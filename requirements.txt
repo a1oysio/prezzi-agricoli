@@ -1,0 +1,3 @@
+# Unica dipendenza: lo scaricamento dei bollettini.
+# Parsing, validazione e pubblicazione usano solo la libreria standard.
+requests

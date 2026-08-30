@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prezzi Borsa Merci di Verona — dati aperti</title>
+<meta name="description" content="Serie storiche dei prezzi dei prodotti agricoli della Borsa Merci di Verona, aggiornate automaticamente e disponibili in CSV.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Prezzi della Borsa Merci di Verona</h1>
+    <div class="sub">Serie storiche in CSV, aggiornate in automatico. Dati non ufficiali.</div>
+  </div>
+  <nav>
+    <a href="https://github.com/a1oysio/prezzi-agricoli/tree/main/dataset/verona">Scarica i CSV</a>
+    <a href="https://github.com/a1oysio/prezzi-agricoli">Codice</a>
+    <a href="https://www.portaleprezziverona.it/camcom-verona/it/borsa-merci">Fonte</a>
+  </nav>
+</header>
+
+<section class="stats" id="stats"></section>
+
+<div class="layout">
+  <aside>
+    <div class="filters">
+      <input id="q" type="search" placeholder="Cerca un prodotto…" autocomplete="off">
+      <select id="group"><option value="">Tutti i comparti</option></select>
+      <select id="unit"><option value="">Tutte le unità</option></select>
+      <div id="count"></div>
+    </div>
+    <div id="list" role="listbox" aria-label="Prodotti"></div>
+  </aside>
+
+  <main>
+    <div id="empty">Scegli un prodotto dall'elenco per vederne la serie storica.</div>
+    <div id="detail" hidden>
+      <h2 id="title"></h2>
+      <div id="crumb"></div>
+      <div class="toolbar">
+        <button data-range="1" aria-pressed="false">1 anno</button>
+        <button data-range="3" aria-pressed="false">3 anni</button>
+        <button data-range="5" aria-pressed="false">5 anni</button>
+        <button data-range="0" aria-pressed="true">Tutto</button>
+        <span class="spacer"></span>
+        <button id="csv">Scarica questa serie in CSV</button>
+      </div>
+      <div id="chart"><div id="legend"></div></div>
+      <div class="facts" id="facts"></div>
+      <div class="note" id="note" hidden></div>
+    </div>
+  </main>
+</div>
+
+<footer>
+  Dati: Camera di Commercio di Verona, ridistribuiti in <a href="https://creativecommons.org/licenses/by/4.0/deed.it">CC&nbsp;BY&nbsp;4.0</a>.
+  Ricostruzione non ufficiale: per usi contrattuali fa fede il listino pubblicato dalla Camera di Commercio.
+</footer>
+
+<script src="https://unpkg.com/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

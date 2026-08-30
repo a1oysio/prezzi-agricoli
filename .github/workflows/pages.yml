@@ -1,0 +1,54 @@
+name: Pubblica il sito
+
+# I JSON del sito non sono versionati: si rigenerano dai CSV a ogni deploy.
+# Versionare sia i CSV sia i JSON significherebbe committare due volte gli
+# stessi dati, e far crescere la history del doppio.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "dataset/**"
+      - "site/**"
+      - "pipeline/**"
+      - ".github/workflows/pages.yml"
+  workflow_run:
+    workflows: ["Aggiorna i dati"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  costruisci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # pipeline.publish usa solo la libreria standard: nessuna dipendenza.
+      - name: Genera i JSON del sito
+        run: python -m pipeline.publish
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  pubblica:
+    needs: costruisci
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

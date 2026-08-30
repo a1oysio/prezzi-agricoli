@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# archivio XML grezzi: ~50 MB, ricostruibile dalla fonte
+data/
+
+# JSON del sito: rigenerati a ogni deploy da pipeline.publish
+site/api/

@@ -1,0 +1,28 @@
+Licenza dei dati contenuti in dataset/
+======================================
+
+Il codice di questo repository è distribuito con licenza MIT (vedi LICENSE).
+I dati nella cartella dataset/ seguono invece la licenza
+
+    Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)
+    https://creativecommons.org/licenses/by/4.0/deed.it
+
+Fonte
+-----
+Camera di Commercio di Verona — Borsa Merci, listino settimanale dei prezzi.
+https://www.portaleprezziverona.it/camcom-verona/it/borsa-merci
+
+I dati originali sono pubblicati dalla Camera di Commercio di Verona. Questo
+repository ne contiene una ricostruzione automatica in formato CSV, prodotta
+dal parsing dei file XML pubblicati dall'ente, con l'aggiunta delle unità di
+misura ricavate dal testo delle categorie.
+
+Come citare
+-----------
+    Dati: Camera di Commercio di Verona (Borsa Merci).
+    Elaborazione: prezzi-agricoli — https://github.com/a1oysio/prezzi-agricoli
+    Licenza: CC BY 4.0
+
+Avvertenza
+----------
+Questa non è una pubblicazione ufficiale. Vedi DISCLAIMER.md.

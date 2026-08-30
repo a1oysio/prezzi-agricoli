@@ -1,0 +1,80 @@
+name: Aggiorna i dati
+
+# La borsa pubblica due o tre bollettini a settimana, in giorni non fissi.
+# Sondare ogni giorno costa sei richieste e rende l'orario irrilevante: se un
+# giorno il cron di GitHub slitta o salta, l'indomani si recupera da solo.
+on:
+  schedule:
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+    inputs:
+      from:
+        description: "Bollettino da cui ripartire (vuoto = dal successivo all'ultimo noto)"
+        required: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: dataset
+  cancel-in-progress: false
+
+jobs:
+  aggiorna:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # DATA_PAT, se presente, tiene vivo il cron: GitHub disattiva i
+          # workflow schedulati dopo 60 giorni senza attivita' del repository, e
+          # i commit fatti con GITHUB_TOKEN non sempre contano come attivita'.
+          token: ${{ secrets.DATA_PAT || secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Scarica i bollettini nuovi
+        run: |
+          python -m pipeline.update ${{ inputs.from && format('--from {0}', inputs.from) || '' }}
+
+      - name: Valida il dataset
+        run: python -m pipeline.validate
+
+      - name: Pubblica le variazioni
+        run: |
+          if git diff --quiet -- dataset; then
+            echo "Nessun bollettino nuovo: niente da committare."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dataset
+          git commit -m "dati: aggiornamento automatico del $(date -u +%F)"
+          git push
+
+      - name: Segnala il guasto con una issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Una sola issue aperta alla volta: un guasto che dura una settimana
+          # non deve produrre sette segnalazioni identiche.
+          existing=$(gh issue list --label pipeline --state open \
+                       --search "Aggiornamento dati fallito in:title" \
+                       --json number --jq '.[0].number')
+          body="Il workflow di aggiornamento e' fallito il $(date -u +%F).
+
+          Log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+          Il dataset **non** e' stato modificato: i CSV pubblicati restano quelli
+          dell'ultima esecuzione riuscita."
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body"
+          else
+            gh issue create --title "Aggiornamento dati fallito" \
+                            --label pipeline --body "$body"
+          fi
