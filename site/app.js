@@ -37,12 +37,37 @@ async function boot() {
     }));
 
   $('#csv').addEventListener('click', downloadCsv);
-  window.addEventListener('resize', () => {
-    if (chart) chart.applyOptions({ width: $('#chart').clientWidth });
-  });
+  $('#back').addEventListener('click', showList);
+
+  // Su telefono il riquadro cambia misura anche senza un resize della finestra
+  // (rotazione, barra dell'indirizzo che si ritrae, passaggio elenco/scheda).
+  const box = $('#chart');
+  if (window.ResizeObserver) {
+    new ResizeObserver(() => resizeChart()).observe(box);
+  } else {
+    window.addEventListener('resize', resizeChart);
+  }
+  window.addEventListener('orientationchange', () => setTimeout(resizeChart, 250));
 
   const code = new URLSearchParams(location.search).get('p');
   if (code && CATALOG.some((p) => p.code === code)) select(code);
+}
+
+function resizeChart() {
+  const el = $('#chart');
+  // A larghezza zero il riquadro è nascosto: ridimensionare romperebbe la scala.
+  if (!chart || !el.clientWidth) return;
+  chart.applyOptions({ width: el.clientWidth, height: el.clientHeight });
+  chart.timeScale().fitContent();
+}
+
+// Su schermo stretto elenco e scheda sono due viste alternate (vedi style.css).
+function showList() {
+  document.body.classList.remove('detail-open');
+  const url = new URL(location);
+  url.searchParams.delete('p');
+  history.replaceState(null, '', url);
+  window.scrollTo(0, 0);
 }
 
 function renderStats() {
@@ -114,6 +139,10 @@ async function select(code) {
 
   $('#empty').hidden = true;
   $('#detail').hidden = false;
+  // Prima di creare il grafico: su telefono <main> è nascosto finché non c'è
+  // questa classe, e un riquadro nascosto ha larghezza zero.
+  document.body.classList.add('detail-open');
+  window.scrollTo(0, 0);
   $('#title').textContent = meta.name;
   $('#crumb').textContent = `${meta.path} · codice ${meta.code} · ${meta.unit}`;
   renderList();
@@ -144,6 +173,9 @@ function ensureChart() {
     rightPriceScale: { borderColor: border },
     timeScale: { borderColor: border, fixLeftEdge: true, fixRightEdge: true },
     crosshair: { mode: LightweightCharts.CrosshairMode.Normal },
+    // Il trascinamento verticale col dito resta alla pagina, non al grafico:
+    // altrimenti su telefono lo scorrimento si blocca sopra il riquadro.
+    handleScroll: { vertTouchDrag: false },
     localization: {
       locale: 'it-IT',
       priceFormatter: (v) => v.toLocaleString('it-IT', { maximumFractionDigits: 2 }),
