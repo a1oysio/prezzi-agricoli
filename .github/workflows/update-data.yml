@@ -1,8 +1,10 @@
 name: Aggiorna i dati
 
 # La borsa pubblica due o tre bollettini a settimana, in giorni non fissi.
-# Sondare ogni giorno costa sei richieste e rende l'orario irrilevante: se un
-# giorno il cron di GitHub slitta o salta, l'indomani si recupera da solo.
+# Sondare ogni giorno rende l'orario irrilevante: se un giorno il cron di GitHub
+# slitta o salta, l'indomani si recupera da solo.  Ogni esecuzione riscarica
+# anche gli ultimi bollettini gia' acquisiti, perche' la borsa a volte pubblica
+# l'XML prima del PDF ufficiale e poi lo corregge senza cambiare numero.
 on:
   schedule:
     - cron: "0 18 * * *"
@@ -10,6 +12,9 @@ on:
     inputs:
       from:
         description: "Bollettino da cui ripartire (vuoto = dal successivo all'ultimo noto)"
+        required: false
+      recheck:
+        description: "Quanti bollettini gia' acquisiti riscaricare (vuoto = 8)"
         required: false
 
 permissions:
@@ -37,9 +42,11 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Scarica i bollettini nuovi
+      - name: Scarica i bollettini nuovi e ricontrolla i recenti
         run: |
-          python -m pipeline.update ${{ inputs.from && format('--from {0}', inputs.from) || '' }}
+          python -m pipeline.update \
+            ${{ inputs.from && format('--from {0}', inputs.from) || '' }} \
+            ${{ inputs.recheck && format('--recheck {0}', inputs.recheck) || '' }}
 
       - name: Valida il dataset
         run: python -m pipeline.validate
@@ -53,7 +60,17 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add dataset
-          git commit -m "dati: aggiornamento automatico del $(date -u +%F)"
+          # Le rettifiche cambiano valori gia' pubblicati: chi ha scaricato il CSV
+          # ieri deve poterlo capire dal messaggio di commit, non dal diff.
+          # Le righe del registro iniziano con la data di rilevamento: contando
+          # solo quelle si esclude l'intestazione della primissima esecuzione.
+          rettifiche=$(git diff --cached -- 'dataset/*/revisions.csv' \
+                       | grep -c '^+[0-9]' || true)
+          messaggio="dati: aggiornamento automatico del $(date -u +%F)"
+          if [ "$rettifiche" -gt 0 ]; then
+            messaggio="$messaggio ($rettifiche rettifiche della fonte)"
+          fi
+          git commit -m "$messaggio"
           git push
 
       - name: Segnala il guasto con una issue

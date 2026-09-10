@@ -39,6 +39,31 @@ corretti**: sono ripubblicati com'è e segnalati dal controllo di qualità
 Il sito segnala da sé, sul grafico, i prodotti con valori che si scostano di
 oltre dieci volte dalla mediana storica.
 
+## Quando la fonte si corregge da sola
+
+Capita che la borsa pubblichi l'XML **prima** del bollettino PDF ufficiale, e che
+quella prima versione contenga dati incompleti o sbagliati. Nei giorni successivi
+l'XML viene riallineato al PDF **mantenendo lo stesso numero di bollettino**: chi
+lo avesse scaricato una volta sola non se ne accorgerebbe mai.
+
+Per questo l'aggiornamento non si limita ai numeri nuovi: a ogni esecuzione
+riscarica anche gli **ultimi otto bollettini già acquisiti** e li riconfronta con
+i CSV. Dove la fonte ha cambiato idea, vince la versione nuova.
+
+Ogni valore sostituito è registrato in
+[`dataset/verona/revisions.csv`](dataset/verona/revisions.csv), con il valore
+vecchio, quello nuovo, il bollettino e la data in cui la differenza è stata
+rilevata. Niente sparisce in silenzio, e il conteggio complessivo è in
+`meta.json` come `n_revisions`.
+
+Conseguenza pratica: **un CSV scaricato può cambiare nei giorni seguenti**, anche
+per date già pubblicate. Chi tiene una copia locale delle ultime settimane
+dovrebbe riscaricarla, o guardare il registro delle rettifiche.
+
+Le rettifiche riguardano solo i valori che la fonte ripubblica. Quelle della
+sezione precedente sono un'altra cosa: errori che la borsa non ha mai corretto, e
+che restano nel dataset così come sono.
+
 ## Continuità delle serie
 
 I codici prodotto della borsa sono stabili: su 840 codici, 794 non cambiano mai
@@ -53,5 +78,6 @@ vanno concatenati.
 ## Rispetto della fonte
 
 Il fetcher si identifica con uno `User-Agent` che rimanda a questo repository e
-attende un secondo fra una richiesta e l'altra. L'aggiornamento gira una volta
-al giorno e fa sei richieste per esecuzione.
+attende un secondo fra una richiesta e l'altra. L'aggiornamento gira una volta al
+giorno e fa una quindicina di richieste per esecuzione: sei di sondaggio sui
+numeri nuovi, otto di ricontrollo su quelli recenti.

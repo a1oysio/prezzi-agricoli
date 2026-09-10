@@ -117,8 +117,10 @@ numeri ha provato.
 ```
 ogni giorno alle 18:00 UTC
         │
-        ├─ pipeline.update    sonda i bollettini successivi all'ultimo noto,
-        │                     scarica quelli che esistono, li unisce ai CSV
+        ├─ pipeline.update    ┬─ riscarica gli ultimi 8 bollettini già acquisiti
+        │                     │  e adotta i valori che la fonte ha corretto
+        │                     └─ sonda i numeri successivi all'ultimo noto,
+        │                        scarica quelli che esistono, li unisce ai CSV
         │
         ├─ pipeline.validate  ┬─ errori → NIENTE commit, apre una issue
         │                     └─ solo avvisi → prosegue
@@ -132,8 +134,8 @@ Il sondaggio si ferma dopo **6 numeri consecutivi mancanti**: la borsa salta
 qualche numero (bollettini mensili, settimane di chiusura), quindi il primo 404
 non significa "non c'è altro".
 
-Sei richieste al giorno, una al secondo, con uno `User-Agent` che rimanda al
-repository.
+Una quindicina di richieste al giorno, una al secondo, con uno `User-Agent` che
+rimanda al repository.
 
 ### Perché tutti i giorni
 
@@ -141,6 +143,30 @@ La borsa pubblica due o tre bollettini a settimana, in giorni non fissi. Sondare
 ogni giorno rende l'orario irrilevante: se un giorno il cron di GitHub slitta o
 salta — succede, il cron di Actions è "best effort" — l'indomani si recupera da
 solo. L'operazione è idempotente: se non c'è niente di nuovo non committa nulla.
+
+### Perché ricontrollare i bollettini già presi
+
+La borsa a volte pubblica l'XML **prima** del bollettino PDF ufficiale, e quella
+prima versione può avere dati incompleti o sbagliati. Nei giorni seguenti l'XML
+viene riallineato al PDF **senza cambiare numero**: leggendo solo i numeri nuovi
+la prima versione resterebbe nei CSV per sempre.
+
+Da qui la finestra di ricontrollo: a ogni esecuzione gli ultimi 8 numeri già
+acquisiti vengono riscaricati e riconfrontati riga per riga. Otto numeri sono
+circa tre settimane — la borsa ne pubblica due o tre a settimana — cioè molto più
+del ritardo con cui il PDF segue l'XML. Costa otto richieste al giorno.
+
+Quando un valore cambia:
+
+- il CSV prende quello nuovo, perché è quello che la fonte considera valido oggi;
+- il vecchio finisce in `dataset/verona/revisions.csv` con data, codice,
+  bollettino e istante del rilevamento;
+- il messaggio di commit lo dice: `(77 rettifiche della fonte)`;
+- `pipeline.validate` lo segnala come avviso, non come errore: non è un guasto
+  nostro.
+
+Chi tiene una copia locale delle ultime settimane deve saperlo: **una riga già
+pubblicata può cambiare**. È la ragione per cui il registro esiste.
 
 ---
 
@@ -165,6 +191,19 @@ git add dataset && git commit -m "dati: aggiornamento manuale"
 ```bash
 python -m pipeline.update --dry-run
 ```
+
+### Ricontrollare più indietro degli 8 numeri di default
+
+Se il sospetto è che una correzione della fonte sia sfuggita — per esempio dopo
+giorni di cron fermo:
+
+```bash
+python -m pipeline.update --recheck 40      # circa tre mesi
+python -m pipeline.update --recheck 0       # solo i numeri nuovi, nessun ricontrollo
+```
+
+Da GitHub è il campo `recheck` di `Run workflow`. Un ricontrollo molto ampio
+costa una richiesta al secondo per numero: `--recheck 400` sono sette minuti.
 
 ### Ripartire da un bollettino preciso
 
@@ -273,13 +312,20 @@ coppia (data, codice) duplicata, unità sconosciuta, prezzo negativo o nullo,
 numero di righe che diminuisce.
 
 Sono avvisi: minimo maggiore del massimo, valori oltre dieci volte la mediana
-storica, prodotti mai quotati.
+storica, prodotti mai quotati, rettifiche fatte dalla fonte.
 
 Un'**unità sconosciuta** è quasi sempre una categoria nuova con una dicitura mai
 vista: aggiungi il pattern in `exchanges/verona/units.py`, poi `rebuild`.
 
 Un **calo del numero di righe** significa che il parser ha smesso di riconoscere
 qualcosa. Non forzare il commit: capisci prima cosa è cambiato nella fonte.
+
+### Un prezzo già pubblicato è cambiato
+
+Guarda `dataset/verona/revisions.csv`: se la riga c'è, è la borsa che ha
+riallineato l'XML al bollettino PDF, e il valore nuovo è quello buono. Se la riga
+**non** c'è ed è cambiata lo stesso, allora è la pipeline ad aver fatto qualcosa
+di imprevisto, e va indagata.
 
 ### Il cron ha smesso di partire
 

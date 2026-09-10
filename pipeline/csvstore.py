@@ -23,6 +23,10 @@ PRODUCT_HEADER = [
     "code", "name", "category_path", "unit",
     "first_date", "last_date", "n_observations", "n_quoted",
 ]
+REVISION_HEADER = [
+    "detected_at", "issue", "date", "code",
+    "low_old", "high_old", "low_new", "high_new",
+]
 
 
 @dataclass
@@ -121,6 +125,33 @@ def write_products(path: Path, products: dict[str, Product], prices: dict) -> in
     return len(rows)
 
 
+def append_revisions(path: Path, rows: list[list]) -> int:
+    """Aggiunge al registro le rettifiche che la fonte ha fatto su bollettini gia'
+    acquisiti.
+
+    Il registro si scrive in coda, non si riscrive: il diff in git resta di poche
+    righe, e la storia di cosa e' cambiato -- e di quando ce ne siamo accorti --
+    non si perde.
+    """
+    if not rows:
+        return 0
+    header_needed = not path.exists()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh, lineterminator="\n")
+        if header_needed:
+            w.writerow(REVISION_HEADER)
+        w.writerows(rows)
+    return len(rows)
+
+
+def count_revisions(path: Path) -> int:
+    if not path.exists():
+        return 0
+    with path.open(encoding="utf-8") as fh:
+        return max(0, sum(1 for _ in fh) - 1)
+
+
 def write_meta(path: Path, prices: dict, n_products: int,
                counts: dict[str, int], last_issue: Optional[int]) -> None:
     dates = sorted({d for d, _ in prices})
@@ -137,6 +168,7 @@ def write_meta(path: Path, prices: dict, n_products: int,
         "n_products": n_products,
         "n_observations": len(prices),
         "n_quoted": quoted,
+        "n_revisions": count_revisions(path.parent / "revisions.csv"),
         "observations_per_year": counts,
     }, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 

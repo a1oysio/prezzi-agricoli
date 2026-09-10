@@ -10,6 +10,7 @@ Verona. Licenza [CC BY 4.0](../../LICENSE-DATA). Leggi anche il
 |------|-----------|
 | `products.csv` | Un prodotto per riga, con unità di misura e gerarchia di categoria |
 | `prices/<anno>.csv` | Le quotazioni di quell'anno |
+| `revisions.csv` | Registro dei valori che la fonte ha corretto dopo la prima pubblicazione |
 | `meta.json` | Data di generazione, ultimo bollettino, conteggi |
 
 I prezzi sono partizionati per anno perché l'aggiornamento tocchi un solo file:
@@ -31,6 +32,26 @@ da "questo prodotto non esiste più".
 
 L'ordinamento è per data e poi per codice numerico, sempre lo stesso: due
 esecuzioni sugli stessi dati producono file identici byte per byte.
+
+## `revisions.csv`
+
+| Colonna | Note |
+|---------|------|
+| `detected_at` | Quando la differenza è stata rilevata (UTC) |
+| `issue` | Bollettino che ha portato il valore nuovo |
+| `date`, `code` | La rilevazione toccata |
+| `low_old`, `high_old` | Il valore che era pubblicato qui |
+| `low_new`, `high_new` | Il valore che c'è adesso |
+
+La borsa a volte pubblica l'XML prima del bollettino PDF ufficiale, con dati
+incompleti o sbagliati, e nei giorni seguenti lo riallinea **senza cambiare
+numero di bollettino**. L'aggiornamento riscarica quindi ogni volta gli ultimi
+otto numeri già acquisiti: dove la fonte si è corretta, vince la versione nuova e
+la vecchia finisce qui.
+
+Il file è in coda, mai riscritto, e c'è solo se una rettifica è stata vista
+almeno una volta. Conseguenza per chi usa i dati: **una riga di
+`prices/<anno>.csv` può cambiare nei giorni successivi alla pubblicazione**.
 
 ## `products.csv`
 

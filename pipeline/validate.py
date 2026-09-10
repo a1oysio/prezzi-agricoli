@@ -155,6 +155,32 @@ def _check_outliers(series, rep: Report) -> None:
             )
 
 
+def _check_revisions(path: Path, products: dict[str, dict], rep: Report) -> int:
+    """Il registro delle rettifiche della fonte: c'e' solo se ne sono state viste."""
+    if not path.exists():
+        return 0
+    n = 0
+    with path.open(encoding="utf-8") as fh:
+        reader = csv.DictReader(fh)
+        expected = ["detected_at", "issue", "date", "code",
+                    "low_old", "high_old", "low_new", "high_new"]
+        if reader.fieldnames != expected:
+            rep.error(f"revisions.csv: intestazione inattesa {reader.fieldnames}")
+            return 0
+        for row_n, row in enumerate(reader, start=2):
+            n += 1
+            where = f"revisions.csv:{row_n}"
+            try:
+                date.fromisoformat(row["date"])
+            except ValueError:
+                rep.error(f"{where}: data non valida '{row['date']}'")
+            if row["code"] not in products:
+                rep.error(f"{where}: codice {row['code']} assente da products.csv")
+            if row["low_old"] == row["low_new"] and row["high_old"] == row["high_new"]:
+                rep.error(f"{where}: rettifica senza differenza")
+    return n
+
+
 def _check_no_regression(meta_file: Path, total: int, rep: Report) -> None:
     """Il dataset puo' solo crescere: un calo segnala un parser che si e' rotto."""
     if not meta_file.exists():
@@ -183,6 +209,14 @@ def validate(dataset: Path) -> Report:
     total, series = _read_prices(prices, products, rep)
     _check_outliers(series, rep)
     _check_no_regression(dataset / "meta.json", total, rep)
+
+    # Le rettifiche non sono un guasto -- e' la fonte che si corregge -- ma un
+    # numero insolito in una sola tornata merita un'occhiata: sono valori gia'
+    # pubblicati che cambiano sotto i piedi di chi ha scaricato il CSV ieri.
+    revisions = _check_revisions(dataset / "revisions.csv", products, rep)
+    if revisions:
+        rep.warn(f"registro rettifiche: {revisions} valori corretti dalla fonte "
+                 f"dopo la prima pubblicazione")
 
     orphans = set(products) - {c for c in series} - {
         c for c in products if products[c]["n_observations"] == "0"

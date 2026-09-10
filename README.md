@@ -20,6 +20,7 @@ gennaio 2016.
 dataset/verona/
 ├── products.csv        catalogo dei prodotti, con unità di misura
 ├── prices/2016.csv …   quotazioni, un file per anno
+├── revisions.csv       i valori che la fonte ha corretto dopo la pubblicazione
 └── meta.json           ultimo bollettino, conteggi, data di generazione
 ```
 
@@ -36,8 +37,13 @@ Due cose da sapere prima di usarli:
   rilevazioni **non** è in euro/tonnellata: non sommare prodotti con unità
   diverse.
 
-Nessun dato viene corretto. Dove la fonte sbaglia, il valore resta com'è e viene
-segnalato — vedi [DISCLAIMER.md](DISCLAIMER.md).
+- **Le ultime settimane possono cambiare.** La borsa pubblica l'XML anche prima
+  del bollettino PDF ufficiale e poi lo riallinea, senza cambiare numero. La
+  pipeline riscarica ogni giorno gli ultimi otto bollettini, adotta la versione
+  nuova e annota quella vecchia in `revisions.csv`.
+
+Nessun dato viene corretto *da noi*. Dove la fonte sbaglia e non si ricrede, il
+valore resta com'è e viene segnalato — vedi [DISCLAIMER.md](DISCLAIMER.md).
 
 ## Com'è fatto
 
