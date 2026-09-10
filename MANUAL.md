@@ -280,9 +280,18 @@ deploy:
 Scaricare i 4 MB dell'intero dataset per disegnare un grafico sarebbe
 inaccettabile: da qui la divisione.
 
-I grafici non sono candele. La fonte pubblica un minimo e un massimo di
-rilevazione, non apertura e chiusura: costruire un OHLC significherebbe inventare
-due valori su quattro.
+Sul grafico si sceglie il **raggruppamento** — ogni rilevazione, per settimana,
+per mese, per anno — e la **forma**: linea con banda, oppure rettangoli
+minimo-massimo. Raggruppando, il minimo e il massimo sono gli estremi toccati nel
+periodo e la linea è la media delle rilevazioni, non il centro della banda: un
+mese con tre settimane a 200 e una a 300 vale 225, non 250.
+
+I rettangoli non sono candele, benché la libreria li disegni con una serie
+`candlestick`. La fonte pubblica un minimo e un massimo di rilevazione, non
+apertura e chiusura: costruire un OHLC vero significherebbe inventare due valori
+su quattro. Apertura e chiusura valgono quindi quanto minimo e massimo, così il
+corpo copre esattamente l'escursione, senza stoppini e con un colore solo — il
+verde/rosso indicherebbe una direzione che la fonte non pubblica.
 
 ---
 

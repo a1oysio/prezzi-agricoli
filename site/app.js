@@ -8,8 +8,15 @@ const fmtPrice = (v) => v == null ? '—' : v.toLocaleString('it-IT', { maximumF
 
 let CATALOG = [];
 let META = {};
-let chart = null, sLow = null, sHigh = null, sMid = null;
+let chart = null, sLow = null, sHigh = null, sMid = null, sBox = null;
+let lastPriceLine = null, lastPriceOwner = null;
 let current = null, currentPoints = [], range = 0;
+// '' = una barra per rilevazione; 'W' | 'M' | 'Y' = raggruppate per periodo.
+let bucket = '', view = 'line';
+// I periodi disegnati adesso, e l'indice per data: il crosshair restituisce una
+// data, non l'oggetto, e cercarla nell'array a ogni movimento del mouse sarebbe
+// una scansione lineare per pixel.
+let currentBuckets = [], bucketIndex = new Map();
 
 /* ---------- avvio ---------- */
 
@@ -35,6 +42,9 @@ async function boot() {
         o.setAttribute('aria-pressed', String(o === b)));
       applyRange();
     }));
+
+  $('#bucket').addEventListener('change', (e) => { bucket = e.target.value; applyRange(); });
+  $('#view').addEventListener('change', (e) => { view = e.target.value; applyRange(); });
 
   $('#csv').addEventListener('click', downloadCsv);
   $('#back').addEventListener('click', showList);
@@ -182,17 +192,48 @@ function ensureChart() {
     },
   });
 
-  // Niente candele: la fonte pubblica un minimo e un massimo di rilevazione,
-  // non apertura e chiusura. Inventare un OHLC significherebbe inventare dati.
+  // Vista a linea: due sottili per gli estremi e una spessa per la media in
+  // mezzo. Le due sottili non hanno etichetta sull'asse dei prezzi, sono il
+  // contorno della banda e non valori da leggere uno per uno.
   sHigh = chart.addLineSeries({ color: band, lineWidth: 1, priceLineVisible: false, lastValueVisible: false });
   sLow = chart.addLineSeries({ color: band, lineWidth: 1, priceLineVisible: false, lastValueVisible: false });
-  sMid = chart.addLineSeries({ color: accent, lineWidth: 2, priceLineVisible: false });
+  // Il tratteggio sull'ultima quotazione lo disegna setLastPriceLine: deve
+  // restare lo stesso valore in tutt'e due le viste, e il price line automatico
+  // della libreria segue la serie, che nella vista a rettangoli e' un'altra.
+  sMid = chart.addLineSeries({
+    color: accent, lineWidth: 2, priceLineVisible: false, lastValueVisible: false,
+  });
+
+  // Vista a rettangoli. La serie e' di tipo candlestick perche' e' l'unica che
+  // disegna un corpo fra due prezzi, ma non sono candele: la fonte pubblica un
+  // minimo e un massimo, non apertura e chiusura, e inventarli sarebbe inventare
+  // dati. Apertura e chiusura valgono quindi quanto minimo e massimo -- il corpo
+  // copre l'escursione e niente altro -- con gli stoppini spenti e un colore
+  // solo, perche' il verde/rosso indicherebbe una direzione che non esiste.
+  sBox = chart.addCandlestickSeries({
+    upColor: band, downColor: band,
+    borderUpColor: accent, borderDownColor: accent,
+    wickVisible: false, borderVisible: true,
+    priceLineVisible: false, lastValueVisible: false,
+  });
 
   chart.subscribeCrosshairMove((param) => {
-    const lo = param.seriesData?.get(sLow)?.value;
-    const hi = param.seriesData?.get(sHigh)?.value;
-    if (!param.time || (lo == null && hi == null)) { updateLegend(null); return; }
-    updateLegend({ time: param.time, low: lo, high: hi });
+    if (!param.time) { updateLegend(null); return; }
+    updateLegend(bucketIndex.get(fmtTime(param.time)) || null);
+  });
+}
+
+// Il tratteggio orizzontale sull'ultima quotazione: dice a colpo d'occhio dove
+// sta oggi il prezzo rispetto a tutto lo storico che gli sta a sinistra.
+function setLastPriceLine(series, value, color) {
+  if (lastPriceOwner && lastPriceLine) lastPriceOwner.removePriceLine(lastPriceLine);
+  lastPriceLine = lastPriceOwner = null;
+  if (value == null) return;
+  lastPriceOwner = series;
+  lastPriceLine = series.createPriceLine({
+    price: value, color, lineWidth: 1,
+    lineStyle: LightweightCharts.LineStyle.Dashed,
+    axisLabelVisible: true, title: '',
   });
 }
 
@@ -207,15 +248,105 @@ function applyRange() {
   }
   if (!pts.length) pts = currentPoints;
 
-  const line = (pick) => pts
-    .map(([d, lo, hi]) => ({ time: d, value: pick(lo, hi) }))
-    .filter((p) => p.value != null);
+  currentBuckets = aggregate(pts, bucket);
+  bucketIndex = new Map(currentBuckets.map((b) => [b.time, b]));
 
-  sLow.setData(line((lo, hi) => lo ?? hi));
-  sHigh.setData(line((lo, hi) => hi ?? lo));
-  sMid.setData(line((lo, hi) => (lo != null && hi != null) ? (lo + hi) / 2 : (lo ?? hi)));
+  const boxed = view === 'box';
+  const pad = rightPad(currentBuckets);
+  const line = (pick) => currentBuckets.map((b) => ({ time: b.time, value: pick(b) }));
+
+  // La serie inattiva si svuota invece di nascondersi: una serie nascosta pesa
+  // comunque sulla scala dei prezzi, e la banda min-max allargherebbe l'asse
+  // anche nella vista a rettangoli, dove non si vede.
+  sLow.setData(boxed ? [] : line((b) => b.low));
+  sHigh.setData(boxed ? [] : line((b) => b.high));
+  sMid.setData(boxed ? [] : line((b) => b.mid).concat(pad));
+  sBox.setData(boxed
+    ? currentBuckets.map((b) => (
+        { time: b.time, open: b.low, high: b.high, low: b.low, close: b.high }
+      )).concat(pad)
+    : []);
+
+  const last = currentBuckets[currentBuckets.length - 1];
+  setLastPriceLine(boxed ? sBox : sMid, last ? last.mid : null,
+                   getComputedStyle(document.body).getPropertyValue('--accent').trim());
+
   chart.timeScale().fitContent();
   updateLegend(null);
+}
+
+const MESI = ['gen', 'feb', 'mar', 'apr', 'mag', 'giu',
+              'lug', 'ago', 'set', 'ott', 'nov', 'dic'];
+
+// La data che rappresenta il periodo, piu' l'etichetta da mostrare in legenda.
+// Il periodo e' identificato dal suo primo giorno: e' quello che l'asse dei
+// tempi puo' ordinare, mentre "agosto 2026" non lo e'.
+function periodOf(iso, mode) {
+  if (mode === 'Y') return { time: `${iso.slice(0, 4)}-01-01`, label: iso.slice(0, 4) };
+  if (mode === 'M') {
+    const [y, m] = iso.split('-');
+    return { time: `${y}-${m}-01`, label: `${MESI[Number(m) - 1]} ${y}` };
+  }
+  // Settimana ISO, cioe' quella che comincia di lunedi'. La borsa rileva quasi
+  // sempre di lunedi', ma non sempre, e due bollettini nella stessa settimana
+  // devono cadere nello stesso periodo.
+  const t = new Date(`${iso}T00:00:00Z`);
+  t.setUTCDate(t.getUTCDate() - ((t.getUTCDay() + 6) % 7));
+  const monday = t.toISOString().slice(0, 10);
+  return { time: monday, label: `sett. del ${monday}` };
+}
+
+// Da rilevazioni a periodi. Minimo e massimo sono gli estremi toccati nel
+// periodo; la linea e' la media delle rilevazioni, non il centro della banda:
+// un mese con tre settimane a 200 e una a 300 vale 225, non 250.
+function aggregate(pts, mode) {
+  const midOf = (lo, hi) => (lo != null && hi != null) ? (lo + hi) / 2 : (lo ?? hi);
+
+  if (!mode) {
+    return pts.map(([d, lo, hi]) => (
+      { time: d, label: d, low: lo ?? hi, high: hi ?? lo, mid: midOf(lo, hi), n: 1 }
+    ));
+  }
+
+  const acc = new Map();
+  for (const [d, lo, hi] of pts) {
+    const { time, label } = periodOf(d, mode);
+    let b = acc.get(time);
+    if (!b) { b = { time, label, low: Infinity, high: -Infinity, sum: 0, n: 0 }; acc.set(time, b); }
+    b.low = Math.min(b.low, lo ?? hi);
+    b.high = Math.max(b.high, hi ?? lo);
+    b.sum += midOf(lo, hi);
+    b.n += 1;
+  }
+  return [...acc.values()]
+    .map(({ time, label, low, high, sum, n }) => ({ time, label, low, high, mid: sum / n, n }))
+    .sort((a, b) => a.time < b.time ? -1 : 1);
+}
+
+// Un po' d'aria fra l'ultima quotazione e l'asse dei prezzi: appiccicata al
+// bordo, l'ultima quotazione e' proprio quella che si legge peggio.
+//
+// Lo spazio si ottiene con punti whitespace -- date senza valore -- e non con
+// `rightOffset`, che con `fixRightEdge: true` viene azzerato dalla libreria
+// (maxRightOffset vale 0 quando il bordo destro e' fissato).  Cosi' il grafico
+// resta ancorato come prima e in piu' l'asse dei tempi mostra le settimane
+// entranti, dove il prossimo bollettino andra' a cadere.
+//
+// La quantita' e' in proporzione ai punti, non fissa: `fitContent` distribuisce
+// la larghezza sul numero di barre, quindi il 4% dei punti da' sempre lo stesso
+// margine in pixel, che si guardino dieci anni o un anno.
+function rightPad(items) {
+  if (!items.length) return [];
+  const day = 86400000;
+  const at = (iso) => new Date(`${iso}T00:00:00Z`).getTime();
+  const last = at(items[items.length - 1].time);
+  // Passo fra due periodi: di norma sette giorni, ma la borsa salta settimane e
+  // raggruppando per mese o per anno il passo e' tutt'altro.
+  const step = items.length > 1 ? Math.max(day, last - at(items[items.length - 2].time)) : 7 * day;
+  const n = Math.max(1, Math.round(items.length * 0.04));
+  return Array.from({ length: n }, (_, i) => (
+    { time: new Date(last + (i + 1) * step).toISOString().slice(0, 10) }
+  ));
 }
 
 // Con le date in formato 'YYYY-MM-DD' la libreria restituisce un BusinessDay
@@ -229,14 +360,15 @@ function fmtTime(t) {
 
 function updateLegend(hover) {
   if (!current) return;
-  const last = currentPoints[currentPoints.length - 1];
-  const p = hover || { time: last[0], low: last[1], high: last[2] };
-  const span = (p.low != null && p.high != null && p.low !== p.high)
-    ? `${fmtPrice(p.low)} – ${fmtPrice(p.high)}`
-    : fmtPrice(p.high ?? p.low);
+  const b = hover || currentBuckets[currentBuckets.length - 1];
+  if (!b) return;
+  const span = (b.low != null && b.high != null && b.low !== b.high)
+    ? `${fmtPrice(b.low)} – ${fmtPrice(b.high)}`
+    : fmtPrice(b.high ?? b.low);
+  const quante = b.n > 1 ? ` <i>(${b.n} rilevazioni)</i>` : '';
+  const coda = hover ? '' : (bucket ? ' <i>(ultimo periodo)</i>' : ' <i>(ultima rilevazione)</i>');
   $('#legend').innerHTML =
-    `${fmtTime(p.time)} &nbsp; <b>${span}</b> ${current.unit}` +
-    (hover ? '' : ' <i>(ultima rilevazione)</i>');
+    `${b.label} &nbsp; <b>${span}</b> ${current.unit}${quante}${coda}`;
 }
 
 function renderFacts() {

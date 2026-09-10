@@ -72,6 +72,11 @@ main { padding: 20px 24px; overflow-y: auto; min-height: 0; }
   border-radius: var(--radius);
 }
 .toolbar button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.toolbar select {
+  font: inherit; font-size: 12.5px; padding: 4px 8px; cursor: pointer;
+  border: 1px solid var(--border); background: var(--panel); color: var(--text);
+  border-radius: var(--radius);
+}
 .toolbar .spacer { margin-left: auto; }
 #chart { height: 420px; border: 1px solid var(--border); border-radius: var(--radius);
          background: var(--panel); position: relative; }
@@ -130,6 +135,8 @@ footer { padding: 14px 22px; border-top: 1px solid var(--border); color: var(--m
   }
   .toolbar button { padding: 7px 12px; font-size: 13px; }
   .toolbar [data-range] { flex: 1 1 0; min-width: 64px; }
+  /* 16px: sotto questa misura iOS ingrandisce la pagina quando si apre il menu. */
+  .toolbar select { flex: 1 1 46%; padding: 8px 10px; font-size: 16px; }
   .toolbar .spacer { display: none; }
   #csv { flex: 1 1 100%; }
   #chart { height: 300px; }

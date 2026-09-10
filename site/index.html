@@ -45,6 +45,16 @@
         <button data-range="3" aria-pressed="false">3 anni</button>
         <button data-range="5" aria-pressed="false">5 anni</button>
         <button data-range="0" aria-pressed="true">Tutto</button>
+        <select id="bucket" aria-label="Raggruppamento dei dati">
+          <option value="">Ogni rilevazione</option>
+          <option value="W">Per settimana</option>
+          <option value="M">Per mese</option>
+          <option value="Y">Per anno</option>
+        </select>
+        <select id="view" aria-label="Tipo di grafico">
+          <option value="line">Linea e banda</option>
+          <option value="box">Rettangoli min-max</option>
+        </select>
         <span class="spacer"></span>
         <button id="csv">Scarica questa serie in CSV</button>
       </div>
