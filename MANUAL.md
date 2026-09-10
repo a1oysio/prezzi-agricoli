@@ -280,6 +280,18 @@ deploy:
 Scaricare i 4 MB dell'intero dataset per disegnare un grafico sarebbe
 inaccettabile: da qui la divisione.
 
+`app.js` e `style.css` arrivano al browser con l'hash del loro contenuto
+nell'indirizzo (`app.js?v=8ed9ab3a`). Pages serve gli asset con `max-age=600`, e
+senza quell'hash dopo un deploy il browser può tenersi per dieci minuti il
+JavaScript vecchio accanto all'HTML nuovo: i controlli si vedono ma non
+rispondono. Lo stamp lo mette `pages.yml` sul runner, subito prima dell'upload,
+quindi nel repository i riferimenti restano puliti. Se un giorno un asset viene
+rinominato e il passo non trova più niente da marchiare, il deploy fallisce
+invece di pubblicare pagine che si romperanno al deploy successivo.
+
+I JSON sotto `api/` non sono marchiati: lì la cache di dieci minuti significa
+soltanto vedere i prezzi di ieri per dieci minuti in più, e si risolve da sé.
+
 Sul grafico si sceglie il **raggruppamento** — ogni rilevazione, per settimana,
 per mese, per anno — e la **forma**: linea con banda, oppure rettangoli
 minimo-massimo. Raggruppando, il minimo e il massimo sono gli estremi toccati nel

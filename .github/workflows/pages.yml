@@ -38,6 +38,24 @@ jobs:
       - name: Genera i JSON del sito
         run: python -m pipeline.publish
 
+      # Pages serve gli asset con max-age=600. Dopo un deploy il browser puo'
+      # quindi tenersi per dieci minuti il vecchio app.js accanto all'HTML nuovo:
+      # i controlli si vedono ma non rispondono, perche' il codice che li collega
+      # e' ancora quello di prima. L'hash nell'URL lega l'asset alla sua versione
+      # -- se il file cambia cambia l'indirizzo, e la cache non ha piu' niente da
+      # servire. Lo stamp vive solo qui sul runner: nel repository i riferimenti
+      # restano senza versione.
+      - name: Lega gli asset alla loro versione
+        run: |
+          for f in app.js style.css; do
+            h=$(sha1sum "site/$f" | cut -c1-8)
+            sed -i -E "s#(src|href)=\"$f\"#\1=\"$f?v=$h\"#g" site/index.html
+          done
+          # Se un asset viene rinominato e questo passo non trova piu' niente da
+          # marchiare, meglio un deploy che fallisce di uno che pubblica in
+          # silenzio pagine che si romperanno alla prossima modifica.
+          grep -E '(src|href)="(app\.js|style\.css)\?v=' site/index.html
+
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
