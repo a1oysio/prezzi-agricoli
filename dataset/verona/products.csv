@@ -50,8 +50,8 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 50,Carnaroli (resa 60) (*),CEREALI (prezzo base per Tonnellata) > RISONI,EUR/t,2016-01-11,2026-09-28,642,521
 51,Vialone nano (resa 56) (*),CEREALI (prezzo base per Tonnellata) > RISONI,EUR/t,2016-01-11,2026-09-28,639,522
 52,Arborio,CEREALI (prezzo base per Tonnellata) > RISI,EUR/t,2016-01-11,2018-02-12,97,0
-53,Carnaroli,CEREALI (prezzo base per Tonnellata) > RISI,EUR/t,2016-01-11,2026-09-28,660,635
-54,Vialone nano,CEREALI (prezzo base per Tonnellata) > RISI,EUR/t,2016-01-11,2026-09-28,660,635
+53,Carnaroli,CEREALI (prezzo base per Tonnellata) > RISI,EUR/t,2016-01-11,2026-09-28,660,634
+54,Vialone nano,CEREALI (prezzo base per Tonnellata) > RISI,EUR/t,2016-01-11,2026-09-28,660,634
 55,Mezza grana,CEREALI (prezzo base per Tonnellata) > SOTTOPRODOTTI DEL RISO,EUR/t,2016-01-11,2026-09-28,677,675
 56,Grana Verde,CEREALI (prezzo base per Tonnellata) > SOTTOPRODOTTI DEL RISO,EUR/t,2016-01-11,2026-09-28,677,675
 57,Farinaccio,Cereali > CEREALI (prezzo base per Tonnellata) > SOTTOPRODOTTI DEL RISO,EUR/t,2016-01-11,2018-01-08,101,100
@@ -70,7 +70,7 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 70,Paglia di frumento imballata in rotoballe,PAGLIA (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-09-28,494,0
 71,Paglia di frumento imballata in rotoballe (f.co arrivo),PAGLIA (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-09-28,663,602
 72,contratto nazionale n. 133,GERME DI GRANTURCO (prezzo base per Tonnellata),EUR/t,2016-01-11,2018-02-05,106,101
-73,Semi di soia nazionali,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-09-28,650,550
+73,Semi di soia nazionali,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-09-28,650,551
 74,Semi di soia esteri (F.co arrivo),SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-09-28,499,18
 75,Semi di soia esteri geneticamente modificati ( f.co partenza  porto),SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-09-28,671,652
 76,Semi di soia integrali tostati base 13% di um,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-09-28,664,626
@@ -78,7 +78,7 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 78,Semi di girasole nazionali (alto oleico) - f.co part.,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-09-28,515,75
 79,Semi di colza nazionale alimentare tipo 00,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-09-28,496,7
 80,Semi di colza naz. uso energetico,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-09-28,523,96
-81,Semi di cotone estero (franco arrivo),SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-09-28,673,649
+81,Semi di cotone estero (franco arrivo),SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-09-28,673,648
 82,Di colza,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-09-28,494,0
 83,Di granturco - acidita base 4% - da amideria,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-09-28,565,304
 84,Di granturco - acidità base 4% - da molino,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-09-28,566,307
@@ -108,7 +108,7 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 108,di germe di granturco nazionale proveniente da mulino,MANGIMI (prezzo base per Tonnellata) > Panelli (alla rinfusa - F.co arrivo),EUR/t,2016-01-11,2026-09-28,653,589
 109,di germe di granturco nazionale proveniente da amideria,MANGIMI (prezzo base per Tonnellata) > Panelli (alla rinfusa - F.co arrivo),EUR/t,2016-01-11,2026-09-28,652,522
 110,di lino comune,MANGIMI (prezzo base per Tonnellata) > Panelli (alla rinfusa - F.co arrivo),EUR/t,2016-01-11,2026-09-28,653,591
-111,di colza nazionale (f.co arrivo),MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-09-28,630,481
+111,di colza nazionale (f.co arrivo),MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-09-28,630,480
 112,di colza estera gen. modificata (f.co arrivo),MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-09-28,567,268
 113,di cotone estera proteine minimo 48%,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-09-28,494,0
 114,di girasole estera 36/37% s.t.q.,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-09-28,677,675
@@ -116,8 +116,8 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 116,di girasole integrale estera 27/28% s.t.q,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-09-28,495,13
 117,di soia normale nazionale,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-09-28,677,672
 118,di soia normale di produzione nazionale geneticamente modificata,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-09-28,675,664
-119,di soia normale estera,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-09-28,495,2
-120,di soia normale estera geneticamente modificata,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-09-28,590,370
+119,di soia normale estera,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-09-28,495,3
+120,di soia normale estera geneticamente modificata,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-09-28,590,371
 121,di soia proteica nazionale,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-09-28,676,671
 122,di soia proteica di produzione nazionale geneticamente modificata,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-09-28,671,651
 123,di soia proteica estera,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-09-28,502,44
@@ -713,8 +713,8 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 973,- bianco,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2023 > VINO DA TAVOLA (quotazione base per 1 grado/100 litri),EUR/grado-hL,2023-10-02,2024-09-16,60,48
 974,- Uve terreni zona D.O.C.,UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2023-10-09,2024-09-23,10,0
 975,- Uve zona classica,UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2023-10-09,2024-09-23,10,0
-976,- Uve recioto e amarone D.O.C. (cons. fresca in plateaux),UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2023-10-09,2026-09-28,25,2
-977,- Uve recioto e amarone zona classica (cons. fresca in plateaux),UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2023-10-09,2026-09-28,25,2
+976,- Uve atte a Valpolicella D.O.C.,UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2023-10-09,2026-09-28,25,2
+977,- Uve recioto e amarone (cons. fresca in plateaux),UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2023-10-09,2026-09-28,25,2
 978,- Atto a Amarone d.o.c.g. classico,PRODUZIONE BIOLOGICA 2023  (prezzo E/litro),EUR/L,2023-11-13,2023-11-13,1,0
 979,- Valpolicella  superiore atto a ripasso classico,PRODUZIONE BIOLOGICA 2023  (prezzo E/litro),EUR/L,2023-11-13,2023-11-13,1,0
 981,- Pinot grigio delle venezie,PRODUZIONE BIOLOGICA 2023  (prezzo E/litro),EUR/L,2023-11-13,2025-05-12,92,74
@@ -780,7 +780,7 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 1052,-  Uva appassita atta a produrre Amarone  ( calcolata sul peso fresco),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2024 > UVA  APPASSITA 2024,EUR/kg,2024-12-02,2025-04-14,19,5
 1053,- Lugana d.o.c.,Uve/Vino > PRODUZIONE BIOLOGICA 2024 (Prezzo € / litro),EUR/L,2024-12-02,2026-01-30,75,75
 1054,atto a Nano Vialone Veronese  IGP  ( resa 56 ) *,CEREALI (prezzo base per Tonnellata) > RISONI,EUR/t,2024-12-09,2026-09-28,86,8
-1055,Nano Vialone Veronese IGP  *,CEREALI (prezzo base per Tonnellata) > RISI,EUR/t,2024-12-09,2026-09-28,103,91
+1055,Nano Vialone Veronese IGP  *,CEREALI (prezzo base per Tonnellata) > RISI,EUR/t,2024-12-09,2026-09-28,103,90
 1056,- Atto a Amarone 2024,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro),EUR/L,2025-01-13,2026-09-28,105,88
 1057,- Atto a Amarone classico 2024,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro),EUR/L,2025-01-13,2026-09-28,105,88
 1058,d.o.c. atto a ripasso 2024,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > VALPOLICELLA  RIPASSO,EUR/L,2025-01-13,2026-09-28,97,60
@@ -857,3 +857,4 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 1146,- Amarone d.o.c.g.,PRODUZIONE BIOLOGICA 2023  (prezzo E/litro),EUR/L,2026-09-21,2026-09-28,2,0
 1147,- Amarone d.o.c.g.,PRODUZIONE BIOLOGICA 2024 (Prezzo € / litro),EUR/L,2026-09-21,2026-09-28,2,0
 1148,-rosso,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > VINO  GENERICO ( quatazione  base per 1 grado /100 litri),EUR/grado-hL,2026-09-21,2026-09-28,2,0
+1149,- bianco 11-12 % vol,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > VINO  GENERICO ( quatazione  base per 1 grado /100 litri),EUR/grado-hL,2026-09-28,2026-09-28,1,1
