@@ -26,6 +26,8 @@ from pipeline import paths
 VALID_UNITS = {
     "EUR/t", "EUR/kg", "EUR/L", "EUR/1000L",
     "EUR/grado-hL", "EUR/grado-100kg", "EUR/100pz", "unknown",
+    # Bologna: uve in EUR al quintale, suini in EUR a capo.
+    "EUR/q", "EUR/pz",
 }
 
 # Un prezzo che si scosta dalla mediana storica del suo prodotto di piu' di
@@ -181,6 +183,46 @@ def _check_revisions(path: Path, products: dict[str, dict], rep: Report) -> int:
     return n
 
 
+def _check_series(dataset: Path, products: dict[str, dict], rep: Report) -> None:
+    """Una serie unisce piu' codici: non devono quotare valori diversi nella stessa data.
+
+    Se due codici della stessa serie hanno prezzi *diversi* nella stessa
+    settimana, la fusione ha messo insieme due prodotti diversi e va annullata.
+    Prezzi identici sono invece la settimana di passaggio fra due varianti
+    dell'etichetta: il listino vecchio la stampa come "corrente" e quello nuovo,
+    con l'etichetta cambiata, come "precedente".  E' la stessa osservazione vista
+    due volte, non un conflitto.
+    """
+    path = dataset / "series.csv"
+    if not path.exists():
+        return
+    by_series: dict[str, list[str]] = defaultdict(list)
+    with path.open(encoding="utf-8") as fh:
+        reader = csv.DictReader(fh)
+        if reader.fieldnames != ["code", "series"]:
+            rep.error(f"series.csv: intestazione inattesa {reader.fieldnames}")
+            return
+        for row in reader:
+            if row["code"] not in products:
+                rep.error(f"series.csv: codice {row['code']} assente da products.csv")
+            by_series[row["series"]].append(row["code"])
+    multi = {c: s for s, codes in by_series.items() if len(codes) > 1 for c in codes}
+    if not multi:
+        return
+    quoted: dict[tuple[str, str], tuple[str, tuple[str, str]]] = {}
+    for csv_file in sorted((dataset / "prices").glob("*.csv")):
+        with csv_file.open(encoding="utf-8") as fh:
+            for row in csv.DictReader(fh):
+                if row["code"] in multi and (row["low"] or row["high"]):
+                    key = (multi[row["code"]], row["date"])
+                    value = (row["low"], row["high"])
+                    if key in quoted and quoted[key][0] != row["code"] and quoted[key][1] != value:
+                        rep.error(
+                            f"serie '{key[0]}': i codici {quoted[key][0]} e {row['code']} "
+                            f"quotano valori diversi il {key[1]} ({quoted[key][1]} contro {value})")
+                    quoted[key] = (row["code"], value)
+
+
 def _check_no_regression(meta_file: Path, total: int, rep: Report) -> None:
     """Il dataset puo' solo crescere: un calo segnala un parser che si e' rotto."""
     if not meta_file.exists():
@@ -208,6 +250,7 @@ def validate(dataset: Path) -> Report:
     products = _read_products(products_file, rep)
     total, series = _read_prices(prices, products, rep)
     _check_outliers(series, rep)
+    _check_series(dataset, products, rep)
     _check_no_regression(dataset / "meta.json", total, rep)
 
     # Le rettifiche non sono un guasto -- e' la fonte che si corregge -- ma un
@@ -229,10 +272,11 @@ def validate(dataset: Path) -> Report:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--dataset", type=Path, default=paths.dataset_dir())
+    ap.add_argument("--exchange", choices=sorted(paths.EXCHANGES), default="verona")
+    ap.add_argument("--dataset", type=Path, default=None)
     args = ap.parse_args()
 
-    rep = validate(args.dataset)
+    rep = validate(args.dataset or paths.dataset_dir(args.exchange))
     print(rep.render())
     if rep.errors:
         print(f"\nValidazione FALLITA: {len(rep.errors)} errori.", file=sys.stderr)

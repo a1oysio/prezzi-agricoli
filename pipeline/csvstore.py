@@ -153,13 +153,17 @@ def count_revisions(path: Path) -> int:
 
 
 def write_meta(path: Path, prices: dict, n_products: int,
-               counts: dict[str, int], last_issue: Optional[int]) -> None:
+               counts: dict[str, int], last_issue: Optional[int],
+               exchange: Optional["paths.Exchange"] = None,
+               extra: Optional[dict] = None) -> None:
+    """``exchange`` e' Verona se omesso; ``extra`` aggiunge chiavi specifiche."""
+    ex = exchange or paths.EXCHANGES["verona"]
     dates = sorted({d for d, _ in prices})
     quoted = sum(1 for lo, hi in prices.values() if lo is not None or hi is not None)
-    path.write_text(json.dumps({
-        "exchange_code": paths.EXCHANGE_CODE,
-        "exchange_name": paths.EXCHANGE_NAME,
-        "source_url": paths.SOURCE_URL,
+    meta = {
+        "exchange_code": ex.code,
+        "exchange_name": ex.name,
+        "source_url": ex.source_url,
         "license": "CC-BY-4.0",
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "last_issue_number": last_issue,
@@ -170,7 +174,9 @@ def write_meta(path: Path, prices: dict, n_products: int,
         "n_quoted": quoted,
         "n_revisions": count_revisions(path.parent / "revisions.csv"),
         "observations_per_year": counts,
-    }, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    }
+    meta.update(extra or {})
+    path.write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
 def read_meta(path: Path) -> dict:

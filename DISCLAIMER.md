@@ -2,10 +2,10 @@
 
 ## Non è una fonte ufficiale
 
-I CSV di questo repository sono una **ricostruzione automatica** del listino
-della Borsa Merci di Verona. Per qualsiasi uso contrattuale, fiscale o legale
-fa fede esclusivamente il listino pubblicato dalla Camera di Commercio di
-Verona.
+I CSV di questo repository sono una **ricostruzione automatica** dei listini
+delle Borse Merci di Verona e di Bologna. Per qualsiasi uso contrattuale,
+fiscale o legale fa fede esclusivamente il listino pubblicato dalla Camera di
+Commercio competente.
 
 ## Cosa il progetto modifica rispetto alla fonte
 
@@ -81,3 +81,33 @@ Il fetcher si identifica con uno `User-Agent` che rimanda a questo repository e
 attende un secondo fra una richiesta e l'altra. L'aggiornamento gira una volta al
 giorno e fa una quindicina di richieste per esecuzione: sei di sondaggio sui
 numeri nuovi, otto di ricontrollo su quelli recenti.
+
+## Bologna: i listini sono PDF
+
+I dati di Bologna non vengono da un file strutturato ma dal **testo dei PDF**
+dei listini, estratto con `pdftotext` e interpretato da un parser. Non e' una
+trascrizione manuale e non e' infallibile.
+
+* Il parser **controlla se stesso**: ogni listino riporta la differenza fra
+  settimana corrente e precedente, e il parser verifica che coincida con quella
+  calcolata. Su oltre 130.000 righe complete non torna in 14, e sono
+  incoerenze della fonte. Le righe che non riesce a collocare con certezza
+  sulla colonna giusta le **scarta**, non le indovina (94 su 241.299).
+* **Il codice di un prodotto Bologna segue l'etichetta esatta.** La Camera cambia
+  le specifiche ogni anno ("p.s. 78/79" diventa "79/80"): il codice cambia con
+  essa. Le serie si uniscono automaticamente solo per i gradi commerciali del
+  frumento; per gli altri prodotti la scelta e' agronomica e non viene fatta in
+  automatico. Vedi `dataset/bologna/README.md`.
+* **Il 2012 e dieci listini successivi non sono leggibili** (caratteri
+  codificati male nei PDF di origine). Quasi tutte le loro settimane si
+  recuperano dal listino seguente, che ripete la settimana precedente;
+  settembre 2014 resta un buco di cinque settimane.
+* **Le settimane senza listino nell'archivio** sono ricostruite dalla colonna
+  "precedente" del listino successivo; sono distinguibili perche' non hanno una
+  riga in `issues.csv` per la propria data.
+* Se la colonna "precedente" di un listino non concorda con il listino della
+  settimana prima, la fonte si e' corretta: vince il valore piu' recente e il
+  vecchio e' in `dataset/bologna/revisions.csv`. Una colonna "precedente"
+  **svuotata** dalla Camera non cancella mai un prezzo gia' pubblicato.
+* Zeri e valori non numerici ("-", "n.r.", errori di formula come "#VALORE!")
+  sono pubblicati come **campi vuoti**, come a Verona.

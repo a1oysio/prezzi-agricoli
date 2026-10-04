@@ -4,15 +4,24 @@ Serie storiche dei prezzi dei prodotti agricoli delle borse merci italiane, in
 formato aperto e aggiornate da sole.
 
 **[→ Consulta i grafici](https://a1oysio.github.io/prezzi-agricoli/)** ·
-**[→ Scarica i CSV](dataset/verona/)**
+**[→ Scarica i CSV di Verona](dataset/verona/)** ·
+**[→ Scarica i CSV di Bologna](dataset/bologna/)**
 
 I listini delle camere di commercio sono pubblici, ma vivono dentro XML
 settimanali senza uno storico consultabile: per sapere quanto costava il mais
 tre anni fa bisogna aprire centocinquanta file. Questo repository li scarica, li
 converte in CSV con uno schema stabile e li tiene aggiornati.
 
-Copre la **Borsa Merci di Verona**: 842 prodotti, 197.745 rilevazioni dal
-gennaio 2016.
+Copre due borse:
+
+* **Borsa Merci di Verona** (XML): 859 prodotti, circa 200.000 rilevazioni dal
+  gennaio 2016.
+* **Borsa Merci di Bologna** (PDF): 4.195 prodotti, 241.299 rilevazioni dal
+  gennaio 2013. Fonte meno strutturata e più complessa da leggere: leggi le
+  [note del dataset](dataset/bologna/README.md), in particolare la differenza
+  fra *codice* e *serie*.
+
+Il **sito** mostra per ora solo Verona; i CSV di Bologna sono già pubblicati.
 
 ## I dati
 

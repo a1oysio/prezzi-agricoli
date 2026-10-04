@@ -392,19 +392,32 @@ si fanno qui e semmai si riportano in agx-scraper, non il contrario.
 
 ## 7. Aggiungere un'altra borsa
 
-`exchanges/verona/` è il modello: un modulo con `fetcher.py` (scaricamento) e
-`parser.py`, che espone `parse_xml_file(path) -> (FileMetadata, [PriceRecord])`.
+Bologna e' la seconda borsa e il modello per le prossime: `exchanges/bologna/`
+(fetcher, parser, unita', identita' dei prodotti) e `pipeline/bologna.py`
+(update e rebuild). Verona resta com'e'; i due non si toccano.
 
-Perché una seconda borsa arrivi fino ai CSV serve:
+Per una terza borsa serve:
 
-1. il nuovo modulo in `exchanges/<nome>/`, che restituisca `PriceRecord` con
-   `category_path` e `units` **corretti** — mai un'unità fissa: è stato l'errore
-   più costoso di questo progetto, il 58% dei dati era sbagliato;
-2. rendere `pipeline/paths.py` multi-borsa: oggi ha una sola coppia
-   `EXCHANGE_CODE` / `EXCHANGE_SLUG`;
-3. estendere `pipeline/update.py`, che oggi chiama direttamente il fetcher di
-   Verona;
-4. estendere il sito, che oggi legge un solo `index.json`.
+1. il modulo in `exchanges/<nome>/` con **unita' e percorso corretti** -- mai
+   un'unita' fissa: e' stato l'errore piu' costoso di questo progetto, il 58%
+   dei dati di Verona era sbagliato;
+2. una voce in `pipeline.paths.EXCHANGES` e un modulo `pipeline/<nome>.py` che
+   riusi `pipeline.csvstore` (lo schema dei CSV e' comune);
+3. un passo nel workflow `update-data.yml`, **dopo** le altre borse e con
+   `continue-on-error`: il guasto di una non deve fermare le altre;
+4. il sito, che oggi legge un solo `index.json` ed e' fermo a Verona.
 
-Un parser PDF per Bologna esiste già in agx-scraper, ma non ha la stessa
-maturità: i suoi dati non sono in questo dataset.
+### Bologna: cosa fare quando si rompe
+
+`pipeline.bologna update` e' fatto per fermarsi, non per indovinare.
+
+| Messaggio | Significato | Cosa fare |
+|---|---|---|
+| `Listini non riconosciuti (layout cambiato?)` | Il testo c'e' ma titolo o tabelle non sono quelli attesi: la Camera ha cambiato l'impaginazione | Scarica il PDF, guarda `pdftotext -layout`, correggi il parser e aggiungi un test con il caso nuovo |
+| `testo illeggibile, saltato` | Il PDF ha i caratteri codificati male | Niente: finisce in `skipped.csv`, la settimana arriva dal listino dopo |
+| `Download fallito` | Il sito non risponde o il file e' stato rinominato | Riprova; se persiste guarda `fetcher.list_issues()` |
+| `Dataset vuoto` | Manca `dataset/bologna` | `python -m pipeline.bologna download` poi `rebuild` |
+
+`rebuild` e' deterministico: due esecuzioni sugli stessi PDF danno file
+identici byte per byte, quindi un diff dopo aver toccato il parser mostra
+esattamente cosa e' cambiato. Richiede `poppler-utils` (`pdftotext`).
