@@ -90,9 +90,13 @@ trascrizione manuale e non e' infallibile.
 
 * Il parser **controlla se stesso**: ogni listino riporta la differenza fra
   settimana corrente e precedente, e il parser verifica che coincida con quella
-  calcolata. Su oltre 130.000 righe complete non torna in 14, e sono
+  calcolata. Su oltre 130.000 righe complete non torna in 17, e sono
   incoerenze della fonte. Le righe che non riesce a collocare con certezza
-  sulla colonna giusta le **scarta**, non le indovina (94 su 241.299).
+  sulla colonna giusta le **scarta**, non le indovina (95 su 240.178).
+* **Le etichette sono pulite di quattro cose**, per non spezzare le serie: i
+  richiami di nota e l'asterisco dei prezzi provvisori, l'anno di raccolto nei
+  titoli di sezione, il marcatore "(1ª quotazione)" e il periodo nell'etichetta
+  degli asparagi. Nient'altro nel testo viene toccato.
 * **Il codice di un prodotto Bologna segue l'etichetta esatta.** La Camera cambia
   le specifiche ogni anno ("p.s. 78/79" diventa "79/80"): il codice cambia con
   essa. Le serie si uniscono automaticamente solo per i gradi commerciali del

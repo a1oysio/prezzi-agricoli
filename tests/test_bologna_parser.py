@@ -198,6 +198,37 @@ class Labels(unittest.TestCase):
                   row("Aglio", ["6,80", "7,20", "6,80", "7,20", "0,00", "0,00"]))
         self.assertEqual(b.rows[0].path, ("PRODOTTI ORTOFRUTTICOLI BIOLOGICI - in €/kg.",))
 
+    def test_provisional_price_with_asterisk(self):
+        # "157,00*": prezzo provvisorio.  Il numero e' 157, l'asterisco e' una nota.
+        b = parse("CEREALI", row("riferimento", ["1,00", "2,00", "1,00", "2,00", "0,00", "0,00"]),
+                  row("orzo estero", ["155,00*", "157,00*", "153,00*", "157,00*", "-2,00", "0,00"]))
+        self.assertEqual(b.rows[1].cur, (153.0, 157.0))
+        self.assertEqual(b.rows[1].label, "orzo estero")
+
+    def test_footnote_marker_between_prices(self):
+        b = parse("ORTOFRUTTA", row("riferimento", ["1,00", "2,00", "1,00", "2,00", "0,00", "0,00"]),
+                  row("Abate 65/70", ["1,45", "1,60", "1,30 (*)", "1,40", "-0,15", "-0,20"]))
+        self.assertEqual(b.rows[1].label, "Abate 65/70")
+        self.assertEqual(b.rows[1].cur, (1.3, 1.4))
+
+    def test_first_quotation_marker_is_not_part_of_the_product(self):
+        a = parse("ALBICOCCHE alla rinfusa in casse (1ª quotazione)", row("Tonda di Costigliola", ["1,00"] * 6))
+        b = parse("ALBICOCCHE alla rinfusa in casse", row("Tonda di Costigliola", ["1,00"] * 6))
+        self.assertEqual(a.rows[0].path, b.rows[0].path)
+        c = parse("ALBICOCCHE", row("Limoni - Verdello 58/67 ((1^ quotazione)", ["1,00"] * 6))
+        self.assertEqual(c.rows[0].label, "Limoni - Verdello 58/67")
+
+    def test_week_range_in_the_label_is_not_part_of_the_product(self):
+        # Gli asparagi: ogni settimana il periodo cambia nell'etichetta.
+        for tail in ("dal 2 all'8 maggio", "15-16-17 aprile", "18 aprile", "dall'11 al 14 giugno",
+                     "dal 28 al 30 aprile"):
+            b = parse("ASPARAGI", row(f"Asparagi extra - {tail}", ["1,00"] * 6))
+            self.assertEqual(b.rows[0].label, "Asparagi extra", tail)
+
+    def test_a_dash_in_a_real_label_survives(self):
+        b = parse("MELE", row("Golden - cal. 70+ - in casse", ["1,00"] * 6))
+        self.assertEqual(b.rows[0].label, "Golden - cal. 70+ - in casse")
+
     def test_excel_error_cell_is_not_a_price(self):
         # Il PDF di Excel stampa "#VALORE!" dove la formula e' rotta.
         b = parse("SEMENTI", row("riferimento", ["1,00", "2,00", "1,00", "2,00", "0,00", "0,00"]),

@@ -76,6 +76,21 @@ _TITLE = re.compile(
     r"del(?:\s+|l['\u2019]\s*)(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})", re.IGNORECASE)
 _FOOTNOTE = re.compile(r"^(?:\(\s*[\d*]+\s*\)|\d+\))")
 _YEAR = re.compile(r"\b(?:19|20)\d{2}\b")
+# "(1ª quotazione)", "((1^ quotazione)": la prima quotazione stagionale di un
+# prodotto.  E' un'annotazione sulla settimana, non una parte del prodotto: se
+# restasse nell'etichetta la serie si spezzerebbe fra la prima settimana e le altre.
+_FIRST_QUOTE = re.compile(r"\s*\(+\s*1\s*[\u00aa\u00b0a^o]?\s*quotazione\s*\)", re.IGNORECASE)
+
+# Gli asparagi sono quotati per periodo e il periodo sta nell'etichetta
+# ("Asparagi extra - dal 2 all'8 maggio", "- 15-16-17 aprile"): senza toglierlo
+# ogni settimana sarebbe un prodotto diverso.  La data e' gia' quella della
+# quotazione.
+_MESI = (r"(?:gennaio|febbraio|marzo|aprile|maggio|giugno|luglio|agosto|settembre"
+         r"|ottobre|novembre|dicembre)")
+_DATE_TAIL = re.compile(
+    rf"\s+-\s+(?:dall?['\u2019]?\s*)?\d{{1,2}}(?:\s*[-/e]\s*\d{{1,2}})*"
+    rf"(?:\s*(?:al|all['\u2019]?)\s*\d{{1,2}})?\s*{_MESI}\s*$", re.IGNORECASE)
+
 _FOOTREF = re.compile(r"(?:\s*(?:\(\s*[\d*]+\s*\)|\(\*+\)))+\s*$")
 # Sezioni fuori schema, ignorate finche' non comincia un'altra sezione:
 #  * petroliferi: prezzi alla pompa, tre decimali, rilevazione quindicinale;
@@ -219,6 +234,10 @@ def _split(raw: str) -> _Line:
 def _split_numbers(raw: str) -> _Line:
     """Separa l'etichetta dalla zona dei numeri, a destra."""
     raw = raw.rstrip()
+    # "157,00*" e "1,30 (*) 1,40": l'asterisco segna un prezzo provvisorio o una
+    # nota e non e' parte del numero.  Si sostituisce con spazi della stessa
+    # lunghezza, perche' la posizione dei numeri e' cio' che li assegna alle colonne.
+    raw = re.sub(r"(?<=\d)\s*\(\*+\)|(?<=\d)\*+", lambda m: " " * len(m.group(0)), raw)
     toks = [(m.group(0), m.start(), m.end()) for m in _TOKEN.finditer(raw)]
     run: list[tuple[str, int, int]] = []
     for t in reversed(toks):
@@ -303,12 +322,13 @@ def _clean_heading(text: str) -> str:
     serie storica supererebbe luglio.  La data della quotazione dice gia' a che
     annata si riferisce.
     """
-    t = _YEAR.sub("", _FOOTREF.sub("", text))
+    t = _YEAR.sub("", _FOOTREF.sub("", _FIRST_QUOTE.sub("", text)))
     return re.sub(r"\s+", " ", t).strip(" -,:")
 
 
 def clean_label(text: str) -> str:
-    return re.sub(r"\s+", " ", _FOOTREF.sub("", text)).strip()
+    t = _DATE_TAIL.sub("", _FIRST_QUOTE.sub("", text))
+    return re.sub(r"\s+", " ", _FOOTREF.sub("", t)).strip(" -")
 
 
 def _column_centres(rows: list[list[tuple[str, int]]]) -> Optional[list[int]]:

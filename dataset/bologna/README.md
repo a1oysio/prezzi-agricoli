@@ -11,7 +11,7 @@ a Verona. Il testo dei PDF si estrae con `pdftotext -layout` (pacchetto
 
 **Copertura:** 651 listini dal 3 gennaio 2013 all'1 ottobre 2026, più le
 settimane recuperate dalle colonne "precedente" (dal 27 dicembre 2012).
-4.195 prodotti, 241.299 rilevazioni.
+3.352 prodotti, 240.178 rilevazioni.
 
 ## File
 
@@ -71,6 +71,17 @@ tenero1 = df[df.series.str.endswith("n. 1 - speciali di forza")].dropna(subset=[
 tenero1.groupby("date")[["low", "high"]].first().plot()
 ```
 
+## Cosa si toglie dalle etichette
+
+Il testo dei prodotti è quello del listino, con queste sole pulizie, che servono
+perché una stessa voce non diventi un prodotto nuovo a ogni settimana:
+
+* i richiami di nota (`(1)`, `(*)`) e l'asterisco dei prezzi provvisori (`157,00*`);
+* l'anno di raccolto nei titoli di sezione (`produzione nazionale 2026`): la
+  data della quotazione dice già l'annata;
+* il marcatore `(1ª quotazione)` della prima settimana stagionale di un prodotto;
+* il periodo nell'etichetta degli asparagi (`- dal 2 all'8 maggio`).
+
 ## Unità di misura
 
 La fonte dichiara nel testo che i prezzi sono in **EUR/t, salvo diversa
@@ -78,8 +89,8 @@ indicazione**. Le sezioni che escono dal default lo dicono nel proprio titolo.
 
 | Valore | Significato | Prodotti |
 |--------|-------------|---------:|
-| `EUR/t` | Euro per tonnellata | 1.137 |
-| `EUR/kg` | Euro per chilogrammo (ortofrutta, formaggi) | 2.699 |
+| `EUR/t` | Euro per tonnellata | 1.119 |
+| `EUR/kg` | Euro per chilogrammo (ortofrutta, formaggi) | 1.874 |
 | `EUR/q` | Euro per quintale (uve da vino) | 140 |
 | `EUR/grado-hL` | Euro per grado alcolico su 100 litri (vini sfusi) | 75 |
 | `EUR/L` | Euro per litro (vini in contenitori) | 51 |
@@ -95,19 +106,19 @@ Ogni listino riporta **due settimane**: quella corrente e la precedente, con la
 differenza stampata. Ne discende quanto segue.
 
 * **Settimane senza listino.** Se il PDF di una settimana manca o è illeggibile,
-  i prezzi si recuperano dalla colonna "precedente" del listino dopo. Sono 9.223
+  i prezzi si recuperano dalla colonna "precedente" del listino dopo. Sono 8.060
   rilevazioni.
 * **Rettifiche.** Se la colonna "precedente" di un listino e il listino della
   settimana prima non concordano, la fonte si è corretta: vince il valore più
-  recente e il vecchio finisce in `revisions.csv` (230 casi). Non sono errori
+  recente e il vecchio finisce in `revisions.csv` (263 casi). Non sono errori
   del parser: sono prezzi pubblicati due volte con valori diversi.
 * **Una colonna "precedente" vuota non cancella nulla.** A volte la Camera
   svuota quella colonna senza aver ritirato niente (il n. 36 del 2019 la mostra a
   trattini per tutti i vini che il n. 35 aveva quotato). Un valore preso dalla
   colonna "precedente" può riempire un buco o cambiarne un altro, mai
-  sostituire un prezzo con un vuoto. Sono 83 casi, ignorati.
+  sostituire un prezzo con un vuoto. Sono 161 casi, ignorati.
 * **Controllo aritmetico.** `corrente − precedente` deve coincidere con la
-  differenza stampata. Su 132.673 righe complete non torna in 14: sono
+  differenza stampata. Su 132.694 righe complete non torna in 17: sono
   incoerenze della fonte (es. `93/125` che la differenza dà `0/5`), lasciate
   così come sono.
 
@@ -127,7 +138,7 @@ differenza stampata. Ne discende quanto segue.
 * **Sezioni escluse** perché hanno una struttura diversa: suini e carni
   (un solo prezzo con tre decimali, rilevati dalla Borsa di Modena), carcasse
   bovine, prodotti petroliferi.
-* **94 righe non collocate** su 241.299 (tabelle dall'impaginazione irregolare);
+* **95 righe non collocate** su 240.178 (tabelle dall'impaginazione irregolare);
   il parser le segnala e le salta, non le indovina. Una riga con celle vuote che
   non può essere collocata con certezza sulla sua colonna è sempre scartata.
 * **Le etichette portano il rumore del PDF** (note a pie di tabella, "max" a capo,
