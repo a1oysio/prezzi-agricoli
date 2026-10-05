@@ -47,9 +47,6 @@ jobs:
       - name: Assicura pdftotext
         run: command -v pdftotext || (sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils)
 
-      - name: Collauda il codice
-        run: python -m unittest discover -s tests -t .
-
       - name: Scarica i bollettini nuovi e ricontrolla i recenti
         run: |
           python -m pipeline.update \

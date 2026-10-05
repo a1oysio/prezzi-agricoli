@@ -16,12 +16,12 @@ Copre due borse:
 
 * **Borsa Merci di Verona** (XML): 859 prodotti, circa 200.000 rilevazioni dal
   gennaio 2016.
-* **Borsa Merci di Bologna** (PDF): 4.195 prodotti, 241.299 rilevazioni dal
+* **Borsa Merci di Bologna** (PDF): 3.352 prodotti, 240.178 rilevazioni dal
   gennaio 2013. Fonte meno strutturata e più complessa da leggere: leggi le
   [note del dataset](dataset/bologna/README.md), in particolare la differenza
   fra *codice* e *serie*.
 
-Il **sito** mostra per ora solo Verona; i CSV di Bologna sono già pubblicati.
+Il **sito** ha un selettore: scegli la borsa e si carica il suo catalogo.
 
 ## I dati
 

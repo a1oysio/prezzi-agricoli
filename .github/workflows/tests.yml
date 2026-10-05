@@ -1,0 +1,26 @@
+name: Test
+
+# I test girano a ogni modifica del codice, non nel job giornaliero dei dati:
+# un test rotto non deve impedire a Verona di pubblicare la sua settimana.
+on:
+  push:
+    paths: ["exchanges/**", "pipeline/**", "tests/**", "site/**", ".github/workflows/tests.yml"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      # Il parser di Bologna usa pdftotext; i test lavorano su testo gia'
+      # estratto, ma il passo e' identico a quello dell'aggiornamento.
+      - run: command -v pdftotext || (sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils)
+      - run: python -m unittest discover -s tests -t .

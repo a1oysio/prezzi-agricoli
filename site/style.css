@@ -32,14 +32,42 @@ header h1 { margin: 0; font-size: 19px; letter-spacing: -0.01em; }
 header .sub { color: var(--muted); font-size: 13px; }
 header nav { margin-left: auto; display: flex; gap: 14px; font-size: 13px; flex-wrap: wrap; }
 
+/* ---------- selettore della borsa ---------- */
+.exchanges {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;
+  padding: 8px 22px; background: var(--panel); border-bottom: 1px solid var(--border);
+  position: relative;
+}
+.exchanges .lbl { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+#exchanges { display: flex; gap: 6px; flex-wrap: wrap; }
+#exchanges button {
+  font: inherit; font-size: 14px; padding: 6px 16px; cursor: pointer;
+  border: 1px solid var(--border); background: var(--bg); color: var(--text);
+  border-radius: 999px;
+}
+#exchanges button:hover { border-color: var(--accent); }
+#exchanges button[aria-selected="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+#exchanges button:disabled { opacity: 0.6; cursor: progress; }
+/* Le note sulla fonte si aprono sopra il contenuto: non spostano il layout. */
+.srcnote { margin-left: auto; font-size: 12.5px; }
+.srcnote summary { cursor: pointer; color: var(--accent); list-style: none; }
+.srcnote summary::-webkit-details-marker { display: none; }
+.srcnote summary::before { content: "ⓘ "; }
+.srcnote .body {
+  position: absolute; z-index: 20; right: 22px; top: calc(100% - 2px); width: min(460px, calc(100vw - 28px));
+  padding: 12px 14px; background: var(--panel); border: 1px solid var(--border);
+  border-left: 3px solid var(--warn); border-radius: 0 0 var(--radius) var(--radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14); color: var(--text); line-height: 1.45;
+}
+
 .stats { display: flex; flex-wrap: wrap; gap: 0; border-bottom: 1px solid var(--border); background: var(--panel); }
 .stat { padding: 12px 22px; border-right: 1px solid var(--border); min-width: 130px; }
 .stat .v { font-size: 19px; font-variant-numeric: tabular-nums; }
 .stat .k { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
 
-.layout { display: grid; grid-template-columns: 340px 1fr; gap: 0; height: calc(100vh - 132px); }
+.layout { display: grid; grid-template-columns: 340px 1fr; gap: 0; height: calc(100vh - 180px); }
 @supports (height: 100dvh) {
-  .layout { height: calc(100dvh - 132px); }
+  .layout { height: calc(100dvh - 180px); }
 }
 
 aside { border-right: 1px solid var(--border); background: var(--panel); display: flex; flex-direction: column; min-height: 0; }
@@ -57,6 +85,12 @@ aside { border-right: 1px solid var(--border); background: var(--panel); display
 .item .n { font-size: 13.5px; }
 .item .m { font-size: 11.5px; color: var(--muted); margin-top: 2px;
            overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#list #more {
+  display: block; width: calc(100% - 24px); margin: 12px; padding: 8px; cursor: pointer;
+  font: inherit; font-size: 13px; color: var(--accent); background: var(--bg);
+  border: 1px dashed var(--border); border-radius: var(--radius);
+}
+.badge.series { background: var(--accent); color: #fff; }
 .badge { font-size: 10.5px; padding: 1px 5px; border-radius: 4px;
          background: var(--accent-soft); color: var(--accent); margin-left: 4px; }
 
@@ -86,6 +120,14 @@ main { padding: 20px 24px; overflow-y: auto; min-height: 0; }
 .facts { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 14px; font-size: 13px; }
 .facts div span { color: var(--muted); display: block; font-size: 11px;
                   text-transform: uppercase; letter-spacing: 0.05em; }
+.variants { margin-top: 14px; font-size: 12.5px; color: var(--muted); }
+.variants summary { cursor: pointer; color: var(--accent); }
+.variants ul { margin: 8px 0 0; padding: 0; list-style: none; max-height: 260px; overflow-y: auto;
+               border: 1px solid var(--border); border-radius: var(--radius); background: var(--panel); }
+.variants li { padding: 6px 10px; border-bottom: 1px solid var(--border); }
+.variants li:last-child { border-bottom: 0; }
+.variants .per { display: inline-block; min-width: 190px; color: var(--muted);
+                 font-variant-numeric: tabular-nums; }
 .note { margin-top: 16px; padding: 10px 12px; border-left: 3px solid var(--warn);
         background: var(--panel); font-size: 12.5px; color: var(--muted); border-radius: 0 var(--radius) var(--radius) 0; }
 footer { padding: 14px 22px; border-top: 1px solid var(--border); color: var(--muted);
@@ -101,6 +143,12 @@ footer { padding: 14px 22px; border-top: 1px solid var(--border); color: var(--m
   header > div { flex: 1 1 100%; }
   header nav { margin-left: 0; gap: 12px; }
 
+  .exchanges { padding: 8px 14px; }
+  .srcnote { margin-left: 0; flex: 1 1 100%; }
+  .srcnote .body { position: static; box-shadow: none; width: auto; margin-top: 6px; }
+  #exchanges button { padding: 8px 18px; font-size: 15px; }
+  .variants .per { display: block; min-width: 0; }
+
   .stats {
     display: grid; grid-template-columns: repeat(3, 1fr);
   }
@@ -112,18 +160,21 @@ footer { padding: 14px 22px; border-top: 1px solid var(--border); color: var(--m
   .stat .v { font-size: 15px; }
   .stat .k { font-size: 9.5px; letter-spacing: 0.04em; }
 
-  .layout { grid-template-columns: 1fr; height: auto; }
+  /* minmax(0, ...): con 1fr la colonna non scende sotto il testo piu' lungo
+     dell'elenco (nowrap) e la pagina sborda a destra. */
+  .layout { grid-template-columns: minmax(0, 1fr); height: auto; }
+  aside, main { min-width: 0; }
   aside { border-right: 0; }
 
-  .filters { padding: 10px; grid-template-columns: 1fr 1fr; }
+  .filters { padding: 10px; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .filters input { grid-column: 1 / -1; }
   /* 16px: sotto questa soglia iOS ingrandisce la pagina al focus. */
   .filters input, .filters select { font-size: 16px; padding: 9px 10px; }
   #count { grid-column: 1 / -1; }
 
   /* L'elenco scorre da solo: la pagina resta ferma, niente scroll infinito. */
-  #list { height: calc(100vh - 300px); min-height: 260px; }
-  @supports (height: 100dvh) { #list { height: calc(100dvh - 300px); } }
+  #list { height: calc(100vh - 350px); min-height: 260px; }
+  @supports (height: 100dvh) { #list { height: calc(100dvh - 350px); } }
   .item { padding: 11px 12px; }
 
   main { padding: 12px 14px; }

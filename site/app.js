@@ -1,13 +1,17 @@
-/* Dashboard dei prezzi della Borsa Merci di Verona.
-   Sito statico: tutto arriva da api/index.json e api/series/<code>.json. */
+/* Dashboard dei prezzi delle borse merci.
+   Sito statico: api/exchanges.json elenca le borse; ognuna ha
+   api/<borsa>/index.json e api/<borsa>/series/<codice>.json. */
 'use strict';
 
 const $ = (sel) => document.querySelector(sel);
 const fmtNum = (n) => n.toLocaleString('it-IT');
 const fmtPrice = (v) => v == null ? '—' : v.toLocaleString('it-IT', { maximumFractionDigits: 2 });
 
+let EXCHANGES = [];          // le borse disponibili, dal selettore
+let EX = null;               // la borsa mostrata adesso (oggetto di exchanges.json)
 let CATALOG = [];
 let META = {};
+let loadToken = 0;           // scarta le risposte di una borsa gia' abbandonata
 let chart = null, sLow = null, sHigh = null, sMid = null, sBox = null;
 let lastPriceLine = null, lastPriceOwner = null;
 let current = null, currentPoints = [], range = 0;
@@ -17,23 +21,36 @@ let bucket = '', view = 'line';
 // data, non l'oggetto, e cercarla nell'array a ogni movimento del mouse sarebbe
 // una scansione lineare per pixel.
 let currentBuckets = [], bucketIndex = new Map();
+// Quante righe dell'elenco si disegnano alla volta: con migliaia di prodotti
+// (Bologna) ricostruire tutto il DOM a ogni tasto premuto sarebbe lento.
+const PAGE = 400;
+let shown = PAGE;
 
 /* ---------- avvio ---------- */
 
 async function boot() {
-  const res = await fetch('api/index.json');
+  const res = await fetch('api/exchanges.json');
   const data = await res.json();
-  META = data.meta || {};
-  // Senza quotazioni non c'è nulla da disegnare: restano nei CSV, non in elenco.
-  CATALOG = (data.products || []).filter((p) => p.n > 0);
+  EXCHANGES = data.exchanges || [];
+  if (!EXCHANGES.length) {
+    $('#empty').textContent = 'Nessuna borsa disponibile.';
+    return;
+  }
 
-  renderStats();
-  fillSelect('#group', CATALOG.map((p) => p.group));
-  fillSelect('#unit', CATALOG.map((p) => p.unit));
-  renderList();
+  const params = new URLSearchParams(location.search);
+  const wanted = params.get('b');
+  const first = EXCHANGES.find((e) => e.slug === wanted)
+    || EXCHANGES.find((e) => e.slug === data.default) || EXCHANGES[0];
 
+  renderTabs();
+  bindControls();
+  await loadExchange(first.slug, params.get('p'));
+}
+
+// Gli ascoltatori si legano una volta sola: cambiare borsa non ricrea la pagina.
+function bindControls() {
   ['#q', '#group', '#unit'].forEach((sel) =>
-    $(sel).addEventListener('input', renderList));
+    $(sel).addEventListener('input', () => { shown = PAGE; renderList(); }));
 
   document.querySelectorAll('[data-range]').forEach((b) =>
     b.addEventListener('click', () => {
@@ -58,9 +75,112 @@ async function boot() {
     window.addEventListener('resize', resizeChart);
   }
   window.addEventListener('orientationchange', () => setTimeout(resizeChart, 250));
+}
 
-  const code = new URLSearchParams(location.search).get('p');
-  if (code && CATALOG.some((p) => p.code === code)) select(code);
+function renderTabs() {
+  $('#exchanges').innerHTML = EXCHANGES.map((e) => `
+    <button type="button" role="tab" data-slug="${e.slug}"
+            aria-selected="${!!EX && EX.slug === e.slug}">${escapeHtml(shortName(e))}</button>`).join('');
+  $('#exchanges').querySelectorAll('button').forEach((b) =>
+    b.addEventListener('click', () => {
+      if (!EX || b.dataset.slug !== EX.slug) loadExchange(b.dataset.slug, null);
+    }));
+}
+
+// "Borsa Merci di Verona" sta troppo larga in una linguetta: basta la citta'.
+function shortName(e) {
+  return e.name.replace(/^Borsa Merci( di)?\s*/i, '') || e.name;
+}
+
+// Carica il catalogo di una borsa e riporta la pagina allo stato iniziale:
+// filtri azzerati, nessun prodotto aperto, grafico vuoto.
+async function loadExchange(slug, productCode) {
+  const ex = EXCHANGES.find((e) => e.slug === slug);
+  if (!ex) return;
+  const token = ++loadToken;
+
+  EX = ex;
+  renderTabs();
+  document.querySelectorAll('#exchanges button').forEach((b) => b.disabled = true);
+  $('#count').textContent = 'Caricamento…';
+  $('#list').innerHTML = '';
+
+  let data;
+  try {
+    const res = await fetch(`api/${slug}/index.json`);
+    if (!res.ok) throw new Error(res.status);
+    data = await res.json();
+  } catch (err) {
+    if (token !== loadToken) return;
+    $('#count').textContent = 'Non riesco a caricare i dati di questa borsa.';
+    document.querySelectorAll('#exchanges button').forEach((b) => b.disabled = false);
+    return;
+  }
+  if (token !== loadToken) return;          // nel frattempo si e' scelta un'altra borsa
+  document.querySelectorAll('#exchanges button').forEach((b) => b.disabled = false);
+
+  META = data.meta || {};
+  // Senza quotazioni non c'è nulla da disegnare: restano nei CSV, non in elenco.
+  CATALOG = (data.products || []).filter((p) => p.n > 0);
+  shown = PAGE;
+
+  clearSelection();
+  resetFilters();
+  applyExchangeTexts();
+  renderStats();
+  renderList();
+
+  if (productCode && CATALOG.some((p) => p.code === productCode)) select(productCode);
+  else syncUrl(null);
+}
+
+function resetFilters() {
+  $('#q').value = '';
+  for (const sel of ['#group', '#unit']) {
+    const el = $(sel);
+    const label = sel === '#group' ? 'Tutti i comparti' : 'Tutte le unità';
+    el.innerHTML = '';
+    el.appendChild(new Option(label, ''));
+  }
+  fillSelect('#group', CATALOG.map((p) => p.group));
+  fillSelect('#unit', CATALOG.map((p) => p.unit));
+}
+
+// Titolo, collegamenti, avvertenza e piede di pagina seguono la borsa scelta.
+function applyExchangeTexts() {
+  document.title = `${EX.name} — Prezzi delle Borse Merci agricole`;
+  $('#lnk-csv').href = EX.dataset_url;
+  $('#lnk-source').href = EX.source_url;
+  $('#chamber').textContent = EX.chamber || 'Camere di Commercio';
+  const note = $('#srcnote');
+  note.hidden = !EX.notice;
+  note.open = false;
+  $('#srcnote-body').innerHTML = EX.notice
+    ? `${escapeHtml(EX.notice)} <a href="${EX.dataset_url}">Dettagli nel README</a>`
+    : '';
+}
+
+// Aggiorna ?b= e ?p= senza aggiungere voci alla cronologia.
+function syncUrl(code) {
+  const url = new URL(location);
+  url.searchParams.set('b', EX.slug);
+  if (code) url.searchParams.set('p', code); else url.searchParams.delete('p');
+  history.replaceState(null, '', url);
+}
+
+// Torna alla schermata "scegli un prodotto": serve quando si cambia borsa.
+function clearSelection() {
+  current = null;
+  currentPoints = [];
+  currentBuckets = [];
+  bucketIndex = new Map();
+  if (chart) {
+    [sLow, sHigh, sMid, sBox].forEach((s) => s.setData([]));
+    setLastPriceLine(null, null, '');
+  }
+  $('#detail').hidden = true;
+  $('#empty').hidden = false;
+  document.body.classList.remove('detail-open');
 }
 
 function resizeChart() {
@@ -74,20 +194,27 @@ function resizeChart() {
 // Su schermo stretto elenco e scheda sono due viste alternate (vedi style.css).
 function showList() {
   document.body.classList.remove('detail-open');
-  const url = new URL(location);
-  url.searchParams.delete('p');
-  history.replaceState(null, '', url);
+  if (EX) syncUrl(null);
   window.scrollTo(0, 0);
+}
+
+// "2026-38" (anno-numero) per Bologna, un intero progressivo per Verona.
+function lastIssueLabel() {
+  if (META.last_issue) {
+    const [y, n] = String(META.last_issue).split('-');
+    return `n. ${n}/${y}`;
+  }
+  return META.last_issue_number != null ? `n. ${META.last_issue_number}` : '—';
 }
 
 function renderStats() {
   const rows = [
-    ['Prodotti', fmtNum(META.n_products || 0)],
+    ['Prodotti', fmtNum(CATALOG.length)],
     ['Quotazioni', fmtNum(META.n_quoted || 0)],
     ['Rilevazioni', fmtNum(META.n_observations || 0)],
     ['Dal', META.first_date || '—'],
     ['Al', META.last_date || '—'],
-    ['Bollettino', META.last_issue_number != null ? `n. ${META.last_issue_number}` : '—'],
+    [META.last_issue ? 'Listino' : 'Bollettino', lastIssueLabel()],
     ['Aggiornato', (META.generated_at || '').slice(0, 10) || '—'],
   ];
   $('#stats').innerHTML = rows
@@ -120,15 +247,22 @@ function renderList() {
   $('#count').textContent =
     `${fmtNum(rows.length)} prodotti su ${fmtNum(CATALOG.length)}`;
 
-  $('#list').innerHTML = rows.map((p) => `
+  const visible = rows.slice(0, shown);
+  const more = rows.length - visible.length;
+  $('#list').innerHTML = visible.map((p) => `
     <div class="item" role="option" data-code="${p.code}"
-         aria-selected="${current && current.code === p.code}">
-      <div class="n">${escapeHtml(p.name)}<span class="badge">${p.unit}</span></div>
+         aria-selected="${!!current && current.code === p.code}">
+      <div class="n">${escapeHtml(p.name)}<span class="badge">${p.unit}</span>${
+        p.merged > 1 ? `<span class="badge series" title="Unisce ${p.merged} varianti della descrizione">serie</span>` : ''}</div>
       <div class="m">${escapeHtml(p.category || p.group)} · ${fmtNum(p.n)} quotazioni · fino al ${p.last}</div>
-    </div>`).join('');
+    </div>`).join('') + (more > 0
+      ? `<button type="button" id="more">Mostra altri ${fmtNum(Math.min(more, PAGE))} (restano ${fmtNum(more)})</button>`
+      : '');
 
   $('#list').querySelectorAll('.item').forEach((el) =>
     el.addEventListener('click', () => select(el.dataset.code)));
+  const btn = $('#more');
+  if (btn) btn.addEventListener('click', () => { shown += PAGE; renderList(); });
 }
 
 function escapeHtml(s) {
@@ -142,10 +276,8 @@ async function select(code) {
   const meta = CATALOG.find((p) => p.code === code);
   if (!meta) return;
   current = meta;
-
-  const url = new URL(location);
-  url.searchParams.set('p', code);
-  history.replaceState(null, '', url);
+  const exchange = EX.slug;
+  syncUrl(code);
 
   $('#empty').hidden = true;
   $('#detail').hidden = false;
@@ -154,16 +286,33 @@ async function select(code) {
   document.body.classList.add('detail-open');
   window.scrollTo(0, 0);
   $('#title').textContent = meta.name;
-  $('#crumb').textContent = `${meta.path} · codice ${meta.code} · ${meta.unit}`;
+  $('#crumb').textContent = `${meta.path} · ${meta.merged > 1 ? 'serie' : 'codice'} ${meta.code} · ${meta.unit}`;
   renderList();
 
-  const res = await fetch(`api/series/${code}.json`);
+  const res = await fetch(`api/${exchange}/series/${code}.json`);
   const data = await res.json();
+  // Nel frattempo si e' scelto un altro prodotto o un'altra borsa: questa
+  // risposta non serve piu', e disegnarla sovrascriverebbe quella giusta.
+  if (!current || current.code !== code || !EX || EX.slug !== exchange) return;
   currentPoints = data.points;
 
   ensureChart();
   applyRange();
   renderFacts();
+  renderVariants(data.variants || []);
+}
+
+// Una serie di Bologna unisce piu' descrizioni della stessa voce: le si
+// elenca, perche' e' dove l'agronomo controlla che l'unione sia ragionevole.
+function renderVariants(variants) {
+  const box = $('#variants');
+  box.hidden = variants.length < 2;
+  box.open = false;
+  if (box.hidden) return;
+  $('#variants-sum').textContent =
+    `Questa serie unisce ${variants.length} descrizioni pubblicate dalla fonte`;
+  $('#variants-list').innerHTML = variants.map((v) =>
+    `<li><span class="per">${v.first} → ${v.last}</span> ${escapeHtml(v.name)}</li>`).join('');
 }
 
 function ensureChart() {
@@ -406,7 +555,7 @@ function downloadCsv() {
                         { type: 'text/csv;charset=utf-8' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = `verona-${current.code}.csv`;
+  a.download = `${EX.slug}-${current.code}.csv`;
   a.click();
   URL.revokeObjectURL(a.href);
 }
