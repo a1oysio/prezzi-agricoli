@@ -16,7 +16,7 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 16,Ibrido estero - f.co partenza porto alla rinfusa - (potrebbe contenere Organismi Geneticamente Modificati),CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2016-01-11,2026-10-05,679,676
 17,avena,CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-05,495,0
 18,orzo vestito naz. p.s. 53/55 um. 14%,CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-05,502,29
-19,orzo vestito naz. p.s. 62/63 um. 14%,CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-05,591,338
+19,orzo vestito naz. p.s. 62/63 um. 14%,CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-05,591,337
 20,orzo vestito naz. p.s. 64/66 um. 14%,CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-05,607,398
 21,orzo vestito estero p.s  65/67 e oltre  (fr. arrivo alla rinfusa),CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-05,670,633
 22,grano foraggero (fr. arrivo alla rinfusa),CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-05,527,117
@@ -38,7 +38,7 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 38,Di grano duro (arr.rinf.),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Crusca pellettata nazionale,EUR/t,2016-01-11,2026-10-05,679,677
 39,Spezzati di granturco (rinfusa),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-05,678,673
 40,Farinetta di granturco per uso zootecnico,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-05,647,564
-41,Glutine di mais,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-05,654,578
+41,Glutine di mais,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-05,654,577
 42,Semola glutinata naz.le prot. min. 17-18% (rinf.arrivo),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-05,663,626
 43,Semola glutinata estera prot. min. 17-18% (rinf.arrivo),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-05,636,530
 44,Manioca (base 64% di amido) frant.,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-05,495,0
@@ -78,7 +78,7 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 78,Semi di girasole nazionali (alto oleico) - f.co part.,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,517,77
 79,Semi di colza nazionale alimentare tipo 00,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,497,7
 80,Semi di colza naz. uso energetico,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,525,98
-81,Semi di cotone estero (franco arrivo),SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,675,649
+81,Semi di cotone estero (franco arrivo),SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,675,650
 82,Di colza,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-10-05,495,0
 83,Di granturco - acidita base 4% - da amideria,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-10-05,566,304
 84,Di granturco - acidità base 4% - da molino,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-10-05,567,307
@@ -116,8 +116,8 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 116,di girasole integrale estera 27/28% s.t.q,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,496,13
 117,di soia normale nazionale,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,679,674
 118,di soia normale di produzione nazionale geneticamente modificata,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,677,666
-119,di soia normale estera,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,497,5
-120,di soia normale estera geneticamente modificata,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,592,373
+119,di soia normale estera,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,497,4
+120,di soia normale estera geneticamente modificata,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,592,372
 121,di soia proteica nazionale,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,678,673
 122,di soia proteica di produzione nazionale geneticamente modificata,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,673,653
 123,di soia proteica estera,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,503,44
@@ -743,7 +743,7 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 1005,- Atto a Amarone classico 2023,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro),EUR/L,2024-07-15,2026-10-05,146,146
 1006,Trinciato di granturco 1° raccolto in piedi - Umidità 65-68% - Amido 30- 32%,FORAGGI (prezzo base per Tonnellata),EUR/t,2024-07-29,2026-10-05,106,14
 1007,Trinciato di granturco 2° raccolto in piedi - Umidità 65-68 % - Amido 30-32%,FORAGGI (prezzo base per Tonnellata),EUR/t,2024-08-26,2026-10-05,102,15
-1008,- Uva rossa consegnata fresca in plateau,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A I.G.T.,EUR/kg,2024-09-09,2026-10-05,22,5
+1008,- Uva rossa consegnata fresca in plateau,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A I.G.T.,EUR/kg,2024-09-09,2026-10-05,22,6
 1009,- pinot grigio,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2024 > DOC DELLE VENEZIE (prezzo E/litro),EUR/L,2024-09-23,2025-09-29,69,67
 1010,- bianco,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2024 > DOC DELLE VENEZIE (prezzo E/litro),EUR/L,2024-09-23,2025-09-30,70,70
 1011,Ibrido farinoso Nazionale e/o Comunitario  con garanzie - Aflatossina B1 max. 3 ppb - Deossinivalenolo DON max. 3.000 ppb,CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2024-09-30,2026-10-05,133,131
