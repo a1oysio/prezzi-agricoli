@@ -3,23 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prezzi Borsa Merci di Verona — dati aperti</title>
-<meta name="description" content="Serie storiche dei prezzi dei prodotti agricoli della Borsa Merci di Verona, aggiornate automaticamente e disponibili in CSV.">
+<title>Prezzi delle Borse Merci agricole — dati aperti</title>
+<meta name="description" content="Serie storiche dei prezzi dei prodotti agricoli delle borse merci italiane (Verona, Bologna), aggiornate automaticamente e disponibili in CSV.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <div>
-    <h1>Prezzi della Borsa Merci di Verona</h1>
+    <h1>Prezzi delle Borse Merci agricole</h1>
     <div class="sub">Serie storiche in CSV, aggiornate in automatico. Dati non ufficiali.</div>
   </div>
   <nav>
-    <a href="https://github.com/a1oysio/prezzi-agricoli/tree/main/dataset/verona">Scarica i CSV</a>
+    <a id="lnk-csv" href="https://github.com/a1oysio/prezzi-agricoli/tree/main/dataset">Scarica i CSV</a>
     <a href="https://github.com/a1oysio/prezzi-agricoli">Codice</a>
-    <a href="https://www.portaleprezziverona.it/camcom-verona/it/borsa-merci">Fonte</a>
+    <a id="lnk-source" href="https://github.com/a1oysio/prezzi-agricoli">Fonte</a>
   </nav>
 </header>
+
+<section class="exchanges" aria-label="Borsa merci">
+  <span class="lbl" id="exchanges-lbl">Borsa</span>
+  <div id="exchanges" role="tablist" aria-labelledby="exchanges-lbl"></div>
+  <details class="srcnote" id="srcnote" hidden>
+    <summary>Note sulla fonte</summary>
+    <div class="body" id="srcnote-body"></div>
+  </details>
+</section>
 
 <section class="stats" id="stats"></section>
 
@@ -60,13 +69,17 @@
       </div>
       <div id="chart"><div id="legend"></div></div>
       <div class="facts" id="facts"></div>
+      <details class="variants" id="variants" hidden>
+        <summary id="variants-sum"></summary>
+        <ul id="variants-list"></ul>
+      </details>
       <div class="note" id="note" hidden></div>
     </div>
   </main>
 </div>
 
 <footer>
-  Dati: Camera di Commercio di Verona, ridistribuiti in <a href="https://creativecommons.org/licenses/by/4.0/deed.it">CC&nbsp;BY&nbsp;4.0</a>.
+  Dati: <span id="chamber">Camere di Commercio</span>, ridistribuiti in <a href="https://creativecommons.org/licenses/by/4.0/deed.it">CC&nbsp;BY&nbsp;4.0</a>.
   Ricostruzione non ufficiale: per usi contrattuali fa fede il listino pubblicato dalla Camera di Commercio.
 </footer>
 

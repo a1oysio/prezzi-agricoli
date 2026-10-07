@@ -42,6 +42,11 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      # I listini di Bologna sono PDF: il testo si estrae con pdftotext.  Il
+      # runner di norma ce l'ha gia'; se manca lo si installa.
+      - name: Assicura pdftotext
+        run: command -v pdftotext || (sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils)
+
       - name: Scarica i bollettini nuovi e ricontrolla i recenti
         run: |
           python -m pipeline.update \
@@ -50,6 +55,22 @@ jobs:
 
       - name: Valida il dataset
         run: python -m pipeline.validate
+
+      # Bologna gira DOPO Verona e non puo' bloccarlo: se la Camera cambia
+      # l'impaginazione dei PDF, il parser si ferma (e' fatto per fermarsi, non
+      # per indovinare) e Verona deve comunque pubblicare la sua settimana.
+      - name: Bologna - scarica i listini nuovi e valida
+        id: bologna
+        continue-on-error: true
+        run: |
+          python -m pipeline.bologna update
+          python -m pipeline.validate --exchange bologna
+
+      - name: Bologna - scarta le modifiche se qualcosa non torna
+        if: steps.bologna.outcome == 'failure'
+        run: |
+          git checkout -- dataset/bologna
+          git clean -fdq dataset/bologna
 
       - name: Pubblica le variazioni
         run: |
@@ -73,6 +94,13 @@ jobs:
           git commit -m "$messaggio"
           git push
 
+      # Il guasto di Bologna si segnala solo ora, a Verona gia' pubblicata.
+      - name: Segnala il guasto di Bologna
+        if: steps.bologna.outcome == 'failure'
+        run: |
+          echo "::error::Aggiornamento di Bologna fallito: i suoi CSV non sono stati modificati."
+          exit 1
+
       - name: Segnala il guasto con una issue
         if: failure()
         env:
@@ -87,8 +115,9 @@ jobs:
 
           Log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
-          Il dataset **non** e' stato modificato: i CSV pubblicati restano quelli
-          dell'ultima esecuzione riuscita."
+          I CSV della borsa che ha fallito **non** sono stati modificati: restano
+          quelli dell'ultima esecuzione riuscita. Verona e Bologna sono
+          indipendenti: il guasto dell'una non ferma l'altra."
           if [ -n "$existing" ]; then
             gh issue comment "$existing" --body "$body"
           else

@@ -1,0 +1,33 @@
+{
+  "exchange_code": "BO",
+  "exchange_name": "Borsa Merci di Bologna",
+  "source_url": "https://www.bo.camcom.gov.it/borsa-merci",
+  "license": "CC-BY-4.0",
+  "generated_at": "2026-10-05T17:50:38+00:00",
+  "last_issue_number": null,
+  "first_date": "2012-12-27",
+  "last_date": "2026-10-01",
+  "n_products": 3352,
+  "n_observations": 240178,
+  "n_quoted": 141648,
+  "n_revisions": 263,
+  "observations_per_year": {
+    "2012": 321,
+    "2013": 15399,
+    "2014": 14157,
+    "2015": 15725,
+    "2016": 15739,
+    "2017": 14603,
+    "2018": 16279,
+    "2019": 17133,
+    "2020": 17832,
+    "2021": 21117,
+    "2022": 20395,
+    "2023": 20941,
+    "2024": 20228,
+    "2025": 15406,
+    "2026": 14903
+  },
+  "last_issue": "2026-38",
+  "n_issues": 651
+}

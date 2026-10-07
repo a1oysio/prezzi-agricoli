@@ -125,9 +125,14 @@ ogni giorno alle 18:00 UTC
         ├─ pipeline.validate  ┬─ errori → NIENTE commit, apre una issue
         │                     └─ solo avvisi → prosegue
         │
+        ├─ pipeline.bologna update   (dopo Verona, con continue-on-error)
+        │     └─ listini PDF nuovi + ricontrollo dell'ultimo, poi
+        │        pipeline.validate --exchange bologna; se qualcosa non torna
+        │        le sue modifiche si scartano e Verona pubblica lo stesso
+        │
         ├─ git commit         solo se dataset/ è cambiato davvero
         │
-        └─ Pubblica il sito   rigenera i JSON dai CSV e fa il deploy su Pages
+        └─ Pubblica il sito   rigenera i JSON di TUTTE le borse e fa il deploy su Pages
 ```
 
 Il sondaggio si ferma dopo **6 numeri consecutivi mancanti**: la borsa salta
@@ -264,9 +269,16 @@ cd site && python -m http.server 8000
 
 ## 4. Il sito
 
-`https://<utente>.github.io/prezzi-agricoli/` — catalogo con ricerca, filtri per
-comparto e unità, grafico per prodotto con banda minimo-massimo, statistiche,
-download della singola serie in CSV.
+`https://<utente>.github.io/prezzi-agricoli/` — un **selettore della borsa**
+(Verona, Bologna), il catalogo di quella borsa con ricerca e filtri per comparto
+e unità, il grafico per prodotto con banda minimo-massimo, le statistiche e il
+download della singola serie in CSV. La borsa e il prodotto aperto stanno
+nell'indirizzo (`?b=bologna&p=<codice>`), quindi un link porta dritto al grafico.
+
+Cambiando borsa la pagina riparte da zero: filtri azzerati, nessun prodotto
+aperto, titolo, collegamenti, note sulla fonte e piè di pagina della nuova borsa.
+Una borsa compare nel selettore solo se ha un dataset: aggiungerne una a
+`pipeline.paths.EXCHANGES` non richiede di toccare il sito.
 
 È **statico**: HTML, CSS e JavaScript, senza alcun server. GitHub Pages non
 esegue codice. I dati arrivano da `site/api/`, generato dai CSV al momento del
@@ -274,11 +286,20 @@ deploy:
 
 | File | Contenuto |
 |------|-----------|
-| `site/api/index.json` | catalogo completo, ~150 KB |
-| `site/api/series/<code>.json` | una serie, scaricata solo quando si apre |
+| `site/api/exchanges.json` | l'elenco delle borse per il selettore, con titolo, collegamenti e note |
+| `site/api/<borsa>/index.json` | il catalogo di una borsa (~250 KB Verona, ~730 KB Bologna) |
+| `site/api/<borsa>/series/<code>.json` | una serie, scaricata solo quando si apre |
 
 Scaricare i 4 MB dell'intero dataset per disegnare un grafico sarebbe
-inaccettabile: da qui la divisione.
+inaccettabile: da qui la divisione. Con migliaia di prodotti (Bologna) l'elenco
+disegna 400 righe alla volta, con un bottone per le successive.
+
+**Le serie di Bologna.** Nel dataset ogni descrizione di prodotto ha il suo
+codice; nel sito le descrizioni che `series.csv` dichiara la stessa serie
+(i gradi del frumento) compaiono come **un solo prodotto**, con il bollino
+"serie" e, nel dettaglio, l'elenco delle descrizioni che unisce. Il loro
+identificativo è `s-` più un hash della chiave di serie, stabile anche se se ne
+aggiungono altre.
 
 `app.js` e `style.css` arrivano al browser con l'hash del loro contenuto
 nell'indirizzo (`app.js?v=8ed9ab3a`). Pages serve gli asset con `max-age=600`, e
@@ -392,19 +413,33 @@ si fanno qui e semmai si riportano in agx-scraper, non il contrario.
 
 ## 7. Aggiungere un'altra borsa
 
-`exchanges/verona/` è il modello: un modulo con `fetcher.py` (scaricamento) e
-`parser.py`, che espone `parse_xml_file(path) -> (FileMetadata, [PriceRecord])`.
+Bologna e' la seconda borsa e il modello per le prossime: `exchanges/bologna/`
+(fetcher, parser, unita', identita' dei prodotti) e `pipeline/bologna.py`
+(update e rebuild). Verona resta com'e'; i due non si toccano.
 
-Perché una seconda borsa arrivi fino ai CSV serve:
+Per una terza borsa serve:
 
-1. il nuovo modulo in `exchanges/<nome>/`, che restituisca `PriceRecord` con
-   `category_path` e `units` **corretti** — mai un'unità fissa: è stato l'errore
-   più costoso di questo progetto, il 58% dei dati era sbagliato;
-2. rendere `pipeline/paths.py` multi-borsa: oggi ha una sola coppia
-   `EXCHANGE_CODE` / `EXCHANGE_SLUG`;
-3. estendere `pipeline/update.py`, che oggi chiama direttamente il fetcher di
-   Verona;
-4. estendere il sito, che oggi legge un solo `index.json`.
+1. il modulo in `exchanges/<nome>/` con **unita' e percorso corretti** -- mai
+   un'unita' fissa: e' stato l'errore piu' costoso di questo progetto, il 58%
+   dei dati di Verona era sbagliato;
+2. una voce in `pipeline.paths.EXCHANGES` e un modulo `pipeline/<nome>.py` che
+   riusi `pipeline.csvstore` (lo schema dei CSV e' comune);
+3. un passo nel workflow `update-data.yml`, **dopo** le altre borse e con
+   `continue-on-error`: il guasto di una non deve fermare le altre;
+4. nient'altro per il sito: legge `api/exchanges.json`, quindi una borsa con un
+   dataset in `dataset/<nome>/` compare nel selettore da sola.
 
-Un parser PDF per Bologna esiste già in agx-scraper, ma non ha la stessa
-maturità: i suoi dati non sono in questo dataset.
+### Bologna: cosa fare quando si rompe
+
+`pipeline.bologna update` e' fatto per fermarsi, non per indovinare.
+
+| Messaggio | Significato | Cosa fare |
+|---|---|---|
+| `Listini non riconosciuti (layout cambiato?)` | Il testo c'e' ma titolo o tabelle non sono quelli attesi: la Camera ha cambiato l'impaginazione | Scarica il PDF, guarda `pdftotext -layout`, correggi il parser e aggiungi un test con il caso nuovo |
+| `testo illeggibile, saltato` | Il PDF ha i caratteri codificati male | Niente: finisce in `skipped.csv`, la settimana arriva dal listino dopo |
+| `Download fallito` | Il sito non risponde o il file e' stato rinominato | Riprova; se persiste guarda `fetcher.list_issues()` |
+| `Dataset vuoto` | Manca `dataset/bologna` | `python -m pipeline.bologna download` poi `rebuild` |
+
+`rebuild` e' deterministico: due esecuzioni sugli stessi PDF danno file
+identici byte per byte, quindi un diff dopo aver toccato il parser mostra
+esattamente cosa e' cambiato. Richiede `poppler-utils` (`pdftotext`).

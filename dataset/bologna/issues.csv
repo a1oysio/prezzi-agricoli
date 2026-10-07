@@ -1,0 +1,652 @@
+date,number,source
+2013-01-03,1,anno-2013__n. 1 - 3 gennaio 2013.pdf
+2013-01-10,2,anno-2013__n. 2 - 10 gennaio 2013.pdf
+2013-01-17,3,anno-2013__n. 3 - 17 gennaio 2013.pdf
+2013-01-24,4,anno-2013__n. 4 - 24 gennaio 2013.pdf
+2013-01-31,5,anno-2013__n. 5 - 31 gennaio 2013.pdf
+2013-02-07,6,anno-2013__n. 6 - 7 febbraio 2013.pdf
+2013-02-14,7,anno-2013__n. 7 - 14 febbraio 2013.pdf
+2013-02-21,8,anno-2013__21 febbraio 2013.pdf
+2013-02-28,9,anno-2013__n. 9 - 28 febbraio 2013.pdf
+2013-03-07,10,anno-2013__n. 10 - 7 marzo 2013.pdf
+2013-03-14,11,anno-2013__n. 11 - 14 marzo 2013.pdf
+2013-03-21,12,anno-2013__n. 12 - 21 marzo 2013.pdf
+2013-03-28,13,anno-2013__n. 13 - 28 marzo 2013.pdf
+2013-04-04,14,anno-2013__n. 14 - 4 aprile 2013.pdf
+2013-04-18,16,anno-2013__n. 16 - 18 aprile 2013.pdf
+2013-05-02,18,anno-2013__n. 18 - 2 maggio 2013.pdf
+2013-05-09,19,anno-2013__n. 19 - 9 maggio 2013.pdf
+2013-05-16,20,anno-2013__n. 20 - 16 maggio 2013.pdf
+2013-05-23,21,anno-2013__n. 21 - 23 maggio 2013.pdf
+2013-05-30,22,anno-2013__n. 22 - 30 maggio 2013.pdf
+2013-06-06,23,anno-2013__n. 23 - 6 giugno 2013.pdf
+2013-06-13,24,anno-2013__n. 24 - 13 giugno 2013.pdf
+2013-06-20,25,anno-2013__n. 25 - 20 giugno 2013.pdf
+2013-06-27,26,anno-2013__n. 26 - 27 giugno 2013.pdf
+2013-07-04,27,anno-2013__n. 27 - 4 luglio 2013.pdf
+2013-07-11,28,anno-2013__n. 28 - 11 luglio 2013.pdf
+2013-07-18,29,anno-2013__n. 29 - 18 luglio 2013.pdf
+2013-07-25,30,anno-2013__n. 30 - 25 luglio 2013.pdf
+2013-08-01,31,anno-2013__n. 31 - 1 agosto 2013.pdf
+2013-08-22,32,anno-2013__n. 32 - 22 agosto 2013.pdf
+2013-08-29,33,anno-2013__n. 33 - 29 agosto 2013.pdf
+2013-09-05,34,anno-2013__n. 34 - 5 settembre 2013.pdf
+2013-09-12,35,anno-2013__n. 35 - 12 settembre 2013.pdf
+2013-09-19,36,anno-2013__n. 36 - 19 settembre 2013.pdf
+2013-09-26,37,anno-2013__n. 37 - 26 settembre 2013.pdf
+2013-10-03,38,anno-2013__n. 38 - 3 ottobre 2013.pdf
+2013-10-10,39,anno-2013__n. 39 - 10 ottobre 2013.pdf
+2013-10-17,40,anno-2013__n. 40 - 17 ottobre 2013.pdf
+2013-10-31,42,anno-2013__n. 42 - 31 ottobre 2013.pdf
+2013-11-07,43,anno-2013__n. 43 - 7 novembre 2013.pdf
+2013-11-14,44,anno-2013__n. 44 - 14 novembre 2013.pdf
+2013-11-21,45,anno-2013__n. 45 - 21 novembre 2013.pdf
+2013-11-28,46,anno-2013__n. 46 - 28 novembre 2013.pdf
+2013-12-05,47,anno-2013__n. 47 - 5 dicembre 2013.pdf
+2013-12-12,48,anno-2013__n. 48 - 12 dicembre 2013.pdf
+2013-12-19,49,anno-2013__n. 49 - 19 dicembre 2013.pdf
+2014-01-02,1,anno-2014__n. 1 - 2 gennaio 2014.pdf
+2014-01-09,2,anno-2014__n.-2-9-gennaio-2014.pdf
+2014-01-16,3,anno-2014__n.-3-16-gennaio-2014.pdf
+2014-01-23,4,anno-2014__n.-4-23-gennaio-2014.pdf
+2014-01-30,5,anno-2014__n.-5-30-gennaio-2014.pdf
+2014-02-06,6,anno-2014__n.-6-6-febbraio-2014.pdf
+2014-02-13,7,anno-2014__n.-7-13-febbraio-2014.pdf
+2014-02-27,9,anno-2014__n.-9-27-febbraio-2014.pdf
+2014-03-06,10,anno-2014__n.-10-6-marzo-2014.pdf
+2014-03-13,11,anno-2014__n.-11-13-marzo-2014.pdf
+2014-03-20,12,anno-2014__n.-12-20-marzo-2014.pdf
+2014-03-27,13,anno-2014__n.-13-27-marzo-2014.pdf
+2014-04-03,14,anno-2014__n.-14-3-aprile-2014.pdf
+2014-04-10,15,anno-2014__n.-15-10-aprile-2014.pdf
+2014-04-17,16,anno-2014__n.-16-17-aprile-2014.pdf
+2014-04-24,17,anno-2014__n.-17-24-aprile-2014.pdf
+2014-04-30,18,anno-2014__n.-18-30-aprile-2014.pdf
+2014-05-08,19,anno-2014__n.-19-8-maggio-2014.pdf
+2014-05-15,20,anno-2014__n.-20-15-maggio-2014.pdf
+2014-05-22,21,anno-2014__n.-21-22-maggio-2014.pdf
+2014-05-29,22,anno-2014__n.-22-29-maggio-2014.pdf
+2014-06-05,23,anno-2014__n.-23-5-giugno-2014.pdf
+2014-06-12,24,anno-2014__n.-24-12-giugno-2014.pdf
+2014-06-19,25,anno-2014__n.-25-19-giugno-2014.pdf
+2014-06-26,26,anno-2014__n.-26-26-giugno-2014.pdf
+2014-07-03,27,anno-2014__n.-27-3-luglio-2014.pdf
+2014-07-17,29,anno-2014__n.-29-17-luglio-2014.pdf
+2014-07-24,30,anno-2014__n.-30-24-luglio-2014.pdf
+2014-08-21,32,anno-2014__n.-32-21-agosto-2014.pdf
+2014-08-28,33,anno-2014__nr.-33-del-28-agosto-2014.pdf
+2014-10-09,39,anno-2014__n.-39-9-ottobre-2014.pdf
+2014-10-16,40,anno-2014__n.-40-16-ottobre-2014.pdf
+2014-10-23,41,anno-2014__n.-41-23-ottobre-2014.pdf
+2014-10-30,42,anno-2014__n.-42-30-ottobre-2014.pdf
+2014-11-06,43,anno-2014__n.-43-6-novembre-2014.pdf
+2014-11-13,44,anno-2014__n.-44-13-novembre-2014.pdf
+2014-11-20,45,anno-2014__n.-45-20-novembre-2014.pdf
+2014-11-27,46,anno-2014__n.-46-27-novembre-2014.pdf
+2014-12-04,47,anno-2014__n.-47-4-dicembre-2014.pdf
+2014-12-11,48,anno-2014__n.-48-11-dicembre-2014.pdf
+2014-12-18,49,anno-2014__n.-49-18-dicembre-2014.pdf
+2015-01-08,1,anno-2015__n.-1-8-gennaio-2015.pdf
+2015-01-15,2,anno-2015__n.-2-15-gennaio-2015.pdf
+2015-01-22,3,anno-2015__n.-3-22-gennaio-2015.pdf
+2015-01-29,4,anno-2015__n.-4-29-gennaio-2015.pdf
+2015-02-05,5,anno-2015__n.-5-5-febbraio-2015.pdf
+2015-02-12,6,anno-2015__n.-6-12-febbraio-2015.pdf
+2015-02-19,7,anno-2015__n.-7-19-febbraio-2015.pdf
+2015-02-26,8,anno-2015__n.-8-26-febbraio-2015.pdf
+2015-03-05,9,anno-2015__n.-9-5-marzo-2015.pdf
+2015-03-12,10,anno-2015__n.-10-12-marzo-2015.pdf
+2015-03-19,11,anno-2015__n.-11-19-marzo-2015.pdf
+2015-03-26,12,anno-2015__n.-12-26-marzo-2015.pdf
+2015-04-02,13,anno-2015__n.-13-2-aprile-2015.pdf
+2015-04-09,14,anno-2015__n.-14-9-aprile-2015.pdf
+2015-04-16,15,anno-2015__n.-15-16-aprile-2015.pdf
+2015-04-23,16,anno-2015__n.-16-23-aprile-2015.pdf
+2015-04-30,17,anno-2015__n.-17-30-aprile-2015.pdf
+2015-05-07,18,anno-2015__n.-18-7-maggio-2015.pdf
+2015-05-14,19,anno-2015__n.-19-14-maggio-2015.pdf
+2015-05-21,20,anno-2015__n.-20-21-maggio-2015.pdf
+2015-05-28,21,anno-2015__n. 21 - 28 maggio 2015.pdf
+2015-06-04,22,anno-2015__n. 22 -  4 giugno 2015.pdf
+2015-06-11,23,anno-2015__n. 23 - 11 giugno 2015.pdf
+2015-06-18,24,anno-2015__n. 24 - 18 giugno 2015.pdf
+2015-06-25,25,anno-2015__n.-25-25-giugno-2015.pdf
+2015-07-02,26,anno-2015__n.-26-2-luglio-2015.pdf
+2015-07-09,27,anno-2015__n.-27-9-luglio-2015.pdf
+2015-07-16,28,anno-2015__n.-28-16-luglio-2015.pdf
+2015-07-23,29,anno-2015__n.-29-23-luglio-2015.pdf
+2015-07-30,30,anno-2015__n.-30-30-luglio-2015.pdf
+2015-08-20,31,anno-2015__n.-31-20-agosto-2015.pdf
+2015-08-27,32,anno-2015__n.-32-27-agosto-2015.pdf
+2015-09-03,33,anno-2015__n.-33-3-settembre-2015.pdf
+2015-09-10,34,anno-2015__n.-34-10-settembre-2015.pdf
+2015-09-17,35,anno-2015__n. 35 -  17 settembre 2015.pdf
+2015-09-24,36,anno-2015__n.-36-24-settembre-2015.pdf
+2015-10-01,37,anno-2015__n.-37-1-ottobre-2015.pdf
+2015-10-08,38,anno-2015__n.-38-8-ottobre-2015.pdf
+2015-10-15,39,anno-2015__n.-39-15-ottobre-2015.pdf
+2015-10-22,40,anno-2015__n.-40-22-ottobre-2015.pdf
+2015-10-29,41,anno-2015__n.-41-29-ottobre-2015.pdf
+2015-11-05,42,anno-2015__n. 42 - 5 novembre 2015.pdf
+2015-11-12,43,anno-2015__n. 43 - 12 novembre 2015.pdf
+2015-11-19,44,anno-2015__n. 44 - 19 novembre 2015.pdf
+2015-11-26,45,anno-2015__n.-45-26-novembre-2015.pdf
+2015-12-03,46,anno-2015__n.-46-3-dicembre-2015.pdf
+2015-12-10,47,anno-2015__n.-47-10-dicembre-2015.pdf
+2015-12-17,48,anno-2015__n.-48-17-dicembre-2015.pdf
+2015-12-30,49,anno-2015__n.-49-30-dicembre-2015.pdf
+2016-01-07,1,anno-2016__n. 1 - 7 gennaio 2016.pdf
+2016-01-14,2,anno-2016__n. 2 - 14 gennaio 2016.pdf
+2016-01-21,3,anno-2016__n. 3 - 21 gennaio 2016.pdf
+2016-01-28,4,anno-2016__n. 4 - 28 gennaio 2016.pdf
+2016-02-04,5,anno-2016__n. 5 - 4 febbraio 2016.pdf
+2016-02-11,6,anno-2016__n. 6 - 11 febbraio 2016.pdf
+2016-02-18,7,anno-2016__n. 7 - 18 febbraio 2016.pdf
+2016-02-25,8,anno-2016__n. 8 - 25 febbraio 2016.pdf
+2016-03-03,9,anno-2016__n. 9 - 3 marzo 2016.pdf
+2016-03-10,10,anno-2016__n. 10 - 10 marzo 2016.pdf
+2016-03-17,11,anno-2016__n. 11 - 17 marzo 2016.pdf
+2016-03-24,12,anno-2016__n. 12 - 24 marzo 2016.pdf
+2016-03-31,13,anno-2016__n. 13 - 31 marzo 2016.pdf
+2016-04-07,14,anno-2016__n. 14 - 7 aprile 2016.pdf
+2016-04-14,15,anno-2016__n. 15 - 14 aprile 2016.pdf
+2016-04-21,16,anno-2016__n. 16 - 21 aprile 2016.pdf
+2016-04-28,17,anno-2016__n. 17 - 28 aprile 2016.pdf
+2016-05-05,18,anno-2016__n. 18 - 5 maggio 2016.pdf
+2016-05-12,19,anno-2016__n. 19 - 12 maggio 2016.pdf
+2016-05-19,20,anno-2016__n. 20 - 19 maggio 2016.pdf
+2016-05-26,21,anno-2016__n. 21 - 26 maggio 2016.pdf
+2016-06-09,22,anno-2016__n. 22 - 9 giugno 2016.pdf
+2016-06-16,23,anno-2016__n. 23 - 16 giugno 2016.pdf
+2016-06-23,24,anno-2016__n. 24 - 23 giugno 2016.pdf
+2016-06-30,25,anno-2016__n. 25 - 30 giugno 2016.pdf
+2016-07-07,26,anno-2016__n. 26 - 7 luglio 2016.pdf
+2016-07-14,27,anno-2016__n. 27 - 14 luglio 2016 modif.pdf
+2016-07-21,28,anno-2016__n. 28 - 21 luglio 2016.pdf
+2016-07-28,29,anno-2016__n. 29 - 28 luglio 2016.pdf
+2016-08-04,30,anno-2016__n. 30 - 4 agosto 2016.pdf
+2016-08-25,31,anno-2016__n. 31 - 25 agosto 2016.pdf
+2016-09-01,32,anno-2016__n. 32 - 1 settembre 2016.pdf
+2016-09-08,33,anno-2016__n. 33 - 8 settembre 2016.pdf
+2016-09-15,34,anno-2016__n. 34 -15 settembre 2016.pdf
+2016-09-22,35,anno-2016__n. 35 - 22 settembre 2016.pdf
+2016-09-29,36,anno-2016__n. 36 - 29 settembre 2016.pdf
+2016-10-06,37,anno-2016__n. 37 - 6 ottobre 2016.pdf
+2016-10-13,38,anno-2016__n. 38 - 13 ottobre 2016.pdf
+2016-10-20,39,anno-2016__n. 39 - 20 ottobre 2016.pdf
+2016-10-27,40,anno-2016__n. 40 - 27 ottobre 2016.pdf
+2016-11-03,41,anno-2016__n. 41 - 3 novembre 2016.pdf
+2016-11-10,42,anno-2016__n. 42 - 10 novembre 2016.pdf
+2016-11-17,43,anno-2016__n. 43 - 17 novembre 2016.pdf
+2016-11-24,44,anno-2016__n. 44 - 24 novembre 2016.pdf
+2016-12-01,45,anno-2016__n. 45 - 1 dicembre 2016.pdf
+2016-12-15,46,anno-2016__n. 46 - 15 dicembre 2016.pdf
+2016-12-22,47,anno-2016__n. 47 - 22 dicembre 2016.pdf
+2016-12-29,48,anno-2016__n. 48 - 29 dicembre 2016.pdf
+2017-01-12,1,anno-2017__n.-1-12-gennaio-2017.pdf
+2017-01-19,2,anno-2017__n.-2-19-gennaio-2017.pdf
+2017-01-26,3,anno-2017__n.-3-26-gennaio-2017.pdf
+2017-02-02,4,anno-2017__n.-4-2-febbraio-2017.pdf
+2017-02-09,5,anno-2017__n.-5-9-febbraio-2017.pdf
+2017-02-16,6,anno-2017__n.-6-16-febbraio-2017.pdf
+2017-02-23,7,anno-2017__n.-7-23-febbraio-2017.pdf
+2017-03-02,8,anno-2017__n.-8-2-marzo-2017.pdf
+2017-03-09,9,anno-2017__n.-9-9-marzo-2017.pdf
+2017-03-16,10,anno-2017__n.-10-16-marzo-2017.pdf
+2017-03-23,11,anno-2017__n.-11-23-marzo-2017.pdf
+2017-03-30,12,anno-2017__n.-12-30-marzo-2017.pdf
+2017-04-06,13,anno-2017__n. 13 - 6 aprile 2017.pdf
+2017-04-13,14,anno-2017__n.14 - 13 aprile 2017.pdf
+2017-04-20,15,anno-2017__n.-15-20-aprile-2017.pdf
+2017-04-27,16,anno-2017__n. 16 - 27 aprile 2017.pdf
+2017-05-04,17,anno-2017__n.-17-4-maggio-2017.pdf
+2017-05-25,20,anno-2017__n. 20 - 25 maggio 2017.pdf
+2017-06-15,23,anno-2017__n. 23 - 15 giugno 2017.pdf
+2017-06-22,24,anno-2017__n. 24 - 22 giugno 2017.pdf
+2017-06-29,25,anno-2017__n. 25 - 29 giugno 2017.pdf
+2017-07-06,26,anno-2017__n. 26- 6 luglio 2017.pdf
+2017-07-13,27,anno-2017__n. 27- 13 luglio 2017.pdf
+2017-07-20,28,anno-2017__n. 28- 20 luglio 2017.pdf
+2017-07-27,29,anno-2017__n. 29- 27 luglio 2017.pdf
+2017-08-03,30,anno-2017__n. 30 - 3 agosto 2017.pdf
+2017-08-24,31,anno-2017__n. 31 - 24 agosto 2017MOD.pdf
+2017-08-31,32,anno-2017__n. 32 - 31 agosto 2017.pdf
+2017-09-07,33,anno-2017__n. 33 - 7 settembre 2017.pdf
+2017-09-14,34,anno-2017__n. 34 - 14 settembre 2017.pdf
+2017-09-21,35,anno-2017__n. 35 - 21 settembre 2017.pdf
+2017-09-28,36,anno-2017__n. 36 - 28 settembre 2017.pdf
+2017-10-05,37,anno-2017__n. 37 - 5 ottobre 2017.pdf
+2017-10-12,38,anno-2017__n. 38 - 12 ottobre 2017.pdf
+2017-10-19,39,anno-2017__n. 39 - 19 ottobre 2017.pdf
+2017-10-26,40,anno-2017__n. 40 - 26 ottobre 2017.pdf
+2017-11-02,41,anno-2017__n. 41 - 2 novembre 2017.pdf
+2017-11-09,42,anno-2017__n. 42 - 9 novembre 2017.pdf
+2017-11-16,43,anno-2017__n. 43 - 16 novembre 2017.pdf
+2017-11-23,44,anno-2017__n. 44 - 23 novembre 2017.pdf
+2017-11-30,45,anno-2017__n. 45 - 30 novembre 2017.pdf
+2017-12-07,46,anno-2017__n. 46 - 7 dicembre 2017.pdf
+2017-12-14,47,anno-2017__n. 47 - 14 dicembre 2017.pdf
+2017-12-21,48,anno-2017__n. 48 - 21 dicembre 2017.pdf
+2018-01-04,1,anno-2018__n. 1 - 4 gennaio 2018.pdf
+2018-01-11,2,anno-2018__n. 2 - 11 gennaio 2018.pdf
+2018-01-18,3,anno-2018__n. 3 - 18 gennaio 2018.pdf
+2018-01-25,4,anno-2018__n. 4 - 25 gennaio 2018.pdf
+2018-02-01,5,anno-2018__n. 5 - 1 febbraio 2018.pdf
+2018-02-08,6,anno-2018__n. 6 - 8 febbraio 2018.pdf
+2018-02-15,7,anno-2018__n. 7 - 15 febbraio 2018.pdf
+2018-02-22,8,anno-2018__n. 8 - 22 febbraio 2018.pdf
+2018-03-01,9,anno-2018__n. 9 - 1 marzo 2018.pdf
+2018-03-08,10,anno-2018__n. 10 - 8 marzo 2018.pdf
+2018-03-15,11,anno-2018__n. 11 - 15 marzo 2018.pdf
+2018-03-22,12,anno-2018__n. 12 - 22 marzo 2018.pdf
+2018-03-29,13,anno-2018__n. 13 - 29 marzo 2018.pdf
+2018-04-05,14,anno-2018__n. 14 - 5 aprile 2018.pdf
+2018-04-12,15,anno-2018__n. 15 - 12 aprile 2018.pdf
+2018-04-19,16,anno-2018__n. 16 - 19 aprile 2018.pdf
+2018-04-26,17,anno-2018__n. 17 - 26 aprile 2018.pdf
+2018-05-03,18,anno-2018__n. 18 - 3 maggio 2018.pdf
+2018-05-10,19,anno-2018__n. 19 - 10 maggio 2018.pdf
+2018-05-17,20,anno-2018__n. 20 - 17 maggio 2018.pdf
+2018-05-24,21,anno-2018__n. 21 - 24 maggio 2018.pdf
+2018-05-31,22,anno-2018__n. 22 - 31 maggio 2018.pdf
+2018-06-07,23,anno-2018__n. 23 - 7 giugno 2018.pdf
+2018-06-14,24,anno-2018__n. 24 - 14 giugno 2018.pdf
+2018-06-21,25,anno-2018__n. 25 - 21 giugno 2018.pdf
+2018-06-28,26,anno-2018__n. 26 - 28 giugno 2018.pdf
+2018-07-05,27,anno-2018__n. 27 - 5 luglio 2018.pdf
+2018-07-12,28,anno-2018__n. 28 - 12 luglio 2018.pdf
+2018-07-19,29,anno-2018__n. 29 - 19 luglio 2018.pdf
+2018-07-26,30,anno-2018__n. 30 - 26 luglio 2018.pdf
+2018-08-02,31,anno-2018__n. 31 - 2 agosto 2018.pdf
+2018-08-23,32,anno-2018__n.32 - 23 agosto 2018.pdf
+2018-08-30,33,anno-2018__n.33 - 30 agosto 2018.pdf
+2018-09-06,34,anno-2018__n. 34 - 6 settembre 2018.pdf
+2018-09-13,35,anno-2018__n. 35 - 13 settembre 2018.pdf
+2018-09-20,36,anno-2018__n. 36 - 20 settembre 2018.pdf
+2018-09-27,37,anno-2018__n. 37 - 27 settembre 2018.pdf
+2018-10-04,38,anno-2018__n. 38 - 4 ottobre 2018.pdf
+2018-10-11,39,anno-2018__n. 39 - 11 ottobre 2018.pdf
+2018-10-18,40,anno-2018__n. 40 - 18 ottobre 2018 modif.pdf
+2018-10-25,41,anno-2018__n. 41 - 25 ottobre 2018.pdf
+2018-11-08,42,anno-2018__n. 42 - 8 novembre 2018.pdf
+2018-11-15,43,anno-2018__n. 43 - 15 novembre 2018.pdf
+2018-11-22,44,anno-2018__n. 44 - 22 novembre 2018.pdf
+2018-11-29,45,anno-2018__n. 45 - 29 novembre 2018.pdf
+2018-12-06,46,anno-2018__n. 46 - 6 dicembre 2018.pdf
+2018-12-13,47,anno-2018__n. 47 - 13 dicembre 2018.pdf
+2018-12-20,48,anno-2018__n. 48 - 20 dicembre 2018.pdf
+2019-01-10,1,anno-2019__n. 1 - 10 gennaio 2019.pdf
+2019-01-17,2,anno-2019__n. 2 - 17 gennaio 2019.pdf
+2019-01-24,3,anno-2019__n. 3 - 24 gennaio 2019.pdf
+2019-01-31,4,anno-2019__n. 4 - 31 gennaio 2019.pdf
+2019-02-07,5,anno-2019__n. 5 - 7 febbraio 2019.pdf
+2019-02-14,6,anno-2019__n. 6 - 14 febbraio 2019.pdf
+2019-02-21,7,anno-2019__n. 7 - 21 febbraio 2019.pdf
+2019-02-28,8,anno-2019__n. 8 - 28 febbraio 2019.pdf
+2019-03-07,9,anno-2019__n. 9 - 7 marzo 2019.pdf
+2019-03-14,10,anno-2019__n. 10 - 14 marzo 2019.pdf
+2019-03-21,11,anno-2019__n. 11 - 21 marzo 2019.pdf
+2019-03-28,12,anno-2019__n. 12 - 28 marzo 2019.pdf
+2019-04-04,13,anno-2019__n. 13 - 4 aprile 2019.pdf
+2019-04-11,14,anno-2019__n. 14 - 11 aprile 2019.pdf
+2019-04-18,15,anno-2019__n. 15 - 18 aprile 2019.pdf
+2019-05-02,16,anno-2019__n. 16 - 2 maggio 2019.pdf
+2019-05-09,17,anno-2019__n. 17 - 9 maggio 2019.pdf
+2019-05-16,18,anno-2019__n. 18 - 16 maggio 2019.pdf
+2019-05-23,19,anno-2019__n. 19 - 23 maggio 2019.pdf
+2019-05-30,20,anno-2019__n. 20 - 30 maggio 2019.pdf
+2019-06-06,21,anno-2019__n. 21 - 6 giugno 2019.pdf
+2019-06-13,22,anno-2019__n. 22 - 13 giugno 2019.pdf
+2019-06-20,23,anno-2019__n.23 - 20 giugno 2019.pdf
+2019-06-27,24,anno-2019__n. 24 - 27 giugno 2019.pdf
+2019-07-04,25,anno-2019__n. 25 - 4 luglio 2019.pdf
+2019-07-11,26,anno-2019__n. 26 - 11 luglio 2019.pdf
+2019-07-18,27,anno-2019__n. 27 - 18 luglio 2019.pdf
+2019-07-25,28,anno-2019__n. 28 - 25 luglio 2019.pdf
+2019-08-01,29,anno-2019__n. 29 - 1 agosto 2019.pdf
+2019-08-22,30,anno-2019__n. 30 - 22 agosto 2019.pdf
+2019-08-29,31,anno-2019__n. 31 - 29 agosto 2019.pdf
+2019-09-05,32,anno-2019__n. 32 - 5 settembre 2019.pdf
+2019-09-12,33,anno-2019__n. 33 - 12 settembre 2019.pdf
+2019-09-19,34,anno-2019__n. 34 - 19 settembre 2019.pdf
+2019-09-26,35,anno-2019__n. 35 - 26 settembre 2019.pdf
+2019-10-03,36,anno-2019__n. 36 - 3 ottobre 2019.pdf
+2019-10-10,37,anno-2019__n. 37 - 10 ottobre 2019.pdf
+2019-10-17,38,anno-2019__n. 38 - 17 ottobre 2019.pdf
+2019-10-24,39,anno-2019__n. 39 - 24 ottobre 2019.pdf
+2019-10-31,40,anno-2019__n. 40 - 31 ottobre 2019.pdf
+2019-11-07,41,anno-2019__n. 41 - 7 novembre 2019.pdf
+2019-11-14,42,anno-2019__n. 42 - 14 novembre 2019.pdf
+2019-11-21,43,anno-2019__n. 43 - 21 novembre 2019.pdf
+2019-11-28,44,anno-2019__n. 44 - 28 novembre 2019.pdf
+2019-12-05,45,anno-2019__n. 45 - 5 dicembre 2019.pdf
+2019-12-12,46,anno-2019__n. 46 - 12 dicembre 2019.pdf
+2019-12-19,47,anno-2019__n. 47 - 19 dicembre 2019.pdf
+2020-01-09,1,anno-2020__n. 1 - 9 gennaio 2020.pdf
+2020-01-16,2,anno-2020__n. 2 - 16 gennaio 2020.pdf
+2020-01-23,3,anno-2020__n. 3 - 23 gennaio 2020.pdf
+2020-01-30,4,anno-2020__n. 4 - 30 gennaio 2020.pdf
+2020-02-06,5,anno-2020__n. 5 - 6 febbraio 2020.pdf
+2020-02-13,6,anno-2020__n. 6 - 13 febbraio 2020.pdf
+2020-02-20,7,anno-2020__n. 7 - 20 febbraio 2020.pdf
+2020-03-05,8,anno-2020__n. 8 - 5 marzo 2020.pdf
+2020-03-12,9,anno-2020__n. 9 - 12 marzo 2020.pdf
+2020-03-19,10,anno-2020__n. 10 - 19 marzo 2020.pdf
+2020-03-26,11,anno-2020__n. 11 - 26 marzo 2020.pdf
+2020-04-02,12,anno-2020__n. 12 - 2 aprile 2020.pdf
+2020-04-09,13,anno-2020__n. 13 - 9 aprile 2020.pdf
+2020-04-16,14,anno-2020__n. 14 - 16 aprile 2020.pdf
+2020-04-23,15,anno-2020__n. 15 - 23 aprile 2020.pdf
+2020-04-30,16,anno-2020__n. 16 - 30 aprile 2020.pdf
+2020-05-07,17,anno-2020__n. 17 - 7 maggio 2020.pdf
+2020-05-14,18,anno-2020__n. 18 - 14 maggio 2020.pdf
+2020-05-21,19,anno-2020__n. 19 - 21 maggio 2020.pdf
+2020-05-28,20,anno-2020__n. 20 - 28 maggio 2020.pdf
+2020-06-04,21,anno-2020__n. 21 - 4 giugno 2020.pdf
+2020-06-11,22,anno-2020__n. 22 - 11 giugno 2020.pdf
+2020-06-18,23,anno-2020__n. 23 - 18 giugno 2020.pdf
+2020-06-25,24,anno-2020__n. 24 - 25 giugno 2020.pdf
+2020-07-02,25,anno-2020__n. 25 - 2 luglio 2020.pdf
+2020-07-09,26,anno-2020__n. 26 - 9 luglio 2020.pdf
+2020-07-16,27,anno-2020__n. 27 - 16 luglio 2020.pdf
+2020-07-23,28,anno-2020__n. 28 - 23 luglio 2020 MOD.pdf
+2020-07-30,29,anno-2020__n. 29 - 30 luglio 2020 MOD.pdf
+2020-08-06,30,anno-2020__n. 30 - 6 agosto 2020.pdf
+2020-08-27,31,anno-2020__n. 31 - 27 agosto 2020.pdf
+2020-09-03,32,anno-2020__n. 32 - 3 settembre 2020.pdf
+2020-09-10,33,anno-2020__n. 33 - 10 settembre 2020.pdf
+2020-09-17,34,anno-2020__n. 34 - 17 settembre 2020.pdf
+2020-09-24,35,anno-2020__n. 35 - 24 settembre 2020.pdf
+2020-10-01,36,anno-2020__n. 36 - 1 ottobre 2020.pdf
+2020-10-08,37,anno-2020__n. 37 - 8 ottobre 2020.pdf
+2020-10-15,38,anno-2020__n. 38 - 15 ottobre 2020.pdf
+2020-10-22,39,anno-2020__n. 39 - 22 ottobre 2020.pdf
+2020-10-29,40,anno-2020__n. 40 - 29 ottobre 2020.pdf
+2020-11-05,41,anno-2020__n. 41 - 5 novembre 2020.pdf
+2020-11-12,42,anno-2020__n. 42 - 12 novembre 2020.pdf
+2020-11-19,43,anno-2020__n. 43 - 19 novembre 2020.pdf
+2020-11-26,44,anno-2020__n. 44 - 26 novembre 2020.pdf
+2020-12-03,45,anno-2020__n. 45 - 3 dicembre 2020.pdf
+2020-12-10,46,anno-2020__n. 46 - 10 dicembre 2020.pdf
+2020-12-17,47,anno-2020__n. 47 - 17 dicembre 2020.pdf
+2021-01-07,1,anno-2021__n. 1 - 7 gennaio 2021.pdf
+2021-01-14,2,anno-2021__n. 2 - 14 gennaio 2021.pdf
+2021-01-21,3,anno-2021__n. 3 - 21 gennaio 2021.pdf
+2021-01-28,4,anno-2021__n. 4 - 28 gennaio 2021.pdf
+2021-02-04,5,anno-2021__n. 5 - 4 febbraio 2021.pdf
+2021-02-11,6,anno-2021__n. 6 - 11 febbraio 2021.pdf
+2021-02-18,7,anno-2021__n. 7 - 18 febbraio 2021.pdf
+2021-02-25,8,anno-2021__n. 8 - 25 febbraio 2021.pdf
+2021-03-04,9,anno-2021__n. 9 - 4 marzo 2021.pdf
+2021-03-11,10,anno-2021__n. 10 - 11 marzo 2021.pdf
+2021-03-18,11,anno-2021__n. 11 - 18 marzo 2021.pdf
+2021-03-25,12,anno-2021__n. 12 - 25 marzo 2021.pdf
+2021-04-01,13,anno-2021__n. 13 - 1 aprile 2021.pdf
+2021-04-08,14,anno-2021__n. 14 - 8 aprile 2021.pdf
+2021-04-15,15,anno-2021__n. 15 - 15 aprile 2021.pdf
+2021-04-22,16,anno-2021__n. 16 - 22 aprile 2021.pdf
+2021-04-29,17,anno-2021__n. 17 - 29 aprile 2021.pdf
+2021-05-06,18,anno-2021__n. 18 - 6 maggio 2021.pdf
+2021-05-13,19,anno-2021__n. 19 - 13 maggio 2021.pdf
+2021-05-20,20,anno-2021__n. 20 - 20 maggio 2021.pdf
+2021-05-27,21,anno-2021__n. 21 - 27 maggio 2021.pdf
+2021-06-03,22,anno-2021__n. 22 - 3 giugno 2021.pdf
+2021-06-10,23,anno-2021__n. 23 - 10 giugno 2021.pdf
+2021-06-17,24,anno-2021__n. 24 - 17 giugno 2021.pdf
+2021-06-24,25,anno-2021__n. 25 - 24 giugno 2021.pdf
+2021-07-01,26,anno-2021__n. 26 - 1 luglio 2021.pdf
+2021-07-08,27,anno-2021__n. 27 - 8 luglio 2021 corr.pdf
+2021-07-15,28,anno-2021__n. 28 - 15 luglio 2021.pdf
+2021-07-22,29,anno-2021__n. 29 - 22 luglio 2021.pdf
+2021-07-29,30,anno-2021__n. 30 - 29 luglio 2021.pdf
+2021-08-05,31,anno-2021__n. 31 - 5 agosto 2021.pdf
+2021-08-19,32,anno-2021__n. 32 - 19 agosto 2021.pdf
+2021-08-26,33,anno-2021__n. 33 - 26 agosto 2021.pdf
+2021-09-02,34,anno-2021__n. 34 - 2 settembre 2021.pdf
+2021-09-09,35,anno-2021__n. 35 - 9 settembre 2021.pdf
+2021-09-16,36,anno-2021__n. 36 - 16 settembre 2021.pdf
+2021-09-23,37,anno-2021__n. 37 - 23 settembre 2021.pdf
+2021-09-30,38,anno-2021__n. 38 - 30 settembre 2021.pdf
+2021-10-07,39,anno-2021__n. 39 - 7 ottobre 2021.pdf
+2021-10-14,40,anno-2021__n. 40 - 14 ottobre 2021.pdf
+2021-10-21,41,anno-2021__n. 41 - 21 ottobre 2021.pdf
+2021-10-28,42,anno-2021__n. 42 - 28 ottobre 2021.pdf
+2021-11-04,43,anno-2021__n. 43 - 4_11_21.pdf
+2021-11-11,44,anno-2021__n. 44 - 11_11_2021.pdf
+2021-11-18,45,anno-2021__n. 45 -18_11_2021.pdf
+2021-11-25,46,anno-2021__n. 46 - 25_11_2021.pdf
+2021-12-02,47,anno-2021__n. 47 - 2_12_2021.pdf
+2021-12-09,48,anno-2021__n. 48- 9_12_2021.pdf
+2021-12-16,49,anno-2021__n. 49- 16_12_2021.pdf
+2021-12-23,50,anno-2021__n. 50- 23_12_2021.pdf
+2021-12-30,51,anno-2021__n. 51- 30_12_2021.pdf
+2022-01-13,1,anno-2022__n.1-13_1_2022.pdf
+2022-01-20,2,anno-2022__n.2-20_1_2022.pdf
+2022-01-27,3,anno-2022__n.3-27_1_2022.pdf
+2022-02-03,4,anno-2022__n.4-3_2_2022.pdf
+2022-02-10,5,anno-2022__n.5-10_2_2022.pdf
+2022-02-17,6,anno-2022__n.6-17_2_2022.pdf
+2022-02-24,7,anno-2022__n.7-24_2_2022.pdf
+2022-03-03,8,anno-2022__n.8-3_3_2022.pdf
+2022-03-10,9,anno-2022__n.9-10_3_2022.pdf
+2022-03-17,10,anno-2022__n.10-17_3_2022.pdf
+2022-03-24,11,anno-2022__n. 11-24_3_2022.pdf
+2022-03-31,12,anno-2022__n.12 -31_3_2022.pdf
+2022-04-07,13,anno-2022__n.13-7_4_2022.pdf
+2022-04-14,14,anno-2022__n.14-14_4_2022.pdf
+2022-04-21,15,anno-2022__n.15-21_4_2022.pdf
+2022-04-28,16,anno-2022__n.16-28_4_2022.pdf
+2022-05-05,17,anno-2022__n.17 5_5_2022.pdf
+2022-05-12,18,anno-2022__n.18-12_5_2022.pdf
+2022-05-19,19,anno-2022__n.19-19_5_2022.pdf
+2022-05-26,20,anno-2022__n.20 - 26_5_2022.pdf
+2022-06-01,21,anno-2022__n.21 - 1_6_2022.pdf
+2022-06-09,22,anno-2022__n.22 - 9_6_2022.pdf
+2022-06-16,23,anno-2022__n.23 - 16_6_2022.pdf
+2022-06-23,24,anno-2022__n.24 - 23 giugno 2022.pdf
+2022-06-30,25,anno-2022__n.25 - 30 giugno 2022.pdf
+2022-07-07,26,anno-2022__n.26 - 7 luglio 2022.pdf
+2022-07-14,27,anno-2022__n.27 - 14 luglio 2022.pdf
+2022-07-21,28,anno-2022__n.28 - 21 luglio 2022.pdf
+2022-07-28,29,anno-2022__n.29 - 28 luglio 2022.pdf
+2022-08-04,30,anno-2022__n.30_4 agosto 2022.pdf
+2022-08-25,31,anno-2022__n.31 _ 25 agosto 2022.pdf
+2022-09-01,32,anno-2022__n.32 _ 1 settembre 2022ec.pdf
+2022-09-08,33,anno-2022__n.33 _ 8 settembre 2022ec.pdf
+2022-09-15,34,anno-2022__n.34 _ 15 settembre 2022ec.pdf
+2022-09-22,35,anno-2022__n.35 _ 22 settembre 2022ec.pdf
+2022-09-29,36,anno-2022__n.36 _ 29 settembre 2022ec.pdf
+2022-10-06,37,anno-2022__n.37_ 6 ottobre 2022ec.pdf
+2022-10-13,38,anno-2022__n.38_ 13 ottobre 2022ec.pdf
+2022-10-20,39,anno-2022__n.39_ 20 ottobre 2022ec.pdf
+2022-10-27,40,anno-2022__n.40_ 27 ottobre 2022ec.pdf
+2022-11-03,41,anno-2022__n.41_ 3 novembre 2022.pdf
+2022-11-10,42,anno-2022__n.42_ 10 novembre 2022.pdf
+2022-11-17,43,anno-2022__n.43_ 17 novembre 2022.pdf
+2022-11-24,44,anno-2022__n.44_ 24 novembre 2022.pdf
+2022-12-01,45,anno-2022__n.45_ 1 dicembre 2022.pdf
+2022-12-07,46,anno-2022__n.46_7 dicembre 2022.pdf
+2022-12-15,47,anno-2022__n.47_15 dicembre 2022.pdf
+2022-12-22,48,anno-2022__n.48_22 dicembre 2022.pdf
+2022-12-29,49,anno-2022__n.49_29 dicembre 2022.pdf
+2023-01-12,1,anno-2023__n.1_12 gennaio 2023.pdf
+2023-01-19,2,anno-2023__n.2_19 gennaio 2023.pdf
+2023-01-26,3,anno-2023__n.3_26 gennaio 2023.pdf
+2023-02-02,4,anno-2023__n.4_2 febbraio 2023.pdf
+2023-02-09,5,anno-2023__n.5-9 febbraio 2023.pdf
+2023-02-16,6,anno-2023__n.6-16 febbraio 2023.pdf
+2023-02-23,7,anno-2023__n.7-23 febbraio 2023.pdf
+2023-03-02,8,anno-2023__n.8-2 marzo 2023.pdf
+2023-03-09,9,anno-2023__n.9-9 marzo 2023.pdf
+2023-03-16,10,anno-2023__n.10-16 marzo 2023.pdf
+2023-03-23,11,anno-2023__n.11-23 marzo 2023.pdf
+2023-03-30,12,anno-2023__n.12-30 marzo 2023.pdf
+2023-04-06,13,anno-2023__n.13_6 aprile 2023.pdf
+2023-04-13,14,anno-2023__n.14_13 aprile_2023.pdf
+2023-04-20,15,anno-2023__n.15_20 aprile 2023.pdf
+2023-04-27,16,anno-2023__n.16_27 aprile 2023.pdf
+2023-05-04,17,anno-2023__n.17_4 maggio 2023.pdf
+2023-05-11,18,anno-2023__n.18_11 maggio 2023.pdf
+2023-05-18,19,anno-2023__n.19 -18 maggio 2023.pdf
+2023-05-25,20,anno-2023__n.20_25 maggio 2023.pdf
+2023-06-01,21,anno-2023__n.21-1 giugno 2023.pdf
+2023-06-08,22,anno-2023__n.22-8 giugno 2023.pdf
+2023-06-15,23,anno-2023__n.23-15 giugno 2023.pdf
+2023-06-22,24,anno-2023__n.24-22 giugno 2023.pdf
+2023-06-29,25,anno-2023__n.25-29 giugno 2023.pdf
+2023-07-06,26,anno-2023__n.26-6 luglio 2023.pdf
+2023-07-13,27,anno-2023__n.27_13 luglio 2023.pdf
+2023-07-20,28,anno-2023__n.28_20 luglio 2023.pdf
+2023-07-27,29,anno-2023__n.29_27 luglio 2023.pdf
+2023-08-03,30,anno-2023__n.30_3 agosto 2023.pdf
+2023-08-24,31,anno-2023__n.31_24 agosto 2023.pdf
+2023-08-31,32,anno-2023__n.32_31 agosto 2023.pdf
+2023-09-07,33,anno-2023__n.33_7 settembre 2023.pdf
+2023-09-14,34,anno-2023__n.34_14 settembre 2023.pdf
+2023-09-21,35,anno-2023__n.35_21 settembre 2023.pdf
+2023-09-28,36,anno-2023__n.36_28 settembre 2023.pdf
+2023-10-05,37,anno-2023__n.37_5 ottobre 2023.pdf
+2023-10-12,38,anno-2023__n.38_12 ottobre 2023.pdf
+2023-10-19,39,anno-2023__n.39_19 ottobre 2023.pdf
+2023-10-26,40,n.40_26 ottobre 2023.pdf
+2023-11-02,41,anno-2023__n.41_2 novembre 2023.pdf
+2023-11-09,42,anno-2023__n.42_9 novembre 2023.pdf
+2023-11-16,43,anno-2023__n.43_16 novembre 2023.pdf
+2023-11-23,44,anno-2023__n.44_23 novembre 2023.pdf
+2023-11-30,45,anno-2023__n.45_30 novembre 2023.pdf
+2023-12-07,46,anno-2023__n.46_7 dicembre 2023.pdf
+2023-12-14,47,anno-2023__n.47_14 dicembre 2023.pdf
+2023-12-21,48,anno-2023__n.48_21 dicembre 2023.pdf
+2023-12-28,49,anno-2023__n.49_28 dicembre 2023.pdf
+2024-01-11,1,anno-2024__n.1_11 gennaio 2024.pdf
+2024-01-18,2,anno-2024__n.2_18 gennaio 2024rev.pdf
+2024-01-25,3,anno-2024__n.3_25 gennaio 2024.pdf
+2024-02-01,4,anno-2024__n.4_1 febbraio 2024.pdf
+2024-02-08,5,anno-2024__n.5_8 febbraio 2024.pdf
+2024-02-15,6,anno-2024__n.6_15 febbraio 2024.pdf
+2024-02-22,7,anno-2024__n.7_22 febbraio 2024.pdf
+2024-02-29,8,anno-2024__n.8_29 febbraio 2024.pdf
+2024-03-07,9,anno-2024__n.9_7 marzo 2024.pdf
+2024-03-14,10,anno-2024__n.10_14 marzo 2024.pdf
+2024-03-21,11,anno-2024__n.11_21 marzo 2024.pdf
+2024-03-28,12,anno-2024__n.12_28 marzo 2024.pdf
+2024-04-04,13,anno-2024__n.13_4 aprile 2024.pdf
+2024-04-11,14,anno-2024__n.14_11 aprile 2024.pdf
+2024-04-18,15,anno-2024__n.15_18 aprile 2024.pdf
+2024-05-02,16,anno-2024__n.16_2 maggio 2024.pdf
+2024-05-09,17,anno-2024__n.17_9 maggio 2024.pdf
+2024-05-16,18,anno-2024__n.18_16 maggio 2024.pdf
+2024-05-23,19,anno-2024__n.19_23 maggio 2024.pdf
+2024-05-30,20,anno-2024__n.20_30_maggio 2024.pdf
+2024-06-06,21,anno-2024__n.21_6_giugno 2024.pdf
+2024-06-13,22,anno-2024__n.22_13 giugno 2024.pdf
+2024-06-20,23,anno-2024__n.23_20 giugno 2024.pdf
+2024-06-27,24,anno-2024__n.24_27 giugno 2024.pdf
+2024-07-04,25,anno-2024__n.25_4 luglio 2024.pdf
+2024-07-11,26,anno-2024__n.26_11 luglio 2024.pdf
+2024-07-18,27,anno-2024__n.27_18 luglio 2024.pdf
+2024-07-25,28,anno-2024__n.28_25 luglio 2024.pdf
+2024-08-01,29,anno-2024__n.29_1 agosto 2024.pdf
+2024-08-22,30,anno-2024__n.30_22 agosto 2024.pdf
+2024-08-29,31,anno-2024__n.31_29 agosto 2024.pdf
+2024-09-05,32,anno-2024__n.32_5 settembre 2024.pdf
+2024-09-12,33,anno-2024__n.33_12 settembre 2024.pdf
+2024-09-19,34,anno-2024__n.34_19 settembre 2024.pdf
+2024-09-26,35,anno-2024__n.35_26_settembre 2024.pdf
+2024-10-03,36,anno-2024__n.36_3 ottobre 2024.pdf
+2024-10-10,37,anno-2024__n.37_10 ottobre 2024CS.pdf
+2024-10-17,38,anno-2024__n.38_17 ottobre 2024CS.pdf
+2024-10-24,39,anno-2024__n.39_24 ottobre 2024CS.pdf
+2024-10-31,40,anno-2024__n.40-31 ottobre 2024CS.pdf
+2024-11-07,41,anno-2024__n.41_7 novembre 2024CS.pdf
+2024-11-14,42,anno-2024__n.42_14 novembre 2024CS.pdf
+2024-11-21,43,anno-2024__n.43_ 21 novembre 2024CS.pdf
+2024-11-28,44,anno-2024__n.44-28 novembre 2024CS.pdf
+2024-12-05,45,anno-2024__n.45-5 dicembre 2024CS.pdf
+2024-12-12,46,anno-2024__n.46.12 dicembre 2024CS.pdf
+2024-12-19,47,anno-2024__n.47-19 dicembre 2024CS.pdf
+2025-01-02,1,anno-2025__n.1_2 gennaio 2025 corretto e senza vini.pdf
+2025-01-09,2,anno-2025__n.2_9 gennaio 2025 corretto e senza vini.pdf
+2025-01-16,3,anno-2025__n.3_16 gennaio 2025 corretto e senza vini.pdf
+2025-01-23,4,anno-2025__n.4_23 gennaio 2025 senza vini.pdf
+2025-01-30,5,anno-2025__n.5_30 gennaio 2025 senza vini 2025.pdf
+2025-02-06,6,anno-2025__n.6_6 febbraio 2025.pdf
+2025-02-13,7,anno-2025__n.7-13 febbraio 2025.pdf
+2025-02-20,8,anno-2025__n.8-20 febbraio 2025.pdf
+2025-02-27,9,anno-2025__n.9-27 febbraio 2025.pdf
+2025-03-06,10,anno-2025__n.10-6 marzo 2025.pdf
+2025-03-13,11,anno-2025__n.11_13 marzo 2025.pdf
+2025-03-20,12,anno-2025__n.12_20 marzo 2025.pdf
+2025-03-27,13,anno-2025__n.13_27 marzo 2025.pdf
+2025-04-03,14,anno-2025__n.14_3 aprile 2025.pdf
+2025-04-10,15,anno-2025__n.15_10 aprile 2025.pdf
+2025-04-17,16,anno-2025__n.16_17 aprile 2025.pdf
+2025-05-08,18,anno-2025__n.18_8 maggio 2025.pdf
+2025-05-15,19,anno-2025__n.19_15 maggio 2025.pdf
+2025-05-22,20,anno-2025__n.20 - 22 maggio 2025.pdf
+2025-05-29,21,anno-2025__n.21 - 29 maggio 2025.pdf
+2025-06-05,22,anno-2025__n.22 - 5 giugno 2025.pdf
+2025-06-12,23,anno-2025__n.23 - 12 giugno 2025.pdf
+2025-06-19,24,anno-2025__n.24 - 19 giugno 2025.pdf
+2025-06-26,25,anno-2025__n.25 - 26 giugno 2025.pdf
+2025-07-03,26,anno-2025__n.26 - 3 luglio 2025.pdf
+2025-07-10,27,anno-2025__n.27 - 10 luglio 2025.pdf
+2025-07-17,28,anno-2025__n.28 - 17 luglio 2025.pdf
+2025-07-24,29,anno-2025__n.29 - 24 luglio 2025-corretto.pdf
+2025-07-31,30,anno-2025__n.30 - 31 luglio 2025.pdf
+2025-08-21,31,anno-2025__Listino del 21 agosto 2025.pdf
+2025-08-28,32,anno-2025__n.32 - 28 agosto 2025.pdf
+2025-09-04,33,anno-2025__n.33 -4 settembre 2025.pdf
+2025-09-11,34,anno-2025__n.34 -11 settembre 2025.pdf
+2025-09-18,35,anno-2025__n.35 _18 settembre 2025.pdf
+2025-09-25,36,anno-2025__n.36 -25 settembre 2025.pdf
+2025-10-02,37,anno-2025__n.37 -2 ottobre 2025.pdf
+2025-10-09,38,anno-2025__n.38 -9 ottobre 2025.pdf
+2025-10-16,39,anno-2025__n.39 -16 ottobre 2025.pdf
+2025-10-23,40,anno-2025__n.40 -23 ottobre 2025.pdf
+2025-10-30,41,anno-2025__n.41 -30 ottobre 2025.pdf
+2025-11-06,42,anno-2025__n.42 -6 novembre 2025.pdf
+2025-11-13,43,anno-2025__n.43 -13 novembre 2025.pdf
+2025-11-20,44,anno-2025__n.44 -20 novembre 2025.pdf
+2025-11-27,45,anno-2025__n.45 -27 novembre 2025.pdf
+2025-12-04,46,anno-2025__n.46 -4 dicembre 2025.pdf
+2025-12-11,47,anno-2025__n.47 -11 dicembre 2025.pdf
+2025-12-18,48,anno-2025__n.48 -18 dicembre 2025.pdf
+2026-01-02,1,anno-2026__n.1_2 gennaio 2026.pdf
+2026-01-08,2,anno-2026__n.2_8 gennaio 2026.pdf
+2026-01-15,3,anno-2026__n.3_15 gennaio 2026.pdf
+2026-01-22,4,anno-2026__n.4_22 gennaio 2026.pdf
+2026-01-29,5,anno-2026__n.5_29 gennaio 2026.pdf
+2026-02-05,6,anno-2026__n.6_5 febbraio 2026.pdf
+2026-02-12,7,anno-2026__n.7_12 febbraio 2026.pdf
+2026-02-19,8,anno-2026__n.8_19 febbraio 2026.pdf
+2026-02-26,9,anno-2026__n.9_26 febbraio 2026.pdf
+2026-03-05,10,anno-2026__n.10_5 marzo_2026.pdf
+2026-03-12,11,anno-2026__n.11_12 marzo_2026.pdf
+2026-03-19,12,anno-2026__n.12_19 marzo_2026.pdf
+2026-03-26,13,anno-2026__n.13_26 marzo_2026.pdf
+2026-04-02,14,anno-2026__n.14_2 aprile_2026.pdf
+2026-04-09,15,anno-2026__n.15_9 aprile_2026.pdf
+2026-04-16,16,anno-2026__n.16_16 aprile_2026.pdf
+2026-04-23,17,anno-2026__n.17_23 aprile_2026.pdf
+2026-04-30,18,anno-2026__n.18_30 aprile_2026.pdf
+2026-05-07,19,anno-2026__n.19 -7_maggio 2026.pdf
+2026-05-14,20,anno-2026__n.20 -14 maggio 2026.pdf
+2026-05-21,21,anno-2026__n.21_ 21 maggio_2026.pdf
+2026-05-28,22,anno-2026__n.22_ 28 maggio_2026.pdf
+2026-06-04,23,anno-2026__n.23_ 4 giugno_2026.pdf
+2026-06-11,24,anno-2026__n.24_ 11 giugno_2026.pdf
+2026-06-18,25,anno-2026__n.25_ 18 giugno_2026.pdf
+2026-06-25,26,anno-2026__n.26_ 25 giugno_2026.pdf
+2026-07-02,27,anno-2026__n.27_ 2 luglio_2026.pdf
+2026-07-09,28,anno-2026__n.28_ 9 luglio_2026.pdf
+2026-07-16,29,anno-2026__n.29_ 16 luglio_2026.pdf
+2026-07-23,30,anno-2026__n.30_ 23 luglio_2026.pdf
+2026-07-30,31,anno-2026__n.31_ 30 luglio_2026.pdf
+2026-08-06,32,anno-2026__n.32_ 6_agosto2026.pdf
+2026-08-27,33,anno-2026__n.33_ 27 agosto_2026.pdf
+2026-09-03,34,anno-2026__n.34_ 3 settembre_2026.pdf
+2026-09-10,35,anno-2026__n.35_ 10 settembre_2026.pdf
+2026-09-17,36,anno-2026__n.36_ 17 settembre_2026.pdf
+2026-09-24,37,anno-2026__n.37_ 24 settembre_2026.pdf
+2026-10-01,38,anno-2026__n.38_ 1 ottobre_2026.pdf
