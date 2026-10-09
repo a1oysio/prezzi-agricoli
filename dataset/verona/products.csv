@@ -1,137 +1,137 @@
 code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
-2,"Grano di forza (W mn 320,P/L mx 0,60 p.s. 80, glut 34%, imp 1%, prot. 14 min.)",CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE NAZIONALE,EUR/t,2016-01-11,2026-10-05,623,416
-3,"Grano Panificabile (Wmn 200,P/L mx 0,50 p.s. 78, glut 28%, imp 1%, prot. 12/13)",CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE NAZIONALE,EUR/t,2016-01-11,2026-10-05,601,337
-4,"Grano Fino (p.s. 78/79, imp. 1%, prot. 11% min.)",CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE NAZIONALE,EUR/t,2016-01-11,2026-10-05,673,642
-5,"Grano Buono merc.le (p.s. 76/77, imp. 2%)",CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE NAZIONALE,EUR/t,2016-01-11,2026-10-05,636,487
-6,"Grano Mercantile (p.s. 72/75, imp. 2%)",CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE NAZIONALE,EUR/t,2016-01-11,2026-10-05,561,223
-7,Manitoba 2,CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE ESTERA,EUR/t,2016-01-11,2026-10-05,672,613
-8,"Northern spring, prot. 15% base",CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE ESTERA,EUR/t,2016-01-11,2026-10-05,672,651
-9,Estero p.s. 76/77 f.co partenza porto alla rinfusa,CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE ESTERA,EUR/t,2016-01-11,2026-10-05,557,259
-10,Estero p.s. 76/77 f.co arrivo alla rinfusa,CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE ESTERA,EUR/t,2016-01-11,2026-10-05,669,626
-11,Ibrido di produzione Veronese base 25% - prezzo min. Aflatossina B1 max. 20 ppb,CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2016-01-11,2026-10-05,512,64
-12,ibrido alimentare (secondo specifiche normative vigenti),CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2016-01-11,2026-10-05,633,507
-13,Ibrido farinoso base Verona e/o prov. limitrofe con garanzie - Aflatossina B1 max. 5 ppb - Deossinivalenolo DON max. 4.000 ppb,CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2016-01-11,2026-10-05,657,547
-14,Ibrido farinoso base Verona - umidità 14% - Aflatossina B1 max 20 ppb,CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2016-01-11,2026-10-05,679,675
-15,Ibrido estero/comunitario -f.co arrivo alla rinfusa - Aflatossina B1 max. 5 ppb - Deossinivalenolo DON max. 4.000 ppb -(potrebbe contenere Organismi Geneticamente Modificati),CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2016-01-11,2026-10-05,677,648
-16,Ibrido estero - f.co partenza porto alla rinfusa - (potrebbe contenere Organismi Geneticamente Modificati),CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2016-01-11,2026-10-05,679,676
-17,avena,CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-05,495,0
-18,orzo vestito naz. p.s. 53/55 um. 14%,CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-05,502,29
-19,orzo vestito naz. p.s. 62/63 um. 14%,CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-05,591,337
-20,orzo vestito naz. p.s. 64/66 um. 14%,CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-05,607,398
-21,orzo vestito estero p.s  65/67 e oltre  (fr. arrivo alla rinfusa),CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-05,670,633
-22,grano foraggero (fr. arrivo alla rinfusa),CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-05,527,117
-23,"tipo 00 (ceneri massimo 0,55)",CEREALI (prezzo base per Tonnellata) > SFARINATI > Farine di frumento > a) ad alto contenuto di glutine,EUR/t,2016-01-11,2026-10-05,679,677
-24,"tipo 0 (ceneri massimo 0,65)",CEREALI (prezzo base per Tonnellata) > SFARINATI > Farine di frumento > a) ad alto contenuto di glutine,EUR/t,2016-01-11,2026-10-05,679,677
-25,"tipo 00 (ceneri massimo 0,55)",CEREALI (prezzo base per Tonnellata) > SFARINATI > Farine di frumento > b) con caratteristiche minime di legge,EUR/t,2016-01-11,2026-10-05,679,677
-26,"tipo 0 (ceneri massimo 0,65)",CEREALI (prezzo base per Tonnellata) > SFARINATI > Farine di frumento > b) con caratteristiche minime di legge,EUR/t,2016-01-11,2026-10-05,679,677
-27,lusso / bramata grossa (veronese),CEREALI (prezzo base per Tonnellata) > SFARINATI > Farine di granturco per alimentazione umana,EUR/t,2016-01-11,2026-10-05,678,673
-28,bramata fine (veronese),CEREALI (prezzo base per Tonnellata) > SFARINATI > Farine di granturco per alimentazione umana,EUR/t,2016-01-11,2026-10-05,678,673
-29,fioretto (veronese),CEREALI (prezzo base per Tonnellata) > SFARINATI > Farine di granturco per alimentazione umana,EUR/t,2016-01-11,2026-10-05,678,673
-30,Autotreno (f.co arrivo in s.c.),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Crusca/cruschello di grano tenero,EUR/t,2016-01-11,2026-10-05,679,677
-31,Motrice (arrivo in s.c.),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Crusca/cruschello di grano tenero,EUR/t,2016-01-11,2026-10-05,679,677
-32,F.co arrivo alla rinfusa (*),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Crusca/cruschello di grano tenero,EUR/t,2016-01-11,2026-10-05,679,677
-33,F.co arrivo in s.c.,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Tritello di grano tenero,EUR/t,2016-01-11,2026-10-05,679,677
-34,Arrivo rinf.,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Tritello di grano tenero,EUR/t,2016-01-11,2026-10-05,679,677
-35,F.co arrivo in s.c.,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Farinaccio di grano tenero,EUR/t,2016-01-11,2026-10-05,679,677
-36,Arrivo rinf.,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Farinaccio di grano tenero,EUR/t,2016-01-11,2026-10-05,679,677
-37,Di grano tenero (f.co arr. rinf.),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Crusca pellettata nazionale,EUR/t,2016-01-11,2026-10-05,679,677
-38,Di grano duro (arr.rinf.),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Crusca pellettata nazionale,EUR/t,2016-01-11,2026-10-05,679,677
-39,Spezzati di granturco (rinfusa),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-05,678,673
-40,Farinetta di granturco per uso zootecnico,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-05,647,564
-41,Glutine di mais,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-05,654,577
-42,Semola glutinata naz.le prot. min. 17-18% (rinf.arrivo),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-05,663,626
-43,Semola glutinata estera prot. min. 17-18% (rinf.arrivo),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-05,636,530
-44,Manioca (base 64% di amido) frant.,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-05,495,0
-45,Manioca (base 68% di amido) frant.,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-05,495,0
-46,Polpe ess.te di bietola cub.te nazionali (rinf. arrivo),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-05,495,0
-47,Polpe ess.te di bietola cub.te estere (rinf. arrivo),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-05,679,677
-48,Melasso di canna uso zootecnico (43-25-25),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-05,679,677
+2,"Grano di forza (W mn 320,P/L mx 0,60 p.s. 80, glut 34%, imp 1%, prot. 14 min.)",CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE NAZIONALE,EUR/t,2016-01-11,2026-10-12,624,417
+3,"Grano Panificabile (Wmn 200,P/L mx 0,50 p.s. 78, glut 28%, imp 1%, prot. 12/13)",CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE NAZIONALE,EUR/t,2016-01-11,2026-10-12,602,337
+4,"Grano Fino (p.s. 78/79, imp. 1%, prot. 11% min.)",CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE NAZIONALE,EUR/t,2016-01-11,2026-10-12,674,643
+5,"Grano Buono merc.le (p.s. 76/77, imp. 2%)",CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE NAZIONALE,EUR/t,2016-01-11,2026-10-12,637,488
+6,"Grano Mercantile (p.s. 72/75, imp. 2%)",CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE NAZIONALE,EUR/t,2016-01-11,2026-10-12,562,223
+7,Manitoba 2,CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE ESTERA,EUR/t,2016-01-11,2026-10-12,673,614
+8,"Northern spring, prot. 15% base",CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE ESTERA,EUR/t,2016-01-11,2026-10-12,673,652
+9,Estero p.s. 76/77 f.co partenza porto alla rinfusa,CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE ESTERA,EUR/t,2016-01-11,2026-10-12,558,259
+10,Estero p.s. 76/77 f.co arrivo alla rinfusa,CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE ESTERA,EUR/t,2016-01-11,2026-10-12,670,627
+11,Ibrido di produzione Veronese base 25% - prezzo min. Aflatossina B1 max. 20 ppb,CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2016-01-11,2026-10-12,513,64
+12,ibrido alimentare (secondo specifiche normative vigenti),CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2016-01-11,2026-10-12,634,507
+13,Ibrido farinoso base Verona e/o prov. limitrofe con garanzie - Aflatossina B1 max. 5 ppb - Deossinivalenolo DON max. 4.000 ppb,CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2016-01-11,2026-10-12,658,548
+14,Ibrido farinoso base Verona - umidità 14% - Aflatossina B1 max 20 ppb,CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2016-01-11,2026-10-12,680,676
+15,Ibrido estero/comunitario -f.co arrivo alla rinfusa - Aflatossina B1 max. 5 ppb - Deossinivalenolo DON max. 4.000 ppb -(potrebbe contenere Organismi Geneticamente Modificati),CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2016-01-11,2026-10-12,678,649
+16,Ibrido estero - f.co partenza porto alla rinfusa - (potrebbe contenere Organismi Geneticamente Modificati),CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2016-01-11,2026-10-12,680,677
+17,avena,CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-12,496,0
+18,orzo vestito naz. p.s. 53/55 um. 14%,CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-12,503,29
+19,orzo vestito naz. p.s. 62/63 um. 14%,CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-12,592,337
+20,orzo vestito naz. p.s. 64/66 um. 14%,CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-12,608,399
+21,orzo vestito estero p.s  65/67 e oltre  (fr. arrivo alla rinfusa),CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-12,671,634
+22,grano foraggero (fr. arrivo alla rinfusa),CEREALI (prezzo base per Tonnellata) > CEREALI MINORI E FORAGGERI,EUR/t,2016-01-11,2026-10-12,528,117
+23,"tipo 00 (ceneri massimo 0,55)",CEREALI (prezzo base per Tonnellata) > SFARINATI > Farine di frumento > a) ad alto contenuto di glutine,EUR/t,2016-01-11,2026-10-12,680,678
+24,"tipo 0 (ceneri massimo 0,65)",CEREALI (prezzo base per Tonnellata) > SFARINATI > Farine di frumento > a) ad alto contenuto di glutine,EUR/t,2016-01-11,2026-10-12,680,678
+25,"tipo 00 (ceneri massimo 0,55)",CEREALI (prezzo base per Tonnellata) > SFARINATI > Farine di frumento > b) con caratteristiche minime di legge,EUR/t,2016-01-11,2026-10-12,680,678
+26,"tipo 0 (ceneri massimo 0,65)",CEREALI (prezzo base per Tonnellata) > SFARINATI > Farine di frumento > b) con caratteristiche minime di legge,EUR/t,2016-01-11,2026-10-12,680,678
+27,lusso / bramata grossa (veronese),CEREALI (prezzo base per Tonnellata) > SFARINATI > Farine di granturco per alimentazione umana,EUR/t,2016-01-11,2026-10-12,679,674
+28,bramata fine (veronese),CEREALI (prezzo base per Tonnellata) > SFARINATI > Farine di granturco per alimentazione umana,EUR/t,2016-01-11,2026-10-12,679,674
+29,fioretto (veronese),CEREALI (prezzo base per Tonnellata) > SFARINATI > Farine di granturco per alimentazione umana,EUR/t,2016-01-11,2026-10-12,679,674
+30,Autotreno (f.co arrivo in s.c.),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Crusca/cruschello di grano tenero,EUR/t,2016-01-11,2026-10-12,680,678
+31,Motrice (arrivo in s.c.),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Crusca/cruschello di grano tenero,EUR/t,2016-01-11,2026-10-12,680,678
+32,F.co arrivo alla rinfusa (*),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Crusca/cruschello di grano tenero,EUR/t,2016-01-11,2026-10-12,680,678
+33,F.co arrivo in s.c.,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Tritello di grano tenero,EUR/t,2016-01-11,2026-10-12,680,678
+34,Arrivo rinf.,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Tritello di grano tenero,EUR/t,2016-01-11,2026-10-12,680,678
+35,F.co arrivo in s.c.,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Farinaccio di grano tenero,EUR/t,2016-01-11,2026-10-12,680,678
+36,Arrivo rinf.,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Farinaccio di grano tenero,EUR/t,2016-01-11,2026-10-12,680,678
+37,Di grano tenero (f.co arr. rinf.),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Crusca pellettata nazionale,EUR/t,2016-01-11,2026-10-12,680,678
+38,Di grano duro (arr.rinf.),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Crusca pellettata nazionale,EUR/t,2016-01-11,2026-10-12,680,678
+39,Spezzati di granturco (rinfusa),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-12,679,674
+40,Farinetta di granturco per uso zootecnico,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-12,648,564
+41,Glutine di mais,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-12,655,577
+42,Semola glutinata naz.le prot. min. 17-18% (rinf.arrivo),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-12,664,627
+43,Semola glutinata estera prot. min. 17-18% (rinf.arrivo),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-12,637,530
+44,Manioca (base 64% di amido) frant.,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-12,496,0
+45,Manioca (base 68% di amido) frant.,CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-12,496,0
+46,Polpe ess.te di bietola cub.te nazionali (rinf. arrivo),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-12,496,0
+47,Polpe ess.te di bietola cub.te estere (rinf. arrivo),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-12,680,678
+48,Melasso di canna uso zootecnico (43-25-25),CEREALI (prezzo base per Tonnellata) > PRODOTTI DELLA LAVORAZIONE DEL GRANO E DEL MAIS > Vari,EUR/t,2016-01-11,2026-10-12,680,678
 49,Arborio (resa 55-58) (*),CEREALI (prezzo base per Tonnellata) > RISONI,EUR/t,2016-01-11,2018-02-12,97,0
-50,Carnaroli (resa 60) (*),CEREALI (prezzo base per Tonnellata) > RISONI,EUR/t,2016-01-11,2026-10-05,643,521
-51,Vialone nano (resa 56) (*),CEREALI (prezzo base per Tonnellata) > RISONI,EUR/t,2016-01-11,2026-10-05,640,522
+50,Carnaroli (resa 60) (*),CEREALI (prezzo base per Tonnellata) > RISONI,EUR/t,2016-01-11,2026-10-12,644,521
+51,Vialone nano (resa 56) (*),CEREALI (prezzo base per Tonnellata) > RISONI,EUR/t,2016-01-11,2026-10-12,641,522
 52,Arborio,CEREALI (prezzo base per Tonnellata) > RISI,EUR/t,2016-01-11,2018-02-12,97,0
-53,Carnaroli,CEREALI (prezzo base per Tonnellata) > RISI,EUR/t,2016-01-11,2026-10-05,662,635
-54,Vialone nano,CEREALI (prezzo base per Tonnellata) > RISI,EUR/t,2016-01-11,2026-10-05,662,635
-55,Mezza grana,CEREALI (prezzo base per Tonnellata) > SOTTOPRODOTTI DEL RISO,EUR/t,2016-01-11,2026-10-05,679,677
-56,Grana Verde,CEREALI (prezzo base per Tonnellata) > SOTTOPRODOTTI DEL RISO,EUR/t,2016-01-11,2026-10-05,679,677
+53,Carnaroli,CEREALI (prezzo base per Tonnellata) > RISI,EUR/t,2016-01-11,2026-10-12,663,635
+54,Vialone nano,CEREALI (prezzo base per Tonnellata) > RISI,EUR/t,2016-01-11,2026-10-12,663,635
+55,Mezza grana,CEREALI (prezzo base per Tonnellata) > SOTTOPRODOTTI DEL RISO,EUR/t,2016-01-11,2026-10-12,680,678
+56,Grana Verde,CEREALI (prezzo base per Tonnellata) > SOTTOPRODOTTI DEL RISO,EUR/t,2016-01-11,2026-10-12,680,678
 57,Farinaccio,Cereali > CEREALI (prezzo base per Tonnellata) > SOTTOPRODOTTI DEL RISO,EUR/t,2016-01-11,2018-01-08,101,100
-58,Pula vergine (rinf.),CEREALI (prezzo base per Tonnellata) > SOTTOPRODOTTI DEL RISO,EUR/t,2016-01-11,2026-10-05,679,677
+58,Pula vergine (rinf.),CEREALI (prezzo base per Tonnellata) > SOTTOPRODOTTI DEL RISO,EUR/t,2016-01-11,2026-10-12,680,678
 59,Pula (rinf.),Cereali > CEREALI (prezzo base per Tonnellata) > SOTTOPRODOTTI DEL RISO,EUR/t,2016-01-11,2018-01-08,101,100
 60,Puletta (rinf.),CEREALI (prezzo base per Tonnellata) > SOTTOPRODOTTI DEL RISO,EUR/t,2016-01-11,2018-01-08,92,0
-61,Fieno maggengo imballato sul campo (*),FORAGGI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,523,85
-62,Fieno maggengo imballato,FORAGGI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,496,39
-63,Fieno maggengo imballato (f.co arrivo),FORAGGI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,655,579
-64,Fieno agostano imballato,FORAGGI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,495,0
-65,Erba medica imballata sul campo (*),FORAGGI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,549,188
-66,Erba medica imballata,FORAGGI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,497,41
-67,Erba medica imballata (f.co arrivo),FORAGGI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,653,569
-68,Paglia d orzo imballata sul campo,PAGLIA (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,506,35
-69,Paglia di frumento imballata sul campo in rotoballe,PAGLIA (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,518,78
-70,Paglia di frumento imballata in rotoballe,PAGLIA (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,495,0
-71,Paglia di frumento imballata in rotoballe (f.co arrivo),PAGLIA (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,665,604
+61,Fieno maggengo imballato sul campo (*),FORAGGI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,524,85
+62,Fieno maggengo imballato,FORAGGI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,497,39
+63,Fieno maggengo imballato (f.co arrivo),FORAGGI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,656,580
+64,Fieno agostano imballato,FORAGGI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,496,0
+65,Erba medica imballata sul campo (*),FORAGGI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,550,188
+66,Erba medica imballata,FORAGGI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,498,41
+67,Erba medica imballata (f.co arrivo),FORAGGI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,654,570
+68,Paglia d orzo imballata sul campo,PAGLIA (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,507,35
+69,Paglia di frumento imballata sul campo in rotoballe,PAGLIA (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,519,78
+70,Paglia di frumento imballata in rotoballe,PAGLIA (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,496,0
+71,Paglia di frumento imballata in rotoballe (f.co arrivo),PAGLIA (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,666,605
 72,contratto nazionale n. 133,GERME DI GRANTURCO (prezzo base per Tonnellata),EUR/t,2016-01-11,2018-02-05,106,101
-73,Semi di soia nazionali,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,652,553
-74,Semi di soia esteri (F.co arrivo),SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,500,18
-75,Semi di soia esteri geneticamente modificati ( f.co partenza  porto),SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,673,654
-76,Semi di soia integrali tostati base 13% di um,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,665,626
-77,Semi di soia integrali tostati base 13% di um. gen. modificati,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,679,677
-78,Semi di girasole nazionali (alto oleico) - f.co part.,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,517,77
-79,Semi di colza nazionale alimentare tipo 00,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,497,7
-80,Semi di colza naz. uso energetico,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,525,98
-81,Semi di cotone estero (franco arrivo),SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,675,650
-82,Di colza,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-10-05,495,0
-83,Di granturco - acidita base 4% - da amideria,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-10-05,566,304
-84,Di granturco - acidità base 4% - da molino,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-10-05,567,307
-85,Di girasole,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-10-05,567,305
-86,Di palma,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-10-05,678,674
-87,Di soia,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-10-05,677,670
-88,Di soia geneticamente modificati,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-10-05,678,673
-89,Di arachide,OLII (prezzo base per Tonnellata) > DI SEMI > Raffinati alimentari,EUR/t,2016-01-11,2026-10-05,673,649
-90,Di granturco (mais) - da amideria,OLII (prezzo base per Tonnellata) > DI SEMI > Raffinati alimentari,EUR/t,2016-01-11,2026-10-05,664,623
-91,Di granturco (mais) - da molino,OLII (prezzo base per Tonnellata) > DI SEMI > Raffinati alimentari,EUR/t,2016-01-11,2026-10-05,600,416
-92,Di girasole,OLII (prezzo base per Tonnellata) > DI SEMI > Raffinati alimentari,EUR/t,2016-01-11,2026-10-05,675,664
-93,Di semi vari,OLII (prezzo base per Tonnellata) > DI SEMI > Raffinati alimentari,EUR/t,2016-01-11,2026-10-05,512,126
-94,Di soia,OLII (prezzo base per Tonnellata) > DI SEMI > Raffinati alimentari,EUR/t,2016-01-11,2026-10-05,676,665
-95,Di soia geneticamente modificati,OLII (prezzo base per Tonnellata) > DI SEMI > Raffinati alimentari,EUR/t,2016-01-11,2026-10-05,678,673
-96,per olio d'oliva Extra Vergine d.o.p. (* resa 8-10),OLII (prezzo base per Tonnellata) > OLIVE CERTIFICATE (prezzo per Kilogrammo) > Garda Orientale d.o.p,EUR/kg,2016-01-11,2026-10-05,511,58
-97,per olio d'oliva Extra Vergine d.o.p. (* resa 11-15),OLII (prezzo base per Tonnellata) > OLIVE CERTIFICATE (prezzo per Kilogrammo) > Garda Orientale d.o.p,EUR/kg,2016-01-11,2026-10-05,517,72
-98,per olio d'oliva Extra Vergine d.o.p. (* resa 16-20),OLII (prezzo base per Tonnellata) > OLIVE CERTIFICATE (prezzo per Kilogrammo) > Garda Orientale d.o.p,EUR/kg,2016-01-11,2026-10-05,506,32
+73,Semi di soia nazionali,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,653,554
+74,Semi di soia esteri (F.co arrivo),SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,501,18
+75,Semi di soia esteri geneticamente modificati ( f.co partenza  porto),SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,674,655
+76,Semi di soia integrali tostati base 13% di um,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,666,626
+77,Semi di soia integrali tostati base 13% di um. gen. modificati,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,680,678
+78,Semi di girasole nazionali (alto oleico) - f.co part.,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,518,78
+79,Semi di colza nazionale alimentare tipo 00,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,498,7
+80,Semi di colza naz. uso energetico,SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,526,99
+81,Semi di cotone estero (franco arrivo),SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,676,651
+82,Di colza,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-10-12,496,0
+83,Di granturco - acidita base 4% - da amideria,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-10-12,567,304
+84,Di granturco - acidità base 4% - da molino,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-10-12,568,307
+85,Di girasole,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-10-12,568,305
+86,Di palma,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-10-12,679,675
+87,Di soia,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-10-12,678,671
+88,Di soia geneticamente modificati,OLII (prezzo base per Tonnellata) > DI SEMI > Grezzi,EUR/t,2016-01-11,2026-10-12,679,674
+89,Di arachide,OLII (prezzo base per Tonnellata) > DI SEMI > Raffinati alimentari,EUR/t,2016-01-11,2026-10-12,674,650
+90,Di granturco (mais) - da amideria,OLII (prezzo base per Tonnellata) > DI SEMI > Raffinati alimentari,EUR/t,2016-01-11,2026-10-12,665,624
+91,Di granturco (mais) - da molino,OLII (prezzo base per Tonnellata) > DI SEMI > Raffinati alimentari,EUR/t,2016-01-11,2026-10-12,601,416
+92,Di girasole,OLII (prezzo base per Tonnellata) > DI SEMI > Raffinati alimentari,EUR/t,2016-01-11,2026-10-12,676,665
+93,Di semi vari,OLII (prezzo base per Tonnellata) > DI SEMI > Raffinati alimentari,EUR/t,2016-01-11,2026-10-12,513,126
+94,Di soia,OLII (prezzo base per Tonnellata) > DI SEMI > Raffinati alimentari,EUR/t,2016-01-11,2026-10-12,677,666
+95,Di soia geneticamente modificati,OLII (prezzo base per Tonnellata) > DI SEMI > Raffinati alimentari,EUR/t,2016-01-11,2026-10-12,679,674
+96,per olio d'oliva Extra Vergine d.o.p. (* resa 8-10),OLII (prezzo base per Tonnellata) > OLIVE CERTIFICATE (prezzo per Kilogrammo) > Garda Orientale d.o.p,EUR/kg,2016-01-11,2026-10-12,512,58
+97,per olio d'oliva Extra Vergine d.o.p. (* resa 11-15),OLII (prezzo base per Tonnellata) > OLIVE CERTIFICATE (prezzo per Kilogrammo) > Garda Orientale d.o.p,EUR/kg,2016-01-11,2026-10-12,518,72
+98,per olio d'oliva Extra Vergine d.o.p. (* resa 16-20),OLII (prezzo base per Tonnellata) > OLIVE CERTIFICATE (prezzo per Kilogrammo) > Garda Orientale d.o.p,EUR/kg,2016-01-11,2026-10-12,507,32
 99,per olio d'oliva Extra Vergine d.o.p. (* resa 14-18),OLII (prezzo base per Tonnellata) > OLIVE CERTIFICATE (prezzo per Kilogrammo) > Veneto Valpolicella d.o.p.,EUR/kg,2016-01-11,2016-10-17,37,0
-100,per olio extra vergine di oliva,OLII (prezzo base per Tonnellata) > OLIVE DI PRODUZIONE ITALIANA (prezzo per Kilogrammo),EUR/kg,2016-01-11,2026-10-05,528,107
-101,Del Veneto D.O.P. Valpolicella,OLII (prezzo base per Tonnellata) > OLIO DI OLIVA (prezzo base per Kilogrammo) > Olio Extra vergine,EUR/kg,2016-01-11,2026-10-05,656,598
-102,Del Garda D.O.P. Orientale,OLII (prezzo base per Tonnellata) > OLIO DI OLIVA (prezzo base per Kilogrammo) > Olio Extra vergine,EUR/kg,2016-01-11,2026-10-05,639,533
-103,Di produzione Italiana (11) (*  prezzo nominale),OLII (prezzo base per Tonnellata) > OLIO DI OLIVA (prezzo base per Kilogrammo) > Olio Extra vergine,EUR/kg,2016-01-11,2026-10-05,679,677
-104,Di produzione estera (Spagna) (11),OLII (prezzo base per Tonnellata) > OLIO DI OLIVA (prezzo base per Kilogrammo) > Olio Extra vergine,EUR/kg,2016-01-11,2026-10-05,679,677
-105,Di produzione estera (Grecia) (11),OLII (prezzo base per Tonnellata) > OLIO DI OLIVA (prezzo base per Kilogrammo) > Olio Extra vergine,EUR/kg,2016-01-11,2026-10-05,679,676
-106,Rettificato (11),OLII (prezzo base per Tonnellata) > OLIO DI OLIVA (prezzo base per Kilogrammo) > Di oliva,EUR/kg,2016-01-11,2026-10-05,679,677
-107,Rettificato (11),OLII (prezzo base per Tonnellata) > OLIO DI OLIVA (prezzo base per Kilogrammo) > Di sansa,EUR/kg,2016-01-11,2026-10-05,679,677
-108,di germe di granturco nazionale proveniente da mulino,MANGIMI (prezzo base per Tonnellata) > Panelli (alla rinfusa - F.co arrivo),EUR/t,2016-01-11,2026-10-05,654,589
-109,di germe di granturco nazionale proveniente da amideria,MANGIMI (prezzo base per Tonnellata) > Panelli (alla rinfusa - F.co arrivo),EUR/t,2016-01-11,2026-10-05,653,522
-110,di lino comune,MANGIMI (prezzo base per Tonnellata) > Panelli (alla rinfusa - F.co arrivo),EUR/t,2016-01-11,2026-10-05,655,593
-111,di colza nazionale (f.co arrivo),MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,631,480
-112,di colza estera gen. modificata (f.co arrivo),MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,568,268
-113,di cotone estera proteine minimo 48%,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,495,0
-114,di girasole estera 36/37% s.t.q.,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,679,677
-115,di girasole integrale nazionale 29/30% s.t.q.,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,653,587
-116,di girasole integrale estera 27/28% s.t.q,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,496,13
-117,di soia normale nazionale,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,679,674
-118,di soia normale di produzione nazionale geneticamente modificata,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,677,666
-119,di soia normale estera,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,497,4
-120,di soia normale estera geneticamente modificata,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,592,372
-121,di soia proteica nazionale,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,678,673
-122,di soia proteica di produzione nazionale geneticamente modificata,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,673,653
-123,di soia proteica estera,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,503,44
-124,di soia proteica estera geneticamente modificata,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-05,679,677
-125,farina qualita extra (insaccata prot. 17%-fibra 22% s.t.q.),MANGIMI (prezzo base per Tonnellata) > Farine vegetali disidratate: (c.to naz. n. 129) > erba medica disidratata,EUR/t,2016-01-11,2026-10-05,514,56
-126,cub.ta extra (rinfusa prot. 17%-fibra 22% s.t.q.),MANGIMI (prezzo base per Tonnellata) > Farine vegetali disidratate: (c.to naz. n. 129) > erba medica disidratata,EUR/t,2016-01-11,2026-10-05,600,341
-127,cub.ta I^ qual. (prot. 16%-fibra 24% s.t.q.),MANGIMI (prezzo base per Tonnellata) > Farine vegetali disidratate: (c.to naz. n. 129) > erba medica disidratata,EUR/t,2016-01-11,2026-10-05,659,594
-128,"cub.ta II^ qual. (prot. 14%-fibra 27,50% s.t.q.)",MANGIMI (prezzo base per Tonnellata) > Farine vegetali disidratate: (c.to naz. n. 129) > erba medica disidratata,EUR/t,2016-01-11,2026-10-05,659,594
-129,"fieno di erba medica (prot 12,50% s.t.q.)",MANGIMI (prezzo base per Tonnellata) > Farine vegetali disidratate: (c.to naz. n. 129) > erba medica disidratata,EUR/t,2016-01-11,2026-10-05,656,547
-130,fieno di prato polifita (prot 8% s.t.q.),MANGIMI (prezzo base per Tonnellata) > Farine vegetali disidratate: (c.to naz. n. 129) > erba medica disidratata,EUR/t,2016-01-11,2026-10-05,654,587
-131,farina di pesce estera (prot. 70% s.s.),MANGIMI (prezzo base per Tonnellata) > Farine animali proteiche e grassi,EUR/t,2016-01-11,2026-10-05,679,677
-132,"grasso uso zootecnico (ac. 5/7%, miu 2%)",MANGIMI (prezzo base per Tonnellata) > Farine animali proteiche e grassi,EUR/t,2016-01-11,2026-10-05,667,639
-133,"grasso uso zootecnico (ac. 8/10%, miu 3%)",MANGIMI (prezzo base per Tonnellata) > Farine animali proteiche e grassi,EUR/t,2016-01-11,2026-10-05,667,639
-134,"grasso suino uso zootecnico (ac. 1%, miu 1%)",MANGIMI (prezzo base per Tonnellata) > Farine animali proteiche e grassi,EUR/t,2016-01-11,2026-10-05,660,618
+100,per olio extra vergine di oliva,OLII (prezzo base per Tonnellata) > OLIVE DI PRODUZIONE ITALIANA (prezzo per Kilogrammo),EUR/kg,2016-01-11,2026-10-12,529,107
+101,Del Veneto D.O.P. Valpolicella,OLII (prezzo base per Tonnellata) > OLIO DI OLIVA (prezzo base per Kilogrammo) > Olio Extra vergine,EUR/kg,2016-01-11,2026-10-12,657,598
+102,Del Garda D.O.P. Orientale,OLII (prezzo base per Tonnellata) > OLIO DI OLIVA (prezzo base per Kilogrammo) > Olio Extra vergine,EUR/kg,2016-01-11,2026-10-12,640,533
+103,Di produzione Italiana (11) (*  prezzo nominale),OLII (prezzo base per Tonnellata) > OLIO DI OLIVA (prezzo base per Kilogrammo) > Olio Extra vergine,EUR/kg,2016-01-11,2026-10-12,680,678
+104,Di produzione estera (Spagna) (11),OLII (prezzo base per Tonnellata) > OLIO DI OLIVA (prezzo base per Kilogrammo) > Olio Extra vergine,EUR/kg,2016-01-11,2026-10-12,680,678
+105,Di produzione estera (Grecia) (11),OLII (prezzo base per Tonnellata) > OLIO DI OLIVA (prezzo base per Kilogrammo) > Olio Extra vergine,EUR/kg,2016-01-11,2026-10-12,680,677
+106,Rettificato (11),OLII (prezzo base per Tonnellata) > OLIO DI OLIVA (prezzo base per Kilogrammo) > Di oliva,EUR/kg,2016-01-11,2026-10-12,680,678
+107,Rettificato (11),OLII (prezzo base per Tonnellata) > OLIO DI OLIVA (prezzo base per Kilogrammo) > Di sansa,EUR/kg,2016-01-11,2026-10-12,680,678
+108,di germe di granturco nazionale proveniente da mulino,MANGIMI (prezzo base per Tonnellata) > Panelli (alla rinfusa - F.co arrivo),EUR/t,2016-01-11,2026-10-12,655,589
+109,di germe di granturco nazionale proveniente da amideria,MANGIMI (prezzo base per Tonnellata) > Panelli (alla rinfusa - F.co arrivo),EUR/t,2016-01-11,2026-10-12,654,522
+110,di lino comune,MANGIMI (prezzo base per Tonnellata) > Panelli (alla rinfusa - F.co arrivo),EUR/t,2016-01-11,2026-10-12,656,594
+111,di colza nazionale (f.co arrivo),MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-12,632,480
+112,di colza estera gen. modificata (f.co arrivo),MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-12,569,268
+113,di cotone estera proteine minimo 48%,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-12,496,0
+114,di girasole estera 36/37% s.t.q.,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-12,680,678
+115,di girasole integrale nazionale 29/30% s.t.q.,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-12,654,588
+116,di girasole integrale estera 27/28% s.t.q,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-12,497,13
+117,di soia normale nazionale,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-12,680,675
+118,di soia normale di produzione nazionale geneticamente modificata,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-12,678,667
+119,di soia normale estera,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-12,498,4
+120,di soia normale estera geneticamente modificata,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-12,593,372
+121,di soia proteica nazionale,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-12,679,674
+122,di soia proteica di produzione nazionale geneticamente modificata,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-12,674,654
+123,di soia proteica estera,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-12,504,44
+124,di soia proteica estera geneticamente modificata,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-01-11,2026-10-12,680,678
+125,farina qualita extra (insaccata prot. 17%-fibra 22% s.t.q.),MANGIMI (prezzo base per Tonnellata) > Farine vegetali disidratate: (c.to naz. n. 129) > erba medica disidratata,EUR/t,2016-01-11,2026-10-12,515,56
+126,cub.ta extra (rinfusa prot. 17%-fibra 22% s.t.q.),MANGIMI (prezzo base per Tonnellata) > Farine vegetali disidratate: (c.to naz. n. 129) > erba medica disidratata,EUR/t,2016-01-11,2026-10-12,601,341
+127,cub.ta I^ qual. (prot. 16%-fibra 24% s.t.q.),MANGIMI (prezzo base per Tonnellata) > Farine vegetali disidratate: (c.to naz. n. 129) > erba medica disidratata,EUR/t,2016-01-11,2026-10-12,660,595
+128,"cub.ta II^ qual. (prot. 14%-fibra 27,50% s.t.q.)",MANGIMI (prezzo base per Tonnellata) > Farine vegetali disidratate: (c.to naz. n. 129) > erba medica disidratata,EUR/t,2016-01-11,2026-10-12,660,595
+129,"fieno di erba medica (prot 12,50% s.t.q.)",MANGIMI (prezzo base per Tonnellata) > Farine vegetali disidratate: (c.to naz. n. 129) > erba medica disidratata,EUR/t,2016-01-11,2026-10-12,657,548
+130,fieno di prato polifita (prot 8% s.t.q.),MANGIMI (prezzo base per Tonnellata) > Farine vegetali disidratate: (c.to naz. n. 129) > erba medica disidratata,EUR/t,2016-01-11,2026-10-12,655,587
+131,farina di pesce estera (prot. 70% s.s.),MANGIMI (prezzo base per Tonnellata) > Farine animali proteiche e grassi,EUR/t,2016-01-11,2026-10-12,680,678
+132,"grasso uso zootecnico (ac. 5/7%, miu 2%)",MANGIMI (prezzo base per Tonnellata) > Farine animali proteiche e grassi,EUR/t,2016-01-11,2026-10-12,668,640
+133,"grasso uso zootecnico (ac. 8/10%, miu 3%)",MANGIMI (prezzo base per Tonnellata) > Farine animali proteiche e grassi,EUR/t,2016-01-11,2026-10-12,668,640
+134,"grasso suino uso zootecnico (ac. 1%, miu 1%)",MANGIMI (prezzo base per Tonnellata) > Farine animali proteiche e grassi,EUR/t,2016-01-11,2026-10-12,661,619
 135,- Amarone e recioto produzione 2012 - d.o.c.g.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro) > VALPOLICELLA,EUR/L,2016-01-11,2016-11-07,42,23
 136,- Amarone e recioto produzione 2012 - d.o.c.g. classico,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro) > VALPOLICELLA,EUR/L,2016-01-11,2016-11-07,42,23
 137,d.o.c.g. atto a Amarone e Recioto,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2013 ATTO A > AMARONE E RECIOTO VALPOLICELLA (quotazione base per litro),EUR/L,2016-01-11,2016-01-11,1,0
@@ -173,30 +173,30 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 173,- pinot grigio veneto - base 12 (prezzo E/litro),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2015 > VINI I.G.T. Verona (quotazione base per 1 grado/100 litri),EUR/L,2016-01-11,2016-10-17,40,35
 174,- rosso,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2015 > VINO DA TAVOLA (quotazione base per 1 grado/100 litri),EUR/grado-hL,2016-01-11,2016-11-07,39,0
 175,- bianco,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2015 > VINO DA TAVOLA (quotazione base per 1 grado/100 litri),EUR/grado-hL,2016-01-11,2016-11-07,42,35
-176,per uso zootecnico,PRODOTTI CASEARI (prezzo base per Kg.) > SIERO DI LATTE (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,679,676
-177,per uso industriale raffreddato,PRODOTTI CASEARI (prezzo base per Kg.) > SIERO DI LATTE (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-05,679,676
+176,per uso zootecnico,PRODOTTI CASEARI (prezzo base per Kg.) > SIERO DI LATTE (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,680,677
+177,per uso industriale raffreddato,PRODOTTI CASEARI (prezzo base per Kg.) > SIERO DI LATTE (prezzo base per Tonnellata),EUR/t,2016-01-11,2026-10-12,680,677
 178,Stagionatura minimo 15 mesi,Lattiero/Caseari > PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Grana Padano,EUR/kg,2016-01-11,2017-12-30,100,100
 179,Stagionatura minimo 12 mesi,Lattiero/Caseari > PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Grana Padano,EUR/kg,2016-01-11,2017-12-30,100,100
 180,Stagionatura minimo 10 mesi,Lattiero/Caseari > PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Grana Padano,EUR/kg,2016-01-11,2017-12-30,100,100
-181,Merce fresca,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Provolone Valpadana,EUR/kg,2016-01-11,2026-10-05,679,676
-182,Stagionatura oltre 3 mesi,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Provolone Valpadana,EUR/kg,2016-01-11,2026-10-05,679,676
-183,A latte intero,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Monte veronese d.o.p.,EUR/kg,2016-01-11,2026-10-05,679,676
-184,D'allevo fresco,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Monte veronese d.o.p.,EUR/kg,2016-01-11,2026-10-05,679,676
-185,Mezzano,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Monte veronese d.o.p.,EUR/kg,2016-01-11,2026-10-05,679,676
-186,Vecchio,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Monte veronese d.o.p.,EUR/kg,2016-01-11,2026-10-05,679,676
-187,Latte Spot Nazionale crudo,LATTE SPOT (prezzo base per tonnellata) > in cisterna - franco arrivo,EUR/t,2016-01-11,2026-10-05,679,676
-188,Latte Estero di provenienza Germania - Austria,LATTE SPOT (prezzo base per tonnellata) > in cisterna - franco arrivo,EUR/t,2016-01-11,2026-10-05,679,676
-189,"Latte Magro Pastorizzato tipo 0,03 M.G.",LATTE SPOT (prezzo base per tonnellata) > in cisterna - franco arrivo,EUR/t,2016-01-11,2026-10-05,679,676
+181,Merce fresca,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Provolone Valpadana,EUR/kg,2016-01-11,2026-10-12,680,677
+182,Stagionatura oltre 3 mesi,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Provolone Valpadana,EUR/kg,2016-01-11,2026-10-12,680,677
+183,A latte intero,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Monte veronese d.o.p.,EUR/kg,2016-01-11,2026-10-12,680,677
+184,D'allevo fresco,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Monte veronese d.o.p.,EUR/kg,2016-01-11,2026-10-12,680,677
+185,Mezzano,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Monte veronese d.o.p.,EUR/kg,2016-01-11,2026-10-12,680,677
+186,Vecchio,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Monte veronese d.o.p.,EUR/kg,2016-01-11,2026-10-12,680,677
+187,Latte Spot Nazionale crudo,LATTE SPOT (prezzo base per tonnellata) > in cisterna - franco arrivo,EUR/t,2016-01-11,2026-10-12,680,677
+188,Latte Estero di provenienza Germania - Austria,LATTE SPOT (prezzo base per tonnellata) > in cisterna - franco arrivo,EUR/t,2016-01-11,2026-10-12,680,677
+189,"Latte Magro Pastorizzato tipo 0,03 M.G.",LATTE SPOT (prezzo base per tonnellata) > in cisterna - franco arrivo,EUR/t,2016-01-11,2026-10-12,680,677
 190,Panna di centrifuga 40% M.G.,LATTE SPOT (prezzo base per tonnellata) > in cisterna - franco arrivo,EUR/t,2016-01-11,2020-01-20,239,238
-191,Lattonzoli da Kg. 15,SUINI (prezzo base per Kg.) > Da allevamento - RILEVAZIONE SOSPESA DAL 04/06/2018 EX ART. 7 DECR. INTERMINISTERIALE N. 72 DEL 31/03/2017 (CUN suinetti),EUR/kg,2016-01-11,2026-10-05,513,128
-192,Lattonzoli da Kg. 25,SUINI (prezzo base per Kg.) > Da allevamento - RILEVAZIONE SOSPESA DAL 04/06/2018 EX ART. 7 DECR. INTERMINISTERIALE N. 72 DEL 31/03/2017 (CUN suinetti),EUR/kg,2016-01-11,2026-10-05,513,128
-193,Magroncelli da Kg. 30,SUINI (prezzo base per Kg.) > Da allevamento - RILEVAZIONE SOSPESA DAL 04/06/2018 EX ART. 7 DECR. INTERMINISTERIALE N. 72 DEL 31/03/2017 (CUN suinetti),EUR/kg,2016-01-11,2026-10-05,513,128
-194,Magroni da Kg. 40,SUINI (prezzo base per Kg.) > Da allevamento - RILEVAZIONE SOSPESA DAL 04/06/2018 EX ART. 7 DECR. INTERMINISTERIALE N. 72 DEL 31/03/2017 (CUN suinetti),EUR/kg,2016-01-11,2026-10-05,513,128
-195,Magroni da Kg. 50,SUINI (prezzo base per Kg.) > Da allevamento - RILEVAZIONE SOSPESA DAL 04/06/2018 EX ART. 7 DECR. INTERMINISTERIALE N. 72 DEL 31/03/2017 (CUN suinetti),EUR/kg,2016-01-11,2026-10-05,513,128
-196,Magroni da Kg. 65,SUINI (prezzo base per Kg.) > Da allevamento - RILEVAZIONE SOSPESA DAL 04/06/2018 EX ART. 7 DECR. INTERMINISTERIALE N. 72 DEL 31/03/2017 (CUN suinetti),EUR/kg,2016-01-11,2026-10-05,513,128
-197,da Kg. 146 a 160,SUINI (prezzo base per Kg.) > Grassi da macello - RILEVAZIONE SOSPESA DAL 04/06/2018 EX ART. 7 DECR. INTERMINISTERIALE N. 72 DEL 31/03/2017 (CUN suini),EUR/kg,2016-01-11,2026-10-05,513,128
-198,da Kg. 161 a 180,SUINI (prezzo base per Kg.) > Grassi da macello - RILEVAZIONE SOSPESA DAL 04/06/2018 EX ART. 7 DECR. INTERMINISTERIALE N. 72 DEL 31/03/2017 (CUN suini),EUR/kg,2016-01-11,2026-10-05,513,128
-199,oltre Kg. 180,SUINI (prezzo base per Kg.) > Grassi da macello - RILEVAZIONE SOSPESA DAL 04/06/2018 EX ART. 7 DECR. INTERMINISTERIALE N. 72 DEL 31/03/2017 (CUN suini),EUR/kg,2016-01-11,2026-10-05,513,128
+191,Lattonzoli da Kg. 15,SUINI (prezzo base per Kg.) > Da allevamento - RILEVAZIONE SOSPESA DAL 04/06/2018 EX ART. 7 DECR. INTERMINISTERIALE N. 72 DEL 31/03/2017 (CUN suinetti),EUR/kg,2016-01-11,2026-10-12,514,128
+192,Lattonzoli da Kg. 25,SUINI (prezzo base per Kg.) > Da allevamento - RILEVAZIONE SOSPESA DAL 04/06/2018 EX ART. 7 DECR. INTERMINISTERIALE N. 72 DEL 31/03/2017 (CUN suinetti),EUR/kg,2016-01-11,2026-10-12,514,128
+193,Magroncelli da Kg. 30,SUINI (prezzo base per Kg.) > Da allevamento - RILEVAZIONE SOSPESA DAL 04/06/2018 EX ART. 7 DECR. INTERMINISTERIALE N. 72 DEL 31/03/2017 (CUN suinetti),EUR/kg,2016-01-11,2026-10-12,514,128
+194,Magroni da Kg. 40,SUINI (prezzo base per Kg.) > Da allevamento - RILEVAZIONE SOSPESA DAL 04/06/2018 EX ART. 7 DECR. INTERMINISTERIALE N. 72 DEL 31/03/2017 (CUN suinetti),EUR/kg,2016-01-11,2026-10-12,514,128
+195,Magroni da Kg. 50,SUINI (prezzo base per Kg.) > Da allevamento - RILEVAZIONE SOSPESA DAL 04/06/2018 EX ART. 7 DECR. INTERMINISTERIALE N. 72 DEL 31/03/2017 (CUN suinetti),EUR/kg,2016-01-11,2026-10-12,514,128
+196,Magroni da Kg. 65,SUINI (prezzo base per Kg.) > Da allevamento - RILEVAZIONE SOSPESA DAL 04/06/2018 EX ART. 7 DECR. INTERMINISTERIALE N. 72 DEL 31/03/2017 (CUN suinetti),EUR/kg,2016-01-11,2026-10-12,514,128
+197,da Kg. 146 a 160,SUINI (prezzo base per Kg.) > Grassi da macello - RILEVAZIONE SOSPESA DAL 04/06/2018 EX ART. 7 DECR. INTERMINISTERIALE N. 72 DEL 31/03/2017 (CUN suini),EUR/kg,2016-01-11,2026-10-12,514,128
+198,da Kg. 161 a 180,SUINI (prezzo base per Kg.) > Grassi da macello - RILEVAZIONE SOSPESA DAL 04/06/2018 EX ART. 7 DECR. INTERMINISTERIALE N. 72 DEL 31/03/2017 (CUN suini),EUR/kg,2016-01-11,2026-10-12,514,128
+199,oltre Kg. 180,SUINI (prezzo base per Kg.) > Grassi da macello - RILEVAZIONE SOSPESA DAL 04/06/2018 EX ART. 7 DECR. INTERMINISTERIALE N. 72 DEL 31/03/2017 (CUN suini),EUR/kg,2016-01-11,2026-10-12,514,128
 200,"Prosciutto Veneto Berico Euganeo con osso, del peso di kg. 8,5/10, stagionatura minima 16 mesi","PROSCIUTTO VENETO DOP - Prezzi comunicati dal Consorzio per la tutela del Prosciutto Veneto Berico Euganeo > I prezzi si intendono da produttore a dettagliante, franco destino, iva esclusa",EUR/kg,2016-01-11,2016-01-11,1,0
 201,"Prosciutto Veneto Berico Euganeo disossato del peso di kg. 6/8, stagionatura minima 16 mesi","PROSCIUTTO VENETO DOP - Prezzi comunicati dal Consorzio per la tutela del Prosciutto Veneto Berico Euganeo > I prezzi si intendono da produttore a dettagliante, franco destino, iva esclusa",EUR/kg,2016-01-11,2016-01-11,1,0
 202,rossi,PRODOTTI ORTIVI CONVENZIONALI (prezzo base per Kg.) - Prezzi comunicati da Veronamercato spa > AGLIO,EUR/kg,2016-01-11,2022-07-25,304,0
@@ -325,51 +325,51 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 325,leggeri,Prodotti avicunicoli a peso vivo > POLLI (prezzo base per Kg.) > d'all. int. a terra a pigmentazione gialla,EUR/kg,2016-01-08,2016-12-16,45,45
 326,pesanti,Prodotti avicunicoli a peso vivo > POLLI (prezzo base per Kg.) > d'all. int. a terra a pigmentazione gialla,EUR/kg,2016-01-08,2016-12-16,45,45
 327,medie,Avicunicoli > Prodotti avicunicoli a peso vivo > GALLINE (prezzo base per Kg.) > d'all. intensivo a terra,EUR/kg,2016-01-15,2016-01-15,1,1
-328,pesanti,Prodotti avicunicoli a peso vivo > GALLINE (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,660,651
-329,livornesi,Prodotti avicunicoli a peso vivo > GALLINE (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,660,651
+328,pesanti,Prodotti avicunicoli a peso vivo > GALLINE (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,661,652
+329,livornesi,Prodotti avicunicoli a peso vivo > GALLINE (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,661,652
 330,leggere,Avicunicoli > Prodotti avicunicoli a peso vivo > GALLINE (prezzo base per Kg.) > d'all. intensivo in batteria,EUR/kg,2016-01-15,2016-01-15,1,1
-331,rosse,Prodotti avicunicoli a peso vivo > GALLINE (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,660,651
-332,Oche,Prodotti avicunicoli a peso vivo > OCHE (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,514,95
-333,anitre mute,Prodotti avicunicoli a peso vivo > ANITRE MUTE (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,660,651
+331,rosse,Prodotti avicunicoli a peso vivo > GALLINE (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,661,652
+332,Oche,Prodotti avicunicoli a peso vivo > OCHE (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,515,95
+333,anitre mute,Prodotti avicunicoli a peso vivo > ANITRE MUTE (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,661,652
 334,maschi pesanti da taglio,Prodotti avicunicoli a peso vivo > ANITRE MUTE (prezzo base per Kg.),EUR/kg,2016-01-08,2016-12-16,45,45
-335,d'allevamento tradizionale,Prodotti avicunicoli a peso vivo > FARAONE (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,660,651
-336,"mini da kg. 3,5/4,2",Prodotti avicunicoli a peso vivo > TACCHINI (prezzo base per Kg.) > Tacchine,EUR/kg,2016-01-08,2026-10-05,513,94
-337,"medie da kg. 4,5/5,5",Prodotti avicunicoli a peso vivo > TACCHINI (prezzo base per Kg.) > Tacchine,EUR/kg,2016-01-08,2026-10-05,513,94
+335,d'allevamento tradizionale,Prodotti avicunicoli a peso vivo > FARAONE (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,661,652
+336,"mini da kg. 3,5/4,2",Prodotti avicunicoli a peso vivo > TACCHINI (prezzo base per Kg.) > Tacchine,EUR/kg,2016-01-08,2026-10-12,514,94
+337,"medie da kg. 4,5/5,5",Prodotti avicunicoli a peso vivo > TACCHINI (prezzo base per Kg.) > Tacchine,EUR/kg,2016-01-08,2026-10-12,514,94
 338,femmine,Prodotti avicunicoli a peso vivo > TACCHINI (prezzo base per Kg.) > Tacchini Pesanti,EUR/kg,2016-01-08,2017-01-13,46,45
 339,maschi,Prodotti avicunicoli a peso vivo > TACCHINI (prezzo base per Kg.) > Tacchini Pesanti,EUR/kg,2016-01-08,2017-01-13,46,45
-340,d'allevamento tradizionale (età minima 180 gg ),Prodotti avicunicoli a peso vivo > CAPPONI (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,514,96
-341,Golden tipo Comet,Prodotti avicunicoli a peso vivo > GALLI (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,660,651
-342,Tipo Livornese,Prodotti avicunicoli a peso vivo > GALLI (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,660,651
+340,d'allevamento tradizionale (età minima 180 gg ),Prodotti avicunicoli a peso vivo > CAPPONI (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,515,96
+341,Golden tipo Comet,Prodotti avicunicoli a peso vivo > GALLI (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,661,652
+342,Tipo Livornese,Prodotti avicunicoli a peso vivo > GALLI (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,661,652
 343,altri,Prodotti avicunicoli a peso vivo > GALLETTI (prezzo base per Kg.),EUR/kg,2016-01-08,2016-12-16,45,45
-344,XL grandissime da 73 gr. e più,"Prodotti avicunicoli a peso vivo > UOVA (prezzo base per 100) > fresche cat ""A"": Provenienti da ALLEVAMENTI IN GABBIA ARRICCHITA",EUR/100pz,2016-01-08,2026-10-05,660,651
-345,L grandi da 63 a 72 gr.,"Prodotti avicunicoli a peso vivo > UOVA (prezzo base per 100) > fresche cat ""A"": Provenienti da ALLEVAMENTI IN GABBIA ARRICCHITA",EUR/100pz,2016-01-08,2026-10-05,660,651
-346,M medie da 53 a 62 gr.,"Prodotti avicunicoli a peso vivo > UOVA (prezzo base per 100) > fresche cat ""A"": Provenienti da ALLEVAMENTI IN GABBIA ARRICCHITA",EUR/100pz,2016-01-08,2026-10-05,660,651
-347,S piccole meno di 53 gr.,"Prodotti avicunicoli a peso vivo > UOVA (prezzo base per 100) > fresche cat ""A"": Provenienti da ALLEVAMENTI IN GABBIA ARRICCHITA",EUR/100pz,2016-01-08,2026-10-05,660,651
+344,XL grandissime da 73 gr. e più,"Prodotti avicunicoli a peso vivo > UOVA (prezzo base per 100) > fresche cat ""A"": Provenienti da ALLEVAMENTI IN GABBIA ARRICCHITA",EUR/100pz,2016-01-08,2026-10-12,661,652
+345,L grandi da 63 a 72 gr.,"Prodotti avicunicoli a peso vivo > UOVA (prezzo base per 100) > fresche cat ""A"": Provenienti da ALLEVAMENTI IN GABBIA ARRICCHITA",EUR/100pz,2016-01-08,2026-10-12,661,652
+346,M medie da 53 a 62 gr.,"Prodotti avicunicoli a peso vivo > UOVA (prezzo base per 100) > fresche cat ""A"": Provenienti da ALLEVAMENTI IN GABBIA ARRICCHITA",EUR/100pz,2016-01-08,2026-10-12,661,652
+347,S piccole meno di 53 gr.,"Prodotti avicunicoli a peso vivo > UOVA (prezzo base per 100) > fresche cat ""A"": Provenienti da ALLEVAMENTI IN GABBIA ARRICCHITA",EUR/100pz,2016-01-08,2026-10-12,661,652
 348,tradizionali - medi e pesanti,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > POLLI (prezzo base per Kg.),EUR/kg,2016-01-08,2017-01-13,46,45
 349,tradizionali - super pesanti,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > POLLI (prezzo base per Kg.),EUR/kg,2016-01-08,2017-01-13,46,45
-350,a busto rosticceria gr. 1.000; gr. 1.100; gr. 1.200,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > POLLI (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,660,651
-351,a busto,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > POLLI (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,660,651
-352,Golden Comet tradizionali,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > GALLI (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,660,651
-353,Livornesi tradizionali,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > GALLI (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,660,651
+350,a busto rosticceria gr. 1.000; gr. 1.100; gr. 1.200,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > POLLI (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,661,652
+351,a busto,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > POLLI (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,661,652
+352,Golden Comet tradizionali,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > GALLI (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,661,652
+353,Livornesi tradizionali,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > GALLI (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,661,652
 354,medie,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > GALLINE (prezzo base per Kg.) > tradizionali,EUR/kg,2016-01-08,2017-01-13,46,45
 355,pesanti,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > GALLINE (prezzo base per Kg.) > tradizionali,EUR/kg,2016-01-08,2017-01-13,46,45
-356,pesanti,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > GALLINE (prezzo base per Kg.) > a busto,EUR/kg,2016-01-08,2026-10-05,660,651
-357,leggere,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > GALLINE (prezzo base per Kg.) > a busto,EUR/kg,2016-01-08,2026-10-05,660,651
-358,tradizionali,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > FARAONE (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,660,651
+356,pesanti,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > GALLINE (prezzo base per Kg.) > a busto,EUR/kg,2016-01-08,2026-10-12,661,652
+357,leggere,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > GALLINE (prezzo base per Kg.) > a busto,EUR/kg,2016-01-08,2026-10-12,661,652
+358,tradizionali,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > FARAONE (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,661,652
 359,eviscerate senza frattaglie,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > TACCHINI (prezzo base per Kg.) > femmine,EUR/kg,2016-01-08,2017-01-13,46,45
 360,eviscerati senza frattaglie,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > TACCHINI (prezzo base per Kg.) > maschi,EUR/kg,2016-01-08,2017-01-13,46,45
-361,femmine tradizionali,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > ANITRE (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,660,651
-362,a busto,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > ANITRE (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,660,651
-363,petti con forcella,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > PARTI DI POLLO (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,660,651
-364,cosciotti,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > PARTI DI POLLO (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,660,651
-365,ali non separate,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > PARTI DI POLLO (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,660,651
-366,fesa,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > PARTI DI TACCHINO (prezzo base per Kg.) > femmine,EUR/kg,2016-01-08,2026-10-05,660,651
-367,cosce,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > PARTI DI TACCHINO (prezzo base per Kg.) > femmine,EUR/kg,2016-01-08,2026-10-05,660,651
-368,ali,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > PARTI DI TACCHINO (prezzo base per Kg.) > femmine,EUR/kg,2016-01-08,2026-10-05,660,651
-369,fesa,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > PARTI DI TACCHINO (prezzo base per Kg.) > maschi,EUR/kg,2016-01-08,2026-10-05,660,651
-370,cosce,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > PARTI DI TACCHINO (prezzo base per Kg.) > maschi,EUR/kg,2016-01-08,2026-10-05,660,651
-371,ali,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > PARTI DI TACCHINO (prezzo base per Kg.) > maschi,EUR/kg,2016-01-08,2026-10-05,660,651
-372,macellati freschi nazionali,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > CONIGLI (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-05,660,651
+361,femmine tradizionali,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > ANITRE (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,661,652
+362,a busto,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > ANITRE (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,661,652
+363,petti con forcella,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > PARTI DI POLLO (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,661,652
+364,cosciotti,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > PARTI DI POLLO (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,661,652
+365,ali non separate,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > PARTI DI POLLO (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,661,652
+366,fesa,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > PARTI DI TACCHINO (prezzo base per Kg.) > femmine,EUR/kg,2016-01-08,2026-10-12,661,652
+367,cosce,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > PARTI DI TACCHINO (prezzo base per Kg.) > femmine,EUR/kg,2016-01-08,2026-10-12,661,652
+368,ali,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > PARTI DI TACCHINO (prezzo base per Kg.) > femmine,EUR/kg,2016-01-08,2026-10-12,661,652
+369,fesa,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > PARTI DI TACCHINO (prezzo base per Kg.) > maschi,EUR/kg,2016-01-08,2026-10-12,661,652
+370,cosce,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > PARTI DI TACCHINO (prezzo base per Kg.) > maschi,EUR/kg,2016-01-08,2026-10-12,661,652
+371,ali,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > PARTI DI TACCHINO (prezzo base per Kg.) > maschi,EUR/kg,2016-01-08,2026-10-12,661,652
+372,macellati freschi nazionali,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > CONIGLI (prezzo base per Kg.),EUR/kg,2016-01-08,2026-10-12,661,652
 615,- Amarone e recioto produzione 2013 - d.o.c.g. classico,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro) > VALPOLICELLA,EUR/L,2016-01-15,2018-02-05,105,104
 616,- Amarone e recioto produzione 2013 - d.o.c.g.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro) > VALPOLICELLA,EUR/L,2016-01-15,2018-02-05,105,104
 617,- recioto e amarone zona D.O.C. (cons. appassita),UVA DA VINO > UVE APPASSITE (prezzo base per kg) > VALPOLICELLA,EUR/kg,2016-01-25,2021-04-19,56,46
@@ -378,28 +378,28 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 620,- d.o.c. classico atto a ripasso,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2015 > VALPOLICELLA (quotazione base per litro),EUR/L,2016-05-09,2017-01-30,35,33
 621,d.o.c.g. atto a Amarone e Recioto,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2015 ATTO A > AMARONE E RECIOTO VALPOLICELLA (quotazione base per litro),EUR/L,2016-06-13,2016-06-13,1,0
 622,d.o.c.g. classico atto a Amarone e Recioto,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2015 ATTO A > AMARONE E RECIOTO VALPOLICELLA (quotazione base per litro),EUR/L,2016-06-13,2016-06-13,1,0
-623,- terreni zona d.o.c.,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > BARDOLINO,EUR/kg,2016-08-22,2026-10-05,121,81
-624,- collina zona classica,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > BARDOLINO,EUR/kg,2016-08-22,2026-10-05,120,78
-625,- terreni zona d.o.c.,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > CUSTOZA,EUR/kg,2016-08-22,2026-10-05,126,94
-626,"- terreni zona D.O.C. ( babo min. 15,30)",UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > VALPOLICELLA,EUR/kg,2016-08-22,2026-10-05,124,95
-627,"- terreni zona classica ( babo min. 15,30)",UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > VALPOLICELLA,EUR/kg,2016-08-22,2026-10-05,124,94
-628,- recioto e amarone  zona D.O.C. (cons.fresca in plateaux),UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > VALPOLICELLA,EUR/kg,2016-08-22,2026-10-05,123,97
-629,- recioto e amarone  zona Classica (cons. fresca in plateaux),UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > VALPOLICELLA,EUR/kg,2016-08-22,2026-10-05,123,96
-630,- terreni zona D.O.C.,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > SOAVE,EUR/kg,2016-08-22,2026-10-05,118,73
-631,"- zona classica (base babo 16,5)",UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > SOAVE,EUR/kg,2016-08-22,2026-10-05,114,56
+623,- terreni zona d.o.c.,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > BARDOLINO,EUR/kg,2016-08-22,2026-10-12,122,82
+624,- collina zona classica,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > BARDOLINO,EUR/kg,2016-08-22,2026-10-12,121,79
+625,- terreni zona d.o.c.,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > CUSTOZA,EUR/kg,2016-08-22,2026-10-12,127,95
+626,"- terreni zona D.O.C. ( babo min. 15,30)",UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > VALPOLICELLA,EUR/kg,2016-08-22,2026-10-12,125,96
+627,"- terreni zona classica ( babo min. 15,30)",UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > VALPOLICELLA,EUR/kg,2016-08-22,2026-10-12,125,95
+628,- recioto e amarone  zona D.O.C. (cons.fresca in plateaux),UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > VALPOLICELLA,EUR/kg,2016-08-22,2026-10-12,124,98
+629,- recioto e amarone  zona Classica (cons. fresca in plateaux),UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > VALPOLICELLA,EUR/kg,2016-08-22,2026-10-12,124,97
+630,- terreni zona D.O.C.,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > SOAVE,EUR/kg,2016-08-22,2026-10-12,119,74
+631,"- zona classica (base babo 16,5)",UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > SOAVE,EUR/kg,2016-08-22,2026-10-12,115,57
 632,- bianca,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > VALDADIGE,EUR/kg,2016-08-22,2022-09-12,69,30
 633,- nera,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > VALDADIGE,EUR/kg,2016-08-22,2022-09-12,68,28
-634,- pinot grigio,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > VALDADIGE,EUR/kg,2016-08-22,2026-10-05,128,107
-635,- terreni zona d.o.c.,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > LUGANA,EUR/kg,2016-08-22,2026-10-05,123,89
-636,- d.o.c.,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > DURELLO,EUR/kg,2016-08-22,2026-10-05,92,34
-637,- Chardonnay,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A I.G.T.,EUR/kg,2016-08-22,2026-10-05,127,104
+634,- pinot grigio,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > VALDADIGE,EUR/kg,2016-08-22,2026-10-12,129,108
+635,- terreni zona d.o.c.,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > LUGANA,EUR/kg,2016-08-22,2026-10-12,124,90
+636,- d.o.c.,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > DURELLO,EUR/kg,2016-08-22,2026-10-12,93,34
+637,- Chardonnay,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A I.G.T.,EUR/kg,2016-08-22,2026-10-12,128,105
 638,- Pinot bianco,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A I.G.T.,EUR/kg,2016-08-22,2021-09-06,59,33
 639,- Pinot grigio,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A I.G.T.,EUR/kg,2016-08-22,2021-08-23,49,9
-640,- Cabernet sauvignon,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A I.G.T.,EUR/kg,2016-08-22,2026-10-05,118,63
-641,- Merlot,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A I.G.T.,EUR/kg,2016-08-22,2026-10-05,121,76
-642,- bianco Verona,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A I.G.T.,EUR/kg,2016-08-22,2026-10-05,118,70
-643,- rosso Verona,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A I.G.T.,EUR/kg,2016-08-22,2026-10-05,116,63
-644,- bianco,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A V.D.T.,EUR/kg,2016-08-22,2026-10-05,106,30
+640,- Cabernet sauvignon,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A I.G.T.,EUR/kg,2016-08-22,2026-10-12,119,64
+641,- Merlot,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A I.G.T.,EUR/kg,2016-08-22,2026-10-12,122,77
+642,- bianco Verona,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A I.G.T.,EUR/kg,2016-08-22,2026-10-12,119,71
+643,- rosso Verona,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A I.G.T.,EUR/kg,2016-08-22,2026-10-12,117,64
+644,- bianco,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A V.D.T.,EUR/kg,2016-08-22,2026-10-12,107,30
 645,- pinot grigio veneto - base 12 (prezzo E/litro),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2016 > VINI I.G.T. Verona (quotazione base per 1 grado/100 litri),EUR/L,2016-10-03,2017-11-27,57,50
 646,- d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2016 > BARDOLINO (quotazione base per litro),EUR/L,2016-11-07,2017-09-25,42,21
 647,- d.o.c. classico,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2016 > BARDOLINO (quotazione base per litro),EUR/L,2016-11-07,2017-09-25,42,21
@@ -424,16 +424,16 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 666,- pinot bianco (gr. 12 prezzo E/litro),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2016 > VINI I.G.T. Verona (quotazione base per 1 grado/100 litri),EUR/L,2016-11-07,2017-09-25,42,19
 667,- rosso,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2016 > VINO DA TAVOLA (quotazione base per 1 grado/100 litri),EUR/grado-hL,2016-11-07,2017-09-18,41,19
 668,- bianco,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2016 > VINO DA TAVOLA (quotazione base per 1 grado/100 litri),EUR/grado-hL,2016-11-07,2017-09-18,41,23
-669,- rosso,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A V.D.T.,EUR/kg,2016-10-10,2026-10-05,96,17
-670,per olio d'oliva Extra Vergine d.o.p. (* resa 11-14),OLII (prezzo base per Tonnellata) > OLIVE CERTIFICATE (prezzo per Kilogrammo) > Veneto Valpolicella d.o.p.,EUR/kg,2016-10-17,2026-10-05,482,76
-671,per olio d'oliva Extra Vergine d.o.p. (* resa 15-17),OLII (prezzo base per Tonnellata) > OLIVE CERTIFICATE (prezzo per Kilogrammo) > Veneto Valpolicella d.o.p.,EUR/kg,2016-11-21,2026-10-05,466,37
-672,di colza estera gen. modificata (f.co partenza),MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-11-21,2026-10-05,590,460
+669,- rosso,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A V.D.T.,EUR/kg,2016-10-10,2026-10-12,97,17
+670,per olio d'oliva Extra Vergine d.o.p. (* resa 11-14),OLII (prezzo base per Tonnellata) > OLIVE CERTIFICATE (prezzo per Kilogrammo) > Veneto Valpolicella d.o.p.,EUR/kg,2016-10-17,2026-10-12,483,76
+671,per olio d'oliva Extra Vergine d.o.p. (* resa 15-17),OLII (prezzo base per Tonnellata) > OLIVE CERTIFICATE (prezzo per Kilogrammo) > Veneto Valpolicella d.o.p.,EUR/kg,2016-11-21,2026-10-12,467,37
+672,di colza estera gen. modificata (f.co partenza),MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2016-11-21,2026-10-12,591,460
 673,- d.o.c. atto a superiore (gr. 12/13),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2016 > VALPOLICELLA (quotazione base per litro),EUR/L,2016-11-28,2019-01-21,103,43
-674,Polli,Prodotti avicunicoli a peso vivo > POLLI (prezzo base per Kg.),EUR/kg,2017-01-13,2026-10-05,615,606
-675,tacchini,Prodotti avicunicoli a peso vivo > TACCHINI (prezzo base per Kg.),EUR/kg,2017-01-13,2026-10-05,615,606
-676,tradizionali,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > POLLI (prezzo base per Kg.),EUR/kg,2017-01-13,2026-10-05,615,606
-677,leggere,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > GALLINE (prezzo base per Kg.) > tradizionali,EUR/kg,2017-01-13,2026-10-05,615,606
-678,a busto,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > TACCHINI (prezzo base per Kg.),EUR/kg,2017-01-13,2026-10-05,615,606
+674,Polli,Prodotti avicunicoli a peso vivo > POLLI (prezzo base per Kg.),EUR/kg,2017-01-13,2026-10-12,616,607
+675,tacchini,Prodotti avicunicoli a peso vivo > TACCHINI (prezzo base per Kg.),EUR/kg,2017-01-13,2026-10-12,616,607
+676,tradizionali,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > POLLI (prezzo base per Kg.),EUR/kg,2017-01-13,2026-10-12,616,607
+677,leggere,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > GALLINE (prezzo base per Kg.) > tradizionali,EUR/kg,2017-01-13,2026-10-12,616,607
+678,a busto,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > TACCHINI (prezzo base per Kg.),EUR/kg,2017-01-13,2026-10-12,616,607
 679,- Amarone e recioto produzione 2014 - d.o.c.g.,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro) > VALPOLICELLA,EUR/L,2017-01-23,2018-09-15,97,96
 680,- Amarone e recioto produzione 2014 - d.o.c.g. classico,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro) > VALPOLICELLA,EUR/L,2017-01-23,2018-09-15,97,96
 681,- d.o.c.  ripasso,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2015 > VALPOLICELLA (quotazione base per litro),EUR/L,2017-01-23,2017-11-30,44,43
@@ -471,24 +471,24 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 713,- pinot grigio veneto - base 12 (prezzo E/litro),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2017 > VINI I.G.T. Verona (quotazione base per 1 grado/100 litri),EUR/L,2017-10-02,2017-10-09,2,0
 714,- rosso,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2017 > VINO DA TAVOLA (quotazione base per 1 grado/100 litri),EUR/grado-hL,2017-10-02,2018-09-10,45,0
 715,- bianco,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2017 > VINO DA TAVOLA (quotazione base per 1 grado/100 litri),EUR/grado-hL,2017-10-02,2018-09-10,63,60
-716,XL grandissime da 73 gr. e più,"Prodotti avicunicoli a peso vivo > UOVA (prezzo base per 100) > fresche cat ""A"": Provenienti da ALLEVAMENTI A TERRA",EUR/100pz,2017-07-28,2026-10-05,589,580
-717,L grandi da 63 a 72 gr.,"Prodotti avicunicoli a peso vivo > UOVA (prezzo base per 100) > fresche cat ""A"": Provenienti da ALLEVAMENTI A TERRA",EUR/100pz,2017-07-28,2026-10-05,589,580
-718,M medie da 53 a 62 gr.,"Prodotti avicunicoli a peso vivo > UOVA (prezzo base per 100) > fresche cat ""A"": Provenienti da ALLEVAMENTI A TERRA",EUR/100pz,2017-07-28,2026-10-05,589,580
-719,S piccole meno di 53 gr.,"Prodotti avicunicoli a peso vivo > UOVA (prezzo base per 100) > fresche cat ""A"": Provenienti da ALLEVAMENTI A TERRA",EUR/100pz,2017-07-28,2026-10-05,589,580
+716,XL grandissime da 73 gr. e più,"Prodotti avicunicoli a peso vivo > UOVA (prezzo base per 100) > fresche cat ""A"": Provenienti da ALLEVAMENTI A TERRA",EUR/100pz,2017-07-28,2026-10-12,590,581
+717,L grandi da 63 a 72 gr.,"Prodotti avicunicoli a peso vivo > UOVA (prezzo base per 100) > fresche cat ""A"": Provenienti da ALLEVAMENTI A TERRA",EUR/100pz,2017-07-28,2026-10-12,590,581
+718,M medie da 53 a 62 gr.,"Prodotti avicunicoli a peso vivo > UOVA (prezzo base per 100) > fresche cat ""A"": Provenienti da ALLEVAMENTI A TERRA",EUR/100pz,2017-07-28,2026-10-12,590,581
+719,S piccole meno di 53 gr.,"Prodotti avicunicoli a peso vivo > UOVA (prezzo base per 100) > fresche cat ""A"": Provenienti da ALLEVAMENTI A TERRA",EUR/100pz,2017-07-28,2026-10-12,590,581
 720,d.o.c.,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > GARDA DOC,EUR/kg,2017-10-02,2017-10-23,4,0
 721,doc classico,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > GARDA DOC,EUR/kg,2017-10-02,2017-10-23,4,0
-722,- bianco,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > DOC DELLE VENEZIE,EUR/kg,2017-08-21,2026-10-05,109,71
-723,- pinot grigio (base 17 babo),UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > DOC DELLE VENEZIE,EUR/kg,2017-08-21,2026-10-05,118,110
-724,- bianco,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > GARDA DOC,EUR/kg,2017-08-21,2026-10-05,108,67
-725,- chardonnay,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > GARDA DOC,EUR/kg,2017-08-21,2026-10-05,118,104
-726,- pinot grigio  (base 17 babo),UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > GARDA DOC,EUR/kg,2017-08-21,2026-10-05,118,109
-727,Ad uso energetico,CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2017-08-21,2026-10-05,433,31
+722,- bianco,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > DOC DELLE VENEZIE,EUR/kg,2017-08-21,2026-10-12,110,72
+723,- pinot grigio (base 17 babo),UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > DOC DELLE VENEZIE,EUR/kg,2017-08-21,2026-10-12,119,111
+724,- bianco,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > GARDA DOC,EUR/kg,2017-08-21,2026-10-12,109,68
+725,- chardonnay,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > GARDA DOC,EUR/kg,2017-08-21,2026-10-12,119,105
+726,- pinot grigio  (base 17 babo),UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > GARDA DOC,EUR/kg,2017-08-21,2026-10-12,119,110
+727,Ad uso energetico,CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2017-08-21,2026-10-12,434,32
 728,- pinot grigio,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2018 > DOC DELLE VENEZIE (quotazione base per litro),EUR/L,2017-09-11,2019-09-30,119,114
 729,- bianco,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2017 > DOC DELLE VENEZIE (quotazione base per litro),EUR/L,2017-09-18,2018-09-10,65,63
-731,"""Formaggio fuori sale"" atto a divenire Grana Padano",PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Grana Padano,EUR/kg,2018-01-08,2026-10-05,579,576
-732,Stagionato 10/12 mesi,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Grana Padano,EUR/kg,2018-01-08,2026-10-05,579,576
-733,Stagionato oltre 15 mesi,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Grana Padano,EUR/kg,2018-01-08,2026-10-05,579,576
-734,Stagionato oltre 20 mesi,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Grana Padano,EUR/kg,2018-01-08,2026-10-05,579,576
+731,"""Formaggio fuori sale"" atto a divenire Grana Padano",PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Grana Padano,EUR/kg,2018-01-08,2026-10-12,580,577
+732,Stagionato 10/12 mesi,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Grana Padano,EUR/kg,2018-01-08,2026-10-12,580,577
+733,Stagionato oltre 15 mesi,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Grana Padano,EUR/kg,2018-01-08,2026-10-12,580,577
+734,Stagionato oltre 20 mesi,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Grana Padano,EUR/kg,2018-01-08,2026-10-12,580,577
 735,- Amarone e recioto produzione 2015 - d.o.c.g. classico,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro) > VALPOLICELLA,EUR/L,2018-02-05,2020-07-06,164,159
 736,- Amarone e recioto produzione 2015 - d.o.c.g.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro) > VALPOLICELLA,EUR/L,2018-02-05,2020-07-06,164,159
 737,- d.o.c. atto a ripasso,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2017 > VALPOLICELLA (quotazione base per litro),EUR/L,2018-02-26,2020-07-06,160,155
@@ -500,7 +500,7 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 744,- bianco (gr. 12),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2018 > DOC DELLE VENEZIE (quotazione base per litro),EUR/L,2018-10-08,2019-09-30,58,36
 745,- pinot grigio,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2018 > VALDADIGE (quotazione base per litro),EUR/L,2018-10-08,2019-09-30,64,55
 746,- bianco,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2018 > VINO DA TAVOLA (quotazione base per 1 grado/100 litri),EUR/grado-hL,2018-10-08,2019-01-30,16,8
-747,per olio d'oliva Extra Vergine d.o.p. (* resa 7 -10),OLII (prezzo base per Tonnellata) > OLIVE CERTIFICATE (prezzo per Kilogrammo) > Veneto Valpolicella d.o.p.,EUR/kg,2018-10-08,2026-10-05,382,43
+747,per olio d'oliva Extra Vergine d.o.p. (* resa 7 -10),OLII (prezzo base per Tonnellata) > OLIVE CERTIFICATE (prezzo per Kilogrammo) > Veneto Valpolicella d.o.p.,EUR/kg,2018-10-08,2026-10-12,383,43
 748,- d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2018 > BARDOLINO (quotazione base per litro),EUR/L,2018-10-15,2019-10-14,68,66
 749,- d.o.c. chiaretto,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2018 > BARDOLINO (quotazione base per litro),EUR/L,2018-10-15,2019-10-14,68,66
 750,- d.o.c. classico,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2018 > BARDOLINO (quotazione base per litro),EUR/L,2018-10-15,2019-10-14,68,66
@@ -554,8 +554,8 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 799,Stagionato con maturazione 2-3 mesi,PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Asiago DOP,EUR/kg,2020-01-13,2020-09-14,34,4
 800,"Stagionato ""Mezzano"" con almeno 4 mesi di maturazione fino a un massimo di 6 mesi",PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Asiago DOP,EUR/kg,2020-01-13,2020-09-14,32,0
 801,"Stagionato ""Vecchio"" con almeno 10 mesi di maturazione fino a un massimo di 14 mesi",PRODOTTI CASEARI (prezzo base per Kg.) > FORMAGGI > Asiago DOP,EUR/kg,2020-01-13,2020-09-14,32,0
-802,Panna di centrifuga 40% M.G. (nazionale),LATTE SPOT (prezzo base per tonnellata) > in cisterna - franco arrivo,EUR/t,2020-01-20,2026-10-05,441,438
-803,Panna di centrifuga 40% M.G. (U.E.),LATTE SPOT (prezzo base per tonnellata) > in cisterna - franco arrivo,EUR/t,2020-01-20,2026-10-05,441,438
+802,Panna di centrifuga 40% M.G. (nazionale),LATTE SPOT (prezzo base per tonnellata) > in cisterna - franco arrivo,EUR/t,2020-01-20,2026-10-12,442,439
+803,Panna di centrifuga 40% M.G. (U.E.),LATTE SPOT (prezzo base per tonnellata) > in cisterna - franco arrivo,EUR/t,2020-01-20,2026-10-12,442,439
 804,- Atto a Amarone e recioto produzione 2018 - d.o.c.g.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro) > VALPOLICELLA,EUR/L,2020-07-06,2021-06-07,61,58
 805,- Atto a Amarone e recioto produzione 2018 - d.o.c.g. classico,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro) > VALPOLICELLA,EUR/L,2020-07-06,2021-06-07,53,34
 806,- d.o.c. classico atto a ripasso,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2019 > VALPOLICELLA (prezzo E/litro),EUR/L,2020-09-28,2022-01-30,87,87
@@ -587,8 +587,8 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 832,- bianco,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2020 > VINO DA TAVOLA (quotazione base per 1 grado/100 litri),EUR/grado-hL,2020-10-12,2021-10-11,63,54
 833,d.o.c. chardonnay (prezzo E/litro),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2020 > GARDA (quotazione base per 1 grado/100 litri),EUR/L,2020-11-09,2021-10-11,59,53
 834,d.o.c. bianco,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2020 > GARDA (quotazione base per 1 grado/100 litri),EUR/grado-hL,2020-11-09,2021-10-11,59,53
-835,Galletti eviscerati inf. a  750 g,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > GALLETTI (prezzo base per Kg.),EUR/kg,2021-01-08,2026-10-05,372,367
-836,a busto,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > FARAONE (prezzo base per Kg.),EUR/kg,2021-01-08,2026-10-05,372,367
+835,Galletti eviscerati inf. a  750 g,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > GALLETTI (prezzo base per Kg.),EUR/kg,2021-01-08,2026-10-12,373,368
+836,a busto,Prodotti avicunicoli macellati naz.li freschi 'Classe A' > FARAONE (prezzo base per Kg.),EUR/kg,2021-01-08,2026-10-12,373,368
 837,- bianco,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2020 > DOC DELLE VENEZIE (quotazione base per litro),EUR/L,2021-02-22,2021-10-11,42,36
 838,- Amarone e recioto produzione  2018 - d.o.c.g. classico,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro) > VALPOLICELLA,EUR/L,2021-06-07,2022-09-30,85,85
 839,- Amarone e recioto produzione  2018 - d.o.c.g.,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro) > VALPOLICELLA,EUR/L,2021-06-07,2022-09-30,85,85
@@ -635,13 +635,13 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 882,- Soave,Uve/Vino > PRODUZIONE BIOLOGICA 2021  (prezzo E/litro),EUR/L,2022-02-28,2023-01-30,60,60
 883,- Pinot grigio delle venezie,Uve/Vino > PRODUZIONE BIOLOGICA 2021  (prezzo E/litro),EUR/L,2022-02-28,2023-01-30,60,60
 884,- Valpolicella d.o.c  classico,Uve/Vino > PRODUZIONE BIOLOGICA 2021  (prezzo E/litro),EUR/L,2022-02-28,2023-01-30,60,60
-885,- Uve atte a doc Bardolino,UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2022-09-12,2026-10-05,45,24
-886,- Uve atte a doc Custoza,UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2022-09-12,2026-10-05,46,31
-887,- Uve atte a pinot grigio doc delle Venezie,UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2022-09-12,2026-10-05,49,41
+885,- Uve atte a doc Bardolino,UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2022-09-12,2026-10-12,46,25
+886,- Uve atte a doc Custoza,UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2022-09-12,2026-10-12,47,32
+887,- Uve atte a pinot grigio doc delle Venezie,UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2022-09-12,2026-10-12,50,42
 888,- d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2021 > BARDOLINO (quotazione base per litro)COPIA,EUR/L,2022-09-12,2022-09-12,1,0
 889,- d.o.c. chiaretto,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2021 > BARDOLINO (quotazione base per litro)COPIA,EUR/L,2022-09-12,2022-09-12,1,0
 890,- d.o.c. classico,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2021 > BARDOLINO (quotazione base per litro)COPIA,EUR/L,2022-09-12,2022-09-12,1,0
-891,Ibrido alimentare (comunitario),CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2022-09-19,2026-10-05,199,42
+891,Ibrido alimentare (comunitario),CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2022-09-19,2026-10-12,200,42
 892,- d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2022 > BARDOLINO (prezzo E/litro),EUR/L,2022-09-26,2023-10-23,65,52
 893,- d.o.c. chiaretto,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2022 > BARDOLINO (prezzo E/litro),EUR/L,2022-09-26,2023-10-23,65,52
 894,- d.o.c. classico,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2022 > BARDOLINO (prezzo E/litro),EUR/L,2022-09-26,2023-10-23,65,52
@@ -676,13 +676,13 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 929,- Valpolicella d.o.c  classico,PRODUZIONE BIOLOGICA 2022 (prezzo E/litro),EUR/L,2022-10-17,2022-10-17,1,0
 930,- Atto a Amarone e recioto produzione 2021 d.o.c.g.,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro) > VALPOLICELLA,EUR/L,2022-11-21,2024-01-30,68,52
 931,-  Atto a Amarone e recioto produzione 2021 d.o.c.g. classico,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro) > VALPOLICELLA,EUR/L,2022-11-21,2024-01-30,68,48
-932,Semi di soia esteri geneticamente modificati ( f.co arrivo ),SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2022-11-21,2026-10-05,192,45
+932,Semi di soia esteri geneticamente modificati ( f.co arrivo ),SEMI OLEOSI (prezzo base per Tonnellata),EUR/t,2022-11-21,2026-10-12,193,45
 933,-Valpolicella doc classico,PRODUZIONE BIOLOGICA 2022 (prezzo E/litro),EUR/L,2023-01-23,2023-10-02,42,33
 934,-Soave,PRODUZIONE BIOLOGICA 2022 (prezzo E/litro),EUR/L,2023-01-23,2023-10-02,42,32
 935,- rosso veronese gr. 13/14 (prezzo E/litro),Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2022 > VINI I.G.T. Verona,EUR/L,2023-01-23,2024-09-30,105,93
-936,Latte Spot biologico nazionale,LATTE SPOT (prezzo base per tonnellata) > in cisterna - franco arrivo,EUR/t,2023-01-30,2026-10-05,243,242
+936,Latte Spot biologico nazionale,LATTE SPOT (prezzo base per tonnellata) > in cisterna - franco arrivo,EUR/t,2023-01-30,2026-10-12,244,243
 937,- rosso veneto passito 15/16 (prezzo E/litro),Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2022 > VINI I.G.T. Verona,EUR/L,2023-02-13,2024-09-30,101,90
-938,"Grano  Panificabile Sup. (Wmn 250, P/L mx 0.50, p.s. 78, glut 28%, imp 1%, prot. 13 min / 13,5 )",CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE NAZIONALE,EUR/t,2023-06-26,2026-10-05,215,206
+938,"Grano  Panificabile Sup. (Wmn 250, P/L mx 0.50, p.s. 78, glut 28%, imp 1%, prot. 13 min / 13,5 )",CEREALI (prezzo base per Tonnellata) > GRANO TENERO DI PRODUZIONE NAZIONALE,EUR/t,2023-06-26,2026-10-12,216,207
 942,- d.o.c.,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2023 > BARDOLINO (prezzo E/litro),EUR/L,2023-10-02,2024-09-30,64,60
 943,- d.o.c. chiaretto,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2023 > BARDOLINO (prezzo E/litro),EUR/L,2023-10-02,2024-09-30,64,62
 944,- d.o.c. classico,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2023 > BARDOLINO (prezzo E/litro),EUR/L,2023-10-02,2024-09-30,64,62
@@ -713,8 +713,8 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 973,- bianco,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2023 > VINO DA TAVOLA (quotazione base per 1 grado/100 litri),EUR/grado-hL,2023-10-02,2024-09-16,60,48
 974,- Uve terreni zona D.O.C.,UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2023-10-09,2024-09-23,10,0
 975,- Uve zona classica,UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2023-10-09,2024-09-23,10,0
-976,- Uve atte a Valpolicella D.O.C.,UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2023-10-09,2026-10-05,27,4
-977,- Uve recioto e amarone (cons. fresca in plateaux),UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2023-10-09,2026-10-05,27,4
+976,- Uve atte a Valpolicella D.O.C.,UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2023-10-09,2026-10-12,28,5
+977,- Uve recioto e amarone (cons. fresca in plateaux),UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2023-10-09,2026-10-12,28,5
 978,- Atto a Amarone d.o.c.g. classico,PRODUZIONE BIOLOGICA 2023  (prezzo E/litro),EUR/L,2023-11-13,2023-11-13,1,0
 979,- Valpolicella  superiore atto a ripasso classico,PRODUZIONE BIOLOGICA 2023  (prezzo E/litro),EUR/L,2023-11-13,2023-11-13,1,0
 981,- Pinot grigio delle venezie,PRODUZIONE BIOLOGICA 2023  (prezzo E/litro),EUR/L,2023-11-13,2025-05-12,92,74
@@ -729,24 +729,24 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 991,- Amarone e recioto produzione 2021 d.o.c.g. classico,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro),EUR/L,2024-01-29,2026-02-28,139,139
 992,- Atto a Amarone 2022,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro),EUR/L,2024-01-29,2025-02-28,73,71
 993,- Atto a Amarone  classico 2022,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro),EUR/L,2024-01-29,2025-02-28,73,71
-994,di soia proteica est./naz. geneticamente modificata alto proteine 48%,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2024-02-12,2026-10-05,176,176
+994,di soia proteica est./naz. geneticamente modificata alto proteine 48%,MANGIMI (prezzo base per Tonnellata) > Farine di estrazione,EUR/t,2024-02-12,2026-10-12,177,177
 995,-d.o.c. ripasso 2022,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2023 > VALPOLICELLA (prezzo E/litro),EUR/L,2024-02-19,2024-02-19,1,0
 996,- d.o.c. classico ripasso 2022,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > VALPOLICELLA  RIPASSO,EUR/L,2024-02-19,2026-09-30,172,171
 997,- d.o.c. ripasso 2022,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > VALPOLICELLA  RIPASSO,EUR/L,2024-02-19,2026-09-30,172,171
 998,- d.o.c. atto a ripasso 2023,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > VALPOLICELLA  RIPASSO,EUR/L,2024-02-19,2025-02-28,67,63
 999,- d.o.c. classico atto a ripasso 2023,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > VALPOLICELLA  RIPASSO,EUR/L,2024-02-19,2025-02-28,61,44
 1000,- Soave classico,Uve/Vino > PRODUZIONE BIOLOGICA 2023  (prezzo E/litro),EUR/L,2024-02-19,2024-11-15,49,49
-1001,Latte crudo alla stalla Verona,PRODOTTI CASEARI (prezzo base per Kg.) > LATTE ALLA STALLA (prezzo euro/1000 litri ) > Partenza più qualità,EUR/1000L,2024-03-04,2026-10-05,171,171
-1002,Latte crudo alla stalla  certificato per prodotti d.o.p.,PRODOTTI CASEARI (prezzo base per Kg.) > LATTE ALLA STALLA (prezzo euro/1000 litri ) > Partenza più qualità,EUR/1000L,2024-03-04,2026-10-05,171,171
+1001,Latte crudo alla stalla Verona,PRODOTTI CASEARI (prezzo base per Kg.) > LATTE ALLA STALLA (prezzo euro/1000 litri ) > Partenza più qualità,EUR/1000L,2024-03-04,2026-10-12,172,172
+1002,Latte crudo alla stalla  certificato per prodotti d.o.p.,PRODOTTI CASEARI (prezzo base per Kg.) > LATTE ALLA STALLA (prezzo euro/1000 litri ) > Partenza più qualità,EUR/1000L,2024-03-04,2026-10-12,172,172
 1003,- doc classico Ripasso,Uve/Vino > PRODUZIONE BIOLOGICA 2022 (prezzo E/litro),EUR/L,2024-03-15,2025-05-15,70,43
-1004,- Atto a Amarone 2023,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro),EUR/L,2024-07-15,2026-10-05,146,146
-1005,- Atto a Amarone classico 2023,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro),EUR/L,2024-07-15,2026-10-05,146,146
-1006,Trinciato di granturco 1° raccolto in piedi - Umidità 65-68% - Amido 30- 32%,FORAGGI (prezzo base per Tonnellata),EUR/t,2024-07-29,2026-10-05,106,14
-1007,Trinciato di granturco 2° raccolto in piedi - Umidità 65-68 % - Amido 30-32%,FORAGGI (prezzo base per Tonnellata),EUR/t,2024-08-26,2026-10-05,102,15
-1008,- Uva rossa consegnata fresca in plateau,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A I.G.T.,EUR/kg,2024-09-09,2026-10-05,22,6
+1004,- Atto a Amarone 2023,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro),EUR/L,2024-07-15,2026-10-12,147,147
+1005,- Atto a Amarone classico 2023,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro),EUR/L,2024-07-15,2026-10-12,147,147
+1006,Trinciato di granturco 1° raccolto in piedi - Umidità 65-68% - Amido 30- 32%,FORAGGI (prezzo base per Tonnellata),EUR/t,2024-07-29,2026-10-12,107,14
+1007,Trinciato di granturco 2° raccolto in piedi - Umidità 65-68 % - Amido 30-32%,FORAGGI (prezzo base per Tonnellata),EUR/t,2024-08-26,2026-10-12,103,15
+1008,- Uva rossa consegnata fresca in plateau,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > ATTE A I.G.T.,EUR/kg,2024-09-09,2026-10-12,23,7
 1009,- pinot grigio,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2024 > DOC DELLE VENEZIE (prezzo E/litro),EUR/L,2024-09-23,2025-09-29,69,67
 1010,- bianco,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2024 > DOC DELLE VENEZIE (prezzo E/litro),EUR/L,2024-09-23,2025-09-30,70,70
-1011,Ibrido farinoso Nazionale e/o Comunitario  con garanzie - Aflatossina B1 max. 3 ppb - Deossinivalenolo DON max. 3.000 ppb,CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2024-09-30,2026-10-05,133,131
+1011,Ibrido farinoso Nazionale e/o Comunitario  con garanzie - Aflatossina B1 max. 3 ppb - Deossinivalenolo DON max. 3.000 ppb,CEREALI (prezzo base per Tonnellata) > GRANTURCO,EUR/t,2024-09-30,2026-10-12,134,132
 1012,- pinot grigio,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2023 > VALDADIGE (prezzo E/litro)_copia,EUR/L,2024-10-07,2024-10-07,1,0
 1015,- pinot grigio,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2024 > VALDADIGE (prezzo €/litro),EUR/L,2024-10-07,2025-09-29,61,43
 1016,- bianco,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2024 > VINO DA TAVOLA (quotazione base per 1 grado/100 litri),EUR/grado-hL,2024-10-07,2025-10-06,64,50
@@ -779,26 +779,26 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 1050,- d.o.c. atto a superiore classico,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2024 > VALPOLICELLA (prezzo E/litro),EUR/L,2024-11-18,2026-08-31,116,114
 1052,-  Uva appassita atta a produrre Amarone  ( calcolata sul peso fresco),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2024 > UVA  APPASSITA 2024,EUR/kg,2024-12-02,2025-04-14,19,5
 1053,- Lugana d.o.c.,Uve/Vino > PRODUZIONE BIOLOGICA 2024 (Prezzo € / litro),EUR/L,2024-12-02,2026-01-30,75,75
-1054,atto a Nano Vialone Veronese  IGP  ( resa 56 ) *,CEREALI (prezzo base per Tonnellata) > RISONI,EUR/t,2024-12-09,2026-10-05,87,8
-1055,Nano Vialone Veronese IGP  *,CEREALI (prezzo base per Tonnellata) > RISI,EUR/t,2024-12-09,2026-10-05,105,91
-1056,- Atto a Amarone 2024,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro),EUR/L,2025-01-13,2026-10-05,107,90
-1057,- Atto a Amarone classico 2024,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro),EUR/L,2025-01-13,2026-10-05,107,90
-1058,d.o.c. atto a ripasso 2024,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > VALPOLICELLA  RIPASSO,EUR/L,2025-01-13,2026-10-05,99,62
-1059,d.o.c. classico atto a ripasso 2024,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > VALPOLICELLA  RIPASSO,EUR/L,2025-01-13,2026-10-05,99,62
+1054,atto a Nano Vialone Veronese  IGP  ( resa 56 ) *,CEREALI (prezzo base per Tonnellata) > RISONI,EUR/t,2024-12-09,2026-10-12,88,8
+1055,Nano Vialone Veronese IGP  *,CEREALI (prezzo base per Tonnellata) > RISI,EUR/t,2024-12-09,2026-10-12,106,91
+1056,- Atto a Amarone 2024,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro),EUR/L,2025-01-13,2026-10-12,108,91
+1057,- Atto a Amarone classico 2024,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro),EUR/L,2025-01-13,2026-10-12,108,91
+1058,d.o.c. atto a ripasso 2024,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > VALPOLICELLA  RIPASSO,EUR/L,2025-01-13,2026-10-12,100,63
+1059,d.o.c. classico atto a ripasso 2024,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > VALPOLICELLA  RIPASSO,EUR/L,2025-01-13,2026-10-12,100,63
 1060,- garganega veronese (quotazione base per 1 grado/100 litri),Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2024 > VINI I.G.T. Verona,EUR/grado-hL,2025-01-13,2025-10-15,51,50
 1061,- chardonnay (quotazione base per 1 grado/100 litri),Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2024 > VINI I.G.T. Verona,EUR/grado-hL,2025-01-13,2025-10-15,51,50
-1062,d.o.c. ripasso 2023,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > VALPOLICELLA  RIPASSO,EUR/L,2025-02-17,2026-10-05,108,108
-1063,d.o.c.classico  ripasso 2023,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > VALPOLICELLA  RIPASSO,EUR/L,2025-02-17,2026-10-05,108,108
+1062,d.o.c. ripasso 2023,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > VALPOLICELLA  RIPASSO,EUR/L,2025-02-17,2026-10-12,109,109
+1063,d.o.c.classico  ripasso 2023,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > VALPOLICELLA  RIPASSO,EUR/L,2025-02-17,2026-10-12,109,109
 1064,- Amarone 2022,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro),EUR/L,2025-02-24,2026-09-30,104,103
 1065,- Amarone classico 2022,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > AMARONE E RECIOTO (prezzo E/litro),EUR/L,2025-02-24,2026-09-30,104,103
 1066,- moscato  ( prezzo € /litro),Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2024 > VINI I.G.T. Verona,EUR/L,2025-02-24,2025-10-15,43,43
-1067,- MC Rettificato ( Alcol potenziale /100 Kg  f.co arrivo),MOSTI CONCENTRATI,EUR/grado-100kg,2025-02-24,2026-10-05,106,105
+1067,- MC Rettificato ( Alcol potenziale /100 Kg  f.co arrivo),MOSTI CONCENTRATI,EUR/grado-100kg,2025-02-24,2026-10-12,107,106
 1068,- Amarone d.o.c.g.,PRODUZIONE BIOLOGICA 2022 (prezzo E/litro),EUR/L,2025-05-12,2026-09-14,62,0
 1069,- Amarone d.o.c.g.,Uve/Vino > PRODUZIONE BIOLOGICA 2021  (prezzo E/litro),EUR/L,2025-05-12,2026-09-15,88,88
 1070,- Valpolicella superiore atto a ripasso,PRODUZIONE BIOLOGICA 2021  (prezzo E/litro),EUR/L,2025-05-12,2026-02-02,34,0
-1071,Valpolicella d.o.c. atto a superiore,PRODUZIONE BIOLOGICA 2024 (Prezzo € / litro),EUR/L,2025-05-12,2026-10-05,92,92
+1071,Valpolicella d.o.c. atto a superiore,PRODUZIONE BIOLOGICA 2024 (Prezzo € / litro),EUR/L,2025-05-12,2026-10-12,93,93
 1072,- doc Ripasso,PRODUZIONE BIOLOGICA 2022 (prezzo E/litro),EUR/L,2025-05-19,2026-09-14,61,0
-1073,- Valpolicella d.o.c.,PRODUZIONE BIOLOGICA 2024 (Prezzo € / litro),EUR/L,2025-05-19,2026-10-05,90,90
+1073,- Valpolicella d.o.c.,PRODUZIONE BIOLOGICA 2024 (Prezzo € / litro),EUR/L,2025-05-19,2026-10-12,91,91
 1075,-  Uva appassita atta a produrre Amarone /Recioto ( resa calo 30% uva fresca ),Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > UVA  APPASSITA 2025,EUR/kg,2025-11-03,2026-01-15,11,8
 1076,- pinot grigio,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > DOC DELLE VENEZIE (prezzo E/litro),EUR/L,2025-08-18,2026-08-31,66,66
 1077,- bianco,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > DOC DELLE VENEZIE (prezzo E/litro),EUR/L,2025-08-18,2026-08-31,65,61
@@ -808,53 +808,53 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 1081,- d.o.c.  chardonnay,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > GARDA (prezzo €/litro ),EUR/L,2025-10-06,2026-09-15,59,57
 1082,"- d.o.c.  bianco ( minimo 10,5 gradi)",Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > GARDA (prezzo €/litro ),EUR/L,2025-10-06,2026-09-15,60,59
 1083,- d.o.c. pinot grigio,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > GARDA (prezzo €/litro ),EUR/L,2025-10-06,2026-09-15,60,58
-1084,-  custoza d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > CUSTOZA ( prezzo €/litro),EUR/L,2025-10-06,2026-10-05,65,65
-1086,- d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > SOAVE  ( prezzo €/litro),EUR/L,2025-10-06,2026-10-05,65,65
-1087,- Soave classico,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > SOAVE  ( prezzo €/litro),EUR/L,2025-10-06,2026-10-05,64,62
-1088,- d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > BARDOLINO ( Prezzo €/litro),EUR/L,2025-10-06,2026-10-05,65,64
-1089,-d.o.c. chiaretto,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > BARDOLINO ( Prezzo €/litro),EUR/L,2025-10-06,2026-10-05,65,64
-1090,- d.o.c.  classico,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > BARDOLINO ( Prezzo €/litro),EUR/L,2025-10-06,2026-10-05,65,64
-1091,- d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VALPOLICELLA (prezzo E/litro),EUR/L,2025-11-03,2026-10-05,60,60
-1092,- d.o.c. classico,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VALPOLICELLA (prezzo E/litro),EUR/L,2025-11-03,2026-10-05,60,60
-1095,- d.o.c. atto a superiore,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VALPOLICELLA (prezzo E/litro),EUR/L,2025-11-03,2026-10-05,60,60
-1096,- d.o.c. atto a superiore classico,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VALPOLICELLA (prezzo E/litro),EUR/L,2025-11-03,2026-10-05,60,60
-1098,- rosso veronese gr. 13/15 (prezzo E/litro),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VINI I.G.T. Verona,EUR/L,2025-10-06,2026-10-05,60,48
-1099,- merlot (quotazione base per 1 grado/100 litri),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VINI I.G.T. Verona,EUR/grado-hL,2025-10-06,2026-10-05,65,64
-1100,- moscato  ( prezzo € /litro),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VINI I.G.T. Verona,EUR/L,2025-10-06,2026-10-05,65,64
-1103,- bianco veronese gr. 10/13 (quotazione base per 1 grado/100 litri),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VINI I.G.T. Verona,EUR/grado-hL,2025-10-06,2026-10-05,65,64
-1105,- rosso veronese gr. 11/12 (quotazione base per 1 grado/100 litri),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VINI I.G.T. Verona,EUR/grado-hL,2025-10-06,2026-10-05,65,64
-1108,- garganega veronese (quotazione base per 1 grado/100 litri),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VINI I.G.T. Verona,EUR/grado-hL,2025-10-06,2026-10-05,65,64
-1109,- chardonnay (quotazione base per 1 grado/100 litri),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VINI I.G.T. Verona,EUR/grado-hL,2025-10-06,2026-10-05,65,64
-1110,"- terreni zona d.o.c  atto a Superiore ( babo min. 16,60)",UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > VALPOLICELLA,EUR/kg,2025-09-01,2026-10-05,19,18
-1111,"- terreni zona d.o.c  atto a Superiore Classico ( babo min. 16,60)",UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > VALPOLICELLA,EUR/kg,2025-09-01,2026-10-05,19,18
+1084,-  custoza d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > CUSTOZA ( prezzo €/litro),EUR/L,2025-10-06,2026-10-12,66,66
+1086,- d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > SOAVE  ( prezzo €/litro),EUR/L,2025-10-06,2026-10-12,66,66
+1087,- Soave classico,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > SOAVE  ( prezzo €/litro),EUR/L,2025-10-06,2026-10-12,65,63
+1088,- d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > BARDOLINO ( Prezzo €/litro),EUR/L,2025-10-06,2026-10-12,66,65
+1089,-d.o.c. chiaretto,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > BARDOLINO ( Prezzo €/litro),EUR/L,2025-10-06,2026-10-12,66,65
+1090,- d.o.c.  classico,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > BARDOLINO ( Prezzo €/litro),EUR/L,2025-10-06,2026-10-12,66,65
+1091,- d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VALPOLICELLA (prezzo E/litro),EUR/L,2025-11-03,2026-10-12,61,61
+1092,- d.o.c. classico,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VALPOLICELLA (prezzo E/litro),EUR/L,2025-11-03,2026-10-12,61,61
+1095,- d.o.c. atto a superiore,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VALPOLICELLA (prezzo E/litro),EUR/L,2025-11-03,2026-10-12,61,61
+1096,- d.o.c. atto a superiore classico,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VALPOLICELLA (prezzo E/litro),EUR/L,2025-11-03,2026-10-12,61,61
+1098,- rosso veronese gr. 13/15 (prezzo E/litro),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VINI I.G.T. Verona,EUR/L,2025-10-06,2026-10-12,61,49
+1099,- merlot (quotazione base per 1 grado/100 litri),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VINI I.G.T. Verona,EUR/grado-hL,2025-10-06,2026-10-12,66,65
+1100,- moscato  ( prezzo € /litro),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VINI I.G.T. Verona,EUR/L,2025-10-06,2026-10-12,66,65
+1103,- bianco veronese gr. 10/13 (quotazione base per 1 grado/100 litri),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VINI I.G.T. Verona,EUR/grado-hL,2025-10-06,2026-10-12,66,65
+1105,- rosso veronese gr. 11/12 (quotazione base per 1 grado/100 litri),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VINI I.G.T. Verona,EUR/grado-hL,2025-10-06,2026-10-12,66,65
+1108,- garganega veronese (quotazione base per 1 grado/100 litri),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VINI I.G.T. Verona,EUR/grado-hL,2025-10-06,2026-10-12,66,65
+1109,- chardonnay (quotazione base per 1 grado/100 litri),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VINI I.G.T. Verona,EUR/grado-hL,2025-10-06,2026-10-12,66,65
+1110,"- terreni zona d.o.c  atto a Superiore ( babo min. 16,60)",UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > VALPOLICELLA,EUR/kg,2025-09-01,2026-10-12,20,19
+1111,"- terreni zona d.o.c  atto a Superiore Classico ( babo min. 16,60)",UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > VALPOLICELLA,EUR/kg,2025-09-01,2026-10-12,20,19
 1113,- rosso,Uve/Vino > VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VINO GENERICO (quotazione base per 1 grado/100 litri),EUR/grado-hL,2025-09-15,2026-09-15,64,60
-1114,- garganega D.O.C.,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > GARDA DOC,EUR/kg,2025-09-15,2026-10-05,16,13
-1115,- d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > LUGANA ( prezzo €/litro),EUR/L,2025-10-06,2026-10-05,65,64
-1116,- Pinot grigio delle venezie,PRODUZIONE BIOLOGICA 2025 (Prezzo € / litro),EUR/L,2025-11-17,2026-10-05,57,56
-1117,- Soave,PRODUZIONE BIOLOGICA 2025 (Prezzo € / litro),EUR/L,2025-11-17,2026-10-05,57,56
-1120,- Custoza d.o.c,PRODUZIONE BIOLOGICA 2025 (Prezzo € / litro),EUR/L,2025-11-17,2026-10-05,57,56
-1121,- Bardolino d.o.c.,PRODUZIONE BIOLOGICA 2025 (Prezzo € / litro),EUR/L,2025-11-17,2026-10-05,57,56
-1123,- Lugana d.o.c.,PRODUZIONE BIOLOGICA 2025 (Prezzo € / litro),EUR/L,2025-11-17,2026-10-05,40,0
-1124,Valpolicella d.o.c. atto a superiore,PRODUZIONE BIOLOGICA 2025 (Prezzo € / litro),EUR/L,2025-11-17,2026-10-05,40,0
-1125,- Valpolicella d.o.c.,PRODUZIONE BIOLOGICA 2025 (Prezzo € / litro),EUR/L,2025-11-17,2026-10-05,40,0
-1126,- Valpolicella Ripasso d.o.c  superiore,PRODUZIONE BIOLOGICA 2023  (prezzo E/litro),EUR/L,2025-11-24,2026-10-05,56,56
-1127,-  cabernet  gr. 12/13 ( prezzo € /litro),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VINI I.G.T. Verona,EUR/L,2025-12-01,2026-10-05,54,54
-1128,pinot grigio (base 17 babo),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > DOC DELLE VENEZIE (prezzo E/litro),EUR/L,2026-08-17,2026-10-05,11,11
-1129,- bianco base spumante 10 % Vol.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > VINO  GENERICO ( quatazione  base per 1 grado /100 litri),EUR/grado-hL,2026-08-24,2026-10-05,10,10
-1130,Uve atte a Soave DOC,UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2026-08-31,2026-10-05,8,8
-1131,- d.o.c. garganega,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > GARDA (prezzo €/litro ),EUR/L,2026-08-31,2026-10-05,6,0
-1132,- d.o.c.  chardonnay,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > GARDA (prezzo €/litro ),EUR/L,2026-08-31,2026-10-05,6,0
-1133,"- d.o.c.  bianco ( minimo 10,5 gradi)",VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > GARDA (prezzo €/litro ),EUR/L,2026-08-31,2026-10-05,6,0
-1134,- d.o.c. pinot grigio,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > GARDA (prezzo €/litro ),EUR/L,2026-08-31,2026-10-05,8,8
-1135,- pinot grigio,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > VALDADIGE (prezzo €/litro),EUR/L,2026-09-14,2026-10-05,4,0
-1136,- Pinot grigio delle venezie,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > PRODUZIONE BIOLOGICA 2026 (Prezzo € / litro),EUR/L,2026-09-21,2026-10-05,3,0
-1137,- Soave,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > PRODUZIONE BIOLOGICA 2026 (Prezzo € / litro),EUR/L,2026-09-21,2026-10-05,3,0
-1140,- Custoza d.o.c,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > PRODUZIONE BIOLOGICA 2026 (Prezzo € / litro),EUR/L,2026-09-21,2026-10-05,3,0
-1141,- Bardolino d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > PRODUZIONE BIOLOGICA 2026 (Prezzo € / litro),EUR/L,2026-09-21,2026-10-05,3,0
-1143,- Lugana d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > PRODUZIONE BIOLOGICA 2026 (Prezzo € / litro),EUR/L,2026-09-21,2026-10-05,3,0
-1144,Valpolicella d.o.c. atto a superiore,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > PRODUZIONE BIOLOGICA 2026 (Prezzo € / litro),EUR/L,2026-09-21,2026-10-05,3,0
-1145,- Valpolicella d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > PRODUZIONE BIOLOGICA 2026 (Prezzo € / litro),EUR/L,2026-09-21,2026-10-05,3,0
-1146,- Amarone d.o.c.g.,PRODUZIONE BIOLOGICA 2023  (prezzo E/litro),EUR/L,2026-09-21,2026-10-05,3,0
-1147,- Amarone d.o.c.g.,PRODUZIONE BIOLOGICA 2024 (Prezzo € / litro),EUR/L,2026-09-21,2026-10-05,3,0
-1148,-rosso,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > VINO  GENERICO ( quatazione  base per 1 grado /100 litri),EUR/grado-hL,2026-09-21,2026-10-05,3,0
-1149,- bianco 11-12 % vol,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > VINO  GENERICO ( quatazione  base per 1 grado /100 litri),EUR/grado-hL,2026-09-28,2026-10-05,3,3
+1114,- garganega D.O.C.,UVA DA VINO > UVE ATTE A D.O.C. (prezzo base per kilogrammo): > GARDA DOC,EUR/kg,2025-09-15,2026-10-12,17,14
+1115,- d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > LUGANA ( prezzo €/litro),EUR/L,2025-10-06,2026-10-12,66,65
+1116,- Pinot grigio delle venezie,PRODUZIONE BIOLOGICA 2025 (Prezzo € / litro),EUR/L,2025-11-17,2026-10-12,58,57
+1117,- Soave,PRODUZIONE BIOLOGICA 2025 (Prezzo € / litro),EUR/L,2025-11-17,2026-10-12,58,57
+1120,- Custoza d.o.c,PRODUZIONE BIOLOGICA 2025 (Prezzo € / litro),EUR/L,2025-11-17,2026-10-12,58,57
+1121,- Bardolino d.o.c.,PRODUZIONE BIOLOGICA 2025 (Prezzo € / litro),EUR/L,2025-11-17,2026-10-12,58,57
+1123,- Lugana d.o.c.,PRODUZIONE BIOLOGICA 2025 (Prezzo € / litro),EUR/L,2025-11-17,2026-10-12,41,0
+1124,Valpolicella d.o.c. atto a superiore,PRODUZIONE BIOLOGICA 2025 (Prezzo € / litro),EUR/L,2025-11-17,2026-10-12,41,0
+1125,- Valpolicella d.o.c.,PRODUZIONE BIOLOGICA 2025 (Prezzo € / litro),EUR/L,2025-11-17,2026-10-12,41,0
+1126,- Valpolicella Ripasso d.o.c  superiore,PRODUZIONE BIOLOGICA 2023  (prezzo E/litro),EUR/L,2025-11-24,2026-10-12,57,57
+1127,-  cabernet  gr. 12/13 ( prezzo € /litro),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2025 > VINI I.G.T. Verona,EUR/L,2025-12-01,2026-10-12,55,55
+1128,pinot grigio (base 17 babo),VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > DOC DELLE VENEZIE (prezzo E/litro),EUR/L,2026-08-17,2026-10-12,12,12
+1129,- bianco base spumante 10 % Vol.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > VINO  GENERICO ( quatazione  base per 1 grado /100 litri),EUR/grado-hL,2026-08-24,2026-10-12,11,11
+1130,Uve atte a Soave DOC,UVA DA VINO > UVE DA VINO DI PRODUZIONE BIOLOGICA,EUR/kg,2026-08-31,2026-10-12,9,9
+1131,- d.o.c. garganega,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > GARDA (prezzo €/litro ),EUR/L,2026-08-31,2026-10-12,7,0
+1132,- d.o.c.  chardonnay,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > GARDA (prezzo €/litro ),EUR/L,2026-08-31,2026-10-12,7,0
+1133,"- d.o.c.  bianco ( minimo 10,5 gradi)",VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > GARDA (prezzo €/litro ),EUR/L,2026-08-31,2026-10-12,7,0
+1134,- d.o.c. pinot grigio,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > GARDA (prezzo €/litro ),EUR/L,2026-08-31,2026-10-12,9,9
+1135,- pinot grigio,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > VALDADIGE (prezzo €/litro),EUR/L,2026-09-14,2026-10-12,5,0
+1136,- Pinot grigio delle venezie,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > PRODUZIONE BIOLOGICA 2026 (Prezzo € / litro),EUR/L,2026-09-21,2026-10-12,4,0
+1137,- Soave,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > PRODUZIONE BIOLOGICA 2026 (Prezzo € / litro),EUR/L,2026-09-21,2026-10-12,4,0
+1140,- Custoza d.o.c,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > PRODUZIONE BIOLOGICA 2026 (Prezzo € / litro),EUR/L,2026-09-21,2026-10-12,4,0
+1141,- Bardolino d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > PRODUZIONE BIOLOGICA 2026 (Prezzo € / litro),EUR/L,2026-09-21,2026-10-12,4,0
+1143,- Lugana d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > PRODUZIONE BIOLOGICA 2026 (Prezzo € / litro),EUR/L,2026-09-21,2026-10-12,4,0
+1144,Valpolicella d.o.c. atto a superiore,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > PRODUZIONE BIOLOGICA 2026 (Prezzo € / litro),EUR/L,2026-09-21,2026-10-12,4,0
+1145,- Valpolicella d.o.c.,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > PRODUZIONE BIOLOGICA 2026 (Prezzo € / litro),EUR/L,2026-09-21,2026-10-12,4,0
+1146,- Amarone d.o.c.g.,PRODUZIONE BIOLOGICA 2023  (prezzo E/litro),EUR/L,2026-09-21,2026-10-12,4,0
+1147,- Amarone d.o.c.g.,PRODUZIONE BIOLOGICA 2024 (Prezzo € / litro),EUR/L,2026-09-21,2026-10-12,4,0
+1148,-rosso,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > VINO  GENERICO ( quatazione  base per 1 grado /100 litri),EUR/grado-hL,2026-09-21,2026-10-12,4,0
+1149,- bianco 11-12 % vol,VINI DELLA PROVINCIA DI VERONA  * Prezzi per prodotto integro * > PRODUZIONE 2026 > VINO  GENERICO ( quatazione  base per 1 grado /100 litri),EUR/grado-hL,2026-09-28,2026-10-12,4,4
