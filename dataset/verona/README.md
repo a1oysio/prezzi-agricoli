@@ -13,6 +13,7 @@ Verona. Licenza [CC BY 4.0](../../LICENSE-DATA). Leggi anche il
 | `averages/<anno>.csv` | Le medie quindicinali pubblicate dalla borsa |
 | `revisions.csv` | Registro dei valori che la fonte ha corretto dopo la prima pubblicazione |
 | `meta.json` | Data di generazione, ultimo bollettino, conteggi |
+| `exchange.json` | Scheda della borsa, scritta a mano: nome, ente, fonte, descrizione e avvertenze mostrate sul sito |
 
 I prezzi sono partizionati per anno perché l'aggiornamento tocchi un solo file:
 il diff settimanale in git resta di poche righe invece di riscrivere tutto.

@@ -279,8 +279,16 @@ deploy:
 
 | File | Contenuto |
 |------|-----------|
-| `site/api/index.json` | catalogo completo, ~150 KB |
-| `site/api/series/<code>.json` | una serie, scaricata solo quando si apre |
+| `site/api/index.json` | elenco delle borse, per la prima pagina |
+| `site/api/<borsa>/index.json` | scheda della borsa e catalogo completo, ~150 KB |
+| `site/api/<borsa>/series/<code>.json` | una serie, scaricata solo quando si apre |
+
+La prima pagina elenca le borse; `?b=<borsa>` apre il catalogo di una,
+`?b=<borsa>&p=<codice>` un prodotto. Una borsa è una cartella di `dataset/` con
+dentro `products.csv`: `pipeline.publish` le pubblica tutte. Quello che il sito
+dice di ciascuna — nome, ente, fonte, descrizione, avvertenze — sta in
+`dataset/<borsa>/exchange.json`, scritto a mano; `meta.json` invece lo rigenera
+la pipeline e non va toccato.
 
 Scaricare i 4 MB dell'intero dataset per disegnare un grafico sarebbe
 inaccettabile: da qui la divisione.
@@ -409,7 +417,9 @@ Perché una seconda borsa arrivi fino ai CSV serve:
    `EXCHANGE_CODE` / `EXCHANGE_SLUG`;
 3. estendere `pipeline/update.py`, che oggi chiama direttamente il fetcher di
    Verona;
-4. estendere il sito, che oggi legge un solo `index.json`.
+4. scrivere `dataset/<nome>/exchange.json` sul modello di quello di Verona: il
+   sito e `pipeline.publish` sono già multi-borsa, la nuova cartella compare da
+   sola in prima pagina.
 
 Un parser PDF per Bologna esiste già in agx-scraper, ma non ha la stessa
 maturità: i suoi dati non sono in questo dataset.

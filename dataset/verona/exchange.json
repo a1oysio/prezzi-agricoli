@@ -1,0 +1,13 @@
+{
+  "name": "Borsa Merci di Verona",
+  "place": "Verona",
+  "publisher": "Camera di Commercio di Verona",
+  "source_url": "https://www.portaleprezziverona.it/camcom-verona/it/borsa-merci",
+  "description": "Listino dei prezzi all'ingrosso rilevati dalla Camera di Commercio di Verona: cereali, sfarinati, mangimi, semi oleosi e olii, foraggi, vini e uve della provincia, ortofrutta, avicunicoli, suini, latte e prodotti caseari.",
+  "notes": [
+    "Ogni prodotto ha un prezzo minimo e uno massimo per rilevazione. Un prezzo mancante non è uno zero: quel giorno il prodotto non è stato quotato.",
+    "L'unità di misura cambia da un comparto all'altro (euro per tonnellata, per chilo, per litro…): non sommare né confrontare prodotti con unità diverse.",
+    "Le ultime settimane possono cambiare: la borsa a volte corregge un bollettino dopo averlo pubblicato. Le correzioni sono elencate in revisions.csv.",
+    "Le medie quindicinali pubblicate dalla borsa stanno a parte, in averages/, e nei grafici non compaiono."
+  ]
+}

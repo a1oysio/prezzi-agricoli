@@ -3,24 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prezzi Borsa Merci di Verona — dati aperti</title>
-<meta name="description" content="Serie storiche dei prezzi dei prodotti agricoli della Borsa Merci di Verona, aggiornate automaticamente e disponibili in CSV.">
+<title>Dati mercuriali — prezzi delle borse merci, dati aperti</title>
+<meta name="description" content="Serie storiche dei prezzi dei prodotti agricoli delle borse merci italiane, aggiornate automaticamente e disponibili in CSV.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <div>
-    <h1>Prezzi della Borsa Merci di Verona</h1>
-    <div class="sub">Serie storiche in CSV, aggiornate in automatico. Dati non ufficiali.</div>
+    <h1><a href="./">Dati mercuriali</a></h1>
+    <div class="sub">Prezzi delle borse merci. Serie storiche in CSV, aggiornate in automatico. Dati non ufficiali.</div>
   </div>
   <nav>
-    <a href="https://github.com/a1oysio/prezzi-agricoli/tree/main/dataset/verona">Scarica i CSV</a>
+    <a id="nav-csv" href="https://github.com/a1oysio/prezzi-agricoli/tree/main/dataset">Scarica i CSV</a>
     <a href="https://github.com/a1oysio/prezzi-agricoli">Codice</a>
-    <a href="https://www.portaleprezziverona.it/camcom-verona/it/borsa-merci">Fonte</a>
+    <a id="nav-source" hidden>Fonte</a>
   </nav>
 </header>
 
+<!-- Prima pagina: l'elenco delle borse. -->
+<section id="home" hidden>
+  <h2>Scegli una borsa merci</h2>
+  <div id="exchanges"></div>
+</section>
+
+<!-- Una borsa (?b=<nome>): catalogo a sinistra, scheda del prodotto a destra. -->
+<div id="exchange" hidden>
+<div class="crumbs"><a href="./">Borse</a> &gt; <b id="exchange-name"></b></div>
 <section class="stats" id="stats"></section>
 
 <div class="layout">
@@ -35,7 +44,10 @@
   </aside>
 
   <main>
-    <div id="empty">Scegli un prodotto dall'elenco per vederne la serie storica.</div>
+    <div id="empty">
+      <div id="about"></div>
+      <p class="hint">Scegli un prodotto dall'elenco per vederne la serie storica.</p>
+    </div>
     <div id="detail" hidden>
       <button id="back" type="button">← Torna all'elenco</button>
       <h2 id="title"></h2>
@@ -64,10 +76,11 @@
     </div>
   </main>
 </div>
+</div>
 
 <footer>
-  Dati: Camera di Commercio di Verona, ridistribuiti in <a href="https://creativecommons.org/licenses/by/4.0/deed.it">CC&nbsp;BY&nbsp;4.0</a>.
-  Ricostruzione non ufficiale: per usi contrattuali fa fede il listino pubblicato dalla Camera di Commercio.
+  Dati delle camere di commercio, ridistribuiti in <a href="https://creativecommons.org/licenses/by/4.0/deed.it">CC&nbsp;BY&nbsp;4.0</a>.
+  Ricostruzione non ufficiale: per usi contrattuali fa fede il listino pubblicato dalla camera di commercio.
 </footer>
 
 <script src="https://unpkg.com/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>

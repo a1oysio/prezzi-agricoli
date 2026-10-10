@@ -1,11 +1,16 @@
-/* Dashboard dei prezzi della Borsa Merci di Verona.
-   Sito statico: tutto arriva da api/index.json e api/series/<code>.json. */
+/* Dashboard dei prezzi delle borse merci.
+   Sito statico: la prima pagina legge api/index.json (l'elenco delle borse);
+   scelta una borsa (?b=<nome>) tutto arriva da api/<nome>/index.json e
+   api/<nome>/series/<code>.json. */
 'use strict';
 
 const $ = (sel) => document.querySelector(sel);
 const fmtNum = (n) => n.toLocaleString('it-IT');
 const fmtPrice = (v) => v == null ? '—' : v.toLocaleString('it-IT', { maximumFractionDigits: 2 });
 
+const REPO = 'https://github.com/a1oysio/prezzi-agricoli';
+
+let EXCHANGE = null, API = '';
 let CATALOG = [];
 let META = {};
 let chart = null, sLow = null, sHigh = null, sMid = null, sBox = null;
@@ -20,14 +25,37 @@ let currentBuckets = [], bucketIndex = new Map();
 
 /* ---------- avvio ---------- */
 
+async function fetchJson(url) {
+  const res = await fetch(url);
+  return res.ok ? res.json() : null;
+}
+
 async function boot() {
-  const res = await fetch('api/index.json');
-  const data = await res.json();
-  META = data.meta || {};
+  const params = new URLSearchParams(location.search);
+  const slug = params.get('b');
+  // Il nome finisce in un indirizzo: si accetta solo quello di una cartella.
+  const data = slug && /^[a-z0-9-]+$/.test(slug)
+    ? await fetchJson(`api/${slug}/index.json`) : null;
+  // Senza borsa, o con una che non esiste, si torna all'elenco.
+  if (!data) return bootHome(params);
+
+  EXCHANGE = data.exchange;
+  API = `api/${EXCHANGE.slug}`;
+  META = EXCHANGE.meta || {};
   // Senza quotazioni non c'è nulla da disegnare: restano nei CSV, non in elenco.
   CATALOG = (data.products || []).filter((p) => p.n > 0);
 
-  renderStats();
+  document.title = `${EXCHANGE.name} — Dati mercuriali`;
+  $('#exchange').hidden = false;
+  $('#exchange-name').textContent = EXCHANGE.name;
+  $('#nav-csv').href = `${REPO}/tree/main/dataset/${EXCHANGE.slug}`;
+  if (EXCHANGE.source_url) {
+    $('#nav-source').href = EXCHANGE.source_url;
+    $('#nav-source').hidden = false;
+  }
+
+  $('#stats').innerHTML = statsHtml(META);
+  renderAbout();
   fillSelect('#group', CATALOG.map((p) => p.group));
   fillSelect('#unit', CATALOG.map((p) => p.unit));
   renderList();
@@ -59,8 +87,43 @@ async function boot() {
   }
   window.addEventListener('orientationchange', () => setTimeout(resizeChart, 250));
 
-  const code = new URLSearchParams(location.search).get('p');
+  const code = params.get('p');
   if (code && CATALOG.some((p) => p.code === code)) select(code);
+}
+
+/* ---------- prima pagina ---------- */
+
+async function bootHome(params) {
+  const data = await fetchJson('api/index.json');
+  const list = (data && data.exchanges) || [];
+
+  // Quando la borsa era una sola i link avevano soltanto ?p=<codice>: finché
+  // resta l'unica continuano ad aprire il loro prodotto.
+  const code = params.get('p');
+  if (code && !params.get('b') && list.length === 1) {
+    location.replace(`?b=${list[0].slug}&p=${encodeURIComponent(code)}`);
+    return;
+  }
+
+  $('#home').hidden = false;
+  $('#exchanges').innerHTML = list.map((x) => `
+    <article class="exchange">
+      <h3><a href="?b=${x.slug}">${escapeHtml(x.name)}</a></h3>
+      ${x.publisher ? `<div>${escapeHtml(x.publisher)}</div>` : ''}
+      ${x.description ? `<p>${escapeHtml(x.description)}</p>` : ''}
+      <div class="stats">${statsHtml(x.meta || {})}</div>
+    </article>`).join('');
+}
+
+// La scheda della borsa (dataset/<nome>/exchange.json), nel riquadro di destra
+// finché non si apre un prodotto.
+function renderAbout() {
+  const notes = EXCHANGE.notes || [];
+  $('#about').innerHTML = `
+    <h2>${escapeHtml(EXCHANGE.name)}</h2>
+    ${EXCHANGE.publisher ? `<div>${escapeHtml(EXCHANGE.publisher)}</div>` : ''}
+    ${EXCHANGE.description ? `<p>${escapeHtml(EXCHANGE.description)}</p>` : ''}
+    ${notes.length ? `<ul>${notes.map((n) => `<li>${escapeHtml(n)}</li>`).join('')}</ul>` : ''}`;
 }
 
 function resizeChart() {
@@ -80,17 +143,17 @@ function showList() {
   window.scrollTo(0, 0);
 }
 
-function renderStats() {
+function statsHtml(meta) {
   const rows = [
-    ['Prodotti', fmtNum(META.n_products || 0)],
-    ['Quotazioni', fmtNum(META.n_quoted || 0)],
-    ['Rilevazioni', fmtNum(META.n_observations || 0)],
-    ['Dal', META.first_date || '—'],
-    ['Al', META.last_date || '—'],
-    ['Bollettino', META.last_issue_number != null ? `n. ${META.last_issue_number}` : '—'],
-    ['Aggiornato', (META.generated_at || '').slice(0, 10) || '—'],
+    ['Prodotti', fmtNum(meta.n_products || 0)],
+    ['Quotazioni', fmtNum(meta.n_quoted || 0)],
+    ['Rilevazioni', fmtNum(meta.n_observations || 0)],
+    ['Dal', meta.first_date || '—'],
+    ['Al', meta.last_date || '—'],
+    ['Bollettino', meta.last_issue_number != null ? `n. ${meta.last_issue_number}` : '—'],
+    ['Aggiornato', (meta.generated_at || '').slice(0, 10) || '—'],
   ];
-  $('#stats').innerHTML = rows
+  return rows
     .map(([k, v]) => `<div class="stat"><div class="v">${v}</div><div class="k">${k}</div></div>`)
     .join('');
 }
@@ -157,7 +220,7 @@ async function select(code) {
   $('#crumb').textContent = `${meta.path} · codice ${meta.code} · ${meta.unit}`;
   renderList();
 
-  const res = await fetch(`api/series/${code}.json`);
+  const res = await fetch(`${API}/series/${code}.json`);
   const data = await res.json();
   currentPoints = data.points;
 
@@ -178,7 +241,8 @@ function ensureChart() {
   chart = LightweightCharts.createChart(el, {
     width: el.clientWidth,
     height: el.clientHeight,
-    layout: { background: { color: 'transparent' }, textColor: text, fontSize: 11 },
+    // Stesso carattere della pagina anche su assi ed etichette del grafico.
+    layout: { background: { color: 'transparent' }, textColor: text, fontSize: 11, fontFamily: css.fontFamily },
     grid: { vertLines: { color: border }, horzLines: { color: border } },
     rightPriceScale: { borderColor: border },
     timeScale: { borderColor: border, fixLeftEdge: true, fixRightEdge: true },
@@ -406,7 +470,7 @@ function downloadCsv() {
                         { type: 'text/csv;charset=utf-8' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = `verona-${current.code}.csv`;
+  a.download = `${EXCHANGE.slug}-${current.code}.csv`;
   a.click();
   URL.revokeObjectURL(a.href);
 }

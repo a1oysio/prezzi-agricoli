@@ -5,6 +5,9 @@ leggero per il catalogo e una serie per prodotto, caricata solo quando l'utente
 la apre -- scaricare i 4 MB del dataset intero per disegnare un grafico sarebbe
 inaccettabile.
 
+Ogni cartella di ``dataset/`` e' una borsa e finisce in ``api/<borsa>/``; in
+cima, ``api/index.json`` le elenca tutte per la prima pagina del sito.
+
     python -m pipeline.publish
 """
 from __future__ import annotations
@@ -18,10 +21,25 @@ from pathlib import Path
 from pipeline import csvstore, paths
 
 
-def publish(dataset: Path, out_dir: Path) -> dict[str, int]:
+def read_exchange(dataset: Path) -> dict:
+    """La scheda della borsa: ``exchange.json`` e' scritto a mano, ``meta.json``
+    lo rigenera la pipeline.  Senza scheda la borsa si pubblica lo stesso, col
+    nome che sta in ``meta.json`` o, in mancanza, con quello della cartella."""
+    path = dataset / "exchange.json"
+    info = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    meta = csvstore.read_meta(dataset / "meta.json")
+    info.setdefault("name", meta.get("exchange_name") or dataset.name)
+    info.setdefault("source_url", meta.get("source_url"))
+    return {**info, "slug": dataset.name, "meta": meta}
+
+
+def find_datasets(root: Path) -> list[Path]:
+    return sorted(d for d in root.iterdir() if (d / "products.csv").is_file())
+
+
+def publish(dataset: Path, out_dir: Path, exchange: dict) -> dict[str, int]:
     products = csvstore.read_products(dataset / "products.csv")
     prices = csvstore.read_prices(dataset / "prices")
-    meta = csvstore.read_meta(dataset / "meta.json")
 
     series: dict[str, list] = defaultdict(list)
     for (d, code), (low, high) in prices.items():
@@ -60,7 +78,7 @@ def publish(dataset: Path, out_dir: Path) -> dict[str, int]:
 
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "index.json").write_text(
-        json.dumps({"meta": meta, "products": index}, ensure_ascii=False,
+        json.dumps({"exchange": exchange, "products": index}, ensure_ascii=False,
                    separators=(",", ":")),
         encoding="utf-8",
     )
@@ -69,14 +87,28 @@ def publish(dataset: Path, out_dir: Path) -> dict[str, int]:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--dataset", type=Path, default=paths.dataset_dir())
+    ap.add_argument("--datasets", type=Path, default=paths.DATASET_DIR,
+                    help="cartella che contiene una sottocartella per borsa")
     ap.add_argument("--out", type=Path, default=paths.SITE_API_DIR)
     args = ap.parse_args()
 
-    stats = publish(args.dataset, args.out)
+    exchanges = []
+    for dataset in find_datasets(args.datasets):
+        exchange = read_exchange(dataset)
+        stats = publish(dataset, args.out / dataset.name, exchange)
+        exchanges.append(exchange)
+        print(f"  {exchange['name']}")
+        print(f"    prodotti in indice : {stats['products']}")
+        print(f"    serie generate     : {stats['series']}")
+    if not exchanges:
+        print(f"  nessuna borsa in {args.datasets}")
+        return 1
+
+    (args.out / "index.json").write_text(
+        json.dumps({"exchanges": exchanges}, ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8",
+    )
     size = sum(f.stat().st_size for f in args.out.rglob("*") if f.is_file())
-    print(f"  prodotti in indice : {stats['products']}")
-    print(f"  serie generate     : {stats['series']}")
     print(f"  peso totale        : {size/1024/1024:.1f} MB in {args.out}")
     return 0
 
