@@ -10,6 +10,7 @@ Verona. Licenza [CC BY 4.0](../../LICENSE-DATA). Leggi anche il
 |------|-----------|
 | `products.csv` | Un prodotto per riga, con unità di misura e gerarchia di categoria |
 | `prices/<anno>.csv` | Le quotazioni di quell'anno |
+| `averages/<anno>.csv` | Le medie quindicinali pubblicate dalla borsa |
 | `revisions.csv` | Registro dei valori che la fonte ha corretto dopo la prima pubblicazione |
 | `meta.json` | Data di generazione, ultimo bollettino, conteggi |
 
@@ -32,6 +33,29 @@ da "questo prodotto non esiste più".
 
 L'ordinamento è per data e poi per codice numerico, sempre lo stesso: due
 esecuzioni sugli stessi dati producono file identici byte per byte.
+
+## `averages/<anno>.csv`
+
+Stesse colonne di `prices/<anno>.csv`, ma **non sono rilevazioni**. Due volte al
+mese la borsa pubblica un bollettino "RILEVAZIONE N. x DEL 15 …" o "… DEL 30 …"
+con la media della quindicina appena chiusa:
+
+| Colonna | Note |
+|---------|------|
+| `date` | Giorno di chiusura della quindicina come lo scrive la fonte: il 15 o la fine del mese |
+| `code` | Come in `prices/` |
+| `low`, `high` | Media dei minimi e media dei massimi della quindicina |
+
+Stanno in una cartella a parte perché la `date` può coincidere con un giorno di
+mercato: quando il 15 o il 30 cadono di lunedì o venerdì, la stessa coppia
+(data, codice) esiste in entrambe le serie con valori diversi. Chi vuole i prezzi
+di mercato legge solo `prices/`. Le medie mensili e annuali della borsa non
+vengono acquisite. `revisions.csv` riguarda solo `prices/`.
+
+Fino al 10 ottobre 2026 queste righe finivano dentro `prices/`: 22 giorni di
+mercato avevano la media al posto del listino (1118 valori) e altre 37 mila
+righe di medie comparivano come rilevazioni, quasi tutte in giorni senza mercato. Chi ha scaricato i
+CSV prima di quella data li riscarichi.
 
 ## `revisions.csv`
 
