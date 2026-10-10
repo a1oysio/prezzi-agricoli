@@ -20,6 +20,7 @@ gennaio 2016.
 dataset/verona/
 ├── products.csv        catalogo dei prodotti, con unità di misura
 ├── prices/2016.csv …   quotazioni, un file per anno
+├── averages/2016.csv … medie quindicinali della borsa, tenute a parte
 ├── revisions.csv       i valori che la fonte ha corretto dopo la pubblicazione
 └── meta.json           ultimo bollettino, conteggi, data di generazione
 ```

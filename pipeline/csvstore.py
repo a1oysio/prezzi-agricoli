@@ -62,6 +62,21 @@ def read_prices(prices_dir: Path) -> dict[tuple[str, str], tuple[Optional[float]
     return out
 
 
+def add_product(products: dict[str, "Product"], rec, average: bool) -> None:
+    """Anagrafica del prodotto da un record del parser.
+
+    Comanda il listino: il bollettino delle medie aggiunge un prodotto solo se
+    nessun listino l'ha ancora descritto, altrimenti nome e categoria
+    cambierebbero secondo quale dei due e' stato letto per ultimo.
+    """
+    product = Product(rec.product_code, rec.product_name,
+                      " > ".join(rec.category_path), rec.units)
+    if average:
+        products.setdefault(rec.product_code, product)
+    else:
+        products[rec.product_code] = product
+
+
 def read_products(path: Path) -> dict[str, Product]:
     out: dict[str, Product] = {}
     if not path.exists():
@@ -153,7 +168,8 @@ def count_revisions(path: Path) -> int:
 
 
 def write_meta(path: Path, prices: dict, n_products: int,
-               counts: dict[str, int], last_issue: Optional[int]) -> None:
+               counts: dict[str, int], last_issue: Optional[int],
+               n_averages: int = 0) -> None:
     dates = sorted({d for d, _ in prices})
     quoted = sum(1 for lo, hi in prices.values() if lo is not None or hi is not None)
     path.write_text(json.dumps({
@@ -168,6 +184,7 @@ def write_meta(path: Path, prices: dict, n_products: int,
         "n_products": n_products,
         "n_observations": len(prices),
         "n_quoted": quoted,
+        "n_averages": n_averages,
         "n_revisions": count_revisions(path.parent / "revisions.csv"),
         "observations_per_year": counts,
     }, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

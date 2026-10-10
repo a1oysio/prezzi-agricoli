@@ -95,11 +95,11 @@ def _read_prices(dir_: Path, products: dict[str, dict], rep: Report):
         with csv_file.open(encoding="utf-8") as fh:
             reader = csv.DictReader(fh)
             if reader.fieldnames != ["date", "code", "low", "high"]:
-                rep.error(f"{csv_file.name}: intestazione inattesa {reader.fieldnames}")
+                rep.error(f"{dir_.name}/{csv_file.name}: intestazione inattesa {reader.fieldnames}")
                 continue
             for n, row in enumerate(reader, start=2):
                 total += 1
-                where = f"{csv_file.name}:{n}"
+                where = f"{dir_.name}/{csv_file.name}:{n}"
                 try:
                     d = date.fromisoformat(row["date"])
                 except ValueError:
@@ -208,6 +208,12 @@ def validate(dataset: Path) -> Report:
     products = _read_products(products_file, rep)
     total, series = _read_prices(prices, products, rep)
     _check_outliers(series, rep)
+
+    # Le medie quindicinali stanno in una serie a parte e hanno la stessa forma:
+    # stessi controlli riga per riga, niente di piu'.
+    averages = dataset / "averages"
+    if averages.is_dir():
+        _read_prices(averages, products, rep)
     _check_no_regression(dataset / "meta.json", total, rep)
 
     # Le rettifiche non sono un guasto -- e' la fonte che si corregge -- ma un

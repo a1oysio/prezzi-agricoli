@@ -203,6 +203,19 @@ def _root_nome(root: ET.Element) -> str:
 
 def parse_title_date(root: ET.Element) -> Optional[str]:
     name = _root_nome(root)
+    average = parse_average_date(root)
+    if average:
+        return average
+    m = RE_TITLE_DOW_DATE.match(name)
+    if m:
+        dd, mm, yyyy = int(m.group(2)), _norm_month(m.group(3)), int(m.group(4))
+        return f"{yyyy:04d}-{mm:02d}-{dd:02d}"
+    return None
+
+
+def parse_average_date(root: ET.Element) -> Optional[str]:
+    """Data di chiusura della quindicina, dal titolo "RILEVAZIONE N. x DEL ..."."""
+    name = _root_nome(root)
     m = RE_TITLE_RIL_DEL_DATE.search(name)
     if m:
         dd, mm, yyyy = int(m.group(1)), _norm_month(m.group(2)), int(m.group(3))
@@ -211,16 +224,21 @@ def parse_title_date(root: ET.Element) -> Optional[str]:
     if m:
         dd, mm, yyyy = int(m.group(1)), int(m.group(2)), int(m.group(3))
         return f"{yyyy:04d}-{mm:02d}-{dd:02d}"
-    m = RE_TITLE_DOW_DATE.match(name)
-    if m:
-        dd, mm, yyyy = int(m.group(2)), _norm_month(m.group(3)), int(m.group(4))
-        return f"{yyyy:04d}-{mm:02d}-{dd:02d}"
     return None
 
 
 def classify_file_type(root: ET.Element) -> Tuple[str, Optional[Tuple[int, int]]]:
     if parse_commission_date(root):
         return "WEEKLY", None
+    # "RILEVAZIONE N. x DEL 15|30 <mese> <anno>" non e' un giorno di mercato: e'
+    # la media della quindicina, 24 l'anno, datata al 15 o a fine mese.  Ha una
+    # data nel titolo e quindi sembra una rilevazione, ma non lo e': quando il 15
+    # o il 30 cadono di lunedi' o venerdi' porta la stessa data del listino vero,
+    # e trattarla come tale lo sovrascrive (30/07/2018, grano fino: 185-187,33
+    # al posto di 189-191).  Non ha la data di commissione, che i listini hanno
+    # sempre: per questo il controllo viene dopo.
+    if parse_average_date(root):
+        return "FORTNIGHTLY", None
     if parse_title_date(root):
         return "WEEKLY", None
     name = _root_nome(root)

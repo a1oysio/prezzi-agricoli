@@ -52,6 +52,7 @@ def update(dataset: Path, staging: Path, start: int | None = None,
            recheck: int = RECHECK_ISSUES) -> dict:
     meta = csvstore.read_meta(dataset / "meta.json")
     prices = csvstore.read_prices(dataset / "prices")
+    averages = csvstore.read_prices(dataset / "averages")
     products = csvstore.read_products(dataset / "products.csv")
 
     if start is None:
@@ -64,7 +65,7 @@ def update(dataset: Path, staging: Path, start: int | None = None,
 
     staging.mkdir(parents=True, exist_ok=True)
     stats = {"probed": 0, "rechecked": 0, "downloaded": 0, "parsed": 0,
-             "new_rows": 0, "updated_rows": 0,
+             "new_rows": 0, "updated_rows": 0, "average_rows": 0,
              "last_issue": meta.get("last_issue_number"), "revisions": []}
 
     downloaded: list[tuple[int, Path]] = []
@@ -116,6 +117,19 @@ def update(dataset: Path, staging: Path, start: int | None = None,
         if not records:
             continue                # bollettino mensile o settimana di chiusura
         stats["parsed"] += 1
+        if _meta.file_type == vr_parser.AVERAGE_FILE_TYPE:
+            # Medie quindicinali: serie a parte, mai dentro prices/, dove
+            # prenderebbero il posto del listino quando il 15 o il 30 cadono in
+            # un giorno di mercato.  Niente registro delle rettifiche: quello
+            # racconta i listini.
+            for rec in records:
+                key = (rec.date.isoformat(), rec.product_code)
+                value = (rec.low, rec.high)
+                if averages.get(key, ()) != value:
+                    stats["average_rows"] += 1
+                averages[key] = value
+                csvstore.add_product(products, rec, average=True)
+            continue
         for rec in records:
             key = (rec.date.isoformat(), rec.product_code)
             value = (rec.low, rec.high)
@@ -126,10 +140,7 @@ def update(dataset: Path, staging: Path, start: int | None = None,
                 before.setdefault(key, prices[key])
                 origin[key] = issue
             prices[key] = value
-            products[rec.product_code] = csvstore.Product(
-                rec.product_code, rec.product_name,
-                " > ".join(rec.category_path), rec.units,
-            )
+            csvstore.add_product(products, rec, average=False)
 
     # Un valore puo' essere cambiato e poi tornato al punto di partenza dentro la
     # stessa esecuzione: confrontare con lo stato iniziale, non passo per passo.
@@ -148,10 +159,11 @@ def update(dataset: Path, staging: Path, start: int | None = None,
         return stats
 
     counts = csvstore.write_prices(dataset / "prices", prices)
+    csvstore.write_prices(dataset / "averages", averages)
     n_products = csvstore.write_products(dataset / "products.csv", products, prices)
     csvstore.append_revisions(dataset / "revisions.csv", revisions)
     csvstore.write_meta(dataset / "meta.json", prices, n_products, counts,
-                        stats["last_issue"])
+                        stats["last_issue"], len(averages))
     return stats
 
 
@@ -181,6 +193,7 @@ def main() -> int:
         f"  bollettini nuovi  : {stats['downloaded']} (con dati: {stats['parsed']})\n"
         f"  righe aggiunte    : {stats['new_rows']}\n"
         f"  righe rettificate : {stats['updated_rows']}\n"
+        f"  medie quindicinali: {stats['average_rows']} righe nuove o cambiate\n"
         f"  ultimo bollettino : {stats['last_issue']}"
     )
     for row in stats["revisions"][:20]:

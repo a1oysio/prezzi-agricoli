@@ -17,10 +17,18 @@ from exchanges.verona.processors import (
 )
 
 
+# file_type dei bollettini con le medie quindicinali.  I loro record hanno la
+# stessa forma di una rilevazione ma non lo sono: chi chiama deve guardare
+# FileMetadata.file_type e tenerli in una serie a parte.
+AVERAGE_FILE_TYPE = "XML_FORTNIGHTLY"
+
+
 def parse_xml_file(path: Path) -> tuple[FileMetadata, list[PriceRecord]]:
     """Parse one Verona XML file.
 
     Returns (FileMetadata, records).  Records is empty for MONTHLY files.
+    For fortnightly averages file_type is AVERAGE_FILE_TYPE and the record date
+    is the closing day of the fortnight (the 15th or the end of the month).
     Raises ValueError if the file cannot be parsed or the date is missing.
     """
     try:
@@ -64,7 +72,7 @@ def parse_xml_file(path: Path) -> tuple[FileMetadata, list[PriceRecord]]:
     return (
         FileMetadata(
             filename=path.name,
-            file_type="XML",
+            file_type=AVERAGE_FILE_TYPE if file_type == "FORTNIGHTLY" else "XML",
             issue_number=issue_number,
             issue_date=issue_date,
         ),

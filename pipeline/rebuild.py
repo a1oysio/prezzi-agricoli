@@ -32,11 +32,13 @@ def _issue_number(path: Path) -> int:
 
 def rebuild(src_dir: Path, dataset: Path) -> dict:
     prices: dict[tuple[str, str], tuple[float | None, float | None]] = {}
+    averages: dict[tuple[str, str], tuple[float | None, float | None]] = {}
     products: dict[str, csvstore.Product] = {}
-    stats = {"files": 0, "empty": 0, "failed": 0, "last_issue": None, "revisions": 0}
+    stats = {"files": 0, "averages": 0, "empty": 0, "failed": 0,
+             "last_issue": None, "revisions": 0}
 
-    # Ordine crescente di bollettino: su 63 date la borsa ne pubblica due, e il
-    # secondo e' una rettifica del primo.  Deve vincere l'ultimo.
+    # Ordine crescente di bollettino: quando la borsa pubblica due listini per la
+    # stessa data il secondo e' una rettifica del primo.  Deve vincere l'ultimo.
     for path in sorted(src_dir.glob("*.xml"), key=_issue_number):
         try:
             meta, records = vr_parser.parse_xml_file(path)
@@ -52,23 +54,26 @@ def rebuild(src_dir: Path, dataset: Path) -> dict:
             stats["empty"] += 1          # bollettino mensile o settimana di chiusura
             continue
 
-        stats["files"] += 1
+        # Le medie quindicinali vanno in una serie a parte: vedi
+        # exchanges.verona.processors.classify_file_type.
+        average = meta.file_type == vr_parser.AVERAGE_FILE_TYPE
+        stats["averages" if average else "files"] += 1
+        target = averages if average else prices
         for rec in records:
             key = (rec.date.isoformat(), rec.product_code)
-            if key in prices:
+            if key in prices and not average:
                 stats["revisions"] += 1
-            prices[key] = (rec.low, rec.high)
-            products[rec.product_code] = csvstore.Product(
-                rec.product_code, rec.product_name,
-                " > ".join(rec.category_path), rec.units,
-            )
+            target[key] = (rec.low, rec.high)
+            csvstore.add_product(products, rec, average)
 
     counts = csvstore.write_prices(dataset / "prices", prices)
+    csvstore.write_prices(dataset / "averages", averages)
     n_products = csvstore.write_products(dataset / "products.csv", products, prices)
     csvstore.write_meta(dataset / "meta.json", prices, n_products, counts,
-                        stats["last_issue"])
+                        stats["last_issue"], len(averages))
     stats["products"] = n_products
     stats["prices"] = len(prices)
+    stats["average_rows"] = len(averages)
     return stats
 
 
@@ -87,6 +92,7 @@ def main() -> int:
     s = rebuild(args.src, args.dataset)
     print(
         f"  bollettini con dati : {s['files']}\n"
+        f"  medie quindicinali  : {s['averages']} ({s['average_rows']} righe)\n"
         f"  senza dati          : {s['empty']} (mensili o settimane di chiusura)\n"
         f"  illeggibili         : {s['failed']}\n"
         f"  prodotti            : {s['products']}\n"

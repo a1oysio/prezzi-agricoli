@@ -22,3 +22,7 @@ def dataset_dir() -> Path:
 
 def prices_dir() -> Path:
     return dataset_dir() / "prices"
+
+
+def averages_dir() -> Path:
+    return dataset_dir() / "averages"

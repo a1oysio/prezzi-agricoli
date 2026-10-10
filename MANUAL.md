@@ -134,6 +134,11 @@ Il sondaggio si ferma dopo **6 numeri consecutivi mancanti**: la borsa salta
 qualche numero (bollettini mensili, settimane di chiusura), quindi il primo 404
 non significa "non c'è altro".
 
+Non tutti i bollettini con una data sono listini. Quelli intitolati "RILEVAZIONE
+N. x DEL 15 …" o "… DEL 30 …" sono le **medie quindicinali**: finiscono in
+`dataset/verona/averages/`, mai in `prices/`, perché il 15 e il 30 possono
+essere giorni di mercato e la media prenderebbe il posto della quotazione vera.
+
 Una quindicina di richieste al giorno, una al secondo, con uno `User-Agent` che
 rimanda al repository.
 
