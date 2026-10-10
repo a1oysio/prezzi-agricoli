@@ -405,21 +405,60 @@ si fanno qui e semmai si riportano in agx-scraper, non il contrario.
 
 ## 7. Aggiungere un'altra borsa
 
-`exchanges/verona/` è il modello: un modulo con `fetcher.py` (scaricamento) e
-`parser.py`, che espone `parse_xml_file(path) -> (FileMetadata, [PriceRecord])`.
+Le borse sono due e hanno fonti fatte diversamente, quindi ognuna ha la sua
+strada fino ai CSV; da lì in poi (validazione, pubblicazione, sito) è tutto
+comune.
 
-Perché una seconda borsa arrivi fino ai CSV serve:
+| | Verona | Bologna |
+|---|---|---|
+| Fonte | XML, un indirizzo per numero | PDF, elencati in una pagina |
+| Codice in `exchanges/` | `verona/` | `bologna/` |
+| Aggiornamento | `python -m pipeline.update` | `python -m pipeline.update --exchange bologna` |
+| Ricostruzione | `python -m pipeline.rebuild` | `python -m pipeline.rebuild --exchange bologna` |
+| Logica | `pipeline/update.py`, `rebuild.py` | `pipeline/bologna.py` |
+| Archivio locale | `data/verona/*.xml` | `data/bologna/<anno>/*.pdf` |
+
+`pipeline.validate` e `pipeline.publish` lavorano su tutte le cartelle di
+`dataset/`. Il workflow aggiorna prima Verona, poi Bologna; se Bologna fallisce
+Verona viene pubblicata lo stesso e il guasto apre comunque la issue.
+
+### Bologna: quando il listino cambia impaginazione
+
+I PDF si leggono con `pdftotext` (pacchetto `poppler-utils`), usando la posizione
+delle parole sulla pagina. La parte che non cambia — trovare la testata "min max
+min max", incolonnare i prezzi — è in `exchanges/bologna/table.py`. Quello che
+cambia da un'epoca all'altra — come si riconosce un titolo, dove finisce la
+tabella — è in `exchanges/bologna/layouts/`, un file per epoca:
+
+| File | Vale da | Formato |
+|---|---|---|
+| `a3.py` | 2004 | un foglio, tre tabelle affiancate |
+| `a4.py` | 9 giugno 2016 | più pagine, una tabella per pagina |
+
+Se un giorno la lettura si rompe o comincia a produrre voci strane, **non si
+modifica un lettore esistente**: si aggiunge un file con una sottoclasse di
+quello più vicino, la si registra in `layouts/__init__.py` con la data da cui
+vale, e gli anni prima restano letti esattamente come prima. Poi:
+
+```bash
+python -m exchanges.bologna.fetcher --dest data/bologna   # archivio PDF, ~1 ora
+python -m pipeline.rebuild --exchange bologna
+git diff --stat dataset/bologna       # deve cambiare solo quello che ci si aspetta
+```
+
+Le voci di Bologna non sono raggruppate: vedi `dataset/bologna/README.md`.
+
+### Una terza borsa
+
+Perché un'altra borsa arrivi fino ai CSV serve:
 
 1. il nuovo modulo in `exchanges/<nome>/`, che restituisca `PriceRecord` con
    `category_path` e `units` **corretti** — mai un'unità fissa: è stato l'errore
    più costoso di questo progetto, il 58% dei dati era sbagliato;
-2. rendere `pipeline/paths.py` multi-borsa: oggi ha una sola coppia
-   `EXCHANGE_CODE` / `EXCHANGE_SLUG`;
-3. estendere `pipeline/update.py`, che oggi chiama direttamente il fetcher di
-   Verona;
+2. un modulo `pipeline/<nome>.py` con il suo aggiornamento e la sua
+   ricostruzione, sul modello di `pipeline/bologna.py`, e la voce in
+   `--exchange` di `pipeline/update.py` e `pipeline/rebuild.py`;
+3. un passo nel workflow `update-data.yml`;
 4. scrivere `dataset/<nome>/exchange.json` sul modello di quello di Verona: il
    sito e `pipeline.publish` sono già multi-borsa, la nuova cartella compare da
    sola in prima pagina.
-
-Un parser PDF per Bologna esiste già in agx-scraper, ma non ha la stessa
-maturità: i suoi dati non sono in questo dataset.

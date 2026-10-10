@@ -12,6 +12,10 @@ risultato.  Per ricostruire l'archivio partendo da zero:
 
     python -m pipeline.rebuild                    # da data/verona
     python -m pipeline.rebuild --src /altro/path
+
+Per Bologna, dai PDF in data/bologna (vedi pipeline/bologna.py):
+
+    python -m pipeline.rebuild --exchange bologna
 """
 from __future__ import annotations
 
@@ -79,9 +83,17 @@ def rebuild(src_dir: Path, dataset: Path) -> dict:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--src", type=Path, default=paths.ARCHIVE_DIR)
-    ap.add_argument("--dataset", type=Path, default=paths.dataset_dir())
+    ap.add_argument("--exchange", choices=["verona", "bologna"], default="verona")
+    ap.add_argument("--src", type=Path, default=None)
+    ap.add_argument("--dataset", type=Path, default=None)
     args = ap.parse_args()
+    if args.src is None:
+        args.src = paths.archive_dir(args.exchange)
+    if args.dataset is None:
+        args.dataset = paths.dataset_dir(args.exchange)
+    if args.exchange == "bologna":
+        from pipeline import bologna
+        return bologna.main_rebuild(args)
 
     if not args.src.is_dir() or not any(args.src.glob("*.xml")):
         print(f"Nessun XML in {args.src}. Vedi l'aiuto di questo comando.",

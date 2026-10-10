@@ -12,7 +12,10 @@ tre anni fa bisogna aprire centocinquanta file. Questo repository li scarica, li
 converte in CSV con uno schema stabile e li tiene aggiornati.
 
 Copre la **Borsa Merci di Verona**: 842 prodotti, 197.745 rilevazioni dal
-gennaio 2016.
+gennaio 2016. E la **Borsa Merci di Bologna**, letta dai listini PDF: 1.413 voci
+di listino, 169.742 rilevazioni dal gennaio 2004 — vedi
+[`dataset/bologna/README.md`](dataset/bologna/README.md), perché lì una "voce"
+non è la stessa cosa che a Verona.
 
 ## I dati
 

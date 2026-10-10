@@ -235,16 +235,23 @@ def validate(dataset: Path) -> Report:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--dataset", type=Path, default=paths.dataset_dir())
+    ap.add_argument("--dataset", type=Path, default=None,
+                    help="una sola borsa (default: tutte le cartelle di dataset/)")
     args = ap.parse_args()
 
-    rep = validate(args.dataset)
-    print(rep.render())
-    if rep.errors:
-        print(f"\nValidazione FALLITA: {len(rep.errors)} errori.", file=sys.stderr)
-        return 1
-    print(f"\nValidazione superata ({len(rep.warnings)} avvisi).")
-    return 0
+    datasets = [args.dataset] if args.dataset else sorted(
+        d for d in paths.DATASET_DIR.iterdir() if (d / "products.csv").is_file())
+    failed = 0
+    for dataset in datasets:
+        rep = validate(dataset)
+        print(f"== {dataset.name}")
+        print(rep.render())
+        if rep.errors:
+            print(f"\nValidazione FALLITA: {len(rep.errors)} errori.", file=sys.stderr)
+            failed += 1
+        else:
+            print(f"\nValidazione superata ({len(rep.warnings)} avvisi).")
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":

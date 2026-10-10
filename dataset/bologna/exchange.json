@@ -1,0 +1,15 @@
+{
+  "name": "Borsa Merci di Bologna",
+  "place": "Bologna",
+  "publisher": "Camera di Commercio di Bologna, gestione AGER (Associazione Granaria Emiliana Romagnola)",
+  "source_url": "https://www.agerborsamerci.it/listino-borsa/settimanale-ager/",
+  "license": "Condizioni di riuso stabilite dalla fonte, non verificate",
+  "description": "Listino settimanale dei prezzi all'ingrosso rilevati il giovedì dal Comitato di Borsa: frumenti, granoturco e cereali minori, farine e cruscami, semi oleosi, farine vegetali, prodotti biologici, risi, foraggi, paglia e sementi. Dal 2004.",
+  "notes": [
+    "Le voci sono quelle del listino, scritte come le scrive la borsa. Quando la borsa ritocca una dicitura (l'annata, una caratteristica tra parentesi) qui nasce una voce nuova e la vecchia si ferma: molte serie durano un solo anno. Per seguire un prodotto nel tempo cercalo per nome e apri le voci una dopo l'altra.",
+    "Tutti i prezzi sono in euro per tonnellata, I.V.A. esclusa. Dal giugno 2016 il percorso della voce dice se la resa è franco partenza o franco arrivo; prima il listino non le teneva distinte.",
+    "Per alcune voci minimo e massimo non sono gli estremi di una forbice ma due qualità o due provenienze diverse, come spiegano le note del listino: lì il minimo può superare il massimo.",
+    "Quattro settimane di cui il PDF non è più disponibile (22 gennaio 2004, 28 maggio 2009, 18 dicembre 2014, 22 ottobre 2015) sono prese dal listino successivo, che riporta anche i prezzi della settimana prima. I listini del 2003 non sono più scaricabili.",
+    "Lettura automatica dei PDF: il riferimento ufficiale resta il listino pubblicato dalla Camera di Commercio di Bologna."
+  ]
+}

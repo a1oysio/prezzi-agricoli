@@ -44,6 +44,16 @@ async function boot() {
   META = EXCHANGE.meta || {};
   // Senza quotazioni non c'è nulla da disegnare: restano nei CSV, non in elenco.
   CATALOG = (data.products || []).filter((p) => p.n > 0);
+  // Prima le voci ancora quotate, poi quelle che la borsa ha smesso di
+  // pubblicare; dentro ciascun gruppo resta l'ordine del listino.  Dove ogni
+  // ritocco a una dicitura apre una voce nuova, le cessate sono la maggioranza.
+  if (META.last_date) {
+    const cut = new Date(META.last_date);
+    cut.setDate(cut.getDate() - 60);
+    const iso = cut.toISOString().slice(0, 10);
+    const live = (p) => p.last >= iso;
+    CATALOG = CATALOG.filter(live).concat(CATALOG.filter((p) => !live(p)));
+  }
 
   document.title = `${EXCHANGE.name} — Dati mercuriali`;
   $('#exchange').hidden = false;
@@ -111,6 +121,7 @@ async function bootHome(params) {
       <h3><a href="?b=${x.slug}">${escapeHtml(x.name)}</a></h3>
       ${x.publisher ? `<div>${escapeHtml(x.publisher)}</div>` : ''}
       ${x.description ? `<p>${escapeHtml(x.description)}</p>` : ''}
+      ${x.license ? `<p>Licenza dei dati: ${escapeHtml(x.license)}</p>` : ''}
       <div class="stats">${statsHtml(x.meta || {})}</div>
     </article>`).join('');
 }
@@ -123,6 +134,7 @@ function renderAbout() {
     <h2>${escapeHtml(EXCHANGE.name)}</h2>
     ${EXCHANGE.publisher ? `<div>${escapeHtml(EXCHANGE.publisher)}</div>` : ''}
     ${EXCHANGE.description ? `<p>${escapeHtml(EXCHANGE.description)}</p>` : ''}
+    ${EXCHANGE.license ? `<p>Licenza dei dati: ${escapeHtml(EXCHANGE.license)}</p>` : ''}
     ${notes.length ? `<ul>${notes.map((n) => `<li>${escapeHtml(n)}</li>`).join('')}</ul>` : ''}`;
 }
 

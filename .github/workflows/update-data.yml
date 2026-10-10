@@ -48,6 +48,17 @@ jobs:
             ${{ inputs.from && format('--from {0}', inputs.from) || '' }} \
             ${{ inputs.recheck && format('--recheck {0}', inputs.recheck) || '' }}
 
+      # Bologna pubblica PDF: per leggerli serve pdftotext.  Il suo passo non
+      # ferma il resto -- se il sito di AGER non risponde, Verona si aggiorna lo
+      # stesso -- ma il guasto viene fatto valere in fondo, dopo il commit.
+      - name: Installa pdftotext
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends poppler-utils
+
+      - name: Scarica i listini nuovi di Bologna
+        id: bologna
+        continue-on-error: true
+        run: python -m pipeline.update --exchange bologna
+
       - name: Valida il dataset
         run: python -m pipeline.validate
 
@@ -72,6 +83,12 @@ jobs:
           fi
           git commit -m "$messaggio"
           git push
+
+      - name: Fa valere il guasto di Bologna
+        if: steps.bologna.outcome == 'failure'
+        run: |
+          echo "L'aggiornamento di Bologna e' fallito: vedi il passo sopra."
+          exit 1
 
       - name: Segnala il guasto con una issue
         if: failure()

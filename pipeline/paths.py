@@ -16,8 +16,13 @@ EXCHANGE_SLUG = "verona"
 SOURCE_URL = "https://www.portaleprezziverona.it/camcom-verona/it/borsa-merci"
 
 
-def dataset_dir() -> Path:
-    return DATASET_DIR / EXCHANGE_SLUG
+def dataset_dir(slug: str = EXCHANGE_SLUG) -> Path:
+    return DATASET_DIR / slug
+
+
+def archive_dir(slug: str = EXCHANGE_SLUG) -> Path:
+    """I bollettini grezzi di una borsa: non versionati, ricostruibili dalla fonte."""
+    return ROOT / "data" / slug
 
 
 def prices_dir() -> Path:

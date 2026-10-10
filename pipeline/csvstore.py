@@ -169,14 +169,20 @@ def count_revisions(path: Path) -> int:
 
 def write_meta(path: Path, prices: dict, n_products: int,
                counts: dict[str, int], last_issue: Optional[int],
-               n_averages: int = 0) -> None:
+               n_averages: int = 0, exchange=None) -> None:
+    """``exchange`` e' il modulo della borsa (con CODE, NAME, SOURCE_URL); senza,
+    vale Verona."""
+    code, name, url = ((exchange.CODE, exchange.NAME, exchange.SOURCE_URL) if exchange
+                       else (paths.EXCHANGE_CODE, paths.EXCHANGE_NAME, paths.SOURCE_URL))
     dates = sorted({d for d, _ in prices})
     quoted = sum(1 for lo, hi in prices.values() if lo is not None or hi is not None)
     path.write_text(json.dumps({
-        "exchange_code": paths.EXCHANGE_CODE,
-        "exchange_name": paths.EXCHANGE_NAME,
-        "source_url": paths.SOURCE_URL,
-        "license": "CC-BY-4.0",
+        "exchange_code": code,
+        "exchange_name": name,
+        "source_url": url,
+        # La licenza la dichiara la borsa: quella di Verona e' nota, per le
+        # altre vale cio' che dice il loro modulo, anche "non verificata" (None).
+        "license": getattr(exchange, "LICENSE", "CC-BY-4.0") if exchange else "CC-BY-4.0",
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "last_issue_number": last_issue,
         "first_date": dates[0] if dates else None,

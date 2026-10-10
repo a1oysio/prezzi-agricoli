@@ -16,6 +16,11 @@ valori pubblicati e finiscono in ``dataset/<borsa>/revisions.csv``.
     python -m pipeline.update --from 1424  # forza il punto di partenza
     python -m pipeline.update --recheck 30 # allarga la finestra di ricontrollo
     python -m pipeline.update --dry-run    # scarica e riferisce, non scrive nulla
+
+Tutto questo e' Verona, che resta la borsa predefinita.  Le altre hanno fonti
+fatte diversamente e ognuna ha il suo modulo:
+
+    python -m pipeline.update --exchange bologna    # vedi pipeline/bologna.py
 """
 from __future__ import annotations
 
@@ -169,18 +174,28 @@ def update(dataset: Path, staging: Path, start: int | None = None,
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--dataset", type=Path, default=paths.dataset_dir())
+    ap.add_argument("--exchange", choices=["verona", "bologna"], default="verona")
+    ap.add_argument("--dataset", type=Path, default=None)
     ap.add_argument("--staging", type=Path, default=None,
-                    help="dove salvare gli XML scaricati (default: cartella temporanea)")
+                    help="dove salvare i bollettini scaricati (default: cartella temporanea)")
     ap.add_argument("--from", dest="start", type=int, default=None)
-    ap.add_argument("--recheck", type=int, default=RECHECK_ISSUES,
+    ap.add_argument("--recheck", type=int, default=None,
                     help="quanti bollettini gia' acquisiti riscaricare (0 = nessuno)")
     ap.add_argument("--sleep", type=float, default=1.0)
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
-    if args.recheck < 0:
+    if args.recheck is not None and args.recheck < 0:
         ap.error("--recheck non puo' essere negativo")
+    if args.dataset is None:
+        args.dataset = paths.dataset_dir(args.exchange)
+    if args.exchange == "bologna":
+        if args.start is not None:
+            ap.error("--from vale solo per Verona: Bologna riparte dall'ultima data acquisita")
+        from pipeline import bologna
+        return bologna.main_update(args)
+    if args.recheck is None:
+        args.recheck = RECHECK_ISSUES
 
     with tempfile.TemporaryDirectory() as tmp:
         staging = args.staging or Path(tmp)

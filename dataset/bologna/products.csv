@@ -1,0 +1,1414 @@
+code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
+1,n. 1 - Speciali di forza (kg/hl 80;c.e.1% max; p,FRUMENTO TENERO NAZ.LE,EUR/t,2004-01-22,2004-06-24,23,18
+2,Tipo 00 - Granito,FARINE DI F. TENERO,EUR/t,2004-01-22,2008-09-25,234,234
+3,"n. 2 - Speciali (kg/hl 80;c.e.1% max; prot.12,5%)",FRUMENTO TENERO NAZ.LE,EUR/t,2004-01-22,2004-06-24,23,20
+4,"Tipo 00 (ceneri da 0,50 a 0,40)",FARINE DI F. TENERO,EUR/t,2004-01-22,2007-07-12,175,175
+5,Fagioli Borlotti Lamon,LEGUMINOSE > Produzione nazionale,EUR/t,2004-01-22,2010-11-18,343,240
+6,"n. 3 - Fino (kg/hl 79; c.e. 1% max; prot. 10,5%)",FRUMENTO TENERO NAZ.LE,EUR/t,2004-01-22,2004-06-24,23,20
+7,"Tipo 0 (ceneri da 0,65 a 0,51)",FARINE DI F. TENERO,EUR/t,2004-01-22,2007-07-12,175,175
+8,n. 4 - Buono Merc. (kg/hl 74/75; c.e. 2% max),FRUMENTO TENERO NAZ.LE,EUR/t,2004-01-22,2004-06-24,23,0
+9,n. 5 - Mercantile (kg/hl 70/72; c.e. 2% max),FRUMENTO TENERO NAZ.LE,EUR/t,2004-01-22,2004-06-24,23,0
+10,Fagioli Bianchi Cannellini,LEGUMINOSE > Produzione estera,EUR/t,2004-01-22,2010-11-18,343,301
+11,"Tipo 00 (W 300 min. - P/L 0,55 max.)",FARINE DI QUALITA' SUP.,EUR/t,2004-01-22,2016-05-26,613,613
+12,Fagioli Corona,LEGUMINOSE > Produzione estera,EUR/t,2004-01-22,2010-11-18,343,204
+13,Northern Spring USA,FRUMENTO TENERO ESTERO,EUR/t,2004-01-22,2016-05-26,613,613
+14,"Tipo 00 (W 280 min. - P/L 0,48 max.)",FARINE DI QUALITA' SUP.,EUR/t,2004-01-22,2016-05-26,613,613
+15,Fagioli Borlotti,LEGUMINOSE > Produzione estera,EUR/t,2004-01-22,2010-11-18,343,296
+16,N. 1 Canada W.R.S. - Manitoba,FRUMENTO TENERO ESTERO,EUR/t,2004-01-22,2016-05-26,613,521
+17,"Tipo 00 (W 250 min. - P/L 0,52 max.)",FARINE DI QUALITA' SUP.,EUR/t,2004-01-22,2012-04-12,413,413
+18,Ceci 29/30 - 31/32,LEGUMINOSE > Produzione estera,EUR/t,2004-01-22,2010-11-18,343,287
+19,Francese,FRUMENTO TENERO ESTERO,EUR/t,2004-01-22,2008-09-11,232,22
+20,Ceci 33 e +,LEGUMINOSE > Produzione estera,EUR/t,2004-01-22,2010-11-18,343,301
+21,Comunitario (kg/hl 75/76 min; c.e. 2% max),FRUMENTO TENERO ESTERO,EUR/t,2004-01-22,2011-01-20,352,0
+22,Lenticchie,LEGUMINOSE > Produzione estera,EUR/t,2004-01-22,2010-11-18,343,274
+23,Austriaco - Qualità 1 (kg/hl 80; prot.14%),FRUMENTO TENERO ESTERO,EUR/t,2004-01-22,2005-08-25,79,0
+24,Semola (con caratteristiche di legge),SFARINATI DI F. DURO,EUR/t,2004-01-22,2016-05-26,613,613
+25,Piselli Verdi Sgusciati,LEGUMINOSE > Produzione estera,EUR/t,2004-01-22,2010-11-18,343,274
+26,Austriaco - Qualità 3 (kg/hl 78; prot. 12%),FRUMENTO TENERO ESTERO,EUR/t,2004-01-22,2005-08-25,79,0
+27,Semola (con caratteristiche sup.minimi di legge),SFARINATI DI F. DURO,EUR/t,2004-01-22,2009-06-25,272,272
+28,Tedesco - Tipo E (kg/hl 79; prot. 14%),FRUMENTO TENERO ESTERO,EUR/t,2004-01-22,2011-01-20,352,84
+29,Tedesco - Tipo A (kg/hl 79; prot. 13%),FRUMENTO TENERO ESTERO,EUR/t,2004-01-22,2005-08-25,79,65
+30,Pellets - prot. 64-66 % Perù/Cile,FARINE PESCE,EUR/t,2004-01-22,2016-05-26,613,611
+31,Tedesco - Tipo B (kg/hl 79; prot. 11%),FRUMENTO TENERO ESTERO,EUR/t,2004-01-22,2004-07-22,27,22
+32,Frumento Tenero,AGRICOLTURA BIOLOGICA > di produzione nazionale,EUR/t,2004-01-22,2008-08-28,230,201
+33,Danese (prot. 70/72%),FARINE PESCE,EUR/t,2004-01-22,2016-05-26,613,611
+34,Frumento Duro,AGRICOLTURA BIOLOGICA > di produzione nazionale,EUR/t,2004-01-22,2008-08-28,230,200
+35,Orzo,AGRICOLTURA BIOLOGICA > di produzione nazionale,EUR/t,2004-01-22,2008-08-28,230,199
+36,Fino (kg/hl 80;bianc.25/30; c.e. 2% max,FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2004-01-22,2004-07-01,24,19
+37,Granoturco,AGRICOLTURA BIOLOGICA > di produzione nazionale,EUR/t,2004-01-22,2008-08-28,230,192
+38,Buono mercantile (kg/hl 75/76; c.e.2% max),FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2004-01-22,2004-07-01,24,0
+39,Seme di soia,AGRICOLTURA BIOLOGICA > di produzione nazionale,EUR/t,2004-01-22,2008-08-28,230,95
+40,Arborio (superfino-resa ind. 56-71),RISO > Risoni,EUR/t,2004-01-22,2005-09-08,81,63
+41,Mercantile (kg/hl 72/73; c.e.2% max),FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2004-01-22,2004-07-01,24,0
+42,Cruscami di frumento tenero,AGRICOLTURA BIOLOGICA > di produzione nazionale,EUR/t,2004-01-22,2008-08-28,230,0
+43,Baldo (superfino -resa ind. 59-71),RISO > Risoni,EUR/t,2004-01-22,2005-09-08,81,61
+44,Cruscami di frumento duro,AGRICOLTURA BIOLOGICA > di produzione nazionale,EUR/t,2004-01-22,2008-08-28,230,0
+45,Indica (fino - resa ind. 58-70),RISO > Risoni,EUR/t,2004-01-22,2005-09-08,81,51
+46,Fino (kg/hl 80; bianc. 25/30; c.e. 2% ma,FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2004-01-22,2004-07-01,24,20
+47,Buono mercantile (kg/hl 75/76; c.e.2% max),FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2004-01-22,2004-07-01,24,0
+48,Soia nazionale (umidità 14% - impurità 2%),SEMI OLEOSI,EUR/t,2004-01-22,2004-04-22,14,14
+49,Arborio (superfino),RISO > Risi,EUR/t,2004-01-22,2005-09-08,81,80
+50,Girasole nazionale,SEMI OLEOSI,EUR/t,2004-01-22,2004-04-22,14,0
+51,Roma e Baldo (superfino),RISO > Risi,EUR/t,2004-01-22,2005-09-08,81,80
+52,Nazionale comune (Umidità 14%),GRANOTURCO,EUR/t,2004-01-22,2016-05-26,613,613
+53,Ribe (fino),RISO > Risi,EUR/t,2004-01-22,2005-09-08,81,80
+54,Estero nazionalizzato (altre provenienze),GRANOTURCO,EUR/t,2004-01-22,2007-10-25,188,0
+55,Indica (fino),RISO > Risi,EUR/t,2004-01-22,2005-09-08,81,80
+56,Farina integrale,DERIVATI LAV. GRANOTURCO,EUR/t,2004-01-22,2004-09-23,34,30
+57,Originario (comune),RISO > Risi,EUR/t,2004-01-22,2005-09-08,81,80
+58,Corn gluten feed,DERIVATI LAV. GRANOTURCO,EUR/t,2004-01-22,2016-05-26,613,0
+59,Parboiled Ribe,RISO > Risi,EUR/t,2004-01-22,2005-09-08,81,80
+60,Avena nazionale bianca,CEREALI FORAGGERI,EUR/t,2004-01-22,2012-04-12,413,0
+61,Distillers Grains USA,DERIVATI LAV. GRANOTURCO,EUR/t,2004-01-22,2012-04-12,413,0
+62,Avena nazionale rossa,CEREALI FORAGGERI,EUR/t,2004-01-22,2016-05-26,613,397
+63,Corpetto,RISO > Sottoprodotti del riso,EUR/t,2004-01-22,2011-07-14,376,376
+64,Avena estera bianca,CEREALI FORAGGERI,EUR/t,2004-01-22,2012-04-12,413,104
+65,Mezzagrana,RISO > Sottoprodotti del riso,EUR/t,2004-01-22,2011-07-14,376,376
+66,Avena estera rossa,CEREALI FORAGGERI,EUR/t,2004-01-22,2012-04-12,413,0
+67,Soia integrale nazionale (prot. 44% s.t.q.),FARINE VEGETALI DI ESTR.,EUR/t,2004-01-22,2004-04-22,14,14
+68,Grana verde,RISO > Sottoprodotti del riso,EUR/t,2004-01-22,2011-07-14,376,376
+69,Orzo nazionale (kg/hl 56/58),CEREALI FORAGGERI,EUR/t,2004-01-22,2005-06-16,71,0
+70,Soia integrale USA,FARINE VEGETALI DI ESTR.,EUR/t,2004-01-22,2004-04-22,14,0
+71,Farinaccio,RISO > Sottoprodotti del riso,EUR/t,2004-01-22,2011-07-14,376,376
+72,Orzo nazionale (kg/hl 61/63),CEREALI FORAGGERI,EUR/t,2004-01-22,2005-06-16,71,48
+73,Soia integrale Argentina - Brasile,FARINE VEGETALI DI ESTR.,EUR/t,2004-01-22,2004-05-06,16,16
+74,Pula vergine,RISO > Sottoprodotti del riso,EUR/t,2004-01-22,2011-07-14,376,376
+75,Orzo nazionale (kg/hl 65/67),CEREALI FORAGGERI,EUR/t,2004-01-22,2005-06-16,71,62
+76,Girasole integrale nazionale,FARINE VEGETALI DI ESTR.,EUR/t,2004-01-22,2016-05-26,602,602
+77,Orzo estero (nazionalizzato),CEREALI FORAGGERI,EUR/t,2004-01-22,2012-07-19,426,413
+78,Segale nazionale,CEREALI FORAGGERI,EUR/t,2004-01-22,2012-03-22,409,0
+79,Sorgo naz. bianco (Umidità 14%),CEREALI FORAGGERI,EUR/t,2004-01-22,2016-05-26,612,493
+80,Sorgo Estero,CEREALI FORAGGERI,EUR/t,2004-01-22,2012-03-22,409,28
+81,Qualità extra - Proteine 17%,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidratata cubettata,EUR/t,2004-01-22,2007-01-04,148,130
+82,Iª Qualità - Proteine 16%,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidratata cubettata,EUR/t,2004-01-22,2007-01-04,148,140
+83,Frumento per uso zootecnico,CEREALI FORAGGERI,EUR/t,2004-01-22,2016-05-26,612,283
+84,IIª Qualità - Proteine 14%,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidratata cubettata,EUR/t,2004-01-22,2007-01-04,148,148
+85,IV° e V° Sfalcio,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidratata in balloni,EUR/t,2004-01-22,2014-04-30,514,301
+86,II° e III° Sfalcio,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidratata in balloni,EUR/t,2004-01-22,2014-04-30,514,427
+87,Crusca e Cruschello,CRUSCAMI DI F. TENERO > (rinfusa - arrivo),EUR/t,2004-01-22,2016-05-26,613,613
+88,I° Sfalcio,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidratata in balloni,EUR/t,2004-01-22,2014-04-17,512,480
+89,Tritello,CRUSCAMI DI F. TENERO > (rinfusa - arrivo),EUR/t,2004-01-22,2016-05-26,613,613
+90,"Erba medica ess. cub. (prot. 13,5 % stq)",PRODOTTI VEG. DISID.O ESSIC.,EUR/t,2004-01-22,2012-04-12,413,0
+91,Farinaccio,CRUSCAMI DI F. TENERO > (rinfusa - arrivo),EUR/t,2004-01-22,2016-05-26,613,613
+92,Fieno erba medica cub. (prot. 8% stq),PRODOTTI VEG. DISID.O ESSIC.,EUR/t,2004-01-22,2007-01-04,148,148
+93,Cruscame cubettato nazionale,CRUSCAMI DI F. TENERO > (rinfusa - arrivo),EUR/t,2004-01-22,2016-05-26,613,613
+94,Paglia cereali cubettata,PRODOTTI VEG. DISID.O ESSIC.,EUR/t,2004-01-22,2007-01-04,148,125
+95,Cruscame cubettato estero,CRUSCAMI DI F. TENERO > (rinfusa - arrivo),EUR/t,2004-01-22,2016-05-26,613,0
+96,Crusca e Cruschello,CRUSCAMI DI F. TENERO > (Sacco - arrivo),EUR/t,2004-01-22,2016-05-26,613,613
+97,Lino scaglie (prov. Argentina/Egitto),PANELLI,EUR/t,2004-01-22,2016-05-26,602,0
+98,Tritello,CRUSCAMI DI F. TENERO > (Sacco - arrivo),EUR/t,2004-01-22,2016-05-26,613,613
+99,Lino scaglie (prov. altre provenienze),PANELLI,EUR/t,2004-01-22,2012-04-12,413,0
+100,Farinaccio,CRUSCAMI DI F. TENERO > (Sacco - arrivo),EUR/t,2004-01-22,2016-05-26,613,613
+101,Melasso canna zucchero - 48/25,SOTTOPROD. ZUCCHERIFICIO,EUR/t,2004-01-22,2007-09-06,181,181
+102,Crusca - Cruschello - Tritello,CRUSCAMI DI F. DURO,EUR/t,2004-01-22,2016-05-26,613,613
+103,Melasso di bietola,SOTTOPROD. ZUCCHERIFICIO,EUR/t,2004-01-22,2016-05-26,602,602
+104,Cruscame cubettato nazionale,CRUSCAMI DI F. DURO,EUR/t,2004-01-22,2016-05-26,613,613
+105,Polpe esauste bietola essic. - cub.,SOTTOPROD. ZUCCHERIFICIO,EUR/t,2004-01-22,2004-09-30,35,35
+106,Farinaccio,CRUSCAMI DI F. DURO,EUR/t,2004-01-22,2016-05-26,613,613
+107,Polpe esauste bietola essic. - fet.,SOTTOPROD. ZUCCHERIFICIO,EUR/t,2004-01-22,2004-10-07,36,0
+108,Farinetta,CRUSCAMI DI F. DURO,EUR/t,2004-01-22,2016-05-26,613,613
+109,Soia Prod. nazionale (um. 14% - imp. 2%),SEMI OLEOSI,EUR/t,2004-04-29,2016-05-26,599,463
+110,Soia Prod. Estera non OGM,SEMI OLEOSI,EUR/t,2004-04-29,2008-11-13,227,70
+111,Soia Prod. Estera,SEMI OLEOSI,EUR/t,2004-04-29,2016-05-26,588,588
+112,Girasole nazionale (um. 9% - imp. 2%),SEMI OLEOSI,EUR/t,2004-04-29,2016-05-26,599,193
+113,Soia integrale naz. (prot. 44% stq),FARINE VEGETALI DI ESTR.,EUR/t,2004-04-29,2004-05-13,3,3
+114,Soia integrale naz. non OGM,FARINE VEGETALI DI ESTR.,EUR/t,2004-04-29,2004-05-13,3,3
+115,Soia integrale Estera non OGM,FARINE VEGETALI DI ESTR.,EUR/t,2004-04-29,2004-05-13,3,3
+116,Soia integrale Argentina Pellets,FARINE VEGETALI DI ESTR.,EUR/t,2004-05-13,2004-05-13,1,1
+117,Soia tostata integ. naz. (prot. 44% stq),FARINE VEGETALI DI ESTR.,EUR/t,2004-05-20,2006-05-11,99,99
+118,Soia Tostata integ. Argentina Pellets,FARINE VEGETALI DI ESTR.,EUR/t,2004-05-20,2012-04-12,396,170
+119,Soia Tostata integ. Naz. non deriv. OGM,FARINE VEGETALI DI ESTR.,EUR/t,2004-05-20,2016-05-26,585,585
+120,Soia Tostata integ. Estera non deriv. OGM,FARINE VEGETALI DI ESTR.,EUR/t,2004-05-20,2016-05-26,585,575
+121,Soia Tostata Decorticata naz.,FARINE VEGETALI DI ESTR.,EUR/t,2004-05-20,2016-05-26,585,585
+122,Soia Tostata Decorticata estera,FARINE VEGETALI DI ESTR.,EUR/t,2004-05-20,2016-05-26,585,585
+123,Soia Tostata Decorticata naz.non deriv. OGM,FARINE VEGETALI DI ESTR.,EUR/t,2004-05-20,2016-05-26,585,585
+124,Soia Tostata Decorticata est.non deriv. OGM,FARINE VEGETALI DI ESTR.,EUR/t,2004-05-20,2016-05-26,585,576
+125,n. 1 - Speciali di forza,FRUMENTO TENERO NAZ.LE,EUR/t,2004-07-01,2004-07-22,4,0
+126,n. 2 - Speciali (kg/hl 80;c.e.1% max;),FRUMENTO TENERO NAZ.LE,EUR/t,2004-07-01,2004-07-01,1,1
+127,n. 3 - Fino,FRUMENTO TENERO NAZ.LE,EUR/t,2004-07-01,2004-07-01,1,0
+128,n. 4 - Buono Merc.,FRUMENTO TENERO NAZ.LE,EUR/t,2004-07-01,2004-07-22,4,0
+129,n. 5 - Mercantile,FRUMENTO TENERO NAZ.LE,EUR/t,2004-07-01,2004-07-22,4,0
+130,n. 2 - Speciali (kg/hl 80/81;c.e.1% max;),FRUMENTO TENERO NAZ.LE,EUR/t,2004-07-08,2004-07-22,3,3
+131,n. 3 - Fino (kg/hl 79/80;c.e.1% max;),FRUMENTO TENERO NAZ.LE,EUR/t,2004-07-08,2004-07-22,3,3
+132,Fino (kg/hl 80; c.e. 2% max),FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2004-07-08,2007-06-07,146,140
+133,Buono mercantile,FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2004-07-08,2007-06-21,148,0
+134,Mercantile,FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2004-07-08,2013-07-04,301,0
+135,Fino (kg/hl 80; c.e. 2% max),FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2004-07-08,2007-06-07,146,140
+136,Buono mercantile,FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2004-07-08,2007-06-21,148,0
+137,n.1 Speciali di forza (kg/hl 81;ce 1% max; prot,FRUMENTO TENERO NAZ.LE,EUR/t,2004-07-29,2005-06-16,44,41
+138,n.2 Speciali (kg/hl 80/81;c.e.1% max;prot.12%),FRUMENTO TENERO NAZ.LE,EUR/t,2004-07-29,2006-06-29,91,87
+139,n.3 Fino (kg/hl 79/80;c.e.1% max;),FRUMENTO TENERO NAZ.LE,EUR/t,2004-07-29,2007-05-17,139,135
+140,n.4 Buono Merc.,FRUMENTO TENERO NAZ.LE,EUR/t,2004-07-29,2008-07-24,147,0
+141,n.5 Mercantile,FRUMENTO TENERO NAZ.LE,EUR/t,2004-07-29,2008-07-24,147,0
+142,"Tedesco - Tipo B (kg/hl 79; prot. 11,5%)",FRUMENTO TENERO ESTERO,EUR/t,2004-07-29,2005-08-25,52,46
+143,Farina integrale uso zootecnico,DERIVATI LAV. GRANOTURCO,EUR/t,2004-09-30,2016-05-26,579,579
+144,Polpe Barbabietola essic. Cub. naz.,SOTTOPROD. ZUCCHERIFICIO,EUR/t,2004-10-07,2016-05-26,567,310
+145,Polpe Barbabietola essic. Cub. Est.,SOTTOPROD. ZUCCHERIFICIO,EUR/t,2004-10-14,2016-05-26,566,494
+146,n.2 Speciali (kg/hl 80/81;c.e.1% max;prot.12%),FRUMENTO TENERO NAZ.LE > n.1 Speciali di forza (kg/hl 81;ce 1% max; prot.13%) n.q. n.q. n.q. n.q. - - - - -,EUR/t,2005-06-23,2005-06-23,1,0
+147,n.3 Fino (kg/hl 79/80;c.e.1% max;),FRUMENTO TENERO NAZ.LE > n.1 Speciali di forza (kg/hl 81;ce 1% max; prot.13%) n.q. n.q. n.q. n.q. - - - - -,EUR/t,2005-06-23,2005-06-23,1,0
+148,n.4 Buono Merc.,FRUMENTO TENERO NAZ.LE > n.1 Speciali di forza (kg/hl 81;ce 1% max; prot.13%) n.q. n.q. n.q. n.q. - - - - -,EUR/t,2005-06-23,2005-06-23,1,0
+149,n.5 Mercantile,FRUMENTO TENERO NAZ.LE > n.1 Speciali di forza (kg/hl 81;ce 1% max; prot.13%) n.q. n.q. n.q. n.q. - - - - -,EUR/t,2005-06-23,2005-06-23,1,0
+150,Orzo nazionale (kg/hl 60/61),CEREALI FORAGGERI,EUR/t,2005-06-23,2007-06-07,99,37
+151,Orzo nazionale (kg/hl 63/64),CEREALI FORAGGERI,EUR/t,2005-06-23,2011-06-16,201,182
+152,Orzo nazionale (kg/hl 66/68),CEREALI FORAGGERI,EUR/t,2005-06-23,2007-06-07,99,92
+153,n.1 Speciali di forza (kg/hl 81;ce 1% max;),FRUMENTO TENERO NAZ.LE,EUR/t,2005-06-30,2005-07-21,4,0
+154,n.2 Speciali (kg/hl 80/81;c.e.1% max;),FRUMENTO TENERO NAZ.LE,EUR/t,2005-06-30,2006-07-06,5,5
+155,n.1 Speciali di forza (kg/hl 81;ce1% max;prot.1,FRUMENTO TENERO NAZ.LE,EUR/t,2005-07-28,2006-07-06,48,42
+156,Austriaco - Qualità 1 (kg/hl 79; prot.15%),FRUMENTO TENERO ESTERO,EUR/t,2005-09-01,2011-01-20,273,205
+157,"Austriaco - Qualità 3 (kg/hl 78; prot. 12,5%)",FRUMENTO TENERO ESTERO,EUR/t,2005-09-01,2011-01-20,273,0
+158,Tedesco - Tipo A (kg/hl 78; prot. 13%),FRUMENTO TENERO ESTERO,EUR/t,2005-09-01,2011-01-20,273,42
+159,"Tedesco - Tipo B (kg/hl 77; prot. 11,5%)",FRUMENTO TENERO ESTERO,EUR/t,2005-09-01,2011-01-20,273,184
+160,Mercantile (kg/hl 77/78),FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2005-09-08,2005-09-08,1,0
+161,Arborio / Volano,RISO > Risoni,EUR/t,2005-09-15,2007-09-27,102,86
+162,Carnaroli,RISO > Risoni,EUR/t,2005-09-15,2007-09-27,103,86
+163,Baldo,RISO > Risoni,EUR/t,2005-09-15,2007-09-27,102,86
+164,"Lido, Savio e similari",RISO > Risoni,EUR/t,2005-09-15,2007-09-27,102,85
+165,Indica,RISO > Risoni,EUR/t,2005-09-15,2007-09-27,102,78
+166,Arborio,RISO > Risi,EUR/t,2005-09-15,2011-07-14,295,291
+167,Mercantile (kg/hl 77/78) slavato,FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2005-09-15,2007-06-07,89,41
+168,Baldo,RISO > Risi,EUR/t,2005-09-15,2011-07-14,295,291
+169,Ribe,RISO > Risi,EUR/t,2005-09-15,2011-07-14,295,291
+170,"Lido, Savio e similari",RISO > Risi,EUR/t,2005-09-15,2011-07-14,295,291
+171,Indica,RISO > Risi,EUR/t,2005-09-15,2011-07-14,295,291
+172,Originario,RISO > Risi,EUR/t,2005-09-15,2011-07-14,295,291
+173,Ribe Parboiled,RISO > Risi,EUR/t,2005-09-15,2011-07-14,295,291
+174,Favino nazionale,AGRICOLTURA BIOLOGICA > di produzione nazionale,EUR/t,2005-09-22,2008-08-28,148,50
+175,Arborio / Volano - resa indic. 58,RISO > Risoni,EUR/t,2005-09-29,2005-09-29,1,1
+176,Baldo - resa indic. 58,RISO > Risoni,EUR/t,2005-09-29,2005-09-29,1,1
+177,"Lido, Savio e similari - r. ind. 60",RISO > Risoni,EUR/t,2005-09-29,2005-09-29,1,1
+178,Indica - resa indic. 58,RISO > Risoni,EUR/t,2005-09-29,2005-09-29,1,1
+179,Soia tostata integ. Nazion. (prot. 44% stq),FARINE VEGETALI DI ESTR.,EUR/t,2006-05-18,2016-05-26,486,486
+180,Soia tostata integ. estera (prot. 44% stq),FARINE VEGETALI DI ESTR.,EUR/t,2006-05-18,2016-05-26,485,485
+181,n.1 Speciali di forza (kg/hl 81;ce1% max;),FRUMENTO TENERO NAZ.LE,EUR/t,2006-07-13,2006-09-14,8,8
+182,n.2 Speciali (kg/hl 80/81;c.e.1% max),FRUMENTO TENERO NAZ.LE,EUR/t,2006-07-13,2007-05-17,43,43
+183,n.1 Speciali forza (kg/hl 81;ce1% max;),FRUMENTO TENERO NAZ.LE,EUR/t,2006-09-21,2007-05-17,35,35
+184,Qualità extra - Proteine 17%,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidr. o essiccata cub.,EUR/t,2007-01-11,2016-02-18,451,337
+185,Iª Qualità - Proteine 16%,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidr. o essiccata cub.,EUR/t,2007-01-11,2016-02-18,450,428
+186,IIª Qualità - Proteine 14%,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidr. o essiccata cub.,EUR/t,2007-01-11,2016-02-18,448,444
+187,Sfarinato di fieno cubettato,PRODOTTI VEG. DISID.O ESSIC.,EUR/t,2007-01-11,2016-02-18,450,450
+188,Sfarinato di paglia cubettato,PRODOTTI VEG. DISID.O ESSIC.,EUR/t,2007-01-11,2016-02-18,450,450
+189,n.1 Speciali forza (kg/hl 81;ce1% max; prot.),FRUMENTO TENERO NAZ.LE,EUR/t,2007-05-24,2007-06-07,3,0
+190,n.2 Speciali (kg/hl 80/81;c.e.1% max; prot.),FRUMENTO TENERO NAZ.LE,EUR/t,2007-05-24,2007-06-07,3,0
+191,n.3 Fino (kg/hl 79/80;c.e.1% max; prot.),FRUMENTO TENERO NAZ.LE,EUR/t,2007-05-24,2007-05-24,1,0
+192,n.3 Fino (kg/hl 79/80;c.e.1% max; ),FRUMENTO TENERO NAZ.LE,EUR/t,2007-05-31,2007-06-07,2,0
+193,n.1 Speciali forza (kg/hl ;ce% max; prot.),FRUMENTO TENERO NAZ.LE,EUR/t,2007-06-14,2007-06-14,1,0
+194,n.2 Speciali (kg/hl ;c.e.% max; prot.),FRUMENTO TENERO NAZ.LE,EUR/t,2007-06-14,2007-06-14,1,0
+195,n.3 Fino (kg/hl ;c.e.% max; ),FRUMENTO TENERO NAZ.LE,EUR/t,2007-06-14,2007-06-14,1,0
+196,Fino (kg/hl ; c.e. % max),FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2007-06-14,2007-06-21,2,0
+197,Fino (kg/hl ; c.e. % max),FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2007-06-14,2007-06-14,1,0
+198,Mercantile (kg/hl ) slavato,FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2007-06-14,2007-06-21,2,0
+199,Orzo nazionale (kg/hl 55/57),CEREALI FORAGGERI,EUR/t,2007-06-14,2011-06-16,202,74
+200,Orzo nazionale (kg/hl 59/60),CEREALI FORAGGERI,EUR/t,2007-06-14,2009-06-18,101,91
+201,Orzo nazionale (kg/hl 62/63),CEREALI FORAGGERI,EUR/t,2007-06-14,2009-06-11,100,91
+202,Orzo nazionale (kg/hl 65/66),CEREALI FORAGGERI,EUR/t,2007-06-14,2009-06-11,100,94
+203,n.1 Spec. forza (kg/hl 78/79 ;ce1%max;prot.),FRUMENTO TENERO NAZ.LE,EUR/t,2007-06-21,2007-08-30,9,6
+204,"n.2 Spec. (kg/hl 77/78;ce,1%max; Hag.180/200)",FRUMENTO TENERO NAZ.LE,EUR/t,2007-06-21,2007-08-30,9,9
+205,n.2 Bis Spec. (kg/hl 76/77;ce.1%max;Hag.130/150,FRUMENTO TENERO NAZ.LE,EUR/t,2007-06-21,2007-08-30,9,9
+206,n.3 Fino (kg/hl 76/77;ce.1%max;Hag.180/200),FRUMENTO TENERO NAZ.LE,EUR/t,2007-06-21,2007-08-30,9,9
+207,n.4 Buono Merc. (kg/hl 74/75;ce.1%max;),FRUMENTO TENERO NAZ.LE,EUR/t,2007-06-21,2007-08-30,9,9
+208,n.5 Mercantile (kg/hl 72/73;ce.2%max;),FRUMENTO TENERO NAZ.LE,EUR/t,2007-06-21,2007-08-30,9,9
+209,n.6 Altri usi,FRUMENTO TENERO NAZ.LE,EUR/t,2007-06-21,2008-06-26,52,45
+210,Fino (kg/hl 78/79 ; c.e. 1+1% max),FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2007-06-21,2008-06-26,52,50
+211,Fino (kg/hl 78/79; c.e. 1+1% max),FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2007-06-28,2008-06-26,51,49
+212,Buono mercantile (kg/hl 75/76; c.e.1+1%ma,FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2007-06-28,2007-10-25,16,16
+213,Buono mercantile (kg/hl 75/76; c.e.1+1%ma,FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2007-06-28,2007-10-25,16,16
+214,Mercantile,FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2007-06-28,2013-07-04,153,0
+215,Tipo 00,FARINE DI F. TENERO,EUR/t,2007-07-19,2008-09-25,59,59
+216,Tipo 0,FARINE DI F. TENERO,EUR/t,2007-07-19,2008-09-25,59,59
+217,"n.1 Spec.forza (ps78/79;ce1%;pr13,5)",FRUMENTO TENERO NAZ.LE,EUR/t,2007-09-06,2008-06-26,43,41
+218,"n.2 Spec. (ps77/78;ce1%;FN180/200;pr12,5)",FRUMENTO TENERO NAZ.LE,EUR/t,2007-09-06,2008-06-26,43,41
+219,"n.2 BisSpec. (ps76/77;ce1%;FN130/150;pr12,5)",FRUMENTO TENERO NAZ.LE,EUR/t,2007-09-06,2008-06-26,43,40
+220,"n.3 Fino (ps76/77;ce1%;FN180/200;pr11,5)",FRUMENTO TENERO NAZ.LE,EUR/t,2007-09-06,2008-06-26,43,41
+221,n.4 Buono Merc. (ps74/75;ce1%),FRUMENTO TENERO NAZ.LE,EUR/t,2007-09-06,2008-06-26,43,37
+222,n.5 Mercantile (ps72/73;ce2%),FRUMENTO TENERO NAZ.LE,EUR/t,2007-09-06,2008-06-26,43,37
+223,Melasso canna zucchero - 43/25,SOTTOPROD. ZUCCHERIFICIO,EUR/t,2007-09-13,2016-05-26,421,421
+224,Arborio / Volano (r.i. 58/60),RISO > Risoni,EUR/t,2007-10-04,2011-07-14,192,165
+225,Carnaroli (r.i. 58/60),RISO > Risoni,EUR/t,2007-10-04,2011-07-14,192,168
+226,Baldo (r.i. 58/60),RISO > Risoni,EUR/t,2007-10-04,2011-07-14,192,150
+227,"Lido, Savio e similari (r.i. 60/62)",RISO > Risoni,EUR/t,2007-10-04,2011-07-14,192,174
+228,Indica (r.i. 60/62),RISO > Risoni,EUR/t,2007-10-04,2011-07-14,192,159
+229,Buono mercantile (kg/hl 75/76; c.e.1+1%max),FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2007-10-31,2008-06-26,35,32
+230,Buono mercantile (kg/hl 75/76; c.e.1+1%max),FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2007-10-31,2008-06-26,35,32
+231,Comunitario,GRANOTURCO,EUR/t,2007-10-31,2012-10-11,249,81
+232,Brasiliano,GRANOTURCO,EUR/t,2007-10-31,2012-09-20,246,1
+233,"n.1 Spec.forza (ps80;ce1%;pr13,5)",FRUMENTO TENERO NAZ.LE,EUR/t,2008-07-03,2008-07-03,1,0
+234,"n.2 Spec. (ps79;ce1%;pr12,5)",FRUMENTO TENERO NAZ.LE,EUR/t,2008-07-03,2008-07-03,1,1
+235,"n.3 Fino (ps78/79;ce1%;pr11,5)",FRUMENTO TENERO NAZ.LE,EUR/t,2008-07-03,2008-07-03,1,1
+236,Fino (kg/hl 80; c.e. 1+1% max),FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2008-07-03,2009-07-09,51,48
+237,Buono mercantile (kg/hl 78; c.e.1+1%max),FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2008-07-03,2009-07-09,51,47
+238,Mercantile (kg/hl 76; c.e.1+1%max),FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2008-07-03,2009-09-24,61,53
+239,Altri usi,FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2008-07-03,2012-04-12,89,45
+240,Fino (kg/hl 80; c.e. 1+1% max),FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2008-07-03,2009-07-09,51,47
+241,Buono mercantile (kg/hl 78; c.e.1+1%max),FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2008-07-03,2009-07-09,51,47
+242,"n.1 Spec.forza (ps 80 kg/hl ; ce 1%; prot.13,5%)",FRUMENTO TENERO NAZ.LE,EUR/t,2008-07-10,2010-06-24,99,93
+243,"n.2 Spec. ( ps 79 kg/hl; ce 1%; prot. 12,5%)",FRUMENTO TENERO NAZ.LE,EUR/t,2008-07-10,2010-06-24,99,94
+244,"n.3 Fino (ps 78/79 kg/hl; ce 1%; prot. 11,5%)",FRUMENTO TENERO NAZ.LE,EUR/t,2008-07-10,2010-06-24,99,94
+245,n.4 Buono Merc. (ps 74/75 kg/hl),FRUMENTO TENERO NAZ.LE,EUR/t,2008-07-31,2009-06-25,45,41
+246,n.5 Mercantile (ps 70/72 kg/hl),FRUMENTO TENERO NAZ.LE,EUR/t,2008-07-31,2009-06-25,45,41
+247,n. 6 Altri Usi,FRUMENTO TENERO NAZ.LE,EUR/t,2008-07-31,2009-06-25,45,41
+248,Frumento Tenero,AGRIC. BIOLOGICA PROD. NAZ.,EUR/t,2008-09-04,2016-05-26,383,357
+249,Frumento Duro,AGRIC. BIOLOGICA PROD. NAZ.,EUR/t,2008-09-04,2016-05-26,383,354
+250,Orzo,AGRIC. BIOLOGICA PROD. NAZ.,EUR/t,2008-09-04,2016-05-26,383,346
+251,Granoturco,AGRIC. BIOLOGICA PROD. NAZ.,EUR/t,2008-09-04,2016-05-26,383,366
+252,Farro,AGRIC. BIOLOGICA PROD. NAZ.,EUR/t,2008-09-04,2009-07-23,46,18
+253,Favino nazionale,AGRIC. BIOLOGICA PROD. NAZ.,EUR/t,2008-09-04,2016-05-26,383,208
+254,Seme di soia,AGRIC. BIOLOGICA PROD. NAZ.,EUR/t,2008-09-04,2016-05-26,383,292
+255,Cruscami di frumento tenero,AGRIC. BIOLOGICA PROD. NAZ.,EUR/t,2008-09-04,2016-05-26,383,228
+256,Cruscami di frumento duro,AGRIC. BIOLOGICA PROD. NAZ.,EUR/t,2008-09-04,2016-05-26,383,205
+257,Francese (kg/hl 76; c.e. 2%; prot.15%),FRUMENTO TENERO ESTERO,EUR/t,2008-09-18,2009-08-27,48,48
+258,Tipo 00 - Granito,FARINE F. TENERO Caratt. Legge,EUR/t,2008-10-02,2016-05-26,379,362
+259,Tipo 00,FARINE F. TENERO Caratt. Legge,EUR/t,2008-10-02,2016-05-26,379,362
+260,Tipo 0,FARINE F. TENERO Caratt. Legge,EUR/t,2008-10-02,2016-05-26,379,362
+261,Soia Prod. Estera Ucraino,SEMI OLEOSI,EUR/t,2008-11-20,2012-04-12,172,72
+262,Soia Prod. Estera Sudamerica,SEMI OLEOSI,EUR/t,2008-11-20,2011-04-07,121,11
+263,Orzo nazionale (kg/hl 66/67),CEREALI FORAGGERI,EUR/t,2009-06-18,2013-06-13,201,184
+264,Orzo nazionale (kg/hl 61/62),CEREALI FORAGGERI,EUR/t,2009-06-25,2010-06-24,52,37
+265,"Semola (con car.sup.min.legge - prot.min 12,5%)",SFARINATI DI F. DURO,EUR/t,2009-07-02,2016-05-26,341,341
+266,Fino (kg/hl 80;c.e.1+1%Max:Bianconati 40%),FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2009-07-16,2009-09-24,10,10
+267,Buono m. (kg/hl 77/78;c.e.1+1%max;Bianc. 50%),FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2009-07-16,2009-09-24,10,10
+268,Fino (kg/hl 79/80;c.e.1+1%max;bianc.35/40),FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2009-07-16,2009-07-16,1,1
+269,Buono m. (kg/hl 77/78;c.e.1+1%max;bianc.50/55%,FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2009-07-16,2009-09-24,10,10
+270,Mercantile (kg/hl 75/76; c.e.1+1%max Slavato),FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2009-07-16,2009-07-16,1,1
+271,114 - IIª Qualità - Proteine 14%,PRODOTTI VEG. DISID.O ESSIC.,EUR/t,2009-07-16,2009-07-23,2,2
+272,n. 4 Buono m. (p.s. 75/76; ce 1%),FRUMENTO TENERO NAZ.LE,EUR/t,2009-07-23,2011-01-20,76,71
+273,Fino (kg/hl 79/80;c.e.1+1%max;bianc.35/40%),FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2009-07-23,2009-09-24,9,9
+274,Mercantile (kg/hl 75/76; c.e.1+1%max-Slavato),FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2009-07-23,2009-09-24,9,9
+275,101 Soia tostata integ. estera (prot. 44% stq),FARINE VEGETALI DI ESTR.,EUR/t,2009-07-23,2016-04-28,12,12
+276,n. 4 Buono m. (p.s. 75/76; ),FRUMENTO TENERO NAZ.LE,EUR/t,2009-07-30,2009-07-30,1,1
+277,Farro (Triticum dicoccum),AGRIC. BIOLOGICA PROD. NAZ.,EUR/t,2009-07-30,2016-05-26,337,244
+278,Mercantile (kg/hl 72/73; c.e.2+2%max-Slavato),FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2009-07-30,2009-09-24,8,8
+279,Francese (kg/hl 76; c.e. 2%),FRUMENTO TENERO ESTERO,EUR/t,2009-09-03,2011-01-20,72,72
+280,Fino (kg/hl 80;c.e.1+1%:Bianconati 40%),FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2009-10-01,2010-07-01,40,39
+281,Buono m. (kg/hl 77/78;c.e.1+1%;Bianc. 50%),FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2009-10-01,2010-07-08,41,40
+282,Mercantile (kg/hl 76; c.e.1+1%),FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2009-10-01,2011-01-20,68,60
+283,Fino (kg/hl 79/80;c.e.1+1%;bianc.35/40%),FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2009-10-01,2011-01-20,68,67
+284,Buono m. (kg/hl 77/78;c.e.1+1%;bianc.50/55%),FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2009-10-01,2011-01-20,68,63
+285,Mercantile (kg/hl 75/76; c.e.1+1% Slavato),FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2009-10-01,2011-01-20,68,60
+286,Mercantile (kg/hl 72/73; c.e.2+2% Slavato),FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2009-10-01,2010-07-01,40,18
+287,n.1 Spec.forza (ps 78/79 kg/hl ; ce 1%;),FRUMENTO TENERO NAZ.LE,EUR/t,2010-07-01,2010-07-08,2,1
+288,n.2 Spec. ( ps 78 kg/hl; ce 1%; Hag.150/180),FRUMENTO TENERO NAZ.LE,EUR/t,2010-07-01,2010-07-01,1,1
+289,n.3 Fino (ps 77 kg/hl; ce 1%;),FRUMENTO TENERO NAZ.LE,EUR/t,2010-07-01,2010-07-08,2,2
+290,n. 5 Mercantile (p.s. 72/74; ce 1%),FRUMENTO TENERO NAZ.LE,EUR/t,2010-07-01,2011-01-20,29,0
+291,Orzo nazionale (kg/hl 60/62),CEREALI FORAGGERI,EUR/t,2010-07-01,2016-05-26,142,112
+292,n.2 Spec. ( ps 78 kg/hl; ce 1%; B.M.A.),FRUMENTO TENERO NAZ.LE,EUR/t,2010-07-08,2010-07-08,1,1
+293,Fino (kg/hl 79/80;c.e.1+1%:Bianconati 40%),FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2010-07-08,2010-07-08,1,1
+294,n.1 Spec.forza (ps 78/79 kg/hl ; ce 1%; p.13%),FRUMENTO TENERO NAZ.LE,EUR/t,2010-07-15,2011-01-20,27,27
+295,n.2 Spec. ( ps 78 kg/hl; ce 1%; p. 12%; B.M.A.),FRUMENTO TENERO NAZ.LE,EUR/t,2010-07-15,2011-01-20,27,27
+296,n.3 Fino (ps 77 kg/hl; ce 1%; prot. 11%),FRUMENTO TENERO NAZ.LE,EUR/t,2010-07-15,2011-01-20,27,27
+297,Fino (kg/hl 79/80;c.e.1+1%; Bianc.40%; Volp.10%),FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2010-07-15,2011-01-20,27,27
+298,Buono m. (kg/hl 77/78;c.e.1+1%; B.50%; V.13%),FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2010-07-15,2011-01-20,27,27
+299,Altri usi (kg/hl 71/74),FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2010-07-22,2011-06-23,47,19
+300,Erba medica di qualità extra,FORAGGI ERBA MEDICA,EUR/t,2010-11-25,2014-07-31,185,79
+301,in cascina 1° taglio - rotoballe,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2010-11-25,2011-07-21,34,33
+302,in cascina 1° taglio - balloni,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2010-11-25,2011-07-21,34,33
+303,in cascina 1/2/3° taglio - rotoballe,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2010-11-25,2011-10-13,17,17
+304,in cascina 1/2/3° taglio - balloni,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2010-11-25,2011-10-13,17,17
+305,1/2/3° taglio - cascina rotoballe,FORAGGI ERBA MEDICA > E.M. di montagna 1 a qual.,EUR/t,2010-11-25,2011-06-01,27,24
+306,Paglia di grano - rotoballe,FORAGGI ERBA MEDICA > Paglia 1a qual.,EUR/t,2010-11-25,2011-07-14,33,31
+307,Paglia di grano - Balloni,FORAGGI ERBA MEDICA > Paglia 1a qual.,EUR/t,2010-11-25,2011-06-09,28,27
+308,"n.1 Spec.forza (ps 78/79 kg/hl, ce 1%, p.13%)",FRUMENTO TENERO NAZ.LE,EUR/t,2011-01-27,2011-06-16,20,18
+309,"n.2 Spec. ( ps 78 kg/hl, ce 1%, p. 12%, B.M.A.)",FRUMENTO TENERO NAZ.LE,EUR/t,2011-01-27,2011-06-16,20,18
+310,"n.3 Fino (ps 77 kg/hl, ce 1%, prot. 11%)",FRUMENTO TENERO NAZ.LE,EUR/t,2011-01-27,2011-06-16,20,18
+311,"n. 4 Buono m. (p.s. 75/76, ce 1%)",FRUMENTO TENERO NAZ.LE,EUR/t,2011-01-27,2011-06-16,20,18
+312,"n. 5 Mercantile (p.s. 72/74, ce 1%)",FRUMENTO TENERO NAZ.LE,EUR/t,2011-01-27,2011-06-16,20,0
+313,in cascina 2/3/4° taglio - rotoballe,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2011-01-27,2011-06-01,18,13
+314,in cascina 2/3/4° taglio - balloni,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2011-01-27,2011-06-01,18,13
+315,"Francese (kg/hl 76, c.e. 2%)",FRUMENTO TENERO ESTERO,EUR/t,2011-01-27,2013-09-26,133,61
+316,"Comunitario (kg/hl 75/76 min, c.e. 2% max)",FRUMENTO TENERO ESTERO,EUR/t,2011-01-27,2013-07-11,124,0
+317,"Austriaco - Qualità 1 (kg/hl 79, prot.15%)",FRUMENTO TENERO ESTERO,EUR/t,2011-01-27,2013-09-26,133,57
+318,"Austriaco - Qualità 3 (kg/hl 78, prot. 12,5%)",FRUMENTO TENERO ESTERO,EUR/t,2011-01-27,2013-09-26,133,0
+319,"Tedesco - Tipo E (kg/hl 79, prot. 14%)",FRUMENTO TENERO ESTERO,EUR/t,2011-01-27,2013-09-26,133,0
+320,"Tedesco - Tipo A (kg/hl 78, prot. 13%)",FRUMENTO TENERO ESTERO,EUR/t,2011-01-27,2013-09-26,133,0
+321,"Tedesco - Tipo B (kg/hl 77, prot. 11,5%)",FRUMENTO TENERO ESTERO,EUR/t,2011-01-27,2013-09-26,133,8
+322,"Fino (kg/hl 79/80,c.e.1+1%, Bianc.40%, Volp.10%)",FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2011-01-27,2011-06-23,21,20
+323,"Buono m. (kg/hl 77/78,c.e.1+1%, B.50%, V.13%)",FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2011-01-27,2011-06-23,21,19
+324,"Mercantile (kg/hl 76, c.e.1+1%)",FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2011-01-27,2011-06-23,21,19
+325,"Fino (kg/hl 79/80,c.e.1+1%,bianc.35/40%)",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2011-01-27,2011-06-23,21,20
+326,"Buono m. (kg/hl 77/78,c.e.1+1%,bianc.50/55%)",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2011-01-27,2011-06-23,21,20
+327,"Mercantile (kg/hl 75/76, c.e.1+1% Slavato)",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2011-01-27,2011-06-23,21,19
+328,in campo 2° taglio - rotoballe,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2011-06-09,2011-07-14,6,4
+329,in campo 2° taglio - balloni,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2011-06-09,2011-07-14,6,4
+330,1° taglio - campo rotoballe,FORAGGI ERBA MEDICA > E.M. mont/collina 1 a qual,EUR/t,2011-06-09,2012-07-12,8,6
+331,Paglia di grano - balloni,FORAGGI ERBA MEDICA > Paglia 1a qual.,EUR/t,2011-06-16,2011-07-14,5,4
+332,n.1 Spec.forza,FRUMENTO TENERO NAZ.LE,EUR/t,2011-06-23,2013-07-04,5,3
+333,n.2 Spec.,FRUMENTO TENERO NAZ.LE,EUR/t,2011-06-23,2013-07-04,5,4
+334,n.3 Fino,FRUMENTO TENERO NAZ.LE,EUR/t,2011-06-23,2011-07-14,4,4
+335,n. 4 Buono m.,FRUMENTO TENERO NAZ.LE,EUR/t,2011-06-23,2013-07-04,103,0
+336,n. 5 Mercantile,FRUMENTO TENERO NAZ.LE,EUR/t,2011-06-23,2013-07-04,103,0
+337,Orzo nazionale (kg/hl 62/64),CEREALI FORAGGERI > -,EUR/t,2011-06-23,2011-06-23,1,1
+338,Orzo nazionale (kg/hl 66/67),CEREALI FORAGGERI > -,EUR/t,2011-06-23,2011-06-23,1,1
+339,Orzo estero (nazionalizzato),CEREALI FORAGGERI > -,EUR/t,2011-06-23,2011-06-23,1,1
+340,Segale nazionale,CEREALI FORAGGERI > -,EUR/t,2011-06-23,2011-06-23,1,0
+341,Sorgo naz. bianco (Umidità 14%),CEREALI FORAGGERI > -,EUR/t,2011-06-23,2011-06-23,1,0
+342,Sorgo Estero,CEREALI FORAGGERI > -,EUR/t,2011-06-23,2011-06-23,1,0
+343,Frumento per uso zootecnico,CEREALI FORAGGERI > -,EUR/t,2011-06-23,2011-06-23,1,0
+344,Fino,FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2011-06-30,2011-07-14,3,3
+345,Buono m.,FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2011-06-30,2013-07-04,102,0
+346,Fino,FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2011-06-30,2011-07-14,3,3
+347,Buono m.,FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2011-06-30,2011-07-21,4,0
+348,Orzo nazionale (kg/hl 62/64),CEREALI FORAGGERI,EUR/t,2011-06-30,2014-06-05,147,91
+349,"n.1 Spec.forza (ps 81 kg/hl, ce 1%, prot. 13%)",FRUMENTO TENERO NAZ.LE,EUR/t,2011-07-21,2012-06-21,47,38
+350,"n.2 Spec. ( ps 80 kg/hl, ce 1%, prot. 12%)",FRUMENTO TENERO NAZ.LE,EUR/t,2011-07-21,2012-06-21,47,45
+351,"n.3 Fino (ps 79 kg/hl, ce 1%, prot. 11%)",FRUMENTO TENERO NAZ.LE,EUR/t,2011-07-21,2012-06-21,47,45
+352,in campo 3° taglio - rotoballe,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2011-07-21,2011-08-04,3,3
+353,in campo 3° taglio - balloni,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2011-07-21,2011-08-04,3,3
+354,in cascina 2° taglio - rotoballe,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2011-07-21,2011-07-21,1,1
+355,in cascina 2° taglio - balloni,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2011-07-21,2011-07-21,1,1
+356,2° taglio - campo rotoballe,FORAGGI ERBA MEDICA > E.M. mont/collina 1 a qual,EUR/t,2011-07-21,2012-06-28,48,3
+357,1° taglio - cascina rotoballe,FORAGGI ERBA MEDICA > E.M. mont/collina 1 a qual,EUR/t,2011-07-21,2012-06-14,46,4
+358,Paglia di grano 1a qual.- rotoballe,FORAGGI ERBA MEDICA > E.M. mont/collina 1 a qual,EUR/t,2011-07-21,2012-07-12,50,49
+359,Paglia di grano 1a qual.- balloni (1,FORAGGI ERBA MEDICA > E.M. mont/collina 1 a qual,EUR/t,2011-07-21,2012-07-12,50,49
+360,Arborio / Volano (r.i. 58/60),FARINE PESCE > RISO - Risoni,EUR/t,2011-07-21,2012-10-04,60,47
+361,"Fino (kg/hl 80,c.e.1+1%,bianc. 25/30%)",FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2011-07-21,2012-06-21,47,45
+362,Carnaroli (r.i. 58/60),FARINE PESCE > RISO - Risoni,EUR/t,2011-07-21,2012-10-04,60,53
+363,Baldo (r.i. 58/60),FARINE PESCE > RISO - Risoni,EUR/t,2011-07-21,2012-10-04,60,47
+364,"Lido, Savio e similari (r.i. 60/62)",FARINE PESCE > RISO - Risoni,EUR/t,2011-07-21,2012-10-04,60,53
+365,Indica (r.i. 60/62),FARINE PESCE > RISO - Risoni,EUR/t,2011-07-21,2012-10-04,60,41
+366,"Fino (kg/hl 80,c.e.1+1%,bianc. 25/30%)",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2011-07-21,2012-06-21,47,45
+367,Arborio,FARINE PESCE > Risi,EUR/t,2011-07-21,2016-05-26,237,235
+368,Baldo,FARINE PESCE > Risi,EUR/t,2011-07-21,2016-05-26,237,235
+369,Ribe,FARINE PESCE > Risi,EUR/t,2011-07-21,2016-05-26,237,235
+370,"Lido, Savio e similari",FARINE PESCE > Risi,EUR/t,2011-07-21,2016-05-26,237,235
+371,Indica,FARINE PESCE > Risi,EUR/t,2011-07-21,2016-05-26,237,235
+372,Originario,FARINE PESCE > Risi,EUR/t,2011-07-21,2016-05-26,237,235
+373,Ribe Parboiled,FARINE PESCE > Risi,EUR/t,2011-07-21,2016-05-26,237,235
+374,Corpetto,FARINE PESCE > Sottoprodotti del riso,EUR/t,2011-07-21,2016-05-26,237,237
+375,Mezzagrana,FARINE PESCE > Sottoprodotti del riso,EUR/t,2011-07-21,2016-05-26,237,237
+376,Grana verde,FARINE PESCE > Sottoprodotti del riso,EUR/t,2011-07-21,2016-05-26,237,237
+377,Farinaccio,FARINE PESCE > Sottoprodotti del riso,EUR/t,2011-07-21,2016-05-26,237,237
+378,Pula vergine,FARINE PESCE > Sottoprodotti del riso,EUR/t,2011-07-21,2016-05-26,237,237
+379,in cascina 4° taglio - rotoballe,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2011-07-28,2011-09-22,7,5
+380,in cascina 4° taglio - balloni,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2011-07-28,2011-09-22,7,5
+381,in cascina 1/2° taglio - rotoballe,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2011-07-28,2011-08-04,2,2
+382,in cascina 1/2° taglio - balloni,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2011-07-28,2011-08-04,2,2
+383,"Buono m. (kg/hl 77/78,c.e.1+1%, bianc. 50%)",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2011-07-28,2013-07-04,98,44
+384,3° taglio - campo rotoballe,FORAGGI ERBA MEDICA > E.M. mont/collina 1 a qual,EUR/t,2011-08-25,2012-06-28,45,8
+385,1/2° taglio - cascina rotoballe,FORAGGI ERBA MEDICA > E.M. mont/collina 1 a qual,EUR/t,2011-08-25,2011-10-13,8,8
+386,in campo 4° taglio - rotoballe,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2011-09-29,2012-05-10,33,3
+387,in campo 4° taglio - balloni,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2011-09-29,2012-05-10,33,3
+388,in cascina 1/2/3/4° taglio - rotoball,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2011-10-20,2012-06-14,35,27
+389,in cascina 1/2/3/4° taglio - balloni,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2011-10-20,2012-06-14,35,27
+390,1/2/3° taglio - cascina rotoballe,FORAGGI ERBA MEDICA > E.M. mont/collina 1 a qual,EUR/t,2011-10-20,2012-06-28,37,27
+391,Girasole Estero,SEMI OLEOSI,EUR/t,2012-02-23,2016-05-26,208,0
+392,Ceci,AGRIC. BIOLOGICA PROD. NAZ.,EUR/t,2012-03-29,2016-05-26,203,106
+393,Pisello proteico nazionale,CEREALI FORAGGERI,EUR/t,2012-03-29,2016-05-26,203,3
+394,Pisello proteico Estero,CEREALI FORAGGERI,EUR/t,2012-03-29,2016-05-26,203,15
+395,"Tipo 0 (W 250 min. - P/L 0,52 max.)",FARINE DI QUALITA' SUP.,EUR/t,2012-04-19,2016-05-26,200,200
+396,Pisello Proteico,AGRIC. BIOLOGICA PROD. NAZ.,EUR/t,2012-04-19,2016-05-26,200,114
+397,Soia Prod. Estera Ucraina,SEMI OLEOSI,EUR/t,2012-04-19,2016-05-26,200,94
+398,Girasole Proteico estero,FARINE VEGETALI DI ESTR.,EUR/t,2012-04-19,2016-05-26,189,189
+399,Colza,FARINE VEGETALI DI ESTR.,EUR/t,2012-04-19,2016-05-26,189,189
+400,in campo 1° taglio - rotoballe,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2012-05-17,2012-06-14,5,5
+401,in campo 1° taglio - balloni,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2012-05-17,2012-06-14,5,5
+402,1° taglio in campo - rotoballe,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2012-06-21,2012-07-12,4,4
+403,1° taglio in campo - balloni,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2012-06-21,2012-07-12,4,4
+404,2/3/4° taglio in campo - in rotobal,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2012-06-21,2012-06-28,2,2
+405,2/3/4° taglio in campo - balloni,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2012-06-21,2012-06-28,2,2
+406,1° taglio in campo rotoballe,FORAGGI ERBA MEDICA > E.M. mont/collina 1 a qual,EUR/t,2012-06-21,2012-07-12,4,4
+407,"n.1 Spec.forza (ps 81 kg/hl, ce 1%)",FRUMENTO TENERO NAZ.LE,EUR/t,2012-06-28,2012-06-28,1,0
+408,"n.2 Spec. ( ps 80 kg/hl, ce 1%)",FRUMENTO TENERO NAZ.LE,EUR/t,2012-06-28,2012-06-28,1,1
+409,"n.3 Fino (ps 80 kg/hl, ce 1%)",FRUMENTO TENERO NAZ.LE,EUR/t,2012-06-28,2012-06-28,1,1
+410,"Fino (kg/hl 80,c.e.1+1%, bianc. 20/25%)",FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2012-06-28,2013-07-04,52,48
+411,"Fino (kg/hl 80,c.e.1+1%)",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2012-06-28,2013-07-04,52,48
+412,"n.1 Spec.forza (ps 81 kg/hl, ce 1%, prt. 13,8%)",FRUMENTO TENERO NAZ.LE,EUR/t,2012-07-05,2013-06-27,50,47
+413,"n.2 Spec. ( ps 80 kg/hl, ce 1%, prt. 12,5%)",FRUMENTO TENERO NAZ.LE,EUR/t,2012-07-05,2013-06-27,50,47
+414,"n.3 Fino (ps 80 kg/hl, ce 1%, prt. 11,5%)",FRUMENTO TENERO NAZ.LE,EUR/t,2012-07-05,2013-06-27,50,47
+415,2° taglio in campo - in rotoballe,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2012-07-05,2012-07-12,2,2
+416,2 taglio in campo - balloni,FORAGGI ERBA MEDICA > E.M. di pianura 1 a qual.,EUR/t,2012-07-05,2012-07-12,2,2
+417,taglio - campo rotoballe,FORAGGI ERBA MEDICA > E.M. mont/collina 1 a qual,EUR/t,2012-07-05,2012-07-12,2,0
+418,taglio - cascina rotoballe,FORAGGI ERBA MEDICA > E.M. mont/collina 1 a qual,EUR/t,2012-07-05,2012-07-12,2,0
+419,E.M. di pianura 1 a qual.,FORAGGI ERBA MEDICA,EUR/t,2012-07-19,2012-07-19,1,0
+420,1° taglio in campo - rotoballe,FORAGGI ERBA MEDICA,EUR/t,2012-07-19,2013-08-01,4,4
+421,1° taglio in campo - balloni,FORAGGI ERBA MEDICA,EUR/t,2012-07-19,2012-07-19,1,1
+422,2° taglio in campo - in rotoballe,FORAGGI ERBA MEDICA,EUR/t,2012-07-19,2012-07-19,1,1
+423,2 taglio in campo - balloni,FORAGGI ERBA MEDICA,EUR/t,2012-07-19,2012-07-19,1,1
+424,E.M. mont/collina 1 a qual,FORAGGI ERBA MEDICA,EUR/t,2012-07-19,2012-07-19,1,0
+425,1° taglio - campo rotoballe,FORAGGI ERBA MEDICA,EUR/t,2012-07-19,2012-07-19,1,0
+426,taglio - campo rotoballe,FORAGGI ERBA MEDICA,EUR/t,2012-07-19,2012-07-19,1,0
+427,taglio - cascina rotoballe,FORAGGI ERBA MEDICA,EUR/t,2012-07-19,2012-07-19,1,0
+428,1° taglio in campo rotoballe,FORAGGI ERBA MEDICA,EUR/t,2012-07-19,2012-07-19,1,1
+429,Paglia di grano 1a qual.- rotoballe,FORAGGI ERBA MEDICA,EUR/t,2012-07-19,2012-07-19,1,1
+430,Paglia di grano 1a qual.- balloni (1,FORAGGI ERBA MEDICA,EUR/t,2012-07-19,2012-07-19,1,1
+431,1° taglio in campo - rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2012-07-26,2015-07-09,30,24
+432,1° taglio in campo - balloni,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2012-07-26,2015-07-09,30,24
+433,2° taglio in campo - in rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2012-07-26,2012-09-27,8,2
+434,2° taglio in campo - balloni,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2012-07-26,2015-07-09,20,13
+435,3° taglio in campo - in rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2012-07-26,2012-08-02,2,2
+436,3° taglio in campo - balloni,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2012-07-26,2013-08-22,3,3
+437,1° taglio in campo - rotoballe,FORAGGI ERBA MEDICA > 1a qual. di Montagna/collina,EUR/t,2012-07-26,2014-05-22,7,4
+438,Paglia di grano 1a qual.- rotoballe,FORAGGI ERBA MEDICA > Paglia 1a qualità,EUR/t,2012-07-26,2012-09-06,4,4
+439,Paglia di grano 1a qual.- balloni (1,FORAGGI ERBA MEDICA > Paglia 1a qualità,EUR/t,2012-07-26,2012-09-06,4,4
+440,Orzo estero,CEREALI FORAGGERI,EUR/t,2012-07-26,2016-05-26,186,186
+441,3/4° taglio in campo - in rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2012-08-23,2012-08-30,2,2
+442,3/4° taglio in campo - balloni,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2012-08-23,2013-06-06,3,2
+443,Paglia di grano 1a qual.- balloni,"FORAGGI ERBA MEDICA > Paglia di grano 1a qual.- rotoballe48,00 53,00 48,00 53,00",EUR/t,2012-08-23,2012-08-23,1,1
+444,100 Soia tostata integ. Nazion. (prot. 44% stq),FARINE VEGETALI DI ESTR.,EUR/t,2012-08-23,2016-04-28,11,11
+445,102 Soia Tostata integ. Naz. non deriv. OGM,FARINE VEGETALI DI ESTR.,EUR/t,2012-08-23,2016-04-28,11,11
+446,103 Soia Tostata integ. Estera non deriv. OGM,FARINE VEGETALI DI ESTR.,EUR/t,2012-08-23,2016-04-28,11,1
+447,106 Soia Tostata Decorticata naz.,FARINE VEGETALI DI ESTR.,EUR/t,2012-08-23,2016-04-28,11,11
+448,107 Soia Tostata Decorticata estera,FARINE VEGETALI DI ESTR.,EUR/t,2012-08-23,2016-04-28,11,11
+449,108 Soia Tostata Decorticata naz.non deriv. OGM,FARINE VEGETALI DI ESTR.,EUR/t,2012-08-23,2016-04-28,11,11
+450,109 Soia Tostata Decorticata est.non deriv. OGM,FARINE VEGETALI DI ESTR.,EUR/t,2012-08-23,2016-04-28,11,1
+451,110 Girasole integrale nazionale,FARINE VEGETALI DI ESTR.,EUR/t,2012-08-23,2016-04-28,11,11
+452,111 Girasole Proteico estero,FARINE VEGETALI DI ESTR.,EUR/t,2012-08-23,2016-04-28,11,11
+453,112 Colza,FARINE VEGETALI DI ESTR.,EUR/t,2012-08-23,2016-04-28,11,11
+454,115 - Iª Qualità - Proteine 16%,PRODOTTI VEG. DISID.O ESSIC.,EUR/t,2012-08-23,2012-08-23,1,1
+455,116 - IIª Qualità - Proteine 14%,PRODOTTI VEG. DISID.O ESSIC.,EUR/t,2012-08-23,2012-08-23,1,1
+456,118 - IV° e V° Sfalcio,PRODOTTI VEG. DISID.O ESSIC. > 117 Erba medica disidratata in balloni,EUR/t,2012-08-23,2012-08-23,1,1
+457,119 - II° e III° Sfalcio,PRODOTTI VEG. DISID.O ESSIC. > 117 Erba medica disidratata in balloni,EUR/t,2012-08-23,2012-08-23,1,1
+458,120 - I° Sfalcio,PRODOTTI VEG. DISID.O ESSIC. > 117 Erba medica disidratata in balloni,EUR/t,2012-08-23,2012-08-23,1,1
+459,121 Sfarinato di fieno cubettato,PRODOTTI VEG. DISID.O ESSIC. > 117 Erba medica disidratata in balloni,EUR/t,2012-08-23,2016-04-28,11,11
+460,122 Sfarinato di paglia cubettato,PRODOTTI VEG. DISID.O ESSIC. > 117 Erba medica disidratata in balloni,EUR/t,2012-08-23,2016-04-28,11,11
+461,124 Lino scaglie (prov. Argentina/Egitto),123 PANELLI,EUR/t,2012-08-23,2016-04-28,11,0
+462,126 Melasso canna zucchero - 43/25,125 SOTTOPROD. ZUCCHERIFICIO,EUR/t,2012-08-23,2016-04-28,11,11
+463,127 Melasso di bietola,125 SOTTOPROD. ZUCCHERIFICIO,EUR/t,2012-08-23,2016-04-28,11,11
+464,128 Polpe Barbabietola essic. Cub. naz.,125 SOTTOPROD. ZUCCHERIFICIO,EUR/t,2012-08-23,2016-04-28,11,0
+465,Polpe Barbabietola essic. Cub. Est.,125 SOTTOPROD. ZUCCHERIFICIO,EUR/t,2012-08-23,2016-04-28,11,11
+466,4° taglio in campo - in rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2012-09-06,2012-09-27,4,4
+467,4° taglio in campo - balloni,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2012-09-06,2015-06-11,50,15
+468,2° taglio in campo - rotoballe,FORAGGI ERBA MEDICA > 1a qual. di Montagna/collina,EUR/t,2012-09-06,2012-09-27,4,4
+469,Paglia di grano - rotoballe,FORAGGI ERBA MEDICA > Paglia 1a qualità,EUR/t,2012-09-13,2012-10-11,5,5
+470,Paglia di grano - balloni,FORAGGI ERBA MEDICA > Paglia 1a qualità,EUR/t,2012-09-13,2012-10-11,5,5
+471,Estero,GRANOTURCO,EUR/t,2012-09-27,2012-10-11,3,0
+472,1° taglio in cascina - rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2012-10-04,2016-05-12,142,120
+473,1° taglio in cascina - balloni,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2012-10-04,2016-05-12,142,120
+474,2° taglio in cascina - rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2012-10-04,2016-05-12,72,62
+475,2° taglio in cascina - balloni,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2012-10-04,2016-05-12,72,62
+476,3/4° taglio in cascina - rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2012-10-04,2013-07-11,40,29
+477,3/4° taglio in cascina - balloni,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2012-10-04,2013-07-11,40,29
+478,1/2° taglio in cascina - rotoballe,FORAGGI ERBA MEDICA > 1a qual. di Montagna/collina,EUR/t,2012-10-04,2013-05-30,35,30
+479,Extra - in cascina,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2012-10-11,2013-06-06,35,28
+480,Arborio / Volano,FARINE PESCE > RISO - Risoni,EUR/t,2012-10-11,2012-10-18,2,2
+481,Carnaroli,FARINE PESCE > RISO - Risoni,EUR/t,2012-10-11,2012-10-18,2,2
+482,Baldo,FARINE PESCE > RISO - Risoni,EUR/t,2012-10-11,2012-10-18,2,2
+483,"Lido, Savio e similari",FARINE PESCE > RISO - Risoni,EUR/t,2012-10-11,2012-10-18,2,2
+484,Indica,FARINE PESCE > RISO - Risoni,EUR/t,2012-10-11,2012-10-18,2,2
+485,Paglia di grano 1a q. - rotoballe,FORAGGI ERBA MEDICA > 1a qual. di Montagna/collina,EUR/t,2012-10-18,2014-05-22,78,76
+486,Paglia di grano 1a q.- balloni,FORAGGI ERBA MEDICA > 1a qual. di Montagna/collina,EUR/t,2012-10-18,2014-05-22,78,76
+487,Estero comunitario,GRANOTURCO,EUR/t,2012-10-18,2016-05-26,176,170
+488,Estero non comunitario,GRANOTURCO,EUR/t,2012-10-18,2016-05-26,176,164
+489,Arborio / Volano (56/58),FARINE PESCE > RISO - Risoni,EUR/t,2012-10-25,2016-05-26,175,136
+490,Carnaroli (58/60),FARINE PESCE > RISO - Risoni,EUR/t,2012-10-25,2016-05-26,175,143
+491,Baldo (58/60),FARINE PESCE > RISO - Risoni,EUR/t,2012-10-25,2016-05-26,175,129
+492,"Lido, Savio e similari (59/61)",FARINE PESCE > RISO - Risoni,EUR/t,2012-10-25,2016-05-26,175,68
+493,Indica (60/62),FARINE PESCE > RISO - Risoni,EUR/t,2012-10-25,2016-05-26,175,86
+494,Ad uso energetico,GRANOTURCO,EUR/t,2013-03-14,2016-05-26,155,21
+495,2° taglio in campo - rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2013-06-06,2015-07-09,12,11
+496,3/4° taglio in campo - rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2013-06-06,2013-06-06,1,0
+497,1/2° taglio in campo - rotoballe,FORAGGI ERBA MEDICA > 1a qual. di Montagna/collina,EUR/t,2013-06-06,2013-07-11,6,6
+498,Orzo nazionale (kg/hl 58/60),CEREALI FORAGGERI,EUR/t,2013-06-20,2014-06-05,48,29
+499,"n.3 Fino (ps 79/80 kg/hl, ce 1%)",FRUMENTO TENERO NAZ.LE,EUR/t,2013-07-04,2013-07-11,2,2
+500,"n.1 Spec.forza (ps 79/80 kg/hl, ce 1%)",FRUMENTO TENERO NAZ.LE,EUR/t,2013-07-11,2013-07-11,1,1
+501,"n.2 Spec. (ps 79/80 kg/hl, ce 1%)",FRUMENTO TENERO NAZ.LE,EUR/t,2013-07-11,2013-07-11,1,1
+502,"n. 4 Buono m. (ps 76/77 kg/hl, ce 2%)",FRUMENTO TENERO NAZ.LE,EUR/t,2013-07-11,2013-09-26,10,10
+503,"n. 5 Mercantile (ps 73/75 kg/hl, ce 2%)",FRUMENTO TENERO NAZ.LE,EUR/t,2013-07-11,2013-09-26,10,0
+504,"Fino (ps 79/80, ce 1+1%, b. 30/35%, v. 10%)",FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2013-07-11,2013-08-01,4,4
+505,"Buono m. (ps 76/77, ce 1,5+1,5%, b. 50/60%, v. 1",FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2013-07-11,2013-08-01,4,3
+506,"Mercantile (ps 74/75, ce 2+2%, v. 12%)",FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2013-07-11,2013-09-26,10,0
+507,"Fino (ps 79/80, ce 1+1%, b. 30/35%, v. 10%)",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2013-07-11,2013-08-01,4,4
+508,"Buono m. (ps 76/77,ce 1,5+1,5%, b. 50/60%, v. 12",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2013-07-11,2013-08-01,4,3
+509,"Mercantile (ps 74/75, ce 2+2%, v. 12%)",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2013-07-11,2013-09-26,10,7
+510,"n.1 Spec.forza (ps 79/80 kg/hl, ce 1%, p",FRUMENTO TENERO NAZ.LE,EUR/t,2013-07-18,2013-09-26,9,9
+511,"n.2 Spec. (ps 79/80 kg/hl, ce 1%, p 12%",FRUMENTO TENERO NAZ.LE,EUR/t,2013-07-18,2013-09-26,9,9
+512,1a qualità di pianura,FORAGGI ERBA MEDICA,EUR/t,2013-07-18,2013-08-01,3,0
+513,"n.3 Fino (ps 79/80 kg/hl, ce 1%, p 11%)",FRUMENTO TENERO NAZ.LE,EUR/t,2013-07-18,2013-09-26,9,9
+514,2° taglio in campo - rotoballe,FORAGGI ERBA MEDICA,EUR/t,2013-07-18,2013-08-01,3,3
+515,2° taglio in campo - balloni,FORAGGI ERBA MEDICA,EUR/t,2013-07-18,2013-08-01,3,3
+516,1° taglio in cascina - rotoballe,FORAGGI ERBA MEDICA,EUR/t,2013-07-18,2013-08-01,3,3
+517,1° taglio in cascina - balloni,FORAGGI ERBA MEDICA,EUR/t,2013-07-18,2013-08-01,3,3
+518,3/4° taglio in cascina - rotoballe,FORAGGI ERBA MEDICA,EUR/t,2013-07-18,2013-07-25,2,0
+519,3/4° taglio in cascina - balloni,FORAGGI ERBA MEDICA,EUR/t,2013-07-18,2013-07-25,2,0
+520,1a qual. di Montagna/collina,FORAGGI ERBA MEDICA,EUR/t,2013-07-18,2013-08-01,3,0
+521,"Comunitario (kg/hl 76 min, c.e. 2% max)",FRUMENTO TENERO ESTERO,EUR/t,2013-07-18,2013-09-26,9,9
+522,Paglia di grano 1a q. - rotoballe,FORAGGI ERBA MEDICA,EUR/t,2013-07-18,2013-08-01,3,3
+523,Paglia di grano 1a q.- balloni,FORAGGI ERBA MEDICA,EUR/t,2013-07-18,2013-08-01,3,3
+524,3° taglio in campo - rotoballe,FORAGGI ERBA MEDICA,EUR/t,2013-08-01,2013-08-01,1,1
+525,3° taglio in campo - balloni,FORAGGI ERBA MEDICA,EUR/t,2013-08-01,2013-08-01,1,1
+526,3° taglio in campo - rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2013-08-22,2013-08-22,1,1
+527,2° taglio in campo - Rotoballe,FORAGGI ERBA MEDICA > 1a qual. di Montagna/collina,EUR/t,2013-08-22,2014-05-22,3,1
+528,"Fino (ps 79/80, ce 1+1%,b.30/35%,v.10%,P.12,5%)",FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2013-08-22,2013-09-26,6,6
+529,"Buono m. (ps 76/77, ce 1,5+1,5%,b.50/60%,v.12%",FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2013-08-22,2013-09-26,6,6
+530,"Fino (ps 79/80, ce 1+1%,b.30/35%,v.10%.,P.12,5%",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2013-08-22,2013-09-26,6,6
+531,"Buono m. (ps 76/77,ce 1,5+1,5%,b.50/60%,v.12%",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2013-08-22,2013-09-26,6,6
+532,3 taglio in cascina - rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2013-08-29,2013-08-29,1,1
+533,3° taglio in cascina - balloni,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2013-08-29,2016-05-12,33,32
+534,1° taglio in cascina - rotoballe,FORAGGI ERBA MEDICA > 1a qual. di Montagna/collina,EUR/t,2013-08-29,2014-05-08,36,28
+535,2° taglio in cascina - Rotoballe,FORAGGI ERBA MEDICA > 1a qual. di Montagna/collina,EUR/t,2013-08-29,2014-05-08,36,33
+536,2°/3° taglio in cascina - rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2013-09-05,2014-05-08,35,32
+537,2°/3° taglio in cascina - balloni,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2013-09-05,2014-05-08,35,32
+538,4° taglio in campo - rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2013-09-05,2015-06-11,46,11
+539,"n.1 Spec.forza (79/80 kg/hl, ce 1%, p 13%)",FRUMENTO TENERO NAZ.LE,EUR/t,2013-10-03,2014-06-19,37,34
+540,"n.2 Spec. (79/80 kg/hl, ce 1%, p 12%)",FRUMENTO TENERO NAZ.LE,EUR/t,2013-10-03,2014-06-19,37,34
+541,"n.3 Fino (79/80 kg/hl, ce 1%, p 11%)",FRUMENTO TENERO NAZ.LE,EUR/t,2013-10-03,2014-06-19,37,34
+542,"n. 4 Buono m. (76/77 kg/hl, ce 2%)",FRUMENTO TENERO NAZ.LE,EUR/t,2013-10-03,2014-07-10,40,16
+543,"n. 5 Mercantile (73/75 kg/hl, ce 2%)",FRUMENTO TENERO NAZ.LE,EUR/t,2013-10-03,2016-05-26,128,39
+544,4° taglio in cascina - rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2013-10-03,2016-05-12,63,59
+545,4° taglio in cascina - balloni,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2013-10-03,2016-05-12,63,59
+546,"Francese (76 kg/hl, c.e. 2%)",FRUMENTO TENERO ESTERO,EUR/t,2013-10-03,2016-05-26,128,0
+547,"Comunitario (76 kg/hl min, c.e. 2% max)",FRUMENTO TENERO ESTERO,EUR/t,2013-10-03,2016-05-26,128,92
+548,"Austriaco - Qualità 1 (79 kg/hl, prot.15%)",FRUMENTO TENERO ESTERO,EUR/t,2013-10-03,2016-05-26,128,57
+549,"Austriaco - Qualità 3 (78 kg/hl, prot. 12,5%)",FRUMENTO TENERO ESTERO,EUR/t,2013-10-03,2016-05-26,128,0
+550,"Tedesco - Tipo E (79 kg/hl, prot. 14%)",FRUMENTO TENERO ESTERO,EUR/t,2013-10-03,2016-05-26,128,0
+551,"Tedesco - Tipo A (78 kg/hl, prot. 13%)",FRUMENTO TENERO ESTERO,EUR/t,2013-10-03,2016-05-26,128,0
+552,"Tedesco - Tipo B (77 kg/hl, prot. 11,5%)",FRUMENTO TENERO ESTERO,EUR/t,2013-10-03,2016-05-26,128,53
+553,"Fino (79/80 kg/hl,ce 1+1%,b.30/35%,v.10%,p.12,5%)",FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2013-10-03,2014-06-26,38,34
+554,"Buono m. (76/77 kg/hl,ce 1,5+1,5%,b.50/60%,v.12%,p.12%)",FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2013-10-03,2014-06-26,38,33
+555,"Mercantile (74/75 kg/hl,ce 2+2%,v. 12%)",FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2013-10-03,2014-07-10,40,0
+556,"Fino (79/80 kg/hl,ce 1+1%,b.30/35%,v.10%.,p.12,5%)",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2013-10-03,2014-06-26,38,34
+557,"Buono m. (76/77 kg/hl,ce 1,5+1,5%,b.50/60%,v.12%,p.12%)",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2013-10-03,2014-06-26,38,33
+558,"Mercantile (74/75 kg/hl,ce 2+2%,v. 12%)",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2013-10-03,2016-05-26,128,72
+559,I° Sfalcio - 20/50% medica,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidratata in balloni,EUR/t,2014-04-24,2014-04-30,2,2
+560,20/50% medica,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidratata in balloni,EUR/t,2014-05-08,2014-05-22,3,3
+561,2°/3° taglio in campo - rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2014-05-15,2014-06-05,4,0
+562,2°/3° taglio in campo - balloni,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2014-05-15,2014-06-05,4,0
+563,1° taglio in campo - rotoballe,FORAGGI ERBA MEDICA > 1a qual. di Collina,EUR/t,2014-05-29,2015-08-20,19,19
+564,2° taglio in campo - Rotoballe,FORAGGI ERBA MEDICA > 1a qual. di Collina,EUR/t,2014-05-29,2015-08-20,14,8
+565,Paglia di grano 1a q. - rotoballe,FORAGGI ERBA MEDICA > 1a qual. di Collina,EUR/t,2014-05-29,2015-08-20,56,50
+566,Paglia di grano 1a q.- balloni,FORAGGI ERBA MEDICA > 1a qual. di Collina,EUR/t,2014-05-29,2015-08-20,56,50
+567,50/90 % medica,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidratata in balloni,EUR/t,2014-05-29,2014-06-19,4,4
+568,20 % medica,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidratata in balloni,EUR/t,2014-05-29,2016-05-26,85,85
+569,taglio in campo - rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2014-06-12,2014-07-31,8,0
+570,taglio in campo - balloni,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2014-06-12,2014-07-31,8,0
+571,Orzo nazionale (kg/hl 64/66),CEREALI FORAGGERI,EUR/t,2014-06-12,2016-05-26,93,87
+572,"n.1 Spec.forza (79/80 kg/hl, ce 1%)",FRUMENTO TENERO NAZ.LE,EUR/t,2014-06-26,2014-06-26,1,0
+573,"n.2 Spec. (79/80 kg/hl, ce 1%)",FRUMENTO TENERO NAZ.LE,EUR/t,2014-06-26,2014-06-26,1,0
+574,"n.3 Fino (78 kg/hl, ce 1%)",FRUMENTO TENERO NAZ.LE,EUR/t,2014-06-26,2014-07-10,3,3
+575,90 % medica,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidratata in balloni,EUR/t,2014-06-26,2016-05-26,81,81
+576,50 % medica,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidratata in balloni,EUR/t,2014-06-26,2016-05-26,81,81
+577,"n.1 Spec.forza (78/79 kg/hl, ce 1%)",FRUMENTO TENERO NAZ.LE,EUR/t,2014-07-03,2014-07-10,2,2
+578,"n.2 Spec. (78/79 kg/hl, ce 1%)",FRUMENTO TENERO NAZ.LE,EUR/t,2014-07-03,2014-07-10,2,2
+579,"Fino (79/80 kg/hl,ce 1+1%,b.30/35%,v.8%)",FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2014-07-03,2014-07-10,2,2
+580,"Buono m. (77/78 kg/hl,ce 1,5+1,5%,b.50/60%,v.10%)",FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2014-07-03,2014-07-10,2,2
+581,"Fino (79/80 kg/hl,ce 1+1%,b.30/35%,v.10%.)",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2014-07-03,2014-07-03,1,0
+582,"Buono m. (76/77 kg/hl,ce 1,5+1,5%,b.50/60%,v.12%)",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2014-07-03,2014-07-03,1,0
+583,"Fino (79/80 kg/hl,ce 1+1%,b.40/45%,v.8%.)",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2014-07-10,2014-07-10,1,1
+584,"Buono m. (76/77 kg/hl,ce 1,5+1,5%,v.10%)",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2014-07-10,2014-07-10,1,1
+585,"n.1 Spec.forza (78/79 kg/hl, ce 1%, p 13%)",FRUMENTO TENERO NAZ.LE,EUR/t,2014-07-17,2016-05-26,88,84
+586,"n.2 Spec. (78/79 kg/hl, ce 1%, p 12%)",FRUMENTO TENERO NAZ.LE,EUR/t,2014-07-17,2016-05-26,88,85
+587,"n.3 Fino (78 kg/hl, ce 1%, p 11%)",FRUMENTO TENERO NAZ.LE,EUR/t,2014-07-17,2016-05-26,88,85
+588,"n. 4 Buono m. (76 kg/hl, ce 2%)",FRUMENTO TENERO NAZ.LE,EUR/t,2014-07-17,2016-05-26,88,39
+589,2/3° taglio in campo - rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2014-07-17,2014-07-31,3,3
+590,2/3° taglio in campo - balloni,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2014-07-17,2014-07-31,3,3
+591,"Fino (79/80 kg/hl,ce 1+1%,b.30/35%,v.6%,p12,5%)",FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2014-07-17,2016-05-26,88,85
+592,"Buono m. (77/78 kg/hl,ce 1,5+1,5%,b.50/60%,v.8%,p11,5%)",FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2014-07-17,2016-05-26,88,81
+593,"Mercantile (74/75 kg/hl,ce 2+2%,v. 10%)",FRUMENTO DURO NAZIONALE > Produzione Nord,EUR/t,2014-07-17,2016-05-26,88,39
+594,"Fino (79/80 kg/hl,ce 1+1%,b.40/45%,v.6%,p12%)",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2014-07-17,2015-06-25,43,40
+595,"Buono m. (76/77 kg/hl,ce 1,5+1,5%,b.50/60%,v.8%,p11%)",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2014-07-17,2016-05-26,88,81
+596,Orzo nazionale (kg/hl 57/59),CEREALI FORAGGERI,EUR/t,2014-07-24,2016-05-26,87,38
+597,2/3° taglio in cascina - rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2014-08-21,2014-10-02,7,7
+598,2/3° taglio in cascina - balloni,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2014-08-21,2014-10-02,7,7
+599,1° taglio in cascina - rotoballe,FORAGGI ERBA MEDICA > 1a qual. di Collina,EUR/t,2014-08-21,2015-06-04,37,30
+600,2° taglio in cascina - Rotoballe,FORAGGI ERBA MEDICA > 1a qual. di Collina,EUR/t,2014-08-21,2014-10-09,8,8
+601,3° taglio in campo - Rotoballe,FORAGGI ERBA MEDICA > 1a qual. di Collina,EUR/t,2014-08-21,2014-10-23,10,9
+602,2/3/4° taglio in cascina - rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2014-10-09,2015-06-11,31,23
+603,2/3/4° taglio in cascina - balloni,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2014-10-09,2015-06-11,31,23
+604,2°/3° taglio in cascina - Rotoballe,FORAGGI ERBA MEDICA > 1a qual. di Collina,EUR/t,2014-10-16,2015-07-09,34,22
+605,Qualità extra,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2014-10-30,2016-05-12,64,49
+606,4° taglio in campo - balloni,"FORAGGI ERBA MEDICA > 4° taglio in campo - rotoballe n.q. n.q. , n.q.",EUR/t,2015-06-18,2015-06-18,1,0
+607,4° taglio in campo - balloni,"FORAGGI ERBA MEDICA > 4° taglio in campo - rotoballe , n.q. , n.q.",EUR/t,2015-06-25,2015-07-09,3,0
+608,"Fino (79/80 kg/hl,ce 1+1%,b.25/30%,v.6%,p12%)",FRUMENTO DURO NAZIONALE > Produzione Centro,EUR/t,2015-07-02,2016-05-26,45,45
+609,Farro (Triticum Dicoccum),CEREALI FORAGGERI,EUR/t,2015-07-09,2016-05-26,44,15
+610,1° taglio in campo - rotoballe,FORAGGI ERBA MEDICA > Qualità extra,EUR/t,2015-07-16,2016-05-26,6,6
+611,1° taglio in campo - balloni,FORAGGI ERBA MEDICA > Qualità extra,EUR/t,2015-07-16,2016-05-26,6,6
+612,2° taglio in campo - rotoballe,FORAGGI ERBA MEDICA > Qualità extra,EUR/t,2015-07-16,2016-05-26,5,4
+613,2° taglio in campo - balloni,FORAGGI ERBA MEDICA > Qualità extra,EUR/t,2015-07-16,2016-05-26,5,4
+614,3° taglio in campo - rotoballe,FORAGGI ERBA MEDICA > Qualità extra,EUR/t,2015-07-16,2016-05-26,5,4
+615,3° taglio in campo - balloni,FORAGGI ERBA MEDICA > Qualità extra,EUR/t,2015-07-16,2016-05-26,5,4
+616,1° taglio in cascina - rotoballe,FORAGGI ERBA MEDICA > Qualità extra,EUR/t,2015-08-27,2015-09-24,5,5
+617,1° taglio in cascina - balloni,FORAGGI ERBA MEDICA > Qualità extra,EUR/t,2015-08-27,2015-09-24,5,5
+618,2° taglio in cascina - rotoballe,FORAGGI ERBA MEDICA > Qualità extra,EUR/t,2015-08-27,2016-05-19,6,5
+619,2° taglio in cascina - balloni,FORAGGI ERBA MEDICA > Qualità extra,EUR/t,2015-08-27,2016-05-19,6,5
+620,3° taglio in cascina - rotoballe,FORAGGI ERBA MEDICA > Qualità extra,EUR/t,2015-08-27,2016-05-19,6,5
+621,3° taglio in cascina - balloni,FORAGGI ERBA MEDICA > Qualità extra,EUR/t,2015-08-27,2016-05-19,6,5
+622,4° taglio in campo - rotoballe,FORAGGI ERBA MEDICA > Qualità extra,EUR/t,2015-08-27,2016-05-26,6,5
+623,4° taglio in campo - balloni,FORAGGI ERBA MEDICA > Qualità extra,EUR/t,2015-08-27,2016-05-26,6,5
+624,Paglia di grano 1a q. - rotoballe,FORAGGI ERBA MEDICA > Qualità extra,EUR/t,2015-08-27,2016-05-26,7,7
+625,Paglia di grano 1a q. - balloni,FORAGGI ERBA MEDICA > Qualità extra,EUR/t,2015-08-27,2016-05-26,7,7
+626,3° taglio in cascina - rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2015-10-01,2016-05-12,32,31
+627,Paglia di grano 1a q. - rotoballe,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2015-10-01,2016-05-12,32,32
+628,Paglia di grano 1a q. - balloni,FORAGGI ERBA MEDICA > 1a qualità di pianura,EUR/t,2015-10-01,2016-05-12,32,32
+629,Proteine 17%,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidr. o essiccata cub.,EUR/t,2016-02-25,2016-05-26,14,8
+630,115 Proteine 16%,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidr. o essiccata cub.,EUR/t,2016-02-25,2016-04-28,10,9
+631,116 Proteine 14%,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidr. o essiccata cub.,EUR/t,2016-02-25,2016-04-28,10,10
+632,118 90 % medica,PRODOTTI VEG. DISID.O ESSIC. > 117 Erba medica disidratata in balloni,EUR/t,2016-02-25,2016-04-28,10,9
+633,119 50 % medica,PRODOTTI VEG. DISID.O ESSIC. > 117 Erba medica disidratata in balloni,EUR/t,2016-02-25,2016-04-28,10,9
+634,120 20 % medica,PRODOTTI VEG. DISID.O ESSIC. > 117 Erba medica disidratata in balloni,EUR/t,2016-02-25,2016-04-28,10,9
+635,Proteine 16%,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidr. o essiccata cub.,EUR/t,2016-05-05,2016-05-26,4,4
+636,Proteine 14%,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidr. o essiccata cub.,EUR/t,2016-05-05,2016-05-26,4,4
+637,Sfarinato di fieno cubettato,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidratata in balloni,EUR/t,2016-05-05,2016-05-26,4,4
+638,Sfarinato di paglia cubettato,PRODOTTI VEG. DISID.O ESSIC. > Erba medica disidratata in balloni,EUR/t,2016-05-05,2016-05-26,4,4
+639,4° taglio in cascina - rotoballe,FORAGGI ERBA MEDICA > Qualità extra,EUR/t,2016-05-19,2016-05-19,1,0
+640,4° taglio in cascina - balloni,FORAGGI ERBA MEDICA > Qualità extra,EUR/t,2016-05-19,2016-05-19,1,0
+641,"n° 1 - speciali di forza - p.s. 78/79 kg/hl, c.e. 1%, prot. 13%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2015,EUR/t,2016-06-09,2016-06-16,2,0
+642,"n° 2 - speciali - p.s. 78/79 kg/hl, c.e. 1%, prot. 12%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2015,EUR/t,2016-06-09,2016-06-16,2,0
+643,"n° 3 - fino - p.s. 78 kg/hl, c.e. 1%, prot. 11%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2015,EUR/t,2016-06-09,2016-06-16,2,0
+644,"n° 4 - buono mercantile - p.s. 76 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2015,EUR/t,2016-06-09,2016-06-16,2,0
+645,"n° 5 - mercantile - p.s. 73/75 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2015,EUR/t,2016-06-09,2016-06-16,2,0
+646,"p.s. 79/80 kg/hl, c.e. 1+1%, bianc. 30/35%, volp.6%, prot. 12,5%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2015",EUR/t,2016-06-09,2016-06-09,1,0
+647,"p.s.77/78 kg/hl,c.e.1,5+1,5%, bianc.50/60%, volp.8%, prot. 11,5%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2015",EUR/t,2016-06-09,2016-06-09,1,0
+648,"p.s. 74/75 kg/hl, c.e. 2+2%, volp.10%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2015",EUR/t,2016-06-09,2016-06-09,1,0
+649,sorgo bianco nazionale,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-09,2026-10-08,480,411
+650,seme di soia nazionale,FRANCO PARTENZA > SEMI OLEOSI,EUR/t,2016-06-09,2026-10-08,486,414
+651,seme di girasole nazionale,FRANCO PARTENZA > SEMI OLEOSI,EUR/t,2016-06-09,2016-06-16,2,0
+652,Northern Spring,"FRANCO PARTENZA > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2016-06-09,2018-04-12,90,90
+653,Canada Western Red Spring n° 1,"FRANCO PARTENZA > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2016-06-09,2020-07-16,193,186
+654,"francese - p.s. 76, c.e. 2%","FRANCO PARTENZA > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2016-06-09,2020-07-16,174,13
+655,"comunitario - p.s. 76, c.e. 2%","FRANCO PARTENZA > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2016-06-09,2020-07-16,197,171
+656,"austriaco - qualità 1ª - p.s. 79, prot. 15%","FRANCO PARTENZA > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2016-06-09,2020-07-16,197,157
+657,"austriaco - qualità 3ª - p.s. 78, prot. 12,5%","FRANCO PARTENZA > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2016-06-09,2020-07-16,197,39
+658,"tedesco - p.s. 79, prot. 14% - tipo E","FRANCO PARTENZA > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2016-06-09,2020-07-16,197,5
+659,"tedesco - p.s. 78, prot. 13% - tipo A","FRANCO PARTENZA > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2016-06-09,2020-07-16,197,19
+660,"tedesco - p.s. 77, prot. 11,5% - tipo B","FRANCO PARTENZA > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2016-06-09,2016-12-01,24,1
+661,"fino - p.s. 79/80 kg/hl, c.e. 1+1%, bianc. 25/30%, volp.6%, prot. 12%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro-sud 2015",EUR/t,2016-06-09,2016-06-16,2,0
+662,"p.s.76/77 kg/hl, c.e.1,5+1,5%, bianc.50/60%, volp.8%, prot. 11%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro-sud 2015",EUR/t,2016-06-09,2016-06-16,2,0
+663,"mercantile - p.s. 74/75 kg/hl, c.e. 2+2%, volp.12%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro-sud 2015",EUR/t,2016-06-09,2016-06-16,2,0
+664,frumento duro estero,FRANCO PARTENZA > FRUMENTO DURO di produzione estera,EUR/t,2016-06-09,2016-07-07,4,0
+665,nazionale ad uso zootecnico (c.tto 103),FRANCO PARTENZA > GRANOTURCO,EUR/t,2016-06-09,2017-03-16,37,37
+666,nazionale ad uso zootecnico (con caratteristiche),FRANCO PARTENZA > GRANOTURCO,EUR/t,2016-06-09,2017-03-16,37,26
+667,comunitario ad uso zootecnico,FRANCO PARTENZA > GRANOTURCO,EUR/t,2016-06-09,2016-10-06,15,11
+668,non comunitario ad uso zootecnico,FRANCO PARTENZA > GRANOTURCO,EUR/t,2016-06-09,2016-09-29,15,15
+669,ad uso energetico,FRANCO PARTENZA > GRANOTURCO,EUR/t,2016-06-09,2017-03-16,37,0
+670,avena rossa,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-09,2020-07-16,197,128
+671,orzo - p.s. 57/59,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-09,2016-06-16,2,0
+672,orzo - p.s. 60/62,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-09,2016-06-16,2,0
+673,orzo - p.s. 64/66,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-09,2016-06-16,2,0
+674,orzo estero,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-09,2019-07-11,149,138
+675,sorgo estero,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-09,2020-07-16,196,19
+676,frumento per uso zootecnico - rinfusa arrivo,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-09,2016-06-09,1,1
+677,pisello proteico nazionale - rinfusa arrivo,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-09,2016-06-09,1,1
+678,pisello proteico estero - rinfusa arrivo,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-09,2016-06-09,1,0
+679,farro (triticum dicoccum) - rinfusa arrivo,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-09,2016-06-09,1,0
+680,"Tipo 0 (W 160/180; P/L max 0,6; prot. min. 11%)",FRANCO ARRIVO > FARINE di grano tenero di produzione nazionale con caratteristiche superiori al minimo di legge - in sacchi carta,EUR/t,2016-06-09,2018-03-22,87,82
+681,"Tipo 0 (W 220/250; P/L max 0,6; prot. min. 12%)",FRANCO ARRIVO > FARINE di grano tenero di produzione nazionale con caratteristiche superiori al minimo di legge - in sacchi carta,EUR/t,2016-06-09,2018-03-22,87,82
+682,"Tipo 0 (W > 300; P/L max 0,6; prot. min. 13%)",FRANCO ARRIVO > FARINE di grano tenero di produzione nazionale con caratteristiche superiori al minimo di legge - in sacchi carta,EUR/t,2016-06-09,2018-03-22,87,82
+683,"Tipo 00 (W > 300; P/L max 0,6; prot. min. 13%)",FRANCO ARRIVO > FARINE di grano tenero di produzione nazionale con caratteristiche superiori al minimo di legge - in sacchi carta,EUR/t,2016-06-09,2018-03-22,87,82
+684,semola con caratteristiche di legge,FRANCO ARRIVO > SFARINATI di grano duro,EUR/t,2016-06-09,2026-10-08,500,499
+685,"semola con caratteristiche superiori al minimo di legge - prot. min. 12,5%",FRANCO ARRIVO > SFARINATI di grano duro,EUR/t,2016-06-09,2017-06-29,52,51
+686,crusca e cruschello,FRANCO ARRIVO > CRUSCAMI di frumento tenero,EUR/t,2016-06-09,2026-10-08,500,500
+687,tritello,FRANCO ARRIVO > CRUSCAMI di frumento tenero,EUR/t,2016-06-09,2026-10-08,500,500
+688,farinaccio,FRANCO ARRIVO > CRUSCAMI di frumento tenero,EUR/t,2016-06-09,2026-10-08,500,500
+689,cubettato,FRANCO ARRIVO > CRUSCAMI di frumento tenero,EUR/t,2016-06-09,2026-10-08,500,500
+690,cubettato estero,FRANCO ARRIVO > CRUSCAMI di frumento tenero,EUR/t,2016-06-09,2016-06-23,3,0
+691,crusca e cruschello - sacchi,FRANCO ARRIVO > CRUSCAMI di frumento tenero,EUR/t,2016-06-09,2026-10-08,500,500
+692,tritello - sacchi,FRANCO ARRIVO > CRUSCAMI di frumento tenero,EUR/t,2016-06-09,2026-10-08,500,500
+693,farinaccio - sacchi,FRANCO ARRIVO > CRUSCAMI di frumento tenero,EUR/t,2016-06-09,2026-10-08,500,500
+694,"crusca, cruschello, tritello",FRANCO ARRIVO > CRUSCAMI di frumento duro,EUR/t,2016-06-09,2026-10-08,500,500
+695,cubettato,FRANCO ARRIVO > CRUSCAMI di frumento duro,EUR/t,2016-06-09,2026-10-08,500,500
+696,farinaccio,FRANCO ARRIVO > CRUSCAMI di frumento duro,EUR/t,2016-06-09,2026-10-08,500,500
+697,farinetta,FRANCO ARRIVO > CRUSCAMI di frumento duro,EUR/t,2016-06-09,2026-10-08,500,500
+698,frumento tenero,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-06-09,2017-08-31,59,53
+699,frumento duro,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-06-09,2017-08-31,59,54
+700,orzo,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-06-09,2017-08-31,59,43
+701,granoturco,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-06-09,2017-08-31,58,55
+702,farro (Triticum dicoccum) - p.s. 50/60,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-06-09,2016-06-23,3,0
+703,farro (Triticum dicoccum) - p.s. 60/70,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-06-09,2016-06-23,3,0
+704,favino,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-06-09,2017-08-31,44,22
+705,seme di soia ad uso alimentare,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-06-09,2016-09-22,13,9
+706,seme di soia ad uso zootecnico,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-06-09,2017-08-31,58,53
+707,ceci,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-06-09,2017-08-31,28,17
+708,pisello proteico,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-06-09,2017-08-31,59,26
+709,cruscami di frumento tenero,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-06-09,2017-08-31,59,59
+710,cruscami di frumento duro,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-06-09,2017-08-31,59,59
+711,di soia tostata integrale nazionale (44% proteine stq) OGM,FRANCO ARRIVO > FARINE vegetali di estrazione,EUR/t,2016-06-09,2026-10-08,500,489
+712,di soia tostata integrale estera (44% proteine stq) OGM,FRANCO ARRIVO > FARINE vegetali di estrazione,EUR/t,2016-06-09,2026-10-08,500,335
+713,di soia tostata decorticata nazionale OGM,FRANCO ARRIVO > FARINE vegetali di estrazione,EUR/t,2016-06-09,2026-10-08,500,491
+714,di soia tostata decorticata estera OGM,FRANCO ARRIVO > FARINE vegetali di estrazione,EUR/t,2016-06-09,2026-10-08,500,500
+715,di soia tostata integrale nazionale NON OGM,FRANCO ARRIVO > FARINE vegetali di estrazione,EUR/t,2016-06-09,2016-08-25,10,10
+716,di soia tostata integrale estera NON OGM,FRANCO ARRIVO > FARINE vegetali di estrazione,EUR/t,2016-06-09,2016-08-25,10,0
+717,di soia tostata decorticata nazionale NON OGM,FRANCO ARRIVO > FARINE vegetali di estrazione,EUR/t,2016-06-09,2026-10-08,500,491
+718,di soia tostata decorticata estera NON OGM,FRANCO ARRIVO > FARINE vegetali di estrazione,EUR/t,2016-06-09,2026-10-08,498,12
+719,di girasole integrale,FRANCO ARRIVO > FARINE vegetali di estrazione,EUR/t,2016-06-09,2026-10-08,500,429
+720,di girasole proteico estero,FRANCO ARRIVO > FARINE vegetali di estrazione,EUR/t,2016-06-09,2026-10-08,500,499
+721,di colza,FRANCO ARRIVO > FARINE vegetali di estrazione,EUR/t,2016-06-09,2026-10-08,500,475
+722,seme di soia estero OGM,FRANCO ARRIVO > SEMI OLEOSI,EUR/t,2016-06-09,2026-10-08,500,496
+723,seme di soia tostato OGM,FRANCO ARRIVO > SEMI OLEOSI,EUR/t,2016-06-09,2026-10-08,500,499
+724,seme di girasole estero,FRANCO ARRIVO > SEMI OLEOSI,EUR/t,2016-06-09,2017-05-25,47,0
+725,erba medica - cubettata - proteine 17% stq,FRANCO ARRIVO > PRODOTTI vegetali disidratati o essiccati,EUR/t,2016-06-09,2020-12-17,217,196
+726,erba medica - cubettata - proteine 16% stq,FRANCO ARRIVO > PRODOTTI vegetali disidratati o essiccati,EUR/t,2016-06-09,2020-12-17,217,217
+727,erba medica - cubettata - proteine 14% stq,FRANCO ARRIVO > PRODOTTI vegetali disidratati o essiccati,EUR/t,2016-06-09,2020-12-17,217,217
+728,erba medica - in balloni - 90% medica,FRANCO ARRIVO > PRODOTTI vegetali disidratati o essiccati,EUR/t,2016-06-09,2020-12-17,217,208
+729,erba medica - in balloni - 50% medica,FRANCO ARRIVO > PRODOTTI vegetali disidratati o essiccati,EUR/t,2016-06-09,2020-12-17,217,211
+730,erba medica - in balloni - 20% medica,FRANCO ARRIVO > PRODOTTI vegetali disidratati o essiccati,EUR/t,2016-06-09,2020-12-17,217,208
+731,"paglia trinciata, depolverizzata in balloni",FRANCO ARRIVO > PRODOTTI vegetali disidratati o essiccati,EUR/t,2016-06-09,2020-12-17,216,208
+732,paglia cubettata,FRANCO ARRIVO > PRODOTTI vegetali disidratati o essiccati,EUR/t,2016-06-09,2020-12-17,217,214
+733,fieno cubettato proteine 10% stq,FRANCO ARRIVO > PRODOTTI vegetali disidratati o essiccati,EUR/t,2016-06-09,2020-12-17,217,195
+734,fieno cubettato proteine 8% stq,FRANCO ARRIVO > PRODOTTI vegetali disidratati o essiccati,EUR/t,2016-06-09,2020-12-17,217,217
+735,"in pellets - Perù, Cile - proteine 64/66% stq - rinfusa",FRANCO ARRIVO > FARINE di pesce,EUR/t,2016-06-09,2026-10-08,498,498
+736,danese - proteine 70/72% stq - insaccato,FRANCO ARRIVO > FARINE di pesce,EUR/t,2016-06-09,2026-10-08,498,498
+737,farina di granoturco integrale ad uso zootecnico,FRANCO ARRIVO > DERIVATI LAV. GRANOTURCO,EUR/t,2016-06-09,2017-01-19,29,29
+738,corn gluten feed,FRANCO ARRIVO > DERIVATI LAV. GRANOTURCO,EUR/t,2016-06-09,2017-05-25,47,0
+739,semola glutinata,FRANCO ARRIVO > DERIVATI LAV. GRANOTURCO,EUR/t,2016-06-09,2026-10-08,500,489
+740,grasso (acidità max 4%),FRANCO ARRIVO > GRASSI,EUR/t,2016-06-09,2018-04-19,91,91
+741,grasso (acidità max 7%),FRANCO ARRIVO > GRASSI,EUR/t,2016-06-09,2018-04-19,91,91
+742,canna da zucchero,FRANCO ARRIVO > MELASSO,EUR/t,2016-06-09,2026-10-08,500,500
+743,barbabietola da zucchero,FRANCO ARRIVO > MELASSO,EUR/t,2016-06-09,2026-10-08,500,500
+744,buccette di soia OGM,FRANCO ARRIVO > VARIE,EUR/t,2016-06-09,2026-10-08,500,496
+745,polpe di barbabietola cubettate in pellets - diametro 10/12 mm,FRANCO ARRIVO > VARIE,EUR/t,2016-06-09,2026-10-08,500,500
+746,lino scaglie,FRANCO ARRIVO > VARIE,EUR/t,2016-06-09,2019-11-07,164,164
+747,seme di cotone,FRANCO ARRIVO > VARIE,EUR/t,2016-06-09,2026-10-08,500,485
+748,Arborio/Volano (resa indicativa 56/58),"FRANCO ARRIVO > RISONI - per merce sfusa, al netto dei diritti di contratto E.N.R.",EUR/t,2016-06-09,2020-07-16,193,178
+749,Carnaroli (resa indicativa 58/60),"FRANCO ARRIVO > RISONI - per merce sfusa, al netto dei diritti di contratto E.N.R.",EUR/t,2016-06-09,2016-11-24,21,17
+750,Baldo (resa indicativa 58/60),"FRANCO ARRIVO > RISONI - per merce sfusa, al netto dei diritti di contratto E.N.R.",EUR/t,2016-06-09,2016-11-24,21,17
+751,Arborio,FRANCO ARRIVO > RISI - franco partenza riserie (min. sfuso/max. confezionato),EUR/t,2016-06-09,2020-07-16,195,191
+752,Baldo,FRANCO ARRIVO > RISI - franco partenza riserie (min. sfuso/max. confezionato),EUR/t,2016-06-09,2020-07-16,195,191
+753,Ribe,FRANCO ARRIVO > RISI - franco partenza riserie (min. sfuso/max. confezionato),EUR/t,2016-06-09,2020-07-16,195,191
+754,"Lido, Savio e similari",FRANCO ARRIVO > RISI - franco partenza riserie (min. sfuso/max. confezionato),EUR/t,2016-06-09,2020-07-16,195,191
+755,Indica,FRANCO ARRIVO > RISI - franco partenza riserie (min. sfuso/max. confezionato),EUR/t,2016-06-09,2020-07-16,195,191
+756,Originario,FRANCO ARRIVO > RISI - franco partenza riserie (min. sfuso/max. confezionato),EUR/t,2016-06-09,2020-07-16,195,191
+757,Ribe parboiled,FRANCO ARRIVO > RISI - franco partenza riserie (min. sfuso/max. confezionato),EUR/t,2016-06-09,2020-07-16,195,191
+758,corpetto,"FRANCO ARRIVO > SOTTOPRODOTTI DEL RISO - franco partenza riserie, rinfusa",EUR/t,2016-06-09,2020-07-16,197,197
+759,mezzagrana,"FRANCO ARRIVO > SOTTOPRODOTTI DEL RISO - franco partenza riserie, rinfusa",EUR/t,2016-06-09,2020-07-16,197,197
+760,grana verde,"FRANCO ARRIVO > SOTTOPRODOTTI DEL RISO - franco partenza riserie, rinfusa",EUR/t,2016-06-09,2020-07-16,197,197
+761,farinaccio,"FRANCO ARRIVO > SOTTOPRODOTTI DEL RISO - franco partenza riserie, rinfusa",EUR/t,2016-06-09,2020-07-16,197,197
+762,pula vergine,"FRANCO ARRIVO > SOTTOPRODOTTI DEL RISO - franco partenza riserie, rinfusa",EUR/t,2016-06-09,2020-07-16,197,197
+763,lolla,"FRANCO ARRIVO > SOTTOPRODOTTI DEL RISO - franco partenza riserie, rinfusa",EUR/t,2016-06-09,2020-07-16,197,197
+764,qualità extra,FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-06-09,2017-10-26,66,27
+765,"1° taglio in campo, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-06-09,2022-05-12,199,22
+766,"1° taglio in campo, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-06-09,2022-05-12,199,22
+767,"1° taglio in cascina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-06-09,2022-05-12,280,238
+768,"1° taglio in cascina, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-06-09,2022-05-12,280,238
+769,"2° taglio in campo, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-06-09,2026-10-08,368,34
+770,"2° taglio in campo, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-06-09,2026-10-08,368,34
+771,"3°/4° taglio in campo, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-06-09,2017-06-29,8,0
+772,"3°/4° taglio in campo, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-06-09,2017-06-29,8,0
+773,"1° taglio in campo, collina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-06-09,2022-05-12,204,16
+774,"2° taglio in campo, collina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-06-09,2022-05-12,201,22
+775,paglia di grano prima qualità - in rotoballe,FRANCO PARTENZA > PAGLIA,EUR/t,2016-06-09,2018-07-05,102,92
+776,paglia di grano prima qualità - in balloni quadri,FRANCO PARTENZA > PAGLIA,EUR/t,2016-06-09,2018-07-05,102,92
+777,erba medica di 2ª moltiplicazione con calo 15% - varietà,FRANCO PARTENZA > SEMENTI IN NATURA CERTIFICATE - merce nuda,EUR/t,2016-06-09,2019-10-10,160,75
+778,favino (buona media dell'annata),FRANCO PARTENZA > SEMENTI IN NATURA CERTIFICATE - merce nuda,EUR/t,2016-06-09,2019-10-10,160,0
+779,sulla sgusciata con calo 10%,FRANCO PARTENZA > SEMENTI IN NATURA CERTIFICATE - merce nuda,EUR/t,2016-06-09,2019-10-10,160,32
+780,trifoglio violetto con calo 15%,FRANCO PARTENZA > SEMENTI IN NATURA CERTIFICATE - merce nuda,EUR/t,2016-06-09,2019-10-10,160,7
+781,trifoglio incarnato con calo 10%,FRANCO PARTENZA > SEMENTI IN NATURA CERTIFICATE - merce nuda,EUR/t,2016-06-09,2019-10-10,160,24
+782,trifoglio alessandrino con calo 10%,FRANCO PARTENZA > SEMENTI IN NATURA CERTIFICATE - merce nuda,EUR/t,2016-06-09,2019-10-10,160,47
+783,- erba medica con calo 15%,FRANCO PARTENZA > SEMENTI PER ESPORTAZIONE EXTRA UE > in natura - merce nuda,EUR/t,2016-06-09,2017-04-06,40,30
+784,- erba medica,"FRANCO PARTENZA > SEMENTI PER ESPORTAZIONE EXTRA UE > selezionate - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-12-01,11,1
+785,erba medica di varietà - 1ª riproduzione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,15,0
+786,erba medica di varietà - 2ª riproduzione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,15,0
+787,trifoglio violetto di varietà,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,16,4
+788,trifoglio violetto ecotipo,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-09-15,12,0
+789,favino,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,16,4
+790,loietto perenne,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,16,0
+791,loietto italico,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,17,7
+792,pisello da foraggio,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,16,0
+793,avena di 1ª moltiplicazione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,16,0
+794,avena di 2ª moltiplicazione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,16,0
+795,orzo di 1ª moltiplicazione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,16,0
+796,orzo di 2ª moltiplicazione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,16,0
+797,segale,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,16,0
+798,frumenti teneri di 1ª riproduzione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,16,0
+799,frumenti teneri di 2ª riproduzione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,16,0
+800,frumenti duri di 1ª riproduzione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,16,0
+801,frumenti duri di 2ª riproduzione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,16,0
+802,triticale di 1ª moltiplicazione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,16,0
+803,triticale di 2ª moltiplicazione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,16,0
+804,sulla,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,17,7
+805,trifoglio incarnato (varietà tardiva),"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,17,7
+806,trifoglio alessandrino,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,16,5
+807,veccia comune,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-06-09,2016-10-13,16,5
+808,trifoglio squarroso,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme > categoria commerciale",EUR/t,2016-06-09,2016-08-25,10,0
+809,lupinella in guscio,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme > categoria commerciale",EUR/t,2016-06-09,2016-08-25,10,0
+810,lupinella sgusciata,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme > categoria commerciale",EUR/t,2016-06-09,2016-08-25,10,0
+811,derivate da cereali,FRANCO PARTENZA > SEMENTI - SOTTOPRODOTTI DI LAVORAZIONE INDUSTRIALE O ARTIGIANALE PER USO ZOOTECNICO,EUR/t,2016-06-09,2019-10-10,159,37
+812,derivate da foraggere e leguminose,FRANCO PARTENZA > SEMENTI - SOTTOPRODOTTI DI LAVORAZIONE INDUSTRIALE O ARTIGIANALE PER USO ZOOTECNICO,EUR/t,2016-06-09,2019-10-10,160,78
+813,derivate da oleaginose,FRANCO PARTENZA > SEMENTI - SOTTOPRODOTTI DI LAVORAZIONE INDUSTRIALE O ARTIGIANALE PER USO ZOOTECNICO,EUR/t,2016-06-09,2019-09-26,157,0
+814,derivate da orticole,FRANCO PARTENZA > SEMENTI - SOTTOPRODOTTI DI LAVORAZIONE INDUSTRIALE O ARTIGIANALE PER USO ZOOTECNICO,EUR/t,2016-06-09,2019-10-10,159,0
+815,"fino p.s. 79/80 kg/hl, c.e. 1+1%, bianc. 30/35%, volp.6%, prot. 12,5%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2015",EUR/t,2016-06-16,2016-06-16,1,0
+816,"buono mercantile p.s.77/78 kg/hl,c.e.1,5+1,5%, bianc.50/60%, volp.8%, prot. 11,5%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2015",EUR/t,2016-06-16,2016-06-16,1,0
+817,"mercantile p.s. 74/75 kg/hl, c.e. 2+2%, volp.10%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2015",EUR/t,2016-06-16,2016-06-16,1,0
+818,frumento per uso zootecnico,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-16,2017-05-11,44,44
+819,pisello proteico nazionale,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-16,2020-07-16,191,80
+820,pisello proteico estero,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-16,2020-07-16,192,168
+821,farro (triticum dicoccum),FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-16,2016-07-21,6,2
+822,"n° 1 - speciali di forza - p.s. 78/79 kg/hl, c.e. 1%, prot. 13%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2016,EUR/t,2016-06-23,2016-06-30,2,0
+823,"n° 2 - speciali - p.s. 78/79 kg/hl, c.e. 1%, prot. 12%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2016,EUR/t,2016-06-23,2016-06-30,2,0
+824,"n° 3 - fino - p.s. 78 kg/hl, c.e. 1%, prot. 11%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2016,EUR/t,2016-06-23,2016-06-30,2,1
+825,"fino - prot. 12,5% min, p.s. 79 kg/hl min, c.e. 1+1%, bianc. 30/35%, volp.6%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2016",EUR/t,2016-06-23,2016-06-30,2,1
+826,"buono mercantile - prot. 11,5% min, p.s. 77 kg/hl min, c.e.1,5+1,5%, bianc.50/60%, volp.8%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2016",EUR/t,2016-06-23,2016-06-30,2,0
+827,"fino - prot. 12% min, p.s. 79 kg/hl min, c.e. 1+1%, bianc. 25/30%, volp.6%,","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro-sud 2016",EUR/t,2016-06-23,2016-06-30,2,1
+828,"buono mercantile - prot. 11% min, p.s.76 kg/hl min, c.e.1,5+1,5%, bianc.50/60%, volp.8%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro-sud 2016",EUR/t,2016-06-23,2016-06-30,2,0
+829,orzo - p.s. 58/61,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-23,2020-07-16,195,99
+830,orzo - p.s. 62/64,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-23,2020-07-16,195,178
+831,orzo - p.s. 65 e oltre,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-23,2020-07-16,195,178
+832,favino bianco nazionale,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-06-30,2018-07-12,100,38
+833,estero,FRANCO ARRIVO > CRUSCAMI di frumento tenero,EUR/t,2016-06-30,2026-10-08,497,33
+834,farro (Triticum dicoccum) - p.s. 45 o inferiore,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-06-30,2016-07-21,4,3
+835,farro (Triticum dicoccum) - p.s. 46 o superiore,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-06-30,2016-07-21,4,3
+836,"n° 1 - speciali di forza - prot. 13% min, p.s. 79/80 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2016,EUR/t,2016-07-07,2017-06-08,45,44
+837,"n° 2 - speciali - prot. 12% min, p.s. 78/79 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2016,EUR/t,2016-07-07,2017-06-08,45,44
+838,"n° 3 - fino - prot. 11% min, p.s. 78 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2016,EUR/t,2016-07-07,2017-06-08,45,44
+839,"fino - prot. 13% min, p.s. 79 kg/hl min, c.e. 1+1%, bianc. 30/35%, volp.9%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2016",EUR/t,2016-07-07,2017-06-22,47,44
+840,"buono mercantile - prot. 12% min, p.s. 77 kg/hl min, c.e.1,5+1,5%, bianc.50/60%, volp.11%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2016",EUR/t,2016-07-07,2017-06-22,47,44
+841,"fino proteico - prot. 13% min, p.s. 80 kg/hl min, c.e. 1+1%, bianc. 25% max, volp.6%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro-sud 2016",EUR/t,2016-07-07,2016-07-21,3,3
+842,"fino - prot. 12% min, p.s. 79 kg/hl min, c.e. 1+1%, bianc. 35% max, volp.6%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro-sud 2016",EUR/t,2016-07-07,2016-07-21,3,3
+843,"buono mercantile - prot. 11,5% min, p.s.76 kg/hl min, c.e.1,5+1,5%, bianc.50/60%, volp.8%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro-sud 2016",EUR/t,2016-07-07,2016-07-21,3,2
+844,favino (1a quotazione),FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-07-07,2016-10-27,15,15
+845,di soia tostata decorticata estera NON OGM (1a quotazione),FRANCO ARRIVO > FARINE vegetali di estrazione,EUR/t,2016-07-07,2016-07-07,1,1
+846,"paglia trinciata, depolverizzata in balloni (1a quotazione)",FRANCO ARRIVO > PRODOTTI vegetali disidratati o essiccati,EUR/t,2016-07-07,2016-07-07,1,1
+847,"mercantile - prot. 11% min, p.s. 74 kg/hl min, c.e. 2+2%, volp.13%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2016",EUR/t,2016-07-14,2017-06-22,46,27
+848,"mercantile - prot. 10% min, p.s. 74 kg/hl min, c.e. 2+2%, volp.12%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro-sud 2016",EUR/t,2016-07-14,2016-07-21,2,2
+849,"2° taglio in cascina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-07-14,2026-10-08,475,410
+850,"2° taglio in cascina, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-07-14,2026-10-08,475,410
+851,"1° taglio in cascina, collina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-07-14,2022-05-12,235,201
+852,"3° taglio in campo, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-07-21,2026-10-08,367,36
+853,"3° taglio in campo, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-07-21,2026-10-08,367,36
+854,"fino proteico - prot. 13% min, p.s. 80 kg/hl min, c.e. 1+1%, bianc. 25% max, volp.6%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2016",EUR/t,2016-07-28,2017-06-22,44,43
+855,"fino - prot. 12% min, p.s. 79 kg/hl min, c.e. 1+1%, bianc. 35% max, volp.6%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2016",EUR/t,2016-07-28,2017-06-22,44,43
+856,"buono mercantile - prot. 11,5% min, p.s.76 kg/hl min, c.e.1,5+1,5%, bianc.50/60%, volp.8%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2016",EUR/t,2016-07-28,2017-06-22,44,42
+857,"mercantile - prot. 10% min, p.s. 74 kg/hl min, c.e. 2+2%, volp.12%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2016",EUR/t,2016-07-28,2017-06-22,44,42
+858,"farro (triticum dicoccum) di produzione nazionale, in natura - p.s. 41/45",FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2016-07-28,2020-07-16,190,109
+859,"farro (Triticum dicoccum) di produzione nazionale, in natura - p.s. 41/45",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-07-28,2016-10-27,12,12
+860,"3° taglio in cascina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-08-25,2026-10-08,420,347
+861,"3° taglio in cascina, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-08-25,2026-10-08,419,347
+862,"2° taglio in cascina, collina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-08-25,2022-05-12,233,197
+863,di soia tostata integrale nazionale (44% proteine stq) NON OGM,FRANCO ARRIVO > FARINE vegetali di estrazione,EUR/t,2016-09-01,2026-10-08,490,480
+864,di soia tostata integrale estera (44% proteine stq) NON OGM,FRANCO ARRIVO > FARINE vegetali di estrazione,EUR/t,2016-09-01,2026-10-08,317,1
+865,"4° taglio in campo, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-09-01,2026-10-08,400,22
+866,"4° taglio in campo, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-09-01,2026-10-08,400,22
+867,categoria commerciale,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-09-08,2016-10-13,6,0
+868,trifoglio squarroso,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-09-08,2016-10-13,6,5
+869,lupinella in guscio,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-09-08,2016-10-13,5,0
+870,lupinella sgusciata,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge, esclusa concia del seme",EUR/t,2016-09-08,2016-10-13,5,0
+871,"4° taglio in cascina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-09-15,2026-10-08,411,315
+872,"4° taglio in cascina, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2016-09-15,2026-10-08,411,315
+873,seme di girasole nazionale,FRANCO ARRIVO > SEMI OLEOSI,EUR/t,2016-09-22,2019-10-03,146,21
+874,seme di soia ad uso alimentare (premi inclusi),FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-09-29,2017-08-31,45,44
+875,non comunitario ad uso zootecnico (potrebbe contenere OGM),FRANCO PARTENZA > GRANOTURCO,EUR/t,2016-10-06,2017-03-16,22,22
+876,comunitario ad uso zootecnico (con caratteristiche),FRANCO PARTENZA > GRANOTURCO,EUR/t,2016-10-13,2017-03-16,21,21
+877,erba medica di varietà - 1ª riproduzione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,118,46
+878,erba medica di varietà - 2ª riproduzione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,118,46
+879,trifoglio violetto di varietà,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,118,22
+880,favino,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,118,22
+881,loietto perenne,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,118,0
+882,loietto italico,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,118,31
+883,pisello da foraggio,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,107,0
+884,avena di 1ª moltiplicazione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,108,23
+885,avena di 2ª moltiplicazione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,108,25
+886,orzo di 1ª moltiplicazione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,108,23
+887,orzo di 2ª moltiplicazione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,108,25
+888,segale,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,107,0
+889,frumenti teneri di 1ª riproduzione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,108,23
+890,frumenti teneri di 2ª riproduzione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,108,25
+891,frumenti duri di 1ª riproduzione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,108,23
+892,frumenti duri di 2ª riproduzione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,108,25
+893,triticale di 1ª moltiplicazione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,108,23
+894,triticale di 2ª moltiplicazione,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,108,25
+895,sulla,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,120,43
+896,trifoglio incarnato (varietà tardiva),"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,104,22
+897,trifoglio alessandrino,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,104,35
+898,veccia comune,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,104,35
+899,categoria commerciale,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,104,0
+900,trifoglio squarroso,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,104,35
+901,lupinella in guscio,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,104,17
+902,lupinella sgusciata,"FRANCO PARTENZA > SEMENTI SELEZIONATE CERTIFICATE - tara merce, a termini di legge",EUR/t,2016-10-20,2019-10-10,75,17
+903,farro (triticum dicoccum) in natura - p.s. 41/45,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2016-11-03,2017-08-31,40,11
+904,Carnaroli e varietà similari (resa indicativa 58/60),"FRANCO ARRIVO > RISONI - per merce sfusa, al netto dei diritti di contratto E.N.R.",EUR/t,2016-12-01,2020-07-16,172,164
+905,Baldo e varietà similari (resa indicativa 58/60),"FRANCO ARRIVO > RISONI - per merce sfusa, al netto dei diritti di contratto E.N.R.",EUR/t,2016-12-01,2020-07-16,172,129
+906,"tedesco - p.s. 75, prot. 11,5% - tipo B","FRANCO PARTENZA > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2016-12-15,2020-07-16,173,26
+907,"selezionate - tara merce, a termini di legge, esclusa concia del seme",FRANCO PARTENZA > SEMENTI PER ESPORTAZIONE EXTRA UE > in natura - merce nuda,EUR/t,2016-12-15,2017-04-06,16,0
+908,- erba medica,FRANCO PARTENZA > SEMENTI PER ESPORTAZIONE EXTRA UE > in natura - merce nuda,EUR/t,2016-12-15,2017-04-06,16,15
+909,farina di granoturco integrale ad uso zootecnico (C.tto n. 103),FRANCO ARRIVO > DERIVATI LAV. GRANOTURCO,EUR/t,2017-01-26,2026-10-08,471,471
+910,nazionale ad uso zootecnico (c.tto 103),FRANCO PARTENZA > GRANOTURCO SECCO (Umidità 14%),EUR/t,2017-03-23,2020-07-16,160,160
+911,nazionale ad uso zootecnico (con caratteristiche),FRANCO PARTENZA > GRANOTURCO SECCO (Umidità 14%),EUR/t,2017-03-23,2020-07-16,160,160
+912,comunitario ad uso zootecnico (con caratteristiche),FRANCO PARTENZA > GRANOTURCO SECCO (Umidità 14%),EUR/t,2017-03-23,2019-05-23,105,105
+913,non comunitario ad uso zootecnico (potrebbe contenere OGM),FRANCO PARTENZA > GRANOTURCO SECCO (Umidità 14%),EUR/t,2017-03-23,2020-07-16,160,160
+914,ad uso energetico,FRANCO PARTENZA > GRANOTURCO SECCO (Umidità 14%),EUR/t,2017-03-23,2020-07-16,160,29
+915,in natura - merce nuda,FRANCO PARTENZA > SEMENTI PER ESPORTAZIONE EXTRA UE,EUR/t,2017-04-13,2019-10-10,120,0
+916,- erba medica con calo 15%,FRANCO PARTENZA > SEMENTI PER ESPORTAZIONE EXTRA UE,EUR/t,2017-04-13,2019-10-10,120,48
+917,"selezionate - tara merce, a termini di legge, esclusa concia del seme",FRANCO PARTENZA > SEMENTI PER ESPORTAZIONE EXTRA UE,EUR/t,2017-04-13,2019-10-10,120,0
+918,- erba medica,FRANCO PARTENZA > SEMENTI PER ESPORTAZIONE EXTRA UE,EUR/t,2017-04-13,2019-10-10,119,0
+919,frumento per uso zootecnico 2),FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2017-05-18,2020-07-16,152,145
+920,erba medica - cubettata - proteine 16% stq,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-06-01,2017-06-01,1,1
+921,erba medica - in balloni - 90% medica,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-06-01,2017-06-01,1,1
+922,Trinciato di mais,FRANCO PARTENZA > MAIS,EUR/t,2017-06-01,2017-07-13,7,0
+923,erba medica disidratata - cubettata - proteine 16% stq,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-06-08,2022-06-16,232,191
+924,erba medica disidratata - in balloni - 90% medica,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-06-08,2026-10-08,450,441
+925,"2°/3° taglio in campo, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2017-06-15,2017-06-15,1,0
+926,"2°/3° taglio in campo, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2017-06-15,2017-06-15,1,0
+927,"n° 3 - fino - prot. 11% min, p.s. 79 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2017,EUR/t,2017-06-22,2017-06-22,1,1
+928,n° 1 - speciali di forza - (caratteristiche da determinare),FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2017,EUR/t,2017-06-29,2017-06-29,1,1
+929,n° 2 - speciali - (caratteristiche da determinare),FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2017,EUR/t,2017-06-29,2017-06-29,1,1
+930,n° 3 - fino - (caratteristiche da determinare),FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2017,EUR/t,2017-06-29,2017-06-29,1,1
+931,n° 4 - buono mercantile - (caratteristiche da determinare),FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2017,EUR/t,2017-06-29,2017-06-29,1,0
+932,n° 5 - mercantile - (caratteristiche da determinare),FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2017,EUR/t,2017-06-29,2017-06-29,1,0
+933,"fino - prot. 13,5% min","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2017",EUR/t,2017-06-29,2017-06-29,1,1
+934,buono mercantile - (caratteristiche da determinare),"FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2017",EUR/t,2017-06-29,2017-06-29,1,0
+935,mercantile - (caratteristiche da determinare),"FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2017",EUR/t,2017-06-29,2017-06-29,1,0
+936,"fino proteico - prot. 13,5% min, p.s. 80 kg/hl min","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2017",EUR/t,2017-06-29,2017-06-29,1,1
+937,fino - (caratteristiche da determinare),"FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2017",EUR/t,2017-06-29,2017-06-29,1,0
+938,buono mercantile - (caratteristiche da determinare),"FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2017",EUR/t,2017-06-29,2017-06-29,1,0
+939,mercantile - (caratteristiche da determinare),"FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2017",EUR/t,2017-06-29,2017-06-29,1,0
+940,"n° 1 - speciali di forza - prot. 13,5% min, p.s. 80 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2017,EUR/t,2017-07-06,2018-06-21,48,45
+941,"n° 2 - speciali - prot. 12% min, p.s. 79 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2017,EUR/t,2017-07-06,2018-06-21,48,43
+942,"n° 3 - fino - prot. 11% min, p.s. 78 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2017,EUR/t,2017-07-06,2018-06-21,48,43
+943,"n° 4 - buono mercantile - p.s. 76 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2017,EUR/t,2017-07-06,2018-06-21,48,0
+944,"n° 5 - mercantile - p.s. 73/75 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2017,EUR/t,2017-07-06,2018-06-21,48,0
+945,"fino - prot. 13% min, p.s. 79 kg/hl min, c.e. 1+1%, bianc. 25/30%, volp.7%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2017",EUR/t,2017-07-06,2018-06-21,48,46
+946,"buono mercantile - prot. 12% min, p.s. 77 kg/hl min, c.e.1,5+1,5%, bianc.35/40%, volp.9%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2017",EUR/t,2017-07-06,2018-06-21,48,0
+947,"mercantile - prot. 11% min, p.s. 75 kg/hl min, c.e. 2+2%, volp.12%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2017",EUR/t,2017-07-06,2018-06-21,48,0
+948,"fino - prot. 13% min, p.s. 80 kg/hl min, c.e. 1+1%, bianc. 25% max, volp.6%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2017",EUR/t,2017-07-06,2018-06-21,48,46
+949,"buono mercantile - prot. 12% min, p.s.77/78 kg/hl min, c.e.1,5+1,5%, bianc.50/60%, volp.8%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2017",EUR/t,2017-07-06,2017-07-06,1,1
+950,"mercantile - prot. 11%, p.s. 75 kg/hl min, c.e. 2+2%, volp.12%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2017",EUR/t,2017-07-06,2017-07-06,1,0
+951,"semola con caratteristiche superiori al minimo di legge - prot. min. 13,5%",FRANCO ARRIVO > SFARINATI di grano duro,EUR/t,2017-07-06,2026-10-08,448,448
+952,"buono mercantile - prot. 12% min, p.s.78/79 kg/hl min, c.e.1,5+1,5%, bianc.40/50%, volp.8%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2017",EUR/t,2017-07-13,2018-06-21,47,45
+953,"mercantile - prot. 11%, p.s. 76/77 kg/hl min, c.e. 2+2%, volp.12%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2017",EUR/t,2017-07-13,2018-06-21,47,27
+954,Trinciato di mais (Piante in piedi) s.a. 30/35% amido 28/32%,FRANCO PARTENZA > MAIS,EUR/t,2017-07-20,2017-07-20,1,0
+955,Trinciato di mais (Piante in piedi) s.s. 30/35% amido 28/32%,FRANCO PARTENZA > MAIS,EUR/t,2017-07-27,2022-07-14,200,34
+956,"frumento tenero ad uso alimentare - prot. 11 % min, p.s. 78 kg/hl",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-09-07,2018-06-28,42,36
+957,"frumento tenero estero ad uso alimentare - prot. 11 % min, p.s. 78 kg/hl",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-09-07,2023-07-06,265,0
+958,"frumento duro ad uso alimentare - prot. 12 % min, p.s. 80 kg/hl min",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-09-07,2018-06-28,42,36
+959,orzo - p.s. 62/64,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-09-07,2018-06-28,42,38
+960,orzo estero - p.s. 62/64,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-09-07,2019-06-06,83,0
+961,farro dicocco in natura - p.s. 41,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-09-07,2018-07-19,45,7
+962,farro Spelta in natura,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-09-07,2023-07-20,283,91
+963,farro Spelta estero decorticato,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-09-07,2026-10-08,428,83
+964,avena bianca in natura,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-09-07,2023-07-27,284,173
+965,granoturco (min base di legge - max con caratteristiche),FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-09-07,2017-11-02,9,7
+966,granoturco estero (min base di legge - max con caratteristiche),FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-09-07,2017-11-02,9,0
+967,cruscami di frumento (min farina - max pellet),FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-09-07,2026-10-08,439,439
+968,pisello proteico - umidità 13% (min uso zootecnico - max uso alimentare),FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-09-07,2018-06-28,42,21
+969,favino per uso zootecnico - umidità 13% (min nero - max bianco),FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-09-07,2019-06-27,86,58
+970,ceci - umidità 13%,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-09-07,2020-07-23,137,47
+971,"3/4° taglio in cascina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2017-09-07,2018-09-13,51,36
+972,"3/4° taglio in cascina, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2017-09-07,2018-09-13,51,36
+973,Arborio/Volano (resa indicativa 56/58),"FRANCO ARRIVO > RISONI - per merce sfusa, al netto dei diritti di contratto E.N.R. *",EUR/t,2017-10-05,2017-10-12,2,2
+974,Carnaroli e varietà similari (resa indicativa 58/60),"FRANCO ARRIVO > RISONI - per merce sfusa, al netto dei diritti di contratto E.N.R. *",EUR/t,2017-10-05,2017-10-12,2,2
+975,Baldo e varietà similari (resa indicativa 58/60),"FRANCO ARRIVO > RISONI - per merce sfusa, al netto dei diritti di contratto E.N.R. *",EUR/t,2017-10-05,2017-10-12,2,2
+976,Arborio,FRANCO ARRIVO > RISI - franco partenza riserie (min. sfuso/max. confezionato) *,EUR/t,2017-10-05,2017-10-12,2,2
+977,Baldo,FRANCO ARRIVO > RISI - franco partenza riserie (min. sfuso/max. confezionato) *,EUR/t,2017-10-05,2017-10-12,2,2
+978,Ribe,FRANCO ARRIVO > RISI - franco partenza riserie (min. sfuso/max. confezionato) *,EUR/t,2017-10-05,2017-10-12,2,2
+979,"Lido, Savio e similari",FRANCO ARRIVO > RISI - franco partenza riserie (min. sfuso/max. confezionato) *,EUR/t,2017-10-05,2017-10-12,2,2
+980,Indica,FRANCO ARRIVO > RISI - franco partenza riserie (min. sfuso/max. confezionato) *,EUR/t,2017-10-05,2017-10-12,2,2
+981,Originario,FRANCO ARRIVO > RISI - franco partenza riserie (min. sfuso/max. confezionato) *,EUR/t,2017-10-05,2017-10-12,2,2
+982,Ribe parboiled,FRANCO ARRIVO > RISI - franco partenza riserie (min. sfuso/max. confezionato) *,EUR/t,2017-10-05,2017-10-12,2,2
+983,seme di soia - umidità 13% (min uso zootecnico - max uso alimentare),FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-10-12,2018-10-11,50,43
+984,lenticchie - umidità 13%,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-10-19,2019-07-11,82,0
+985,"qualità extra, 100% medica, prot. 18% min.",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2017-11-02,2017-11-09,2,2
+986,granoturco (min uso zootecnico - max uso alimentare),FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-11-09,2018-09-06,41,38
+987,granoturco estero (min uso zootecnico - max uso alimentare),FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2017-11-09,2024-11-14,328,26
+988,"qualità extra, 100% medica, prot. 17% min.",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2017-11-16,2020-10-01,135,64
+989,"Tipo 0 (W 160/180; P/L max 0,6; prot. min. 11%)",FRANCO ARRIVO > FARINE di grano tenero di produzione nazionale con caratteristiche superiori al minimo di legge - alla rinfusa (franco partenza),EUR/t,2018-03-29,2018-03-29,1,1
+990,"Tipo 0 (W 220/250; P/L max 0,6; prot. min. 12%)",FRANCO ARRIVO > FARINE di grano tenero di produzione nazionale con caratteristiche superiori al minimo di legge - alla rinfusa (franco partenza),EUR/t,2018-03-29,2018-03-29,1,1
+991,"Tipo 0 (W > 300; P/L max 0,6; prot. min. 13%)",FRANCO ARRIVO > FARINE di grano tenero di produzione nazionale con caratteristiche superiori al minimo di legge - alla rinfusa (franco partenza),EUR/t,2018-03-29,2018-03-29,1,1
+992,"Tipo 00 (W > 300; P/L max 0,6; prot. min. 13%)",FRANCO ARRIVO > FARINE di grano tenero di produzione nazionale con caratteristiche superiori al minimo di legge - alla rinfusa (franco partenza),EUR/t,2018-03-29,2018-03-29,1,1
+993,"Tipo 0 (W 160/180; P/L max 0,6; prot. min. 11%)",FRANCO PARTENZA > FARINE di grano tenero di produzione nazionale con caratteristiche superiori al minimo di legge - alla rinfusa,EUR/t,2018-04-05,2026-10-08,412,412
+994,"Tipo 0 (W 220/250; P/L max 0,6; prot. min. 12%)",FRANCO PARTENZA > FARINE di grano tenero di produzione nazionale con caratteristiche superiori al minimo di legge - alla rinfusa,EUR/t,2018-04-05,2026-10-08,412,412
+995,"Tipo 0 (W > 300; P/L max 0,6; prot. min. 13%)",FRANCO PARTENZA > FARINE di grano tenero di produzione nazionale con caratteristiche superiori al minimo di legge - alla rinfusa,EUR/t,2018-04-05,2026-10-08,412,412
+996,"Tipo 00 (W > 300; P/L max 0,6; prot. min. 13%)",FRANCO PARTENZA > FARINE di grano tenero di produzione nazionale con caratteristiche superiori al minimo di legge - alla rinfusa,EUR/t,2018-04-05,2026-10-08,412,412
+997,"Northern Spring min prot: 15,3% max prot: 15,8%","FRANCO PARTENZA > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2018-04-19,2020-07-16,107,103
+998,grasso (acidità max 4%),FRANCO ARRIVO > GRASSI ANIMALI PER USO ZOOTECNICO,EUR/t,2018-04-26,2026-10-08,407,407
+999,grasso (acidità max 7%),FRANCO ARRIVO > GRASSI ANIMALI PER USO ZOOTECNICO,EUR/t,2018-04-26,2026-10-08,407,407
+1000,seme di soia estero - umidità 13%,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2018-05-17,2026-06-25,379,112
+1001,"n° 1 - speciali di forza - p.s. 80 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2018,EUR/t,2018-06-28,2018-06-28,1,1
+1002,"n° 2 - speciali - p.s. 79 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2018,EUR/t,2018-06-28,2018-06-28,1,1
+1003,"n° 3 - fino - p.s. 78 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2018,EUR/t,2018-06-28,2018-06-28,1,1
+1004,"n° 4 - buono mercantile - p.s. 76 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2018,EUR/t,2018-06-28,2019-06-27,47,43
+1005,"n° 5 - mercantile - p.s. 73/75 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2018,EUR/t,2018-06-28,2019-06-27,47,0
+1006,"fino - prot. 13% min, p.s. 79 kg/hl min, c.e. 1+1%, bianc. 25/30%, volp.7%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2018",EUR/t,2018-06-28,2018-06-28,1,0
+1007,"buono mercantile - prot. 12% min, p.s. 77 kg/hl min, c.e.1,5+1,5%, bianc.35/40%, volp.9%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2018",EUR/t,2018-06-28,2018-06-28,1,0
+1008,"mercantile - prot. 11% min, p.s. 75 kg/hl min, c.e. 2+2%, volp.12%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2018",EUR/t,2018-06-28,2018-06-28,1,0
+1009,"fino - prot. 13% min, p.s. 80 kg/hl min, c.e. 1+1%, bianc. 25% max, volp.6%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2018",EUR/t,2018-06-28,2018-06-28,1,0
+1010,"buono mercantile - prot. 12% min, p.s.78/79 kg/hl min, c.e.1,5+1,5%, bianc.40/50%, volp.8%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2018",EUR/t,2018-06-28,2018-06-28,1,0
+1011,"mercantile - prot. 11%, p.s. 76/77 kg/hl min, c.e. 2+2%, volp.12%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2018",EUR/t,2018-06-28,2018-06-28,1,0
+1012,"n° 1 - speciali di forza - prot. 14% min, p.s. 80 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2018,EUR/t,2018-07-05,2019-06-27,46,43
+1013,"n° 2 - speciali - prot. 12% min, p.s. 79 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2018,EUR/t,2018-07-05,2019-06-27,46,42
+1014,"n° 3 - fino - prot. 11% min, p.s. 78 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2018,EUR/t,2018-07-05,2019-06-27,46,43
+1015,"fino - prot. 13% min, p.s. 79 kg/hl min, c.e. 1+1%, bianc. 25/30%, volp.9%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2018",EUR/t,2018-07-05,2019-06-27,46,44
+1016,"buono mercantile - prot. 12% min, p.s. 77 kg/hl min, c.e.1,5+1,5%, bianc.35/40%, volp.14%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2018",EUR/t,2018-07-05,2019-06-27,46,44
+1017,"mercantile - prot. 11% min, p.s. 75 kg/hl min, c.e. 2+2%, volp.19%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2018",EUR/t,2018-07-05,2019-06-27,46,5
+1018,"fino - prot. 13% min, p.s. 79 kg/hl min, c.e. 1+1%, bianc. 25/30% max, volp.9%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2018",EUR/t,2018-07-05,2018-07-05,1,1
+1019,"buono mercantile - prot. 12% min, p.s.77 kg/hl min, c.e.1,5+1,5%, bianc.35/40%, volp.14%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2018",EUR/t,2018-07-05,2019-06-27,46,44
+1020,"mercantile - prot. 11%, p.s. 74 kg/hl min, c.e. 2+2%, volp.19%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2018",EUR/t,2018-07-05,2019-06-27,46,22
+1021,"frumento tenero ad uso alimentare - prot. 11 % min, p.s. 75/78 kg/hl",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2018-07-05,2021-07-22,140,133
+1022,"frumento duro ad uso alimentare - prot. 12 % min, p.s. 78 kg/hl min",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2018-07-05,2023-07-06,232,215
+1023,orzo - p.s. 60/62,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2018-07-05,2019-06-06,41,40
+1024,pisello - umidità 13% (min uso zootecnico - max uso alimentare),FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2018-07-05,2024-06-20,286,112
+1025,"fino - prot. 13% min, p.s. 79 kg/hl min, c.e. 1+1%, bianc. 25/30%, volp.9%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2018",EUR/t,2018-07-12,2019-06-27,45,43
+1026,paglia di grano prima qualità in campo - in rotoballe,FRANCO PARTENZA > PAGLIA,EUR/t,2018-07-12,2026-10-08,391,49
+1027,paglia di grano prima qualità in campo - in balloni quadri,FRANCO PARTENZA > PAGLIA,EUR/t,2018-07-12,2026-10-08,391,49
+1028,favino nazionale,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2018-07-19,2020-07-16,94,56
+1029,farro dicocco in natura,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2018-07-26,2023-07-20,232,96
+1030,paglia di grano prima qualità in cascina - in rotoballe,FRANCO PARTENZA > PAGLIA,EUR/t,2018-07-26,2026-10-08,386,323
+1031,paglia di grano prima qualità in cascina - in balloni quadri,FRANCO PARTENZA > PAGLIA,EUR/t,2018-07-26,2026-10-08,389,323
+1032,granoturco ad uso alimentare,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2018-09-13,2026-10-08,388,235
+1033,granoturco ad uso zootecnico,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2018-09-27,2026-09-17,260,239
+1034,seme di soia - umidità 13%,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2018-10-18,2026-10-08,377,221
+1035,comunitario - escl. nazionale - ad uso zootecnico (con caratteristiche),FRANCO PARTENZA > GRANOTURCO SECCO (Umidità 14%),EUR/t,2019-05-30,2020-07-16,55,55
+1036,"1° taglio in campo collina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2019-06-13,2020-01-30,30,30
+1037,"2° taglio in campo collina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2019-06-13,2020-01-30,30,22
+1038,"n° 1 - speciali di forza - prot. 14% min, p.s. 80 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2019,EUR/t,2019-07-04,2020-06-18,46,43
+1039,"n° 2 - speciali - prot. 12% min, p.s. 79 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2019,EUR/t,2019-07-04,2020-06-18,46,43
+1040,"n° 3 - fino - prot. 11% min, p.s. 78 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2019,EUR/t,2019-07-04,2020-06-18,46,44
+1041,"n° 4 - buono mercantile - p.s. 76 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2019,EUR/t,2019-07-04,2020-06-18,46,43
+1042,"n° 5 - mercantile - p.s. 73/75 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2019,EUR/t,2019-07-04,2020-06-18,46,43
+1043,"fino - prot. 13% min, p.s. 79 kg/hl min, c.e. 1+1%, bianc. 25/30%, volp.9%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2019",EUR/t,2019-07-04,2019-07-04,1,0
+1044,"buono mercantile - prot. 12% min, p.s. 77 kg/hl min, c.e.1,5+1,5%, bianc.35/40%, volp.14%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2019",EUR/t,2019-07-04,2019-07-04,1,0
+1045,"mercantile - prot. 11% min, p.s. 75 kg/hl min, c.e. 2+2%, volp.19%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2019",EUR/t,2019-07-04,2019-07-04,1,0
+1046,"fino - prot. 13% min, p.s. 79 kg/hl min, c.e. 1+1%, bianc. 25/30%, volp.9%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2019",EUR/t,2019-07-04,2019-07-04,1,0
+1047,"buono mercantile - prot. 12% min, p.s.77 kg/hl min, c.e.1,5+1,5%, bianc.35/40%, volp.14%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2019",EUR/t,2019-07-04,2019-07-04,1,0
+1048,"mercantile - prot. 11%, p.s. 74 kg/hl min, c.e. 2+2%, volp.19%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2019",EUR/t,2019-07-04,2019-07-04,1,0
+1049,orzo - p.s. 62/63,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2019-07-04,2019-10-17,14,14
+1050,favino per uso zootecnico - umidità 13%,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2019-07-04,2026-10-08,353,238
+1051,"fino - prot. 13,5% min, p.s. 79 kg/hl min, c.e. 2+2%, bianc. 25/30%, volp.15%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2019",EUR/t,2019-07-11,2020-06-18,45,44
+1052,"buono mercantile - prot. 12,5% min, p.s. 77 kg/hl min, c.e.2+2%, bianc.35/40%, volp.20%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2019",EUR/t,2019-07-11,2020-06-18,45,44
+1053,"mercantile - prot. 11% min, p.s. 75 kg/hl min, c.e. 2+2%, volp.25/30%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2019",EUR/t,2019-07-11,2020-06-18,45,44
+1054,"fino - prot. 13,5% min, p.s. 79 kg/hl min, c.e. 2+2%, bianc. 25/30%, volp.15%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2019",EUR/t,2019-07-11,2020-06-18,45,44
+1055,"buono mercantile - prot. 12,5% min, p.s.77 kg/hl min, c.e.2+2%, bianc.35/40%, volp.20%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2019",EUR/t,2019-07-11,2020-06-18,45,44
+1056,"mercantile - prot. 11%, p.s. 75 kg/hl min, c.e. 2+2%, volp.25/30%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2019",EUR/t,2019-07-11,2019-07-11,1,1
+1057,orzo estero - p.s. 62/63,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2019-07-11,2023-07-20,188,0
+1058,"mercantile - prot. 11% min, p.s. 75 kg/hl min, c.e. 2+2%, volp.25/30%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2019",EUR/t,2019-07-18,2020-06-18,44,43
+1059,orzo estero - p.s. 63/64,FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2019-07-18,2020-07-16,48,43
+1060,seme di girasole,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2019-07-18,2022-09-01,39,3
+1061,sorgo bianco,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2019-08-29,2025-08-28,286,82
+1062,seme di girasole (min linoleico - max alto oleico),FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2019-09-19,2020-08-27,45,12
+1063,seme di girasole nazionale alto oleico (franco arrivo utilizzatore - prezzo nominale),FRANCO ARRIVO > SEMI OLEOSI,EUR/t,2019-10-10,2020-09-10,44,4
+1064,- calo 15% (trifoglio max 1%; cuscuta max 2%),FRANCO PARTENZA > SEMENTI CONVENZIONALI CERTIFICATE > erba medica di 2ª moltiplicazione - varietà,EUR/t,2019-10-17,2025-12-11,128,121
+1065,favino (buona media dell'annata),FRANCO PARTENZA > SEMENTI CONVENZIONALI CERTIFICATE > erba medica di 2ª moltiplicazione - varietà,EUR/t,2019-10-17,2025-12-11,89,0
+1066,sulla sgusciata con calo 10%,FRANCO PARTENZA > SEMENTI CONVENZIONALI CERTIFICATE > erba medica di 2ª moltiplicazione - varietà,EUR/t,2019-10-17,2025-12-11,105,30
+1067,trifoglio violetto con calo 15%,FRANCO PARTENZA > SEMENTI CONVENZIONALI CERTIFICATE > erba medica di 2ª moltiplicazione - varietà,EUR/t,2019-10-17,2025-12-11,104,30
+1068,trifoglio incarnato con calo 10%,FRANCO PARTENZA > SEMENTI CONVENZIONALI CERTIFICATE > erba medica di 2ª moltiplicazione - varietà,EUR/t,2019-10-17,2025-12-11,106,85
+1069,trifoglio alessandrino con calo 10%,FRANCO PARTENZA > SEMENTI CONVENZIONALI CERTIFICATE > erba medica di 2ª moltiplicazione - varietà,EUR/t,2019-10-17,2025-12-11,129,112
+1070,- calo 15% (trifoglio max 1%; cuscuta max 2%),FRANCO PARTENZA > SEMENTI CONVENZIONALI PER ESPORTAZIONE EXTRA UE > erba medica non certificata,EUR/t,2019-10-17,2023-01-19,76,72
+1071,- calo 15% (trifoglio max 1%; cuscuta max 2%),FRANCO PARTENZA > SEMENTI BIOLOGICHE CERTIFICATE > erba medica di 2ª moltiplicazione - varietà,EUR/t,2019-10-17,2025-11-27,119,112
+1072,favino (buona media dell'annata),FRANCO PARTENZA > SEMENTI BIOLOGICHE CERTIFICATE > erba medica di 2ª moltiplicazione - varietà,EUR/t,2019-10-17,2025-12-11,120,0
+1073,sulla sgusciata con calo 10%,FRANCO PARTENZA > SEMENTI BIOLOGICHE CERTIFICATE > erba medica di 2ª moltiplicazione - varietà,EUR/t,2019-10-17,2025-12-11,121,16
+1074,trifoglio violetto con calo 15%,FRANCO PARTENZA > SEMENTI BIOLOGICHE CERTIFICATE > erba medica di 2ª moltiplicazione - varietà,EUR/t,2019-10-17,2025-12-11,121,16
+1075,trifoglio incarnato con calo 10%,FRANCO PARTENZA > SEMENTI BIOLOGICHE CERTIFICATE > erba medica di 2ª moltiplicazione - varietà,EUR/t,2019-10-17,2025-12-11,121,71
+1076,trifoglio alessandrino con calo 10%,FRANCO PARTENZA > SEMENTI BIOLOGICHE CERTIFICATE > erba medica di 2ª moltiplicazione - varietà,EUR/t,2019-10-17,2025-12-11,129,79
+1077,derivate da cereali,FRANCO PARTENZA > SOTTOPRODOTTI DI LAVORAZIONE,EUR/t,2019-10-17,2024-01-25,94,0
+1078,derivate da foraggere e leguminose,FRANCO PARTENZA > SOTTOPRODOTTI DI LAVORAZIONE,EUR/t,2019-10-17,2025-12-11,126,90
+1079,derivate da oleaginose,FRANCO PARTENZA > SOTTOPRODOTTI DI LAVORAZIONE,EUR/t,2019-10-17,2024-01-25,94,0
+1080,derivate da orticole,FRANCO PARTENZA > SOTTOPRODOTTI DI LAVORAZIONE,EUR/t,2019-10-17,2024-01-25,94,0
+1081,erba medica di 2ª moltiplicazione - varietà,FRANCO PARTENZA > PREZZI CALCOLATI A CALO 0% - merce nuda > SEMENTI CONVENZIONALI CERTIFICATE,EUR/t,2019-10-17,2025-12-11,128,121
+1082,sulla sgusciata,FRANCO PARTENZA > PREZZI CALCOLATI A CALO 0% - merce nuda > SEMENTI CONVENZIONALI CERTIFICATE,EUR/t,2019-10-17,2025-12-11,128,30
+1083,trifoglio violetto,FRANCO PARTENZA > PREZZI CALCOLATI A CALO 0% - merce nuda > SEMENTI CONVENZIONALI CERTIFICATE,EUR/t,2019-10-17,2025-12-11,128,30
+1084,trifoglio incarnato,FRANCO PARTENZA > PREZZI CALCOLATI A CALO 0% - merce nuda > SEMENTI CONVENZIONALI CERTIFICATE,EUR/t,2019-10-17,2025-12-11,128,85
+1085,trifoglio alessandrino,FRANCO PARTENZA > PREZZI CALCOLATI A CALO 0% - merce nuda > SEMENTI CONVENZIONALI CERTIFICATE,EUR/t,2019-10-17,2025-12-11,129,113
+1086,erba medica non certificata,FRANCO PARTENZA > PREZZI CALCOLATI A CALO 0% - merce nuda > SEMENTI CONVENZIONALI PER ESPORTAZIONE EXTRA UE,EUR/t,2019-10-17,2024-01-25,96,73
+1087,erba medica di 2ª moltiplicazione - varietà,FRANCO PARTENZA > PREZZI CALCOLATI A CALO 0% - merce nuda > SEMENTI BIOLOGICHE CERTIFICATE,EUR/t,2019-10-17,2025-11-27,110,103
+1088,sulla sgusciata,FRANCO PARTENZA > PREZZI CALCOLATI A CALO 0% - merce nuda > SEMENTI BIOLOGICHE CERTIFICATE,EUR/t,2019-10-17,2024-12-19,113,16
+1089,trifoglio violetto,FRANCO PARTENZA > PREZZI CALCOLATI A CALO 0% - merce nuda > SEMENTI BIOLOGICHE CERTIFICATE,EUR/t,2019-10-17,2024-12-19,113,16
+1090,trifoglio incarnato,FRANCO PARTENZA > PREZZI CALCOLATI A CALO 0% - merce nuda > SEMENTI BIOLOGICHE CERTIFICATE,EUR/t,2019-10-17,2024-12-19,113,71
+1091,trifoglio alessandrino,FRANCO PARTENZA > PREZZI CALCOLATI A CALO 0% - merce nuda > SEMENTI BIOLOGICHE CERTIFICATE,EUR/t,2019-10-17,2025-12-11,106,79
+1092,orzo ad uso zootecnico - p.s. 62/63,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2019-10-24,2021-06-17,80,53
+1093,pisello proteico nazionale (prezzo nominale),FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2019-10-31,2019-11-07,2,2
+1094,pisello proteico estero (prezzo nominale),FRANCO PARTENZA > CEREALI MINORI E LEGUMINOSE,EUR/t,2019-10-31,2019-11-07,2,2
+1095,panello di lino in scaglie,FRANCO ARRIVO > VARIE,EUR/t,2019-11-14,2026-10-08,336,4
+1096,"n° 1 - speciali di forza - prot. 14% min, p.s. 80 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2020,EUR/t,2020-06-25,2020-06-25,1,0
+1097,"n° 2 - speciali - prot. 12% min, p.s. 79 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2020,EUR/t,2020-06-25,2021-06-24,49,45
+1098,"n° 3 - fino - prot. 11% min, p.s. 78 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2020,EUR/t,2020-06-25,2020-06-25,1,0
+1099,"n° 4 - buono mercantile - p.s. 76 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2020,EUR/t,2020-06-25,2021-06-24,49,45
+1100,"n° 5 - mercantile - p.s. 73/75 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2020,EUR/t,2020-06-25,2021-06-24,49,0
+1101,"fino - prot. 13,5% min, p.s. 79 kg/hl min, c.e. 2+2%, bianc. 25/30%, volp.15%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2020",EUR/t,2020-06-25,2020-06-25,1,0
+1102,"buono mercantile - prot. 12,5% min, p.s. 77 kg/hl min, c.e.2+2%, bianc.35/40%, volp.20%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2020",EUR/t,2020-06-25,2020-06-25,1,0
+1103,"mercantile - prot. 11% min, p.s. 75 kg/hl min, c.e. 2+2%, volp.25/30%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2020",EUR/t,2020-06-25,2020-06-25,1,0
+1104,"fino - prot. 13,5% min, p.s. 79 kg/hl min, c.e. 2+2%, bianc. 25/30%, volp.15%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2020",EUR/t,2020-06-25,2020-06-25,1,0
+1105,"buono mercantile - prot. 12,5% min, p.s.77 kg/hl min, c.e.2+2%, bianc.35/40%, volp.20%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2020",EUR/t,2020-06-25,2020-06-25,1,0
+1106,"mercantile - prot. 11% min, p.s. 75 kg/hl min, c.e. 2+2%, volp.25/30%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2020",EUR/t,2020-06-25,2020-06-25,1,0
+1107,"n° 1 - speciali di forza - prot. 13,5% min, p.s. 80 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2020,EUR/t,2020-07-02,2021-06-24,48,46
+1108,"n° 3 - fino - prot. 11% min, p.s. 79 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2020,EUR/t,2020-07-02,2021-06-24,48,45
+1109,"fino - prot. 13% min, p.s. 80 kg/hl min, c.e. 2+2%, bianc. 20%, volp.5/6%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2020",EUR/t,2020-07-02,2021-06-24,48,46
+1110,"buono mercantile - prot. 12% min, p.s. 78 kg/hl min, c.e. 2+2%, bianc. 30%, volp.5/6%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2020",EUR/t,2020-07-02,2021-06-24,48,46
+1111,"mercantile - prot. 11% min, p.s. 76 kg/hl min, c.e. 2+2%, volp.10%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2020",EUR/t,2020-07-02,2021-06-24,48,46
+1112,"fino - prot. 13,5% min, p.s. 80 kg/hl min, c.e. 2+2%, bianc. 20%, volp.5/6%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2020",EUR/t,2020-07-02,2020-07-16,3,3
+1113,"buono mercantile - prot. 12,5% min, p.s.78 kg/hl min, c.e.2+2%, bianc.30%, volp.5/6%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2020",EUR/t,2020-07-02,2020-07-16,3,3
+1114,"mercantile - prot. 11% min, p.s. 76 kg/hl min, c.e. 2+2%, volp.10%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, centro 2020",EUR/t,2020-07-02,2020-07-16,3,3
+1115,"Northern Spring min prot: 15,3% max prot: 15,8%","FRANCO ARRIVO > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2020-07-23,2026-10-08,303,292
+1116,Canada Western Red Spring n° 1,"FRANCO ARRIVO > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2020-07-23,2026-10-08,303,295
+1117,"francese - p.s. 76, c.e. 2%","FRANCO ARRIVO > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2020-07-23,2026-10-08,301,2
+1118,"comunitario - p.s. 76, c.e. 2%","FRANCO ARRIVO > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2020-07-23,2026-10-08,303,300
+1119,"austriaco - qualità 1ª - p.s. 79, prot. 15%","FRANCO ARRIVO > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2020-07-23,2026-10-08,302,272
+1120,"austriaco - qualità 3ª - p.s. 78, prot. 12,5%","FRANCO ARRIVO > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2020-07-23,2020-07-23,1,0
+1121,"tedesco - p.s. 79, prot. 14% - tipo E","FRANCO ARRIVO > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2020-07-23,2026-10-08,301,0
+1122,"tedesco - p.s. 78, prot. 13% - tipo A","FRANCO ARRIVO > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2020-07-23,2023-07-27,147,0
+1123,"tedesco - p.s. 75, prot. 11,5% - tipo B","FRANCO ARRIVO > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2020-07-23,2026-10-08,301,0
+1124,"fino - prot. 13,5% min, p.s. 80 kg/hl min, c.e. 2+2%, bianc. 20%, volp.5/6%","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2020",EUR/t,2020-07-23,2021-06-24,45,43
+1125,"buono mercantile - prot. 12,5% min, p.s.78 kg/hl min, c.e.2+2%, bianc.30%, volp.5/6%","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2020",EUR/t,2020-07-23,2021-06-24,45,43
+1126,"mercantile - prot. 11% min, p.s. 76 kg/hl min, c.e. 2+2%, volp.10%","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2020",EUR/t,2020-07-23,2021-06-24,45,43
+1127,nazionale ad uso zootecnico (c.tto 103),FRANCO ARRIVO > GRANOTURCO SECCO (Umidità 14%),EUR/t,2020-07-23,2026-10-08,303,303
+1128,nazionale ad uso zootecnico (con caratteristiche),FRANCO ARRIVO > GRANOTURCO SECCO (Umidità 14%),EUR/t,2020-07-23,2026-10-08,303,303
+1129,comunitario - escl. nazionale - ad uso zootecnico (con caratteristiche),FRANCO ARRIVO > GRANOTURCO SECCO (Umidità 14%),EUR/t,2020-07-23,2026-10-08,303,303
+1130,non comunitario ad uso zootecnico (potrebbe contenere OGM),FRANCO ARRIVO > GRANOTURCO SECCO (Umidità 14%),EUR/t,2020-07-23,2026-10-08,303,303
+1131,ad uso energetico,FRANCO ARRIVO > GRANOTURCO SECCO (Umidità 14%),EUR/t,2020-07-23,2026-10-08,303,119
+1132,avena rossa,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2020-07-23,2023-06-29,144,42
+1133,orzo - p.s. 58/61,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2020-07-23,2023-06-15,138,65
+1134,orzo - p.s. 62/64,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2020-07-23,2026-10-08,207,188
+1135,orzo - p.s. 65 e oltre,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2020-07-23,2026-10-08,207,188
+1136,orzo estero - p.s. 63/64,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2020-07-23,2023-07-06,146,136
+1137,sorgo estero,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2020-07-23,2026-10-08,298,0
+1138,frumento per uso zootecnico 2),FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2020-07-23,2025-06-12,238,235
+1139,pisello proteico nazionale,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2020-07-23,2026-10-08,303,155
+1140,pisello proteico estero,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2020-07-23,2026-10-08,303,291
+1141,"farro (triticum dicoccum) di produzione nazionale, in natura - p.s. 41/45",FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2020-07-23,2023-07-13,146,31
+1142,favino nazionale,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2020-07-23,2024-07-04,194,124
+1143,Arborio/Volano (resa indicativa 56/58),"FRANCO PARTENZA > RISONI - per merce sfusa, al netto dei diritti di contratto E.N.R.",EUR/t,2020-07-23,2026-02-19,266,235
+1144,Carnaroli e varietà similari (resa indicativa 58/60),"FRANCO PARTENZA > RISONI - per merce sfusa, al netto dei diritti di contratto E.N.R.",EUR/t,2020-07-23,2026-02-19,266,243
+1145,Baldo e varietà similari (resa indicativa 58/60),"FRANCO PARTENZA > RISONI - per merce sfusa, al netto dei diritti di contratto E.N.R.",EUR/t,2020-07-23,2026-02-19,267,218
+1146,Arborio,FRANCO PARTENZA > RISI - franco partenza riserie (min. sfuso/max. confezionato),EUR/t,2020-07-23,2026-10-08,302,294
+1147,Baldo,FRANCO PARTENZA > RISI - franco partenza riserie (min. sfuso/max. confezionato),EUR/t,2020-07-23,2026-10-08,302,294
+1148,Ribe,FRANCO PARTENZA > RISI - franco partenza riserie (min. sfuso/max. confezionato),EUR/t,2020-07-23,2026-10-08,302,294
+1149,"Lido, Savio e similari",FRANCO PARTENZA > RISI - franco partenza riserie (min. sfuso/max. confezionato),EUR/t,2020-07-23,2023-09-28,156,152
+1150,Indica,FRANCO PARTENZA > RISI - franco partenza riserie (min. sfuso/max. confezionato),EUR/t,2020-07-23,2026-10-08,302,295
+1151,Originario,FRANCO PARTENZA > RISI - franco partenza riserie (min. sfuso/max. confezionato),EUR/t,2020-07-23,2026-10-08,302,295
+1152,Ribe parboiled,FRANCO PARTENZA > RISI - franco partenza riserie (min. sfuso/max. confezionato),EUR/t,2020-07-23,2026-10-08,302,294
+1153,corpetto,"FRANCO PARTENZA > SOTTOPRODOTTI DEL RISO - franco partenza riserie, rinfusa",EUR/t,2020-07-23,2026-10-08,303,303
+1154,mezzagrana,"FRANCO PARTENZA > SOTTOPRODOTTI DEL RISO - franco partenza riserie, rinfusa",EUR/t,2020-07-23,2026-10-08,303,303
+1155,grana verde,"FRANCO PARTENZA > SOTTOPRODOTTI DEL RISO - franco partenza riserie, rinfusa",EUR/t,2020-07-23,2026-10-08,303,303
+1156,farinaccio,"FRANCO PARTENZA > SOTTOPRODOTTI DEL RISO - franco partenza riserie, rinfusa",EUR/t,2020-07-23,2026-10-08,303,303
+1157,pula vergine,"FRANCO PARTENZA > SOTTOPRODOTTI DEL RISO - franco partenza riserie, rinfusa",EUR/t,2020-07-23,2026-10-08,303,303
+1158,lolla,"FRANCO PARTENZA > SOTTOPRODOTTI DEL RISO - franco partenza riserie, rinfusa",EUR/t,2020-07-23,2026-10-08,303,303
+1159,"1° taglio in cascina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-07-23,2022-05-12,89,80
+1160,"1° taglio in cascina, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-07-23,2022-05-12,89,80
+1161,"2° taglio in cascina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-07-23,2026-10-08,290,243
+1162,"2° taglio in cascina, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-07-23,2026-10-08,290,218
+1163,"2° taglio in campo, collina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-07-23,2022-05-12,86,5
+1164,"1° taglio in cascina, collina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-07-23,2022-05-12,89,79
+1165,paglia di grano prima qualità in campo - in rotoballe,FRANCO PARTENZA > PAGLIA CERTIFICATA BIOLOGICA,EUR/t,2020-07-23,2026-10-08,300,34
+1166,paglia di grano prima qualità in campo - in balloni quadri,FRANCO PARTENZA > PAGLIA CERTIFICATA BIOLOGICA,EUR/t,2020-07-23,2026-10-08,295,30
+1167,"austriaco - qualità 1ª - p.s. 79, prot. 14%","FRANCO ARRIVO > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2020-07-30,2026-10-08,301,268
+1168,orzo ad uso alimentare,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2020-07-30,2020-07-30,1,1
+1169,ceci - umidità 13% (min liscio - max rugoso),FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2020-07-30,2024-02-29,171,18
+1170,"4° taglio in campo, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-07-30,2026-10-08,259,5
+1171,"3° taglio in cascina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-07-30,2026-10-08,291,202
+1172,"3° taglio in cascina, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-07-30,2026-10-08,291,202
+1173,"4° taglio in cascina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-07-30,2026-10-08,287,150
+1174,"4° taglio in cascina, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-07-30,2026-10-08,287,150
+1175,"1° taglio in campo, collina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-07-30,2022-05-12,84,4
+1176,"orzo ad uso alimentare, monovarietale bianco, p.s. min 65",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2020-08-06,2024-02-29,171,35
+1177,"2° taglio in cascina, collina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-09-03,2022-05-12,84,78
+1178,paglia di grano prima qualità in cascina - in rotoballe,FRANCO PARTENZA > PAGLIA CERTIFICATA BIOLOGICA,EUR/t,2020-09-03,2026-10-08,289,248
+1179,paglia di grano prima qualità in cascina - in balloni quadri,FRANCO PARTENZA > PAGLIA CERTIFICATA BIOLOGICA,EUR/t,2020-09-03,2026-10-08,288,222
+1180,"1° taglio in campo, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-09-10,2022-05-12,79,4
+1181,"1° taglio in campo, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-09-10,2022-05-12,79,4
+1182,"2° taglio in campo, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-09-10,2026-10-08,257,26
+1183,"2° taglio in campo, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-09-10,2026-10-08,249,13
+1184,"3° taglio in campo, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-09-10,2026-10-08,256,19
+1185,"3° taglio in campo, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-09-10,2026-10-08,256,19
+1186,"4° taglio in campo, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2020-09-10,2026-10-08,255,5
+1187,seme di girasole (min linoleico - max altoleico),FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2020-09-17,2024-09-12,141,35
+1188,seme di girasole nazionale alto oleico (franco arrivo utilizzatore),FRANCO ARRIVO > SEMI OLEOSI,EUR/t,2020-09-17,2026-10-08,297,36
+1189,"qualità extra, 100% medica, prot. 18% min., ceneri 9% max.",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2020-10-08,2026-10-08,259,187
+1190,erba medica - cubettata - proteine 17% s.t.q.,FRANCO ARRIVO > PRODOTTI VEGETALI DISIDRATATI,EUR/t,2021-01-07,2021-01-07,1,1
+1191,erba medica - cubettata - proteine 16% s.t.q.,FRANCO ARRIVO > PRODOTTI VEGETALI DISIDRATATI,EUR/t,2021-01-07,2021-01-07,1,1
+1192,erba medica - cubettata - proteine 14% s.t.q.,FRANCO ARRIVO > PRODOTTI VEGETALI DISIDRATATI,EUR/t,2021-01-07,2021-01-07,1,1
+1193,erba medica fibra - in balloni quadri ad alta densità,FRANCO ARRIVO > PRODOTTI VEGETALI DISIDRATATI,EUR/t,2021-01-07,2021-01-07,1,0
+1194,fieno primo taglio fibra lunga - in balloni quadri ad alta densità,FRANCO ARRIVO > PRODOTTI VEGETALI DISIDRATATI,EUR/t,2021-01-07,2021-01-07,1,0
+1195,erba medica - cubettata - proteine 12% s.t.q.,FRANCO ARRIVO > PRODOTTI VEGETALI VENTILATI,EUR/t,2021-01-07,2021-01-07,1,0
+1196,fieno - cubettato - proteine 10% s.t.q.,FRANCO ARRIVO > PRODOTTI VEGETALI VENTILATI,EUR/t,2021-01-07,2021-01-07,1,1
+1197,fieno - cubettato - proteine 8% s.t.q.,FRANCO ARRIVO > PRODOTTI VEGETALI VENTILATI,EUR/t,2021-01-07,2021-01-07,1,1
+1198,erba medica fibra lunga - in balloni quadri ad alta densità,FRANCO ARRIVO > PRODOTTI VEGETALI VENTILATI,EUR/t,2021-01-07,2021-01-07,1,0
+1199,fieno primo taglio fibra - in balloni quadri ad alta densità,FRANCO ARRIVO > PRODOTTI VEGETALI VENTILATI,EUR/t,2021-01-07,2021-01-07,1,0
+1200,paglia trinciata depolverizzata in balloni quadri ad alta densità,FRANCO ARRIVO > PRODOTTI VEGETALI VENTILATI,EUR/t,2021-01-07,2026-10-08,283,272
+1201,paglia cubettata,FRANCO ARRIVO > PRODOTTI VEGETALI VENTILATI,EUR/t,2021-01-07,2026-10-08,283,273
+1202,erba medica - cubettata - proteine 17%,FRANCO ARRIVO > PRODOTTI VEGETALI DISIDRATATI,EUR/t,2021-01-14,2026-10-08,220,205
+1203,erba medica - cubettata - proteine 16%,FRANCO ARRIVO > PRODOTTI VEGETALI DISIDRATATI,EUR/t,2021-01-14,2026-10-08,280,268
+1204,erba medica - cubettata - proteine 14%,FRANCO ARRIVO > PRODOTTI VEGETALI DISIDRATATI,EUR/t,2021-01-14,2026-10-08,280,269
+1205,erba medica in balloni quadri ad alta densità,FRANCO ARRIVO > PRODOTTI VEGETALI DISIDRATATI,EUR/t,2021-01-14,2026-10-08,280,265
+1206,fieno primo taglio in balloni quadri ad alta densità,FRANCO ARRIVO > PRODOTTI VEGETALI DISIDRATATI,EUR/t,2021-01-14,2026-10-08,282,265
+1207,erba medica - cubettata - proteine 12%,FRANCO ARRIVO > PRODOTTI VEGETALI VENTILATI,EUR/t,2021-01-14,2026-10-08,282,136
+1208,fieno - cubettato - proteine 10%,FRANCO ARRIVO > PRODOTTI VEGETALI VENTILATI,EUR/t,2021-01-14,2026-10-08,282,205
+1209,fieno - cubettato - proteine 8%,FRANCO ARRIVO > PRODOTTI VEGETALI VENTILATI,EUR/t,2021-01-14,2026-10-08,282,275
+1210,erba medica fibra lunga in balloni quadri ad alta densità,FRANCO ARRIVO > PRODOTTI VEGETALI VENTILATI,EUR/t,2021-01-14,2026-10-08,242,56
+1211,fieno primo taglio fibra lunga in balloni quadri ad alta densità,FRANCO ARRIVO > PRODOTTI VEGETALI VENTILATI,EUR/t,2021-01-14,2026-10-08,280,103
+1212,orzo ad uso zootecnico - p.s. 63/64,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2021-06-24,2023-06-22,100,80
+1213,erba medica disidratata - cubettata - proteine 14/15% stq,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2021-06-24,2026-10-08,259,250
+1214,"n° 1 - speciali di forza - prot. 13,5% min, p.s. 80 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2021,EUR/t,2021-07-01,2022-06-16,49,48
+1215,"n° 2 - speciali - prot. 12% min, p.s. 79 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2021,EUR/t,2021-07-01,2022-06-16,49,48
+1216,"n° 3 - fino - prot. 11% min, p.s. 79 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2021,EUR/t,2021-07-01,2022-06-16,49,48
+1217,"fino - prot. 13% min, p.s. 80 kg/hl min, c.e. 2+2%, bianc. 20%, volp.5/6%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2021",EUR/t,2021-07-01,2022-06-16,49,48
+1218,"buono mercantile - prot. 12% min, p.s. 78 kg/hl min, c.e. 2+2%, bianc. 30%, volp.5/6%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2021",EUR/t,2021-07-01,2022-06-16,49,48
+1219,"fino - prot. 13% min, p.s. 80 kg/hl min, c.e. 2+2%, bianc. 20%, volp.5/6%","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2021",EUR/t,2021-07-01,2022-06-16,49,48
+1220,"buono mercantile - prot. 12% min, p.s.78 kg/hl min, c.e.2+2%, bianc.30%, volp.5/6%","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2021",EUR/t,2021-07-01,2022-06-16,49,48
+1221,"n° 4 - buono mercantile - p.s. 76 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2021,EUR/t,2021-07-08,2022-06-16,48,47
+1222,"mercantile - prot. 11% min, p.s. 76 kg/hl min, c.e. 2+2%, volp.10%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2021",EUR/t,2021-07-08,2022-06-16,48,47
+1223,"n° 5 - mercantile - p.s. 73/75 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2021,EUR/t,2021-07-15,2022-06-16,47,0
+1224,"mercantile - prot. 11% min, p.s. 76 kg/hl min, c.e. 2+2%, volp.10%","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2021",EUR/t,2021-07-15,2022-06-16,47,0
+1225,semola prodotta con grano duro nazionale - prot. 12% s.s.,FRANCO ARRIVO > SFARINATI di grano duro,EUR/t,2021-07-22,2026-10-08,255,0
+1226,"fieno di montagna in campo, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2021-07-22,2022-05-12,39,0
+1227,"fieno di montagna in cascina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2021-07-22,2022-05-12,41,38
+1228,"fieno di montagna in campo, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2021-07-22,2022-05-12,39,0
+1229,"fieno di montagna in cascina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2021-07-22,2022-05-12,41,38
+1230,"frumento tenero ad uso alimentare - prot. 11% min, p.s. 75/78 kg/hl",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2021-07-29,2021-07-29,1,0
+1231,frumento tenero ad uso alimentare di base*,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2021-07-29,2022-01-20,24,24
+1232,"frumento tenero ad uso alimentare di forza - prot. 13,5% min, p.s.79 kg/hl min",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2021-07-29,2022-06-30,47,42
+1233,seme di girasole (min altoleico - max linoleico),FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2021-09-16,2022-01-27,19,16
+1234,frumento tenero ad uso alimentare di base,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2022-01-27,2023-07-06,73,65
+1235,"1° taglio in campo: erba medica min. 20%, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2022-05-19,2026-10-08,175,24
+1236,"1° taglio in campo: erba medica min 20%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2022-05-19,2022-06-01,3,3
+1237,"1° taglio in campo: erba medica min. 50%, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2022-05-19,2025-11-27,165,21
+1238,"1° taglio in campo: erba medica min 50%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2022-05-19,2022-06-01,3,3
+1239,"1° taglio in campo, collina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di collina e di montagna,EUR/t,2022-05-19,2026-10-08,180,25
+1240,"2° taglio in campo, collina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di collina e di montagna,EUR/t,2022-05-19,2026-10-08,179,18
+1241,"1° taglio in cascina, collina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di collina e di montagna,EUR/t,2022-05-19,2026-10-08,203,166
+1242,"2° taglio in cascina, collina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di collina e di montagna,EUR/t,2022-05-19,2026-10-08,204,114
+1243,"fieno di montagna in campo, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di collina e di montagna,EUR/t,2022-05-19,2026-10-08,178,56
+1244,"fieno di montagna in cascina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di collina e di montagna,EUR/t,2022-05-19,2026-10-08,204,126
+1245,"1° taglio in campo: erba medica min. 20%, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2022-05-19,2026-06-04,167,25
+1246,"1° taglio in campo: erba medica min 20%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2022-05-19,2022-06-01,3,3
+1247,"1° taglio in campo: erba medica min. 50%, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2022-05-19,2025-11-27,165,12
+1248,"1° taglio in campo: erba medica min 50%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2022-05-19,2022-06-01,3,3
+1249,"1° taglio in campo, collina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di collina e di montagna - CERTIFICATI BIOLOGICI,EUR/t,2022-05-19,2026-10-08,179,27
+1250,"2° taglio in campo, collina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di collina e di montagna - CERTIFICATI BIOLOGICI,EUR/t,2022-05-19,2026-10-08,174,18
+1251,"1° taglio in cascina, collina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di collina e di montagna - CERTIFICATI BIOLOGICI,EUR/t,2022-05-19,2026-10-08,199,165
+1252,"2° taglio in cascina, collina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di collina e di montagna - CERTIFICATI BIOLOGICI,EUR/t,2022-05-19,2026-10-08,199,114
+1253,"fieno di montagna in campo, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di collina e di montagna - CERTIFICATI BIOLOGICI,EUR/t,2022-05-19,2026-10-08,173,56
+1254,"fieno di montagna in cascina, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di collina e di montagna - CERTIFICATI BIOLOGICI,EUR/t,2022-05-19,2026-10-08,203,126
+1255,"1° taglio in cascina: erba medica min. 20%, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2022-05-26,2026-10-08,197,168
+1256,"1° taglio in cascina: erba medica min 20%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2022-05-26,2022-06-01,2,0
+1257,"1° taglio in cascina: erba medica min. 50%, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2022-05-26,2022-06-01,2,0
+1258,"1° taglio in cascina: erba medica min 50%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2022-05-26,2022-06-01,2,0
+1259,"1° taglio in cascina: erba medica min. 20%, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2022-06-01,2026-10-08,196,172
+1260,"1° taglio in cascina: erba medica min 20%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2022-06-01,2022-06-01,1,0
+1261,"1° taglio in cascina: erba medica min. 50%, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2022-06-01,2022-06-01,1,0
+1262,"1° taglio in cascina: erba medica min 50%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2022-06-01,2022-06-01,1,0
+1263,"1° taglio in campo: erba medica min. 20%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2022-06-09,2026-10-08,172,21
+1264,"1° taglio in campo: erba medica min. 50%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2022-06-09,2025-11-27,162,18
+1265,"1° taglio in cascina: erba medica min. 20%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2022-06-09,2026-10-08,195,172
+1266,"1° taglio in cascina: erba medica min. 80%, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2022-06-09,2026-10-08,195,172
+1267,"1° taglio in cascina: erba medica min. 80%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2022-06-09,2026-10-08,195,172
+1268,"1° taglio in campo: erba medica min. 20%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2022-06-09,2026-06-04,163,10
+1269,"1° taglio in campo: erba medica min. 50%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2022-06-09,2025-11-27,162,9
+1270,"1° taglio in cascina: erba medica min. 20%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2022-06-09,2026-10-08,195,139
+1271,"1° taglio in cascina: erba medica min. 80%, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2022-06-09,2026-10-08,195,139
+1272,"1° taglio in cascina: erba medica min. 80%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2022-06-09,2026-10-08,195,139
+1273,"n° 1 - speciali di forza - prot. 13,5% min, p.s. 80 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2022,EUR/t,2022-06-23,2022-06-23,1,0
+1274,"n° 2 - speciali - prot. 12% min, p.s. 79 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2022,EUR/t,2022-06-23,2022-06-23,1,0
+1275,"n° 3 - fino - prot. 11% min, p.s. 79 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2022,EUR/t,2022-06-23,2022-06-23,1,0
+1276,"n° 4 - buono mercantile - p.s. 76 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2022,EUR/t,2022-06-23,2023-06-15,49,47
+1277,"n° 5 - mercantile - p.s. 73/75 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2022,EUR/t,2022-06-23,2023-06-15,49,47
+1278,"fino - prot. 13% min, p.s. 80 kg/hl min, c.e. 2+2%, bianc. 20%, volp.5/6%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2022",EUR/t,2022-06-23,2022-06-23,1,0
+1279,"buono mercantile - prot. 12% min, p.s. 78 kg/hl min, c.e. 2+2%, bianc. 30%, volp.5/6%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2022",EUR/t,2022-06-23,2023-06-15,49,47
+1280,"mercantile - prot. 11% min, p.s. 76 kg/hl min, c.e. 2+2%, volp.10%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2022",EUR/t,2022-06-23,2023-06-15,49,47
+1281,"fino - prot. 13% min, p.s. 80 kg/hl min, c.e. 2+2%, bianc. 20%, volp.5/6%","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2022",EUR/t,2022-06-23,2022-06-23,1,0
+1282,"buono mercantile - prot. 12% min, p.s.78 kg/hl min, c.e.2+2%, bianc.30%, volp.5/6%","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2022",EUR/t,2022-06-23,2023-06-15,49,47
+1283,"mercantile - prot. 11% min, p.s. 76 kg/hl min, c.e. 2+2%, volp.10%","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2022",EUR/t,2022-06-23,2023-06-15,49,47
+1284,"n° 1 - speciali di forza - prot. 14% min, p.s. 79/80 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2022,EUR/t,2022-06-30,2023-06-15,48,47
+1285,"n° 2 - speciali - prot. 12% min, p.s. 78/79 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2022,EUR/t,2022-06-30,2023-06-15,48,47
+1286,"n° 3 - fino - prot. 11% min, p.s. 78 kg/hl min, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2022,EUR/t,2022-06-30,2023-06-15,48,47
+1287,"fino - prot. 13,5% min, p.s. 79/80 kg/hl, c.e. 2+2%, bianc. 25%, volp.5/6%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2022",EUR/t,2022-06-30,2023-06-15,48,47
+1288,"fino - prot. 13,5% min, p.s. 79/80 kg/hl, c.e. 2+2%, bianc. 25%, volp.5/6%","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2022",EUR/t,2022-06-30,2023-06-15,48,47
+1289,"frumento tenero ad uso alimentare di forza - prot. 14 % min, p.s.79 kg/hl min",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2022-07-07,2025-06-26,97,90
+1290,Trinciato di mais (Piante in piedi),FRANCO PARTENZA > MAIS,EUR/t,2022-07-21,2023-05-25,42,7
+1291,Frumento foraggero in rotoballe,FRANCO PARTENZA > FRUMENTO FORAGGERO,EUR/t,2022-07-21,2026-06-18,108,11
+1292,Frumento foraggero in balloni quadri,FRANCO PARTENZA > FRUMENTO FORAGGERO,EUR/t,2022-07-21,2026-06-18,108,11
+1293,Trinciato di cereali a paglia (piante in piedi),FRANCO PARTENZA > TRINCIATI (piante in piedi),EUR/t,2023-06-01,2026-08-27,82,10
+1294,Trinciato di mais (Piante in piedi),FRANCO PARTENZA > TRINCIATI (piante in piedi),EUR/t,2023-06-08,2026-08-27,87,22
+1295,seme di colza,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2023-06-15,2026-10-08,160,29
+1296,orzo - p.s. 55/57,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2023-06-22,2024-06-13,48,42
+1297,orzo - p.s. 58/60,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2023-06-22,2026-10-08,160,88
+1298,orzo - p.s. 62 e oltre,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2023-06-22,2024-06-13,48,45
+1299,orzo ad uso zootecnico - p.s. 58/60,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2023-06-29,2023-07-20,4,4
+1300,"n° 1 - speciali di forza - prot. 14% min, p.s. 78/79 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2023,EUR/t,2023-07-06,2024-06-20,47,45
+1301,"n° 2 - speciali - prot. 12% min, p.s. 77/78 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2023,EUR/t,2023-07-06,2024-06-20,47,45
+1302,"n° 3 - fino - prot. 11% min, p.s. 77 kg/hl min, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2023,EUR/t,2023-07-06,2024-06-20,47,45
+1303,"n° 4 - buono mercantile - p.s. 74/75 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2023,EUR/t,2023-07-06,2024-06-20,47,45
+1304,"n° 5 - mercantile - p.s. 71/73 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2023,EUR/t,2023-07-06,2024-06-20,47,39
+1305,"fino - prot. 13,5% min, p.s. 78/79 kg/hl, c.e. 2+2%, bianc. 30%, volp.9/10%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2023",EUR/t,2023-07-06,2024-06-20,47,46
+1306,"buono mercantile - prot. 12% min, p.s. 76/77 kg/hl min, c.e. 2+2%, bianc. 30%, volp.16/18%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2023",EUR/t,2023-07-06,2024-06-20,47,46
+1307,"mercantile - prot. 11% min, p.s. 73/75 kg/hl min, c.e. 2+2%, volp. oltre 19%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2023",EUR/t,2023-07-06,2023-07-06,1,1
+1308,"fino - prot. 13,5% min, p.s. 78/79 kg/hl, c.e. 2+2%, bianc. 30%, volp.9/10%","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2023",EUR/t,2023-07-06,2024-06-27,48,46
+1309,"buono mercantile - prot. 12% min, p.s. 76/77 kg/hl min, c.e. 2+2%, bianc. 30%, volp.16/18%","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2023",EUR/t,2023-07-06,2024-06-27,48,46
+1310,"mercantile - prot. 11% min, p.s. 73/75 kg/hl min, c.e. 2+2%, volp. oltre 19%","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2023",EUR/t,2023-07-06,2023-07-06,1,1
+1311,avena rossa - p.s. 43/45,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2023-07-06,2026-07-02,146,66
+1312,"mercantile - prot. 11% min, p.s. 73/75 kg/hl min, c.e. 2+2%, volp. oltre 19% e max 30%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2023",EUR/t,2023-07-13,2024-06-20,46,45
+1313,"sotto mercantile - prot. 11% min, p.s. 70/72 kg/hl min, c.e. 2+2%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2023",EUR/t,2023-07-13,2024-06-20,46,45
+1314,"mercantile - prot. 11% min, p.s. 73/75 kg/hl min, c.e. 2+2%, volp. oltre 19% e max 30%","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2023",EUR/t,2023-07-13,2024-06-27,47,45
+1315,"sotto mercantile - prot. 11% min, p.s. 70/72 kg/hl min, c.e. 2+2%","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2023",EUR/t,2023-07-13,2024-06-27,47,45
+1316,orzo estero - p.s. 61/62,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2023-07-13,2024-06-20,46,46
+1317,"frumento tenero ad uso alimentare di forza - prot. 14 % min, p.s.78 kg/hl min",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2023-07-13,2024-07-04,47,44
+1318,"frumento tenero ad uso alimentare di base - prot. 11 % min, p.s.76 kg/hl min",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2023-07-13,2025-06-26,94,87
+1319,frumento tenero ad uso zootecnico - p.s. 72 kg/hl min,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2023-07-13,2025-06-26,94,87
+1320,"frumento duro fino - prot. 13% min, p.s. 78 kg/hl min, c.e. 2+2%, bianc. 30%, volp.9/10%",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2023-07-13,2024-07-04,47,44
+1321,"frumento duro buono mercantile - prot. 12% min, p.s. 76 kg/hl min, c.e. 2+2%, bianc. 30%, volp.16/18%",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2023-07-13,2024-07-04,47,44
+1322,"frumento duro mercantile - prot. 11% min, p.s. 73 kg/hl min, c.e. 2+2%, volp. 19/25%",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2023-07-13,2024-07-04,47,44
+1323,"farro (triticum dicoccum) di produzione nazionale, in natura - p.s. 39/43",FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2023-07-20,2026-10-08,156,62
+1324,"1° taglio in cascina: erba medica min. 20%, in rotoballe (prezzo nominale)",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2023-07-20,2023-07-20,1,1
+1325,"1° taglio in cascina: erba medica min. 20%, in balloni quadri (prezzo nominale)",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2023-07-20,2023-07-20,1,1
+1326,"1° taglio in cascina: erba medica min. 80%, in rotoballe (prezzo nominale)",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2023-07-20,2023-07-20,1,1
+1327,"1° taglio in cascina: erba medica min. 80%, in balloni quadri (prezzo nominale)",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2023-07-20,2023-07-20,1,1
+1328,"1° taglio in cascina, collina, in rotoballe (prezzo nominale)",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di collina e di montagna,EUR/t,2023-07-20,2023-07-20,1,1
+1329,orzo ad uso zootecnico - p.s. 58/60 kg/hl,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2023-07-27,2024-06-20,44,41
+1330,orzo estero - p.s. 62/63 kg/hl,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2023-07-27,2026-10-08,154,0
+1331,farro dicocco in natura - p.s. 40 kg/hl,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2023-07-27,2026-10-08,155,46
+1332,farro Spelta in natura - p.s. 40 kg/hl,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2023-07-27,2026-10-08,155,49
+1333,"austriaco - qualità 1ª - p.s. 76, prot. 12,5%","FRANCO ARRIVO > FRUMENTO TENERO di produzione estera, nazionalizzata",EUR/t,2023-08-03,2026-10-08,154,94
+1334,avena bianca in natura - p.s. 48/50 kg/hl,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2023-08-03,2026-07-02,142,53
+1335,Carnaroli e varietà similari,FRANCO PARTENZA > RISI - franco partenza riserie (min. sfuso/max. confezionato),EUR/t,2023-10-05,2026-10-08,146,142
+1336,Lido e varietà similari,FRANCO PARTENZA > RISI - franco partenza riserie (min. sfuso/max. confezionato),EUR/t,2023-10-12,2026-10-08,145,140
+1337,granoturco ad uso zootecnico (min c.tto 103 - max con caratteristiche),FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2024-02-29,2024-09-05,25,22
+1338,"orzo ad uso alimentare, monovarietale bianco, p.s. min 65 kg/hl",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2024-03-07,2026-10-08,118,41
+1339,"ceci ad uso alimentare - um. 13%, imp. max 3% (min cal. fino a 7 mm - max cal. oltre 7 mm)",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2024-03-07,2026-10-08,126,48
+1340,"qualità extra, um. max 14%, prot. 8-12%, ceneri ≤ 9%, alta digerib., colore verde (prezzo nominale)",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2024-05-23,2024-05-23,1,1
+1341,"qualità extra, um. max 14%, prot. 8-12%, ceneri ≤ 9%, alta digerib., colore verde",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2024-05-30,2024-07-04,6,6
+1342,orzo - p.s. 61/63,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2024-06-20,2025-06-12,48,46
+1343,orzo - p.s. 64 e oltre,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2024-06-20,2025-06-12,48,46
+1344,orzo estero - p.s. 62 min.,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2024-06-27,2026-10-08,111,104
+1345,orzo ad uso zootecnico - p.s. 60/62 kg/hl,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2024-06-27,2025-06-19,48,42
+1346,pisello per uso zootecnico - umidità 13%,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2024-06-27,2026-10-08,111,31
+1347,"n° 1 - speciali di forza - prot. 14%, p.s. 79/80 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2024,EUR/t,2024-07-04,2025-06-19,47,45
+1348,"n° 2 - speciali - prot. 12% min, p.s. 78/79 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2024,EUR/t,2024-07-04,2025-06-19,47,45
+1349,"n° 3 - fino - prot. 11% min, p.s. 78 kg/hl min, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2024,EUR/t,2024-07-04,2025-06-19,47,45
+1350,"n° 4 - buono mercantile - p.s. 75/76 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2024,EUR/t,2024-07-04,2025-06-19,47,45
+1351,"n° 5 - mercantile - p.s. 71/73 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2024,EUR/t,2024-07-04,2025-06-19,47,40
+1352,"fino - prot. 13,5% min, p.s. 79/80 kg/hl, c.e. 2+2%, bianc. 25%, volp. 6% max","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2024",EUR/t,2024-07-04,2025-06-19,47,45
+1353,"buono mercantile - prot. 12% min, p.s. 77/78 kg/hl min, c.e. 2+2%, bianc. 30%,volp.10% max","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2024",EUR/t,2024-07-04,2025-06-19,47,45
+1354,"mercantile - prot. 11% min, p.s. 74/76 kg/hl min, c.e. 2+2%, bianc. 50%, volp. 12% max","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2024",EUR/t,2024-07-04,2025-06-19,47,45
+1355,"sotto mercantile - prot. 11% min, p.s. 70/73 kg/hl min, c.e. 2+2%","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2024",EUR/t,2024-07-04,2024-07-04,1,0
+1356,"fino - prot. 13,5% min, p.s. 79/80 kg/hl, c.e. 2+2%, bianc. 25%, volp. 6% max","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2024",EUR/t,2024-07-04,2025-06-19,47,45
+1357,"buono mercantile - prot. 12% min, p.s. 77/78 kg/hl min, c.e. 2+2%, bianc. 30%,volp.10% max","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2024",EUR/t,2024-07-04,2025-06-19,47,45
+1358,"mercantile - prot. 11% min, p.s. 74/76 kg/hl min, c.e. 2+2%, bianc. 50%, volp. 12% max","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2024",EUR/t,2024-07-04,2025-06-19,47,45
+1359,"sotto mercantile - prot. 11% min, p.s. 70/73 kg/hl min, c.e. 2+2%","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2024",EUR/t,2024-07-04,2024-07-04,1,0
+1360,"sotto mercantile - prot. 11% min, p.s. 70/73 kg/hl min, c.e. 2+2%, anche dopo pioggia/slavato","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2024",EUR/t,2024-07-11,2025-06-19,46,44
+1361,"sotto mercantile - prot. 11% min, p.s. 70/73 kg/hl min, c.e. 2+2%, anche dopo pioggia/slavato","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2024",EUR/t,2024-07-11,2025-06-19,46,44
+1362,favino nazionale (min. nero - max. bianco),FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2024-07-11,2026-10-08,109,85
+1363,"frumento duro fino - prot. 13% min, p.s. 79 kg/hl min, c.e. 2+2%, bianc. 25%, volp.8%",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2024-07-11,2025-06-26,47,43
+1364,"frumento duro buono mercantile - prot. 12% min, p.s. 77 kg/hl min, c.e. 2+2%, bianc. 30%, volp.12%",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2024-07-11,2025-06-26,47,43
+1365,"frumento duro mercantile - prot. 11% min, p.s. 73 kg/hl min, c.e. 2+2%, volp. 15/18%",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2024-07-11,2025-06-26,47,43
+1366,Trinciato di mais (Piante in piedi) (prezzo nominale),FRANCO PARTENZA > TRINCIATI (piante in piedi),EUR/t,2024-07-18,2024-07-18,1,1
+1367,granoturco ad uso zootecnico (min: c.tto 103 - max: afla B1 max 5 ppb/ DON max 4000 ppb),FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2024-09-12,2026-10-08,101,92
+1368,seme di girasole altoleico,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2024-09-19,2026-10-08,101,14
+1369,granoturco ad uso zootecnico estero con caratteristiche (afla B1 max 3 ppb/ DON max 3000 ppb),FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2024-11-21,2026-10-08,92,89
+1370,"1° taglio in campo: erba medica min. 20%, in rotoballe prezzo nominale",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2025-05-08,2025-05-08,1,1
+1371,"1° taglio in campo: erba medica min. 20%, in balloni quadri prezzo nominale",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2025-05-08,2025-05-08,1,1
+1372,"1° taglio extra, umidità ≤ 14%, prot. 8-12%, ceneri ≤ 9%, alta digeribilità",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2025-05-15,2026-10-08,36,35
+1373,frumento per uso zootecnico,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2025-06-19,2026-10-08,64,64
+1374,"n° 1 - speciali di forza - prot. 13,5%, p.s. 80 kg/hl min, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2025,EUR/t,2025-06-26,2026-06-18,49,47
+1375,"n° 2 - speciali - prot. 12% min, p.s. 79/80 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2025,EUR/t,2025-06-26,2026-06-18,49,47
+1376,"n° 3 - fino - prot. 11% min, p.s. 79/80 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2025,EUR/t,2025-06-26,2026-06-18,49,47
+1377,"n° 5 - mercantile - p.s. 71/73 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2025,EUR/t,2025-06-26,2026-06-18,49,0
+1378,"fino - prot. 13% min, p.s. 81 kg/hl min, c.e. 2+2%, bianc. 25%, volp. 6% max","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2025",EUR/t,2025-06-26,2026-05-07,43,37
+1379,"buono mercantile - prot. 12% min, p.s. 80 kg/hl min, c.e. 2+2%, bianc. 30%,volp.6% max","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2025",EUR/t,2025-06-26,2026-05-07,42,37
+1380,"mercantile - prot. 11% min, p.s. 78 kg/hl min, c.e. 2+2%, bianc. 40%, volp. 6% max","FRANCO PARTENZA > FRUMENTO DURO di produzione nazionale, nord 2025",EUR/t,2025-06-26,2026-05-07,42,37
+1381,"fino - prot. 13% min, p.s. 81 kg/hl min, c.e. 2+2%, bianc. 25%, volp. 6% max","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2025",EUR/t,2025-06-26,2026-06-25,50,37
+1382,"buono mercantile - prot. 12% min, p.s. 80 kg/hl min, c.e. 2+2%, bianc. 30%,volp.6% max","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2025",EUR/t,2025-06-26,2026-06-25,49,37
+1383,"mercantile - prot. 11% min, p.s. 78 kg/hl min, c.e. 2+2%, bianc. 40%, volp. 6% max","FRANCO ARRIVO > FRUMENTO DURO di produzione nazionale, centro 2025",EUR/t,2025-06-26,2026-06-25,49,37
+1384,orzo ad uso zootecnico - p.s. 61/62 kg/hl,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2025-06-26,2026-06-25,45,44
+1385,"n° 4 - buono mercantile - p.s. 76 kg/hl min, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2025,EUR/t,2025-07-03,2026-06-18,48,46
+1386,"frumento tenero ad uso alimentare di forza - prot. 13/13,5%, p.s. 80 kg/hl min",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2025-07-03,2026-05-07,42,41
+1387,"frumento tenero ad uso alimentare di base - prot. 11 % min, p.s. 78 kg/hl min",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2025-07-03,2026-05-14,43,42
+1388,frumento tenero ad uso zootecnico - p.s. 74 kg/hl min,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2025-07-03,2026-05-14,43,42
+1389,"frumento duro fino - prot. 12,5% min, p.s. 80 kg/hl min, c.e. 2+2%, bianc. 30%, volp.8%",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2025-07-03,2026-10-08,56,55
+1390,"frumento duro buono mercantile - prot. 11% min, p.s. 78 kg/hl min, c.e. 2+2%, bianc. 30%, volp.8%",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2025-07-03,2026-10-08,56,55
+1391,sorgo bianco ad uso zootecnico,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2025-09-04,2026-10-08,55,25
+1392,Arborio/Volano (resa indicativa 56/58) (prezzo nominale),"FRANCO PARTENZA > RISONI - per merce sfusa, al netto dei diritti di contratto E.N.R.",EUR/t,2026-02-05,2026-10-08,33,30
+1393,Carnaroli e varietà similari (resa indicativa 58/60) (prezzo nominale),"FRANCO PARTENZA > RISONI - per merce sfusa, al netto dei diritti di contratto E.N.R.",EUR/t,2026-02-05,2026-10-08,33,30
+1394,Baldo e varietà similari (resa indicativa 58/60) (prezzo nominale),"FRANCO PARTENZA > RISONI - per merce sfusa, al netto dei diritti di contratto E.N.R.",EUR/t,2026-02-05,2026-10-08,33,30
+1395,seme di soia estero extra UE - umidità 13%,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2026-04-02,2026-10-08,15,3
+1396,"1° taglio in campo: erba medica min. 80%, in rotoballe (prezzo nominale)",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2026-05-14,2026-05-14,1,1
+1397,"1° taglio in campo: erba medica min. 80%, in balloni quadri (prezzo nominale)",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2026-05-14,2026-05-14,1,1
+1398,"1° taglio in campo: erba medica min. 80%, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2026-05-21,2026-10-08,10,2
+1399,"1° taglio in campo: erba medica min. 80%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura,EUR/t,2026-05-21,2026-10-08,10,2
+1400,"1° taglio in campo: erba medica min. 80%, in rotoballe",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2026-05-28,2026-06-04,2,1
+1401,"1° taglio in campo: erba medica min. 80%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2026-05-28,2026-06-04,2,1
+1402,orzo ad uso zootecnico - p.s. 62/63 kg/hl,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2026-06-18,2026-10-08,14,14
+1403,"n° 1 - speciali di forza - prot. 13,5% min, p.s. 80 kg/hl min, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2026,EUR/t,2026-06-25,2026-10-08,14,14
+1404,"n° 2 - speciali - prot. 12% min, p.s. 80 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2026,EUR/t,2026-06-25,2026-10-08,14,14
+1405,"n° 3 - fino - prot. 11% min, p.s. 79/80 kg/hl, c.e. 1%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2026,EUR/t,2026-06-25,2026-10-08,14,14
+1406,"n° 4 - buono mercantile - p.s. 76 kg/hl min, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2026,EUR/t,2026-06-25,2026-10-08,14,14
+1407,"n° 5 - mercantile - p.s. 71/73 kg/hl, c.e. 2%",FRANCO PARTENZA > FRUMENTO TENERO di produzione nazionale 2026,EUR/t,2026-06-25,2026-10-08,14,0
+1408,"erba medica min. 80%, in balloni quadri",FRANCO PARTENZA > FORAGGI DI ERBA MEDICA - Prima qualità di pianura - CERTIFICATI BIOLOGICI,EUR/t,2026-06-25,2026-10-08,14,0
+1409,"frumento tenero ad uso alimentare di forza - prot. 13,5%, p.s. 80 kg/hl min",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2026-07-02,2026-10-08,13,13
+1410,"frumento tenero ad uso alimentare di base - prot. 11% min, p.s. 78 kg/hl min",FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2026-07-02,2026-10-08,13,13
+1411,frumento tenero ad uso zootecnico - p.s. 75 kg/hl,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2026-07-02,2026-10-08,13,13
+1412,avena rossa - p.s. 45/46,FRANCO ARRIVO > CEREALI MINORI E LEGUMINOSE,EUR/t,2026-07-09,2026-10-08,12,12
+1413,avena bianca in natura - p.s. 46/50 kg/hl,FRANCO ARRIVO > AGRICOLTURA BIOLOGICA di produzione nazionale,EUR/t,2026-07-09,2026-10-08,12,12
