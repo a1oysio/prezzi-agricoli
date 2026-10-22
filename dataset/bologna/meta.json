@@ -3,13 +3,13 @@
   "exchange_name": "Borsa Merci di Bologna",
   "source_url": "https://www.agerborsamerci.it/listino-borsa/settimanale-ager/",
   "license": null,
-  "generated_at": "2026-10-16T20:37:46+00:00",
-  "last_issue_number": 40,
+  "generated_at": "2026-10-22T21:17:48+00:00",
+  "last_issue_number": 41,
   "first_date": "2004-01-22",
-  "last_date": "2026-10-15",
+  "last_date": "2026-10-22",
   "n_products": 1413,
-  "n_observations": 169933,
-  "n_quoted": 119721,
+  "n_observations": 170124,
+  "n_quoted": 119858,
   "n_averages": 0,
   "n_revisions": 0,
   "observations_per_year": {
@@ -35,6 +35,6 @@
     "2023": 10162,
     "2024": 9674,
     "2025": 9864,
-    "2026": 7036
+    "2026": 7227
   }
 }
