@@ -3,13 +3,13 @@
   "exchange_name": "Borsa Merci di Verona",
   "source_url": "https://www.portaleprezziverona.it/camcom-verona/it/borsa-merci",
   "license": "CC-BY-4.0",
-  "generated_at": "2026-11-12T00:10:16+00:00",
+  "generated_at": "2026-11-12T23:17:30+00:00",
   "last_issue_number": 1466,
   "first_date": "2016-01-08",
-  "last_date": "2026-11-09",
+  "last_date": "2026-11-16",
   "n_products": 882,
-  "n_observations": 164013,
-  "n_quoted": 100611,
+  "n_observations": 164144,
+  "n_quoted": 100716,
   "n_averages": 44422,
   "n_revisions": 670,
   "observations_per_year": {
@@ -23,6 +23,6 @@
     "2023": 11519,
     "2024": 12388,
     "2025": 12822,
-    "2026": 11251
+    "2026": 11382
   }
 }
