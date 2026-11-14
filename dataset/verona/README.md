@@ -115,6 +115,7 @@ confrontare prodotti con unità diverse.
 
 ```python
 import pandas as pd
+from pathlib import Path
 
 prezzi = pd.concat(pd.read_csv(f) for f in sorted(Path("prices").glob("*.csv")))
 prodotti = pd.read_csv("products.csv")

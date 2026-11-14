@@ -16,16 +16,14 @@ catalogo dei template invece dei workflow — non sceglierne nessuno, i due
 workflow sono gia' in `.github/workflows/` e GitHub li trova da solo al push.
 
 ```bash
-# 1. repository vuoto: niente README, licenza o .gitignore generati da GitHub.
-#    Li abbiamo gia', e un commit iniziale loro costringerebbe a un merge.
+# 1. un fork, oppure un repository vuoto (senza README, licenza o .gitignore
+#    generati da GitHub: sono gia' nel progetto e costringerebbero a un merge)
 gh repo create prezzi-agricoli --public
 
 # 2. il codice
-git init -b main            # il branch DEVE chiamarsi main: i workflow lo citano
-git add .
-git commit -m "Dataset e pipeline della Borsa Merci di Verona"
-git remote add origin git@github.com:<utente>/prezzi-agricoli.git
-git push -u origin main
+git clone https://github.com/a1oysio/prezzi-agricoli.git && cd prezzi-agricoli
+git remote set-url origin git@github.com:<utente>/prezzi-agricoli.git
+git push -u origin main     # il branch DEVE chiamarsi main: i workflow lo citano
 
 # 3. le impostazioni: paragrafi 1.1 - 1.4
 # 4. rilancia il workflow fallito: paragrafo 1.5
@@ -377,9 +375,8 @@ e, in assenza di `DATA_PAT`, dal trigger `workflow_run` al termine di
 
 ## 6. Rapporto con agx-scraper
 
-Il parser di Verona nasce in [agx-scraper](https://github.com/a1oysio/agx-scraper),
-dove vive anche una dashboard Flask locale per ispezionare i dati e provare borse
-nuove. Qui ne esiste una copia, perché la pipeline non può funzionare senza.
+Il parser di Verona è condiviso con [agx-scraper](https://github.com/a1oysio/agx-scraper),
+uno strumento locale per ispezionare i dati e sperimentare nuove borse.
 
 Quattro file sono **copie identiche**, e un `diff` basta a vedere se hanno preso
 strade diverse:
@@ -453,8 +450,8 @@ Le voci di Bologna non sono raggruppate: vedi `dataset/bologna/README.md`.
 Perché un'altra borsa arrivi fino ai CSV serve:
 
 1. il nuovo modulo in `exchanges/<nome>/`, che restituisca `PriceRecord` con
-   `category_path` e `units` **corretti** — mai un'unità fissa: è stato l'errore
-   più costoso di questo progetto, il 58% dei dati era sbagliato;
+   `category_path` e `units` **corretti** — mai un'unità fissa: a Verona oltre
+   metà delle rilevazioni non è in euro/tonnellata;
 2. un modulo `pipeline/<nome>.py` con il suo aggiornamento e la sua
    ricostruzione, sul modello di `pipeline/bologna.py`, e la voce in
    `--exchange` di `pipeline/update.py` e `pipeline/rebuild.py`;

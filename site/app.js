@@ -55,7 +55,7 @@ async function boot() {
     CATALOG = CATALOG.filter(live).concat(CATALOG.filter((p) => !live(p)));
   }
 
-  document.title = `${EXCHANGE.name} — Dati mercuriali`;
+  document.title = `${EXCHANGE.name} — Prezzi agricoli`;
   $('#exchange').hidden = false;
   $('#exchange-name').textContent = EXCHANGE.name;
   $('#nav-csv').href = `${REPO}/tree/main/dataset/${EXCHANGE.slug}`;

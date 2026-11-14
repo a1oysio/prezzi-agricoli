@@ -1,102 +1,127 @@
-# prezzi-agricoli
+# Prezzi agricoli
 
-Serie storiche dei prezzi dei prodotti agricoli delle borse merci italiane, in
-formato aperto e aggiornate da sole.
+[![Aggiorna i dati](https://github.com/a1oysio/prezzi-agricoli/actions/workflows/update-data.yml/badge.svg)](https://github.com/a1oysio/prezzi-agricoli/actions/workflows/update-data.yml)
+[![Pubblica il sito](https://github.com/a1oysio/prezzi-agricoli/actions/workflows/pages.yml/badge.svg)](https://github.com/a1oysio/prezzi-agricoli/actions/workflows/pages.yml)
+[![Codice: MIT](https://img.shields.io/badge/codice-MIT-blue.svg)](LICENSE)
+[![Dati: CC BY 4.0](https://img.shields.io/badge/dati-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
 
-**[→ Consulta i grafici](https://a1oysio.github.io/prezzi-agricoli/)** ·
-**[→ Scarica i CSV](dataset/verona/)**
+Serie storiche dei prezzi all'ingrosso dei prodotti agricoli rilevati dalle
+borse merci italiane, in formato aperto (CSV) e aggiornate automaticamente ogni
+giorno.
 
-I listini delle camere di commercio sono pubblici, ma vivono dentro XML
-settimanali senza uno storico consultabile: per sapere quanto costava il mais
-tre anni fa bisogna aprire centocinquanta file. Questo repository li scarica, li
-converte in CSV con uno schema stabile e li tiene aggiornati.
+**[Consulta i grafici](https://a1oysio.github.io/prezzi-agricoli/)** ·
+**[Scarica i dati](dataset/)** ·
+**[Avvertenze](DISCLAIMER.md)**
 
-Copre la **Borsa Merci di Verona**: 842 prodotti, 197.745 rilevazioni dal
-gennaio 2016. E la **Borsa Merci di Bologna**, letta dai listini PDF: 1.413 voci
-di listino, 169.742 rilevazioni dal gennaio 2004 — vedi
-[`dataset/bologna/README.md`](dataset/bologna/README.md), perché lì una "voce"
-non è la stessa cosa che a Verona.
+## Perché
+
+Le Camere di Commercio pubblicano i listini delle borse merci, ma come bollettini
+settimanali separati (XML o PDF) senza uno storico consultabile: per ricostruire
+l'andamento di un prezzo su più anni bisogna aprire centinaia di file. Questo
+progetto li scarica, li converte in CSV con uno schema stabile e documentato, e
+li mantiene aggiornati.
+
+## Copertura
+
+| Borsa | Fonte | Dal | Comparti | Documentazione |
+|---|---|---|---|---|
+| Borsa Merci di Verona | Camera di Commercio di Verona, bollettini XML | 2016 | cereali, sfarinati, mangimi, semi oleosi, foraggi, vini e uve, ortofrutta, avicunicoli, suini, lattiero-caseari | [`dataset/verona/`](dataset/verona/README.md) |
+| Borsa Merci di Bologna | AGER per la Camera di Commercio di Bologna, listini PDF | 2004 | frumenti, granoturco, cereali minori, farine, semi oleosi, risi, foraggi, sementi | [`dataset/bologna/`](dataset/bologna/README.md) |
+
+I conteggi aggiornati (prodotti, rilevazioni, ultimo bollettino) sono in
+`dataset/<borsa>/meta.json`, rigenerato a ogni aggiornamento.
 
 ## I dati
 
 ```
-dataset/verona/
-├── products.csv        catalogo dei prodotti, con unità di misura
-├── prices/2016.csv …   quotazioni, un file per anno
-├── averages/2016.csv … medie quindicinali della borsa, tenute a parte
-├── revisions.csv       i valori che la fonte ha corretto dopo la pubblicazione
+dataset/<borsa>/
+├── products.csv        catalogo dei prodotti, con unità di misura e categoria
+├── prices/<anno>.csv   quotazioni (minimo e massimo), un file per anno
+├── averages/<anno>.csv medie quindicinali della borsa, tenute a parte (solo Verona)
+├── revisions.csv       valori corretti dalla fonte dopo la prima pubblicazione
 ├── meta.json           ultimo bollettino, conteggi, data di generazione
 └── exchange.json       scheda della borsa: nome, ente, fonte, avvertenze
 ```
 
-Documentazione dei campi: [`dataset/verona/README.md`](dataset/verona/README.md).
+Prima di usarli:
 
-Due cose da sapere prima di usarli:
-
-- **Un campo prezzo vuoto non è uno zero.** Vuol dire che il prodotto non è stato
-  quotato quella settimana. La riga esiste comunque, perché anche l'assenza di
+- **Un campo prezzo vuoto non è uno zero.** Il prodotto non è stato quotato in
+  quella rilevazione. La riga è presente comunque: anche l'assenza di
   quotazione è un'informazione.
-- **L'unità di misura non esiste nella fonte.** Gli XML della borsa non hanno un
-  campo per la misura: è scritta in italiano dentro il nome delle categorie
-  (`CEREALI (prezzo base per Tonnellata)`), e viene ricavata da lì. Il 58% delle
-  rilevazioni **non** è in euro/tonnellata: non sommare prodotti con unità
-  diverse.
+- **Le unità di misura sono diverse.** A Verona l'unità non è un campo della
+  fonte: è ricavata dal testo delle categorie (`CEREALI (prezzo base per
+  Tonnellata)`). Oltre metà delle rilevazioni non è in euro/tonnellata: non
+  sommare né confrontare prodotti con unità diverse.
+- **Le ultime settimane possono cambiare.** Le borse a volte correggono un
+  bollettino già pubblicato senza cambiarne il numero. La pipeline ricontrolla
+  ogni giorno i bollettini recenti, adotta la versione corretta e registra il
+  valore precedente in `revisions.csv`.
 
-- **Le ultime settimane possono cambiare.** La borsa pubblica l'XML anche prima
-  del bollettino PDF ufficiale e poi lo riallinea, senza cambiare numero. La
-  pipeline riscarica ogni giorno gli ultimi otto bollettini, adotta la versione
-  nuova e annota quella vecchia in `revisions.csv`.
+I dati non vengono corretti dal progetto: dove la fonte contiene un errore, il
+valore resta quello pubblicato e viene segnalato. Dettagli in
+[DISCLAIMER.md](DISCLAIMER.md).
 
-Nessun dato viene corretto *da noi*. Dove la fonte sbaglia e non si ricrede, il
-valore resta com'è e viene segnalato — vedi [DISCLAIMER.md](DISCLAIMER.md).
-
-## Com'è fatto
-
-```
-exchanges/verona/   scaricamento e parsing dei bollettini XML
-pipeline/           update, rebuild, validate, publish
-dataset/            ← la sorgente di verità
-site/               il sito statico; site/api/ è generato, non versionato
-```
-
-Non c'è un database. I CSV sono la sorgente: gli XML grezzi pesano una
-cinquantina di MB e non sono versionati, quindi la CI non potrebbe ricostruire da
-quelli. Ogni comando legge e riscrive direttamente i CSV.
-
-L'unica dipendenza è `requests`, e serve solo a scaricare. Parsing, validazione e
-pubblicazione usano la libreria standard.
-
-## Aggiornamento automatico
-
-Un workflow GitHub Actions gira ogni giorno, cerca i bollettini nuovi, li unisce
-ai CSV e committa **solo se qualcosa è cambiato**. Se il controllo di qualità
-trova un errore, non pubblica nulla e apre una issue.
-
-Per attivarlo su un fork servono quattro passaggi: [`MANUAL.md`](MANUAL.md).
-
-## Uso locale
-
-```bash
-python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-
-python -m pipeline.update --dry-run    # cosa arriverebbe di nuovo
-python -m pipeline.validate            # controllo di qualità
-python -m pipeline.publish             # genera i JSON del sito
-```
-
-Per lavorare sui CSV non serve installare niente: sono file di testo.
+### Esempio
 
 ```python
 import pandas as pd
 from pathlib import Path
 
-prezzi = pd.concat(pd.read_csv(f) for f in sorted(Path("dataset/verona/prices").glob("*.csv")))
-prodotti = pd.read_csv("dataset/verona/products.csv")
+base = Path("dataset/verona")
+prezzi = pd.concat(pd.read_csv(f) for f in sorted((base / "prices").glob("*.csv")))
+prodotti = pd.read_csv(base / "products.csv")
 df = prezzi.merge(prodotti[["code", "name", "unit"]], on="code")
 ```
 
+## Architettura
+
+```
+exchanges/   scaricamento e lettura delle fonti (XML di Verona, PDF di Bologna)
+pipeline/    update, rebuild, validate, publish
+dataset/     i CSV: la sorgente di verità
+site/        sito statico; site/api/ è generato al deploy e non è versionato
+```
+
+Non c'è un database: i CSV sono la sorgente e ogni comando li legge e li
+riscrive direttamente. Le scritture sono deterministiche, quindi due esecuzioni
+sugli stessi dati producono file identici byte per byte.
+
+Dipendenze minime: `requests` per lo scaricamento e `pdftotext`
+(`poppler-utils`) per i listini PDF di Bologna. Parsing, validazione e
+pubblicazione usano solo la libreria standard.
+
+## Aggiornamento automatico
+
+Un workflow GitHub Actions gira ogni giorno: cerca i bollettini nuovi, ricontrolla
+quelli recenti, valida il dataset e committa solo se qualcosa è cambiato. Se il
+controllo di qualità trova un errore non pubblica nulla e apre una issue. Un
+secondo workflow rigenera e pubblica il sito su GitHub Pages.
+
+## Uso in locale
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+python -m pipeline.update --dry-run    # mostra cosa arriverebbe di nuovo
+python -m pipeline.validate            # controllo di qualità
+python -m pipeline.publish             # genera i JSON del sito
+cd site && python -m http.server 8000  # sito su http://localhost:8000
+```
+
+Il [manuale operativo](MANUAL.md) descrive tutte le operazioni: attivazione su un
+fork, ricostruzione dall'archivio, gestione dei guasti, aggiunta di una nuova
+borsa.
+
+## Contribuire
+
+Segnalazioni e proposte sono benvenute: vedi [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Licenze
 
-Codice [MIT](LICENSE). Dati [CC BY 4.0](LICENSE-DATA), fonte Camera di Commercio
-di Verona. Ricostruzione non ufficiale: leggi il [DISCLAIMER](DISCLAIMER.md).
+Codice: [MIT](LICENSE). Dati di Verona: [CC BY 4.0](LICENSE-DATA), fonte Camera di
+Commercio di Verona. Per i dati di Bologna le condizioni di riuso della fonte non
+sono state verificate: vedi [`dataset/bologna/README.md`](dataset/bologna/README.md).
+
+Questa è una ricostruzione non ufficiale: per usi contrattuali, fiscali o legali
+fa fede esclusivamente il listino pubblicato dalla Camera di Commercio.

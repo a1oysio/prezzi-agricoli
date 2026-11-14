@@ -2,10 +2,13 @@
 
 ## Non è una fonte ufficiale
 
-I CSV di questo repository sono una **ricostruzione automatica** del listino
-della Borsa Merci di Verona. Per qualsiasi uso contrattuale, fiscale o legale
-fa fede esclusivamente il listino pubblicato dalla Camera di Commercio di
-Verona.
+I CSV di questo repository sono una **ricostruzione automatica** dei listini
+delle borse merci. Per qualsiasi uso contrattuale, fiscale o legale fa fede
+esclusivamente il listino pubblicato dalla Camera di Commercio competente.
+
+Le sezioni che seguono descrivono la Borsa Merci di Verona. Le particolarità dei
+listini PDF di Bologna sono in
+[`dataset/bologna/README.md`](dataset/bologna/README.md).
 
 ## Cosa il progetto modifica rispetto alla fonte
 
