@@ -20,7 +20,8 @@ valori pubblicati e finiscono in ``dataset/<borsa>/revisions.csv``.
 Tutto questo e' Verona, che resta la borsa predefinita.  Le altre hanno fonti
 fatte diversamente e ognuna ha il suo modulo:
 
-    python -m pipeline.update --exchange bologna    # vedi pipeline/bologna.py
+    python -m pipeline.update --exchange bologna         # vedi pipeline/bologna.py
+    python -m pipeline.update --exchange verona-energia  # vedi pipeline/energia.py
 """
 from __future__ import annotations
 
@@ -174,7 +175,8 @@ def update(dataset: Path, staging: Path, start: int | None = None,
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--exchange", choices=["verona", "bologna"], default="verona")
+    ap.add_argument("--exchange", choices=["verona", "bologna", "verona-energia"],
+                    default="verona")
     ap.add_argument("--dataset", type=Path, default=None)
     ap.add_argument("--staging", type=Path, default=None,
                     help="dove salvare i bollettini scaricati (default: cartella temporanea)")
@@ -189,11 +191,14 @@ def main() -> int:
         ap.error("--recheck non puo' essere negativo")
     if args.dataset is None:
         args.dataset = paths.dataset_dir(args.exchange)
+    if args.exchange != "verona" and args.start is not None:
+        ap.error("--from vale solo per Verona: le altre ripartono dall'indice della fonte")
     if args.exchange == "bologna":
-        if args.start is not None:
-            ap.error("--from vale solo per Verona: Bologna riparte dall'ultima data acquisita")
         from pipeline import bologna
         return bologna.main_update(args)
+    if args.exchange == "verona-energia":
+        from pipeline import energia
+        return energia.main_update(args)
     if args.recheck is None:
         args.recheck = RECHECK_ISSUES
 

@@ -408,22 +408,34 @@ si fanno qui e semmai si riportano in agx-scraper, non il contrario.
 
 ## 7. Aggiungere un'altra borsa
 
-Le borse sono due e hanno fonti fatte diversamente, quindi ognuna ha la sua
-strada fino ai CSV; da lì in poi (validazione, pubblicazione, sito) è tutto
-comune.
+Le fonti sono tre e fatte diversamente, quindi ognuna ha la sua strada fino ai
+CSV; da lì in poi (validazione, pubblicazione, sito) è tutto comune.
 
-| | Verona | Bologna |
-|---|---|---|
-| Fonte | XML, un indirizzo per numero | PDF, elencati in una pagina |
-| Codice in `exchanges/` | `verona/` | `bologna/` |
-| Aggiornamento | `python -m pipeline.update` | `python -m pipeline.update --exchange bologna` |
-| Ricostruzione | `python -m pipeline.rebuild` | `python -m pipeline.rebuild --exchange bologna` |
-| Logica | `pipeline/update.py`, `rebuild.py` | `pipeline/bologna.py` |
-| Archivio locale | `data/verona/*.xml` | `data/bologna/<anno>/*.pdf` |
+| | Verona | Bologna | Petroliferi di Verona |
+|---|---|---|---|
+| Fonte | XML, un indirizzo per numero | PDF, elencati in una pagina | XML, numeri presi dall'indice della pagina |
+| Codice in `exchanges/` | `verona/` | `bologna/` | `verona/energia.py` |
+| Aggiornamento | `python -m pipeline.update` | `… --exchange bologna` | `… --exchange verona-energia` |
+| Ricostruzione | `python -m pipeline.rebuild` | `… --exchange bologna` | `… --exchange verona-energia` |
+| Logica | `pipeline/update.py`, `rebuild.py` | `pipeline/bologna.py` | `pipeline/energia.py` |
+| Archivio locale | `data/verona/*.xml` | `data/bologna/<anno>/*.pdf` | `data/verona-energia/*.xml` |
 
 `pipeline.validate` e `pipeline.publish` lavorano su tutte le cartelle di
-`dataset/`. Il workflow aggiorna prima Verona, poi Bologna; se Bologna fallisce
-Verona viene pubblicata lo stesso e il guasto apre comunque la issue.
+`dataset/`. Il workflow aggiorna prima Verona, poi Bologna e i petroliferi; se
+uno di questi due fallisce Verona viene pubblicata lo stesso e il guasto apre
+comunque la issue.
+
+I petroliferi hanno uno schema dei prezzi diverso (netto, con accisa, IVA, al
+consumo invece di minimo e massimo): `pipeline.validate` riconosce i due schemi
+dall'intestazione, e `pipeline.publish` trasforma ogni prezzo in una voce del
+sito con minimo = massimo (`energia.for_site`). La numerazione è condivisa con la
+borsa merci: lo stesso numero su `borsa-merci/` è una media quindicinale, per
+questo l'archivio è in una cartella a parte. Per ricostruirlo:
+
+```bash
+python -m exchanges.verona.energia --dest data/verona-energia   # ~260 file, ~5 minuti
+python -m pipeline.rebuild --exchange verona-energia
+```
 
 ### Bologna: quando il listino cambia impaginazione
 

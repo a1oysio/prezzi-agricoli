@@ -26,7 +26,13 @@ from pipeline import paths
 VALID_UNITS = {
     "EUR/t", "EUR/kg", "EUR/L", "EUR/1000L",
     "EUR/grado-hL", "EUR/grado-100kg", "EUR/100pz", "unknown",
+    "EUR/m3", "EUR/bombola",                # prodotti petroliferi
 }
+
+# Le colonne dopo date e code: un minimo e un massimo per le borse, i quattro
+# valori della rilevazione per i prodotti petroliferi (pipeline/energia.py).
+RANGE = ("low", "high")
+ENERGY = ("price", "price_with_excise", "vat_rate", "consumer_price")
 
 # Un prezzo che si scosta dalla mediana storica del suo prodotto di piu' di
 # questo fattore e' quasi sempre un errore di scala alla fonte.  Riferimento:
@@ -94,7 +100,8 @@ def _read_prices(dir_: Path, products: dict[str, dict], rep: Report):
         year = csv_file.stem
         with csv_file.open(encoding="utf-8") as fh:
             reader = csv.DictReader(fh)
-            if reader.fieldnames != ["date", "code", "low", "high"]:
+            cols = tuple(reader.fieldnames or ())[2:]
+            if (reader.fieldnames or [])[:2] != ["date", "code"] or cols not in (RANGE, ENERGY):
                 rep.error(f"{dir_.name}/{csv_file.name}: intestazione inattesa {reader.fieldnames}")
                 continue
             for n, row in enumerate(reader, start=2):
@@ -119,14 +126,21 @@ def _read_prices(dir_: Path, products: dict[str, dict], rep: Report):
                     rep.error(f"{where}: coppia (data, codice) duplicata {key}")
                 seen.add(key)
 
-                lo = float(row["low"]) if row["low"] else None
-                hi = float(row["high"]) if row["high"] else None
+                v = {c: float(row[c]) if row[c] else None for c in cols}
                 # Il parser converte zeri e negativi in campi vuoti: se ne
                 # ricompare uno, e' la nostra pipeline ad essersi rotta.
-                if lo is not None and lo <= 0:
-                    rep.error(f"{where}: prezzo minimo non positivo ({lo})")
-                if hi is not None and hi <= 0:
-                    rep.error(f"{where}: prezzo massimo non positivo ({hi})")
+                for c, x in v.items():
+                    if x is not None and x <= 0:
+                        rep.error(f"{where}: {c} non positivo ({x})")
+                if cols == ENERGY:
+                    # Netto, con accisa, al consumo: ogni passo aggiunge una tassa.
+                    chain = [v["price"], v["price_with_excise"], v["consumer_price"]]
+                    if None not in chain and not chain[0] <= chain[1] <= chain[2]:
+                        rep.warn(f"{where}: prezzi non crescenti netto/accisa/consumo {chain}")
+                    if v["price"] is not None:
+                        series[code].append((row["date"], v["price"]))
+                    continue
+                lo, hi = v["low"], v["high"]
                 if lo is not None and hi is not None and lo > hi:
                     # Errore della fonte, non nostro: capita che la borsa
                     # pubblichi una coppia incoerente (2022-03-30, codice 672:
@@ -162,8 +176,9 @@ def _check_revisions(path: Path, products: dict[str, dict], rep: Report) -> int:
     n = 0
     with path.open(encoding="utf-8") as fh:
         reader = csv.DictReader(fh)
-        expected = ["detected_at", "issue", "date", "code",
-                    "low_old", "high_old", "low_new", "high_new"]
+        cols = RANGE if "low_old" in (reader.fieldnames or ()) else ENERGY
+        expected = (["detected_at", "issue", "date", "code"]
+                    + [f"{c}_old" for c in cols] + [f"{c}_new" for c in cols])
         if reader.fieldnames != expected:
             rep.error(f"revisions.csv: intestazione inattesa {reader.fieldnames}")
             return 0
@@ -176,7 +191,7 @@ def _check_revisions(path: Path, products: dict[str, dict], rep: Report) -> int:
                 rep.error(f"{where}: data non valida '{row['date']}'")
             if row["code"] not in products:
                 rep.error(f"{where}: codice {row['code']} assente da products.csv")
-            if row["low_old"] == row["low_new"] and row["high_old"] == row["high_new"]:
+            if all(row[f"{c}_old"] == row[f"{c}_new"] for c in cols):
                 rep.error(f"{where}: rettifica senza differenza")
     return n
 

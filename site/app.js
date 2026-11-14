@@ -6,7 +6,9 @@
 
 const $ = (sel) => document.querySelector(sel);
 const fmtNum = (n) => n.toLocaleString('it-IT');
-const fmtPrice = (v) => v == null ? '—' : v.toLocaleString('it-IT', { maximumFractionDigits: 2 });
+// Tre decimali sotto i 10 euro: il gasolio si legge al millesimo di euro al litro.
+const fmtPrice = (v) => v == null ? '—'
+  : v.toLocaleString('it-IT', { maximumFractionDigits: Math.abs(v) < 10 ? 3 : 2 });
 
 const REPO = 'https://github.com/a1oysio/prezzi-agricoli';
 
@@ -264,7 +266,7 @@ function ensureChart() {
     handleScroll: { vertTouchDrag: false },
     localization: {
       locale: 'it-IT',
-      priceFormatter: (v) => v.toLocaleString('it-IT', { maximumFractionDigits: 2 }),
+      priceFormatter: fmtPrice,
     },
   });
 

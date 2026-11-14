@@ -1,0 +1,28 @@
+{
+  "exchange_code": "VR-EN",
+  "exchange_name": "Prodotti petroliferi di Verona",
+  "source_url": "https://www.portaleprezziverona.it/camcom-verona/it/prodotti-petroliferi",
+  "license": "CC-BY-4.0",
+  "generated_at": "2026-11-14T22:17:49+00:00",
+  "last_issue_number": 1464,
+  "first_date": "2016-01-15",
+  "last_date": "2026-10-30",
+  "n_products": 32,
+  "n_observations": 5770,
+  "n_quoted": 5770,
+  "n_averages": 0,
+  "n_revisions": 0,
+  "observations_per_year": {
+    "2016": 538,
+    "2017": 528,
+    "2018": 528,
+    "2019": 528,
+    "2020": 528,
+    "2021": 528,
+    "2022": 528,
+    "2023": 568,
+    "2024": 528,
+    "2025": 528,
+    "2026": 440
+  }
+}

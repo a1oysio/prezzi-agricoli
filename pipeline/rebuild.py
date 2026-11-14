@@ -16,6 +16,10 @@ risultato.  Per ricostruire l'archivio partendo da zero:
 Per Bologna, dai PDF in data/bologna (vedi pipeline/bologna.py):
 
     python -m pipeline.rebuild --exchange bologna
+
+Per i prodotti petroliferi di Verona, da data/verona-energia (vedi pipeline/energia.py):
+
+    python -m pipeline.rebuild --exchange verona-energia
 """
 from __future__ import annotations
 
@@ -83,7 +87,8 @@ def rebuild(src_dir: Path, dataset: Path) -> dict:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--exchange", choices=["verona", "bologna"], default="verona")
+    ap.add_argument("--exchange", choices=["verona", "bologna", "verona-energia"],
+                    default="verona")
     ap.add_argument("--src", type=Path, default=None)
     ap.add_argument("--dataset", type=Path, default=None)
     args = ap.parse_args()
@@ -94,6 +99,9 @@ def main() -> int:
     if args.exchange == "bologna":
         from pipeline import bologna
         return bologna.main_rebuild(args)
+    if args.exchange == "verona-energia":
+        from pipeline import energia
+        return energia.main_rebuild(args)
 
     if not args.src.is_dir() or not any(args.src.glob("*.xml")):
         print(f"Nessun XML in {args.src}. Vedi l'aiuto di questo comando.",

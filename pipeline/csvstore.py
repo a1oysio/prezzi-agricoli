@@ -50,15 +50,21 @@ def parse(value: str) -> Optional[float]:
     return float(value) if value else None
 
 
-def read_prices(prices_dir: Path) -> dict[tuple[str, str], tuple[Optional[float], Optional[float]]]:
-    """Tutti i prezzi indicizzati per (data, codice)."""
-    out: dict[tuple[str, str], tuple[Optional[float], Optional[float]]] = {}
+def read_prices(prices_dir: Path) -> dict[tuple[str, str], tuple[Optional[float], ...]]:
+    """Tutti i prezzi indicizzati per (data, codice).
+
+    I valori sono le colonne dopo ``date`` e ``code``, nell'ordine del file:
+    (low, high) per le borse, i quattro prezzi per i petroliferi.
+    """
+    out: dict[tuple[str, str], tuple[Optional[float], ...]] = {}
     if not prices_dir.is_dir():
         return out
     for f in sorted(prices_dir.glob("*.csv")):
         with f.open(encoding="utf-8") as fh:
-            for row in csv.DictReader(fh):
-                out[(row["date"], row["code"])] = (parse(row["low"]), parse(row["high"]))
+            reader = csv.DictReader(fh)
+            cols = reader.fieldnames[2:]
+            for row in reader:
+                out[(row["date"], row["code"])] = tuple(parse(row[c]) for c in cols)
     return out
 
 
@@ -89,10 +95,10 @@ def read_products(path: Path) -> dict[str, Product]:
     return out
 
 
-def write_prices(prices_dir: Path, prices: dict) -> dict[str, int]:
+def write_prices(prices_dir: Path, prices: dict, header: list[str] = PRICE_HEADER) -> dict[str, int]:
     by_year = defaultdict(list)
-    for (d, code), (lo, hi) in prices.items():
-        by_year[d[:4]].append((d, code, lo, hi))
+    for (d, code), values in prices.items():
+        by_year[d[:4]].append((d, code, values))
 
     prices_dir.mkdir(parents=True, exist_ok=True)
     for stale in prices_dir.glob("*.csv"):
@@ -106,19 +112,19 @@ def write_prices(prices_dir: Path, prices: dict) -> dict[str, int]:
         items.sort(key=lambda r: (r[0], sort_key(r[1])))
         with (prices_dir / f"{year}.csv").open("w", newline="", encoding="utf-8") as fh:
             w = csv.writer(fh, lineterminator="\n")
-            w.writerow(PRICE_HEADER)
-            for d, code, lo, hi in items:
-                w.writerow([d, code, fmt(lo), fmt(hi)])
+            w.writerow(header)
+            for d, code, values in items:
+                w.writerow([d, code, *map(fmt, values)])
         counts[year] = len(items)
     return counts
 
 
 def write_products(path: Path, products: dict[str, Product], prices: dict) -> int:
     agg = defaultdict(lambda: {"dates": [], "quoted": 0})
-    for (d, code), (lo, hi) in prices.items():
+    for (d, code), values in prices.items():
         a = agg[code]
         a["dates"].append(d)
-        if lo is not None or hi is not None:
+        if any(v is not None for v in values):
             a["quoted"] += 1
 
     rows = []
@@ -140,7 +146,7 @@ def write_products(path: Path, products: dict[str, Product], prices: dict) -> in
     return len(rows)
 
 
-def append_revisions(path: Path, rows: list[list]) -> int:
+def append_revisions(path: Path, rows: list[list], header: list[str] = REVISION_HEADER) -> int:
     """Aggiunge al registro le rettifiche che la fonte ha fatto su bollettini gia'
     acquisiti.
 
@@ -155,7 +161,7 @@ def append_revisions(path: Path, rows: list[list]) -> int:
     with path.open("a", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh, lineterminator="\n")
         if header_needed:
-            w.writerow(REVISION_HEADER)
+            w.writerow(header)
         w.writerows(rows)
     return len(rows)
 
@@ -175,7 +181,7 @@ def write_meta(path: Path, prices: dict, n_products: int,
     code, name, url = ((exchange.CODE, exchange.NAME, exchange.SOURCE_URL) if exchange
                        else (paths.EXCHANGE_CODE, paths.EXCHANGE_NAME, paths.SOURCE_URL))
     dates = sorted({d for d, _ in prices})
-    quoted = sum(1 for lo, hi in prices.values() if lo is not None or hi is not None)
+    quoted = sum(1 for values in prices.values() if any(v is not None for v in values))
     path.write_text(json.dumps({
         "exchange_code": code,
         "exchange_name": name,

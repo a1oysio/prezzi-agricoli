@@ -1,0 +1,14 @@
+{
+  "name": "Prodotti petroliferi di Verona",
+  "place": "Verona",
+  "publisher": "Camera di Commercio di Verona",
+  "source_url": "https://www.portaleprezziverona.it/camcom-verona/it/prodotti-petroliferi",
+  "license": "CC BY 4.0",
+  "description": "Rilevazione quindicinale (il 15 e a fine mese) dei prezzi dei prodotti petroliferi in provincia di Verona: gasolio da riscaldamento, da autotrazione extra rete e per uso agricolo, olio combustibile e GPL, per fascia di consegna. Dal 2016.",
+  "notes": [
+    "Per ogni prodotto la fonte pubblica il prezzo netto, il prezzo con accisa e il prezzo al consumo (IVA inclusa). Qui ciascuno è una voce a sé; nei CSV stanno sulla stessa riga, con l'aliquota IVA.",
+    "L'accisa cambia per decreto: un salto del prezzo con accisa che non compare nel netto è fiscale, non di mercato.",
+    "Le fasce (\"fino a 2.000\", \"oltre 20.000\"…) sono i litri o chili di ogni consegna. Il GPL in bombole è quotato a bombola, non al chilo.",
+    "L'olio combustibile non è più quotato: il BTZ 0,3% compare solo il 15 gennaio 2016, il BTZ 1% in nove rilevazioni, l'ultima del 30 maggio 2023. La voce resta nel listino, vuota."
+  ]
+}

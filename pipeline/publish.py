@@ -18,7 +18,7 @@ import shutil
 from collections import defaultdict
 from pathlib import Path
 
-from pipeline import csvstore, paths
+from pipeline import csvstore, energia, paths
 
 
 def read_exchange(dataset: Path) -> dict:
@@ -40,6 +40,8 @@ def find_datasets(root: Path) -> list[Path]:
 def publish(dataset: Path, out_dir: Path, exchange: dict) -> dict[str, int]:
     products = csvstore.read_products(dataset / "products.csv")
     prices = csvstore.read_prices(dataset / "prices")
+    if dataset.name == energia.SLUG:
+        products, prices = energia.for_site(products, prices)
 
     series: dict[str, list] = defaultdict(list)
     for (d, code), (low, high) in prices.items():

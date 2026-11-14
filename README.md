@@ -27,6 +27,7 @@ li mantiene aggiornati.
 |---|---|---|---|---|
 | Borsa Merci di Verona | Camera di Commercio di Verona, bollettini XML | 2016 | cereali, sfarinati, mangimi, semi oleosi, foraggi, vini e uve, ortofrutta, avicunicoli, suini, lattiero-caseari | [`dataset/verona/`](dataset/verona/README.md) |
 | Borsa Merci di Bologna | AGER per la Camera di Commercio di Bologna, listini PDF | 2004 | frumenti, granoturco, cereali minori, farine, semi oleosi, risi, foraggi, sementi | [`dataset/bologna/`](dataset/bologna/README.md) |
+| Prodotti petroliferi di Verona | Camera di Commercio di Verona, rilevazioni quindicinali XML | 2016 | gasolio da riscaldamento, autotrazione e agricolo, olio combustibile, GPL | [`dataset/verona-energia/`](dataset/verona-energia/README.md) |
 
 I conteggi aggiornati (prodotti, rilevazioni, ultimo bollettino) sono in
 `dataset/<borsa>/meta.json`, rigenerato a ogni aggiornamento.
@@ -36,7 +37,8 @@ I conteggi aggiornati (prodotti, rilevazioni, ultimo bollettino) sono in
 ```
 dataset/<borsa>/
 ├── products.csv        catalogo dei prodotti, con unità di misura e categoria
-├── prices/<anno>.csv   quotazioni (minimo e massimo), un file per anno
+├── prices/<anno>.csv   quotazioni (minimo e massimo; per i petroliferi netto,
+│                       con accisa, IVA e al consumo), un file per anno
 ├── averages/<anno>.csv medie quindicinali della borsa, tenute a parte (solo Verona)
 ├── revisions.csv       valori corretti dalla fonte dopo la prima pubblicazione
 ├── meta.json           ultimo bollettino, conteggi, data di generazione
@@ -120,8 +122,8 @@ Segnalazioni e proposte sono benvenute: vedi [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Licenze
 
-Codice: [MIT](LICENSE). Dati di Verona: [CC BY 4.0](LICENSE-DATA), fonte Camera di
-Commercio di Verona. Per i dati di Bologna le condizioni di riuso della fonte non
+Codice: [MIT](LICENSE). Dati di Verona (borsa merci e prodotti petroliferi):
+[CC BY 4.0](LICENSE-DATA), fonte Camera di Commercio di Verona. Per i dati di Bologna le condizioni di riuso della fonte non
 sono state verificate: vedi [`dataset/bologna/README.md`](dataset/bologna/README.md).
 
 Questa è una ricostruzione non ufficiale: per usi contrattuali, fiscali o legali
