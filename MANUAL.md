@@ -16,8 +16,8 @@ catalogo dei template invece dei workflow — non sceglierne nessuno, i due
 workflow sono gia' in `.github/workflows/` e GitHub li trova da solo al push.
 
 ```bash
-# 1. un fork, oppure un repository vuoto (senza README, licenza o .gitignore
-#    generati da GitHub: sono gia' nel progetto e costringerebbero a un merge)
+# 1. un repository vuoto (senza README, licenza o .gitignore generati da
+#    GitHub: sono gia' nel progetto e costringerebbero a un merge)
 gh repo create prezzi-agricoli --public
 
 # 2. il codice
@@ -33,6 +33,12 @@ Il primo push fa partire `pages.yml` da solo — al primo commit `site/`,
 `dataset/` e `pipeline/` sono tutti percorsi nuovi — e quel primo tentativo
 **fallisce**, perche' Pages non e' ancora configurato. E' atteso: si rilancia a
 mano dopo il paragrafo 1.1.
+
+**Con un fork** i passi 1 e 2 non servono: il codice c'e' gia'. Serve invece un
+passo in piu': GitHub disattiva le Actions sui fork, e i workflow pianificati
+restano fermi finche' non le riattivi dalla scheda `Actions` del fork
+("I understand my workflows, go ahead and enable them"). Poi i paragrafi
+1.1 - 1.4, e lancia `pages.yml` a mano: senza un push non parte da solo.
 
 Link diretti, per non cercarli nei menu:
 

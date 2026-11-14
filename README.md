@@ -84,7 +84,8 @@ site/        sito statico; site/api/ è generato al deploy e non è versionato
 
 Non c'è un database: i CSV sono la sorgente e ogni comando li legge e li
 riscrive direttamente. Le scritture sono deterministiche, quindi due esecuzioni
-sugli stessi dati producono file identici byte per byte.
+sugli stessi dati producono CSV identici byte per byte (in `meta.json` cambia
+solo `generated_at`).
 
 Dipendenze minime: `requests` per lo scaricamento e `pdftotext`
 (`poppler-utils`) per i listini PDF di Bologna. Parsing, validazione e

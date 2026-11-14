@@ -21,11 +21,12 @@ pip install -r requirements.txt
 ```
 
 Ogni modifica a parser, unità di misura o pipeline va verificata ricostruendo il
-dataset e controllando che cambi solo ciò che ci si aspetta:
+dataset della borsa che hai toccato (serve l'archivio locale, vedi MANUAL.md) e
+controllando che cambi solo ciò che ci si aspetta:
 
 ```bash
-python -m pipeline.rebuild            # richiede l'archivio locale, vedi MANUAL.md
-python -m pipeline.validate
+python -m pipeline.rebuild --exchange verona    # o bologna: la borsa che hai toccato
+python -m pipeline.validate                      # controlla tutte le borse
 git diff --stat dataset/
 ```
 
