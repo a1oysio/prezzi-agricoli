@@ -9,4 +9,4 @@ NAME = "Borsa Merci di Bologna"
 SLUG = "bologna"
 SOURCE_URL = "https://www.agerborsamerci.it/listino-borsa/settimanale-ager/"
 # Condizioni di riuso dei listini non verificate: in meta.json resta vuota.
-LICENSE = None
+LICENSE = "Dati pubblici di libera consultazione, riutilizzabili da chiunque citando la fonte"

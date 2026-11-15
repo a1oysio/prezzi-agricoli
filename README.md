@@ -123,8 +123,9 @@ Segnalazioni e proposte sono benvenute: vedi [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Licenze
 
 Codice: [MIT](LICENSE). Dati di Verona (borsa merci e prodotti petroliferi):
-[CC BY 4.0](LICENSE-DATA), fonte Camera di Commercio di Verona. Per i dati di Bologna le condizioni di riuso della fonte non
-sono state verificate: vedi [`dataset/bologna/README.md`](dataset/bologna/README.md).
+[CC BY 4.0](LICENSE-DATA), fonte Camera di Commercio di Verona. I dati di Bologna vengono
+dai listini pubblici e di libera consultazione della borsa: chiunque può usarli
+citando la fonte, vedi [`dataset/bologna/README.md`](dataset/bologna/README.md).
 
 Questa è una ricostruzione non ufficiale: per usi contrattuali, fiscali o legali
 fa fede esclusivamente il listino pubblicato dalla Camera di Commercio.

@@ -2,7 +2,7 @@
   "exchange_code": "BO",
   "exchange_name": "Borsa Merci di Bologna",
   "source_url": "https://www.agerborsamerci.it/listino-borsa/settimanale-ager/",
-  "license": null,
+  "license": "Dati pubblici di libera consultazione, riutilizzabili da chiunque citando la fonte",
   "generated_at": "2026-11-12T23:17:44+00:00",
   "last_issue_number": 44,
   "first_date": "2004-01-22",

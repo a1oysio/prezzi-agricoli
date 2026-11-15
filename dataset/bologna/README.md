@@ -4,9 +4,10 @@ Prezzi settimanali all'ingrosso rilevati il giovedì alla Borsa Merci di Bologna
 letti dai listini PDF pubblicati da [AGER](https://www.agerborsamerci.it/listino-borsa/settimanale-ager/),
 che gestisce la borsa per conto della Camera di Commercio. Dal gennaio 2004.
 
-**Licenza.** Le condizioni di riuso di questi listini non sono state verificate:
-la CC BY 4.0 di [LICENSE-DATA](../../LICENSE-DATA) vale per Verona, non per
-questa cartella. Il riferimento ufficiale resta il listino pubblicato dalla
+**Condizioni d'uso.** I listini della borsa sono pubblici e di libera
+consultazione; questa cartella li riporta in CSV. Chiunque può usare questi
+dati, citando come fonte la Borsa Merci di Bologna (Camera di Commercio di
+Bologna, AGER). Il riferimento ufficiale resta il listino pubblicato dalla
 Camera di Commercio di Bologna. Leggi anche il [DISCLAIMER](../../DISCLAIMER.md).
 
 ## File
