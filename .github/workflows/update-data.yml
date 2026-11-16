@@ -7,7 +7,10 @@ name: Aggiorna i dati
 # l'XML prima del PDF ufficiale e poi lo corregge senza cambiare numero.
 on:
   schedule:
-    - cron: "0 18 * * *"
+    # Minuto non tondo: allo scoccare dell'ora GitHub e' sovraccarico e i cron
+    # partono con ore di ritardo o vengono saltati del tutto (successo il
+    # 2026-11-16).  Due passaggi al giorno: se uno salta, c'e' l'altro.
+    - cron: "37 6,19 * * *"
   workflow_dispatch:
     inputs:
       from:
