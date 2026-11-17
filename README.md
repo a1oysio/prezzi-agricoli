@@ -110,18 +110,6 @@ Per i petroliferi ogni prodotto diventa tre serie, `<code>-netto`,
 queste forme sono stabili: un cambiamento incompatibile verrà annunciato nel
 README prima di essere pubblicato.
 
-## Come citare
-
-Il primo di ogni mese il workflow `release.yml` pubblica una release
-`dati-AAAA.MM`, con lo zip di `dataset/` com'era quel giorno. In uno studio
-cita la release che hai usato: è l'unico modo perché altri ritrovino gli
-stessi numeri, dato che i CSV del branch `main` cambiano ogni settimana. I
-metadati di citazione sono in [`CITATION.cff`](CITATION.cff), e GitHub li
-mostra nel riquadro "Cite this repository".
-
-Cita anche la fonte di ogni borsa che usi (Camera di Commercio di Verona,
-Borsa Merci di Bologna/AGER), come chiedono le sue condizioni d'uso.
-
 ## Architettura
 
 ```
