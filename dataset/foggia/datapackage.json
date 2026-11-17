@@ -1,0 +1,113 @@
+{
+  "name": "prezzi-agricoli-foggia",
+  "title": "Borsa Merci di Foggia",
+  "homepage": "https://github.com/a1oysio/prezzi-agricoli",
+  "licenses": [
+    {
+      "title": "Listini pubblici della Camera di Commercio di Foggia, riutilizzabili citando la fonte"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Borsa Merci di Foggia",
+      "path": "https://www.fg.camcom.gov.it/servizi/storico-dei-listini-settimanali"
+    }
+  ],
+  "resources": [
+    {
+      "name": "products",
+      "path": "products.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "description": "Anagrafica dei prodotti",
+      "schema": {
+        "fields": [
+          {
+            "name": "code",
+            "type": "string",
+            "description": "Codice del prodotto: della fonte a Verona, assegnato dal progetto a Bologna"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Nome del prodotto, come scritto nel listino"
+          },
+          {
+            "name": "category_path",
+            "type": "string",
+            "description": "Categorie del listino, dalla piu' generale, separate da ' > '"
+          },
+          {
+            "name": "unit",
+            "type": "string",
+            "description": "Unita' di misura del prezzo (EUR/t, EUR/kg, EUR/L, ...)"
+          },
+          {
+            "name": "first_date",
+            "type": "date",
+            "description": "Prima rilevazione del prodotto"
+          },
+          {
+            "name": "last_date",
+            "type": "date",
+            "description": "Ultima rilevazione del prodotto"
+          },
+          {
+            "name": "n_observations",
+            "type": "integer",
+            "description": "Righe del prodotto in prices/"
+          },
+          {
+            "name": "n_quoted",
+            "type": "integer",
+            "description": "Righe con almeno un prezzo"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "prices",
+      "path": [
+        "prices/2021.csv",
+        "prices/2022.csv",
+        "prices/2023.csv",
+        "prices/2024.csv",
+        "prices/2025.csv",
+        "prices/2026.csv"
+      ],
+      "format": "csv",
+      "encoding": "utf-8",
+      "description": "Quotazioni, un file per anno",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "date",
+            "description": "Data della rilevazione"
+          },
+          {
+            "name": "code",
+            "type": "string",
+            "description": "Codice del prodotto: della fonte a Verona, assegnato dal progetto a Bologna"
+          },
+          {
+            "name": "low",
+            "type": "number",
+            "description": "Prezzo minimo; vuoto = non quotato"
+          },
+          {
+            "name": "high",
+            "type": "number",
+            "description": "Prezzo massimo; vuoto = non quotato"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}

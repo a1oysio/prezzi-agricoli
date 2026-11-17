@@ -27,6 +27,7 @@ li mantiene aggiornati.
 |---|---|---|---|---|
 | Borsa Merci di Verona | Camera di Commercio di Verona, bollettini XML | 2016 | cereali, sfarinati, mangimi, semi oleosi, foraggi, vini e uve, ortofrutta, avicunicoli, suini, lattiero-caseari | [`dataset/verona/`](dataset/verona/README.md) |
 | Borsa Merci di Bologna | AGER per la Camera di Commercio di Bologna, listini PDF | 2004 | frumenti, granoturco, cereali minori, farine, semi oleosi, risi, foraggi, sementi | [`dataset/bologna/`](dataset/bologna/README.md) |
+| Borsa Merci di Foggia | Camera di Commercio di Foggia, listini PDF | 2021 | grano duro, grano tenero, cereali minori e legumi, granoturco, foraggi, semole e farine, cruscami, paste | [`dataset/foggia/`](dataset/foggia/README.md) |
 | Prodotti petroliferi di Verona | Camera di Commercio di Verona, rilevazioni quindicinali XML | 2016 | gasolio da riscaldamento, autotrazione e agricolo, olio combustibile, GPL | [`dataset/verona-energia/`](dataset/verona-energia/README.md) |
 
 I conteggi aggiornati (prodotti, rilevazioni, ultimo bollettino) sono in
@@ -91,7 +92,7 @@ petroliferi i quattro prezzi al posto di `low, high`):
 df = pd.read_csv("https://a1oysio.github.io/prezzi-agricoli/api/verona/all.csv.gz")
 ```
 
-`verona`, `bologna`, `verona-energia`. Si rigenera a ogni aggiornamento.
+`verona`, `bologna`, `foggia`, `verona-energia`. Si rigenera a ogni aggiornamento.
 
 ### Interfaccia JSON
 
@@ -113,7 +114,7 @@ README prima di essere pubblicato.
 ## Architettura
 
 ```
-exchanges/   scaricamento e lettura delle fonti (XML di Verona, PDF di Bologna)
+exchanges/   scaricamento e lettura delle fonti (XML di Verona, PDF di Bologna e Foggia)
 pipeline/    update, rebuild, validate, publish
 dataset/     i CSV: la sorgente di verità
 site/        sito statico; site/api/ è generato al deploy e non è versionato
@@ -125,7 +126,7 @@ sugli stessi dati producono CSV identici byte per byte (in `meta.json` cambia
 solo `generated_at`).
 
 Dipendenze minime: `requests` per lo scaricamento e `pdftotext`
-(`poppler-utils`) per i listini PDF di Bologna. Parsing, validazione e
+(`poppler-utils`) per i listini PDF di Bologna e Foggia. Parsing, validazione e
 pubblicazione usano solo la libreria standard.
 
 ## Aggiornamento automatico
@@ -163,7 +164,9 @@ Segnalazioni e proposte sono benvenute: vedi [CONTRIBUTING.md](CONTRIBUTING.md).
 Codice: [MIT](LICENSE). Dati di Verona (borsa merci e prodotti petroliferi):
 [CC BY 4.0](LICENSE-DATA), fonte Camera di Commercio di Verona. I dati di Bologna vengono
 dai listini pubblici e di libera consultazione della borsa: chiunque può usarli
-citando la fonte, vedi [`dataset/bologna/README.md`](dataset/bologna/README.md).
+citando la fonte, vedi [`dataset/bologna/README.md`](dataset/bologna/README.md). Lo
+stesso vale per i listini pubblici della Camera di Commercio di Foggia, vedi
+[`dataset/foggia/README.md`](dataset/foggia/README.md).
 
 Questa è una ricostruzione non ufficiale: per usi contrattuali, fiscali o legali
 fa fede esclusivamente il listino pubblicato dalla Camera di Commercio.

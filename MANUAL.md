@@ -421,22 +421,22 @@ si fanno qui e semmai si riportano in agx-scraper, non il contrario.
 
 ## 7. Aggiungere un'altra borsa
 
-Le fonti sono tre e fatte diversamente, quindi ognuna ha la sua strada fino ai
+Le fonti sono quattro e fatte diversamente, quindi ognuna ha la sua strada fino ai
 CSV; da lì in poi (validazione, pubblicazione, sito) è tutto comune.
 
-| | Verona | Bologna | Petroliferi di Verona |
-|---|---|---|---|
-| Fonte | XML, un indirizzo per numero | PDF, elencati in una pagina | XML, numeri presi dall'indice della pagina |
-| Codice in `exchanges/` | `verona/` | `bologna/` | `verona/energia.py` |
-| Aggiornamento | `python -m pipeline.update` | `… --exchange bologna` | `… --exchange verona-energia` |
-| Ricostruzione | `python -m pipeline.rebuild` | `… --exchange bologna` | `… --exchange verona-energia` |
-| Logica | `pipeline/update.py`, `rebuild.py` | `pipeline/bologna.py` | `pipeline/energia.py` |
-| Archivio locale | `data/verona/*.xml` | `data/bologna/<anno>/*.pdf` | `data/verona-energia/*.xml` |
+| | Verona | Bologna | Foggia | Petroliferi di Verona |
+|---|---|---|---|---|
+| Fonte | XML, un indirizzo per numero | PDF, elencati in una pagina | PDF, elencati in una pagina | XML, numeri presi dall'indice della pagina |
+| Codice in `exchanges/` | `verona/` | `bologna/` | `foggia/` | `verona/energia.py` |
+| Aggiornamento | `python -m pipeline.update` | `… --exchange bologna` | `… --exchange foggia` | `… --exchange verona-energia` |
+| Ricostruzione | `python -m pipeline.rebuild` | `… --exchange bologna` | `… --exchange foggia` | `… --exchange verona-energia` |
+| Logica | `pipeline/update.py`, `rebuild.py` | `pipeline/bologna.py` | `pipeline/bologna.py` (via `pipeline/foggia.py`) | `pipeline/energia.py` |
+| Archivio locale | `data/verona/*.xml` | `data/bologna/<anno>/*.pdf` | `data/foggia/<anno>/*.pdf` | `data/verona-energia/*.xml` |
 
 `pipeline.validate` e `pipeline.publish` lavorano su tutte le cartelle di
-`dataset/`. Il workflow aggiorna prima Verona, poi Bologna e i petroliferi; se
-uno di questi due fallisce Verona viene pubblicata lo stesso e il guasto apre
-comunque la issue.
+`dataset/`. Il workflow aggiorna prima Verona, poi Bologna, Foggia e i
+petroliferi; se uno di questi fallisce Verona viene pubblicata lo stesso e il
+guasto apre comunque la issue.
 
 I petroliferi hanno uno schema dei prezzi diverso (netto, con accisa, IVA, al
 consumo invece di minimo e massimo): `pipeline.validate` riconosce i due schemi
@@ -475,6 +475,20 @@ git diff --stat dataset/bologna       # deve cambiare solo quello che ci si aspe
 ```
 
 Le voci di Bologna non sono raggruppate: vedi `dataset/bologna/README.md`.
+
+### Foggia
+
+Foggia passa per la stessa strada di Bologna (`pipeline/bologna.py`, con
+`Source`): cambiano solo l'elenco (`exchanges/foggia/fetcher.py`) e la lettura
+del PDF (`exchanges/foggia/parser.py`). Il listino è un foglio Excel: i nomi
+vanno a capo dentro la cella e si riattaccano ai prezzi per vicinanza; il
+docstring del parser spiega le regole. Se compare una voce strana, il primo
+sospetto è un sottotitolo nuovo da aggiungere a `_SUB` nel parser.
+
+```bash
+python -m exchanges.foggia.fetcher --dest data/foggia     # ~250 PDF, ~25 minuti
+python -m pipeline.rebuild --exchange foggia
+```
 
 ### Una terza borsa
 

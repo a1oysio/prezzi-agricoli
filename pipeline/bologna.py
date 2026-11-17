@@ -17,13 +17,19 @@ strada diversa, per tre ragioni.
 
     python -m pipeline.update  --exchange bologna
     python -m pipeline.rebuild --exchange bologna     # da data/bologna
+
+Foggia ha listini fatti allo stesso modo -- PDF senza codici, con la settimana
+precedente accanto -- e passa di qui con il suo fetcher e il suo parser: vedi
+``Source`` e ``pipeline/foggia.py``.
 """
 from __future__ import annotations
 
 import sys
 import time
+from dataclasses import dataclass
 from datetime import date, datetime, timezone
 from pathlib import Path
+from types import ModuleType
 from typing import Optional
 
 import exchanges.bologna as exchange
@@ -36,6 +42,18 @@ from pipeline import csvstore
 RECHECK_ISSUES = 3
 
 Prices = dict[tuple[str, str], tuple[Optional[float], Optional[float]]]
+
+
+@dataclass(frozen=True)
+class Source:
+    """Una borsa a listini PDF: il modulo con nome e licenza, il fetcher (con
+    ``list_bulletins`` e ``fetch``) e il parser (con ``parse_file``)."""
+    exchange: ModuleType
+    fetcher: ModuleType
+    parser: ModuleType
+
+
+BOLOGNA = Source(exchange, fetcher, parser)
 
 
 class Codebook:
@@ -57,7 +75,7 @@ class Codebook:
         return code
 
 
-def merge(files: list[Path], prices: Prices, book: Codebook) -> dict:
+def merge(files: list[Path], prices: Prices, book: Codebook, source: Source = BOLOGNA) -> dict:
     """Unisce i listini a ``prices``, dal piu' vecchio.
 
     Restituisce le statistiche e, in ``before``, il valore che ogni riga gia'
@@ -71,7 +89,7 @@ def merge(files: list[Path], prices: Prices, book: Codebook) -> dict:
 
     for path in sorted(files, key=lambda p: p.name):
         try:
-            meta, entries = parser.parse_file(path)
+            meta, entries = source.parser.parse_file(path)
         except ValueError as exc:
             stats["failed"] += 1
             print(f"  ! {exc}", file=sys.stderr)
@@ -111,15 +129,16 @@ def merge(files: list[Path], prices: Prices, book: Codebook) -> dict:
     return stats
 
 
-def _write(dataset: Path, prices: Prices, book: Codebook, last_issue: Optional[int]) -> int:
+def _write(dataset: Path, prices: Prices, book: Codebook, last_issue: Optional[int],
+           source: Source = BOLOGNA) -> int:
     counts = csvstore.write_prices(dataset / "prices", prices)
     n_products = csvstore.write_products(dataset / "products.csv", book.products, prices)
     csvstore.write_meta(dataset / "meta.json", prices, n_products, counts,
-                        last_issue, exchange=exchange)
+                        last_issue, exchange=source.exchange)
     return n_products
 
 
-def rebuild(src: Path, dataset: Path) -> dict:
+def rebuild(src: Path, dataset: Path, source: Source = BOLOGNA) -> dict:
     """Riscrive il dataset da tutti i PDF in ``src``.
 
     I codici gia' assegnati in ``products.csv`` restano: una voce non cambia
@@ -128,28 +147,29 @@ def rebuild(src: Path, dataset: Path) -> dict:
     book = Codebook(csvstore.read_products(dataset / "products.csv"))
     known = set(book.products)
     prices: Prices = {}
-    stats = merge(sorted(src.glob("*/*.pdf")), prices, book)
+    stats = merge(sorted(src.glob("*/*.pdf")), prices, book, source)
     # Le voci che il parser non produce piu' -- un nome letto meglio di prima --
     # non devono restare in anagrafica senza una riga di prezzo.
     used = {code for _, code in prices}
     for code in known - used:
         del book.products[code]
-    stats["products"] = _write(dataset, prices, book, stats["last_issue"])
+    stats["products"] = _write(dataset, prices, book, stats["last_issue"], source)
     stats["prices"] = len(prices)
     return stats
 
 
 def update(dataset: Path, staging: Path, recheck: int = RECHECK_ISSUES,
-           sleep: float = 1.0, dry_run: bool = False) -> dict:
+           sleep: float = 1.0, dry_run: bool = False, source: Source = BOLOGNA) -> dict:
     """Scarica i listini nuovi, ricontrolla gli ultimi e li unisce ai CSV."""
     meta = csvstore.read_meta(dataset / "meta.json")
     prices = csvstore.read_prices(dataset / "prices")
     book = Codebook(csvstore.read_products(dataset / "products.csv"))
     last = meta.get("last_date")
     if last is None:
-        raise SystemExit("dataset di Bologna vuoto: prima `python -m pipeline.rebuild --exchange bologna`.")
+        slug = source.exchange.SLUG
+        raise SystemExit(f"dataset {slug} vuoto: prima `python -m pipeline.rebuild --exchange {slug}`.")
 
-    bulletins = fetcher.list_bulletins()
+    bulletins = source.fetcher.list_bulletins()
     old = [b for b in bulletins if b.date.isoformat() <= last][-recheck:] if recheck else []
     new = [b for b in bulletins if b.date.isoformat() > last]
 
@@ -158,7 +178,7 @@ def update(dataset: Path, staging: Path, recheck: int = RECHECK_ISSUES,
     for i, b in enumerate(old + new):
         if i:
             time.sleep(sleep)
-        status, path = fetcher.fetch(b, staging, overwrite=True)
+        status, path = source.fetcher.fetch(b, staging, overwrite=True)
         if path is None:
             # Un listino in elenco che non si scarica e' un guasto, non una
             # settimana senza mercato: fermarsi, o resterebbe un buco muto.
@@ -166,7 +186,7 @@ def update(dataset: Path, staging: Path, recheck: int = RECHECK_ISSUES,
         files.append(path)
         downloaded += b in new
 
-    stats = merge(files, prices, book)
+    stats = merge(files, prices, book, source)
     if stats["failed"]:
         raise SystemExit(f"{stats['failed']} listini illeggibili: il dataset non e' stato toccato.")
 
@@ -186,16 +206,16 @@ def update(dataset: Path, staging: Path, recheck: int = RECHECK_ISSUES,
         return stats
 
     csvstore.append_revisions(dataset / "revisions.csv", revisions)
-    _write(dataset, prices, book, stats["last_issue"] or meta.get("last_issue_number"))
+    _write(dataset, prices, book, stats["last_issue"] or meta.get("last_issue_number"), source)
     return stats
 
 
-def main_update(args) -> int:
+def main_update(args, source: Source = BOLOGNA) -> int:
     import tempfile
     with tempfile.TemporaryDirectory() as tmp:
         stats = update(args.dataset, args.staging or Path(tmp),
                        RECHECK_ISSUES if args.recheck is None else args.recheck,
-                       args.sleep, args.dry_run)
+                       args.sleep, args.dry_run, source)
     print(
         f"  listini ricontroll.: {stats['rechecked']}\n"
         f"  listini nuovi      : {stats['downloaded']}\n"
@@ -209,13 +229,13 @@ def main_update(args) -> int:
     return 0
 
 
-def main_rebuild(args) -> int:
+def main_rebuild(args, source: Source = BOLOGNA) -> int:
     if not args.src.is_dir() or not any(args.src.glob("*/*.pdf")):
         print(f"Nessun PDF in {args.src}. Per scaricarli:\n"
-              f"    python -m exchanges.bologna.fetcher --dest {args.src}", file=sys.stderr)
+              f"    python -m {source.fetcher.__name__} --dest {args.src}", file=sys.stderr)
         return 1
     print(f"Ricostruzione di {args.dataset} da {args.src} …")
-    s = rebuild(args.src, args.dataset)
+    s = rebuild(args.src, args.dataset, source)
     print(
         f"  listini letti       : {s['parsed']}\n"
         f"  illeggibili         : {s['failed']}\n"

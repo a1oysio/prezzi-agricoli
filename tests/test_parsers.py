@@ -18,6 +18,7 @@ from pathlib import Path
 from exchanges.bologna import layouts
 from exchanges.bologna.pdfwords import parse_tsv
 from exchanges.bologna.table import parse_day, parse_number
+from exchanges.foggia import parser as fg_parser
 from exchanges.verona import parser as vr_parser
 
 FIXTURES = Path(__file__).parent / "fixtures"
@@ -41,8 +42,8 @@ def _contained(records, published: dict[str, tuple]) -> None:
     assert {k: published.get(k) for k in parsed} == parsed
 
 
-def _bologna_codes() -> dict[tuple[str, str], str]:
-    with (DATASET / "bologna" / "products.csv").open(encoding="utf-8") as fh:
+def _codes(exchange: str = "bologna") -> dict[tuple[str, str], str]:
+    with (DATASET / exchange / "products.csv").open(encoding="utf-8") as fh:
         return {(r["category_path"], r["name"]): r["code"] for r in csv.DictReader(fh)}
 
 
@@ -55,7 +56,7 @@ def _check_bologna(name: str, day: date, n: int) -> None:
     entries = _bologna(name, day)
     assert len(entries) == n, len(entries)
     assert {e.date for e in entries} == {day}
-    codes = _bologna_codes()
+    codes = _codes()
     parsed = {codes[(" > ".join(e.path), e.name)]: (e.low, e.high) for e in entries}
     assert parsed == _published("bologna", day)
 
@@ -72,6 +73,41 @@ def test_bologna_a4():
     first = _bologna("2026-10-08_n39", date(2026, 10, 8))[0]
     assert first.path == ("FRANCO PARTENZA", "FRUMENTO TENERO di produzione nazionale 2026")
     assert (first.low, first.high, first.unit) == (273, 277, "EUR/t")
+
+
+def _foggia(name: str):
+    text = gzip.open(FIXTURES / f"foggia_{name}.tsv.gz", "rt", encoding="utf-8").read()
+    return fg_parser.parse_pages(parse_tsv(text), f"{name}.pdf")
+
+
+def _check_foggia(name: str, day: date, n: int) -> list:
+    meta, entries = _foggia(name)
+    assert meta.issue_date == day and len(entries) == n, (meta.issue_date, len(entries))
+    codes = _codes("foggia")
+    parsed = {codes[(" > ".join(e.path), e.name)]: (e.low, e.high) for e in entries}
+    assert parsed == _published("foggia", day)
+    return entries
+
+
+def test_foggia_2026():
+    entries = _check_foggia("2026-10-21_n40", date(2026, 10, 21), 27)
+    by_name = {e.name: e for e in entries}
+    # Nome su due righe, una sopra e una sotto i prezzi.
+    orzo = by_name["ORZO NAZIONALE Pesante (peso min. 62 kg/hl, umidità max. 12%)"]
+    assert (orzo.path, orzo.low, orzo.high) == (("CEREALI MINORI E LEGUMINOSE",), 200, 205)
+    # Sottotitolo, e unita' scritta solo li'.
+    semola = by_name["Ceneri 0.86-0.90%"]
+    assert semola.path == ("SFARINATI", "SEMOLA DI GRANO DURO ITALIANO") and semola.unit == "EUR/t"
+    # Il listino CUN in fondo non c'e'.
+    assert not any("Fino alto proteico" in e.name for e in entries)
+
+
+def test_foggia_2021_invisible_characters():
+    # Un carattere invisibile al posto di ogni spazio, e iniziali staccate
+    # ("GRANO D URO"): devono uscire nomi normali.
+    entries = _check_foggia("2021-08-25_n08", date(2021, 8, 25), 27)
+    assert entries[0].path == ("GRANO DURO",)
+    assert any(e.name.startswith("ORZO NAZIONALE Pesante") for e in entries)
 
 
 def test_verona_weekly():

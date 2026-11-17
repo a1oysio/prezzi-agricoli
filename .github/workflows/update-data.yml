@@ -62,6 +62,12 @@ jobs:
         continue-on-error: true
         run: python -m pipeline.update --exchange bologna
 
+      # Foggia: PDF anche qui, stessa regola di Bologna.
+      - name: Scarica i listini nuovi di Foggia
+        id: foggia
+        continue-on-error: true
+        run: python -m pipeline.update --exchange foggia
+
       # Prodotti petroliferi di Verona: stessa regola di Bologna, un guasto qui
       # non ferma le borse ma fa fallire il workflow dopo il commit.
       - name: Scarica le rilevazioni nuove dei petroliferi
@@ -94,10 +100,10 @@ jobs:
           git commit -m "$messaggio"
           git push
 
-      - name: Fa valere i guasti di Bologna e dei petroliferi
-        if: steps.bologna.outcome == 'failure' || steps.energia.outcome == 'failure'
+      - name: Fa valere i guasti di Bologna, Foggia e dei petroliferi
+        if: steps.bologna.outcome == 'failure' || steps.foggia.outcome == 'failure' || steps.energia.outcome == 'failure'
         run: |
-          echo "Bologna: ${{ steps.bologna.outcome }}, petroliferi: ${{ steps.energia.outcome }}. Vedi i passi sopra."
+          echo "Bologna: ${{ steps.bologna.outcome }}, Foggia: ${{ steps.foggia.outcome }}, petroliferi: ${{ steps.energia.outcome }}. Vedi i passi sopra."
           exit 1
 
       - name: Segnala il guasto con una issue

@@ -87,7 +87,7 @@ def rebuild(src_dir: Path, dataset: Path) -> dict:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--exchange", choices=["verona", "bologna", "verona-energia"],
+    ap.add_argument("--exchange", choices=["verona", "bologna", "foggia", "verona-energia"],
                     default="verona")
     ap.add_argument("--src", type=Path, default=None)
     ap.add_argument("--dataset", type=Path, default=None)
@@ -99,6 +99,9 @@ def main() -> int:
     if args.exchange == "bologna":
         from pipeline import bologna
         return bologna.main_rebuild(args)
+    if args.exchange == "foggia":
+        from pipeline import foggia
+        return foggia.main_rebuild(args)
     if args.exchange == "verona-energia":
         from pipeline import energia
         return energia.main_rebuild(args)

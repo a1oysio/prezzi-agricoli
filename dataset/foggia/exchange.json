@@ -1,0 +1,14 @@
+{
+  "name": "Borsa Merci di Foggia",
+  "place": "Foggia",
+  "publisher": "Camera di Commercio di Foggia",
+  "source_url": "https://www.fg.camcom.gov.it/servizi/storico-dei-listini-settimanali",
+  "license": "Listini pubblici della Camera di Commercio di Foggia, riutilizzabili citando la fonte",
+  "description": "Listino settimanale dei prezzi all'ingrosso rilevati il mercoledì dalla Borsa Merci di Foggia: grano duro, grano tenero, cereali minori e legumi, granoturco, foraggi, semole e farine, cruscami, paste alimentari. Dal 23 giugno 2021.",
+  "notes": [
+    "Le voci sono quelle del listino, scritte come le scrive la borsa: quando cambia una caratteristica tra parentesi (peso, proteine, bianconati) nasce una voce nuova e la vecchia si ferma.",
+    "Tutti i prezzi sono in euro per tonnellata, I.V.A. esclusa.",
+    "In fondo al listino la Camera riporta i prezzi della Commissione Unica Nazionale del grano duro: sono un'altra fonte, con altre date, e qui non ci sono.",
+    "Lettura automatica dei PDF: il riferimento ufficiale resta il listino pubblicato dalla Camera di Commercio di Foggia."
+  ]
+}
