@@ -119,7 +119,7 @@ numeri ha provato.
 ## 2. Cosa succede da solo
 
 ```
-ogni giorno alle 18:00 UTC
+ogni giorno alle 06:37 e alle 19:37 UTC
         │
         ├─ pipeline.update    ┬─ riscarica gli ultimi 8 bollettini già acquisiti
         │                     │  e adotta i valori che la fonte ha corretto
@@ -268,6 +268,39 @@ in locale:
 python -m pipeline.publish
 cd site && python -m http.server 8000
 ```
+
+### Versioni citabili e DOI (Zenodo)
+
+`release.yml` crea il primo di ogni mese la release `dati-AAAA.MM`, con lo zip
+di `dataset/`. Si può lanciare anche a mano (Actions → Pubblica la versione dei
+dati → Run workflow). Se la release del mese esiste già non fa nulla: una
+versione citata non si sovrascrive.
+
+Per avere un DOI per ogni release, una volta sola:
+
+1. Accedi a <https://zenodo.org> con l'account GitHub.
+2. In *GitHub* (dal menu dell'account) attiva l'interruttore accanto a
+   `prezzi-agricoli`.
+3. Da lì in poi Zenodo archivia ogni release e le assegna un DOI. Il primo DOI
+   "concept", quello che vale per tutte le versioni, va aggiunto al README nella
+   sezione "Come citare", e a `CITATION.cff` come `doi:`.
+
+Zenodo legge titolo, autori e parole chiave da `CITATION.cff`. In `authors`
+c'è solo l'alias GitHub: aggiungi nome e cognome (`given-names`,
+`family-names`) se vuoi che compaiano nella citazione.
+
+### datapackage.json non allineato
+
+`pipeline.validate` controlla che `dataset/<borsa>/datapackage.json` descriva i
+file che ci sono davvero. La pipeline lo riscrive a ogni aggiornamento; se un
+CSV è stato toccato a mano:
+
+```bash
+python -m pipeline.validate --fix-datapackage
+```
+
+Una colonna nuova va descritta in `csvstore.FIELDS`, altrimenti la validazione
+fallisce.
 
 ---
 

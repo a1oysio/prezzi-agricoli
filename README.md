@@ -42,8 +42,14 @@ dataset/<borsa>/
 ├── averages/<anno>.csv medie quindicinali della borsa, tenute a parte (solo Verona)
 ├── revisions.csv       valori corretti dalla fonte dopo la prima pubblicazione
 ├── meta.json           ultimo bollettino, conteggi, data di generazione
+├── datapackage.json    descrittore Frictionless: file, colonne, tipi, licenza
 └── exchange.json       scheda della borsa: nome, ente, fonte, avvertenze
 ```
+
+`datapackage.json` segue lo standard [Frictionless Data
+Package](https://datapackage.org/): con `frictionless`, R (`frictionless`) o
+altri strumenti compatibili una borsa si carica con tipi e valori mancanti già
+dichiarati. Lo rigenera la pipeline a ogni aggiornamento.
 
 Prima di usarli:
 
@@ -75,6 +81,47 @@ prodotti = pd.read_csv(base / "products.csv")
 df = prezzi.merge(prodotti[["code", "name", "unit"]], on="code")
 ```
 
+### Tutto in un file
+
+Per ogni borsa il sito pubblica un unico CSV compresso, con prezzi e anagrafica
+già uniti (`date, code, name, category_path, unit, low, high`; per i
+petroliferi i quattro prezzi al posto di `low, high`):
+
+```python
+df = pd.read_csv("https://a1oysio.github.io/prezzi-agricoli/api/verona/all.csv.gz")
+```
+
+`verona`, `bologna`, `verona-energia`. Si rigenera a ogni aggiornamento.
+
+### Interfaccia JSON
+
+Il sito non ha un backend: legge file JSON statici, che chiunque può usare.
+L'indirizzo base è `https://a1oysio.github.io/prezzi-agricoli/api/`.
+
+| Percorso | Contenuto |
+|---|---|
+| `index.json` | Le borse: `{"exchanges": [{slug, name, publisher, license, meta, …}]}` |
+| `<borsa>/index.json` | La scheda della borsa e il catalogo: `{"exchange": …, "products": [{code, name, path, group, category, unit, n, first, last}]}` |
+| `<borsa>/series/<code>.json` | Una serie: `{"code", "name", "unit", "points": [[data, minimo, massimo], …]}`, solo le rilevazioni quotate |
+| `<borsa>/all.csv.gz` | La borsa intera in CSV, vedi sopra |
+
+Per i petroliferi ogni prodotto diventa tre serie, `<code>-netto`,
+`<code>-accisa` e `<code>-consumo`, con minimo uguale al massimo. Questi nomi e
+queste forme sono stabili: un cambiamento incompatibile verrà annunciato nel
+README prima di essere pubblicato.
+
+## Come citare
+
+Il primo di ogni mese il workflow `release.yml` pubblica una release
+`dati-AAAA.MM`, con lo zip di `dataset/` com'era quel giorno. In uno studio
+cita la release che hai usato: è l'unico modo perché altri ritrovino gli
+stessi numeri, dato che i CSV del branch `main` cambiano ogni settimana. I
+metadati di citazione sono in [`CITATION.cff`](CITATION.cff), e GitHub li
+mostra nel riquadro "Cite this repository".
+
+Cita anche la fonte di ogni borsa che usi (Camera di Commercio di Verona,
+Borsa Merci di Bologna/AGER), come chiedono le sue condizioni d'uso.
+
 ## Architettura
 
 ```
@@ -95,10 +142,12 @@ pubblicazione usano solo la libreria standard.
 
 ## Aggiornamento automatico
 
-Un workflow GitHub Actions gira ogni giorno: cerca i bollettini nuovi, ricontrolla
+Un workflow GitHub Actions gira due volte al giorno: cerca i bollettini nuovi, ricontrolla
 quelli recenti, valida il dataset e committa solo se qualcosa è cambiato. Se il
 controllo di qualità trova un errore non pubblica nulla e apre una issue. Un
-secondo workflow rigenera e pubblica il sito su GitHub Pages.
+secondo workflow rigenera e pubblica il sito su GitHub Pages. I test dei parser
+(`tests/`, su bollettini veri in `tests/fixtures/`) girano a ogni modifica del
+codice.
 
 ## Uso in locale
 
@@ -108,6 +157,7 @@ pip install -r requirements.txt
 
 python -m pipeline.update --dry-run    # mostra cosa arriverebbe di nuovo
 python -m pipeline.validate            # controllo di qualità
+python -m tests.test_parsers           # i parser rileggono bollettini noti
 python -m pipeline.publish             # genera i JSON del sito
 cd site && python -m http.server 8000  # sito su http://localhost:8000
 ```

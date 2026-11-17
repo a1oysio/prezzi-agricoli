@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: >-
+  Se usi questi dati, cita la versione (release "dati-AAAA.MM") che hai
+  scaricato, e la fonte di ciascuna borsa indicata in dataset/<borsa>/README.md.
+  Le licenze sono diverse da borsa a borsa: CC BY 4.0 per Verona, libera
+  consultazione con citazione della fonte per Bologna (vedi README).
+type: dataset
+title: "Prezzi agricoli: serie storiche delle borse merci italiane"
+abstract: >-
+  Serie storiche dei prezzi all'ingrosso dei prodotti agricoli rilevati dalle
+  borse merci di Verona (dal 2016) e Bologna (dal 2004) e dei prodotti
+  petroliferi di Verona, convertite in CSV con uno schema stabile e aggiornate
+  automaticamente. Ricostruzione non ufficiale dei listini delle Camere di
+  Commercio.
+authors:
+  - alias: a1oysio
+repository-code: "https://github.com/a1oysio/prezzi-agricoli"
+url: "https://a1oysio.github.io/prezzi-agricoli/"
+keywords:
+  - prezzi agricoli
+  - borse merci
+  - agricultural prices
+  - commodity prices
+  - Italy
+  - open data

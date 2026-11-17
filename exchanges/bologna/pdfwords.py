@@ -63,9 +63,14 @@ def read_pages(path: Path) -> list[Page]:
         raise ValueError(f"PDF illeggibile '{path.name}': "
                          f"{exc.stderr.decode(errors='replace').strip()}") from exc
 
+    return parse_tsv(proc.stdout.decode("utf-8", errors="replace"))
+
+
+def parse_tsv(text: str) -> list[Page]:
+    """Le pagine dall'uscita di ``pdftotext -tsv``.  A parte per i test, che la
+    tengono in un file e non hanno bisogno di poppler."""
     pages: list[Page] = []
-    reader = csv.DictReader(io.StringIO(proc.stdout.decode("utf-8", errors="replace")),
-                            delimiter="\t", quoting=csv.QUOTE_NONE)
+    reader = csv.DictReader(io.StringIO(text), delimiter="\t", quoting=csv.QUOTE_NONE)
     for r in reader:
         level = r["level"]
         if level == "1":

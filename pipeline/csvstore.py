@@ -180,6 +180,7 @@ def write_meta(path: Path, prices: dict, n_products: int,
     vale Verona."""
     code, name, url = ((exchange.CODE, exchange.NAME, exchange.SOURCE_URL) if exchange
                        else (paths.EXCHANGE_CODE, paths.EXCHANGE_NAME, paths.SOURCE_URL))
+    license = getattr(exchange, "LICENSE", "CC-BY-4.0") if exchange else "CC-BY-4.0"
     dates = sorted({d for d, _ in prices})
     quoted = sum(1 for values in prices.values() if any(v is not None for v in values))
     path.write_text(json.dumps({
@@ -188,7 +189,7 @@ def write_meta(path: Path, prices: dict, n_products: int,
         "source_url": url,
         # La licenza la dichiara la borsa: quella di Verona e' nota, per le
         # altre vale cio' che dice il loro modulo, anche "non verificata" (None).
-        "license": getattr(exchange, "LICENSE", "CC-BY-4.0") if exchange else "CC-BY-4.0",
+        "license": license,
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "last_issue_number": last_issue,
         "first_date": dates[0] if dates else None,
@@ -200,6 +201,78 @@ def write_meta(path: Path, prices: dict, n_products: int,
         "n_revisions": count_revisions(path.parent / "revisions.csv"),
         "observations_per_year": counts,
     }, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    write_datapackage(path.parent, name, url, license)
+
+
+def write_datapackage(dataset: Path, title: str, source_url: str, license: Optional[str]) -> None:
+    (dataset / "datapackage.json").write_text(
+        json.dumps(datapackage(dataset, title, source_url, license),
+                   indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+# Il significato delle colonne, per datapackage.json.  Chi ne aggiunge una la
+# descrive qui: validate segnala le colonne senza descrizione.
+FIELDS = {
+    "date": ("date", "Data della rilevazione"),
+    "code": ("string", "Codice del prodotto: della fonte a Verona, assegnato dal progetto a Bologna"),
+    "low": ("number", "Prezzo minimo; vuoto = non quotato"),
+    "high": ("number", "Prezzo massimo; vuoto = non quotato"),
+    "price": ("number", "Prezzo netto, senza accisa ne' IVA"),
+    "price_with_excise": ("number", "Prezzo con accisa, senza IVA"),
+    "vat_rate": ("number", "Aliquota IVA in percento"),
+    "consumer_price": ("number", "Prezzo al consumo, accisa e IVA incluse"),
+    "name": ("string", "Nome del prodotto, come scritto nel listino"),
+    "category_path": ("string", "Categorie del listino, dalla piu' generale, separate da ' > '"),
+    "unit": ("string", "Unita' di misura del prezzo (EUR/t, EUR/kg, EUR/L, ...)"),
+    "first_date": ("date", "Prima rilevazione del prodotto"),
+    "last_date": ("date", "Ultima rilevazione del prodotto"),
+    "n_observations": ("integer", "Righe del prodotto in prices/"),
+    "n_quoted": ("integer", "Righe con almeno un prezzo"),
+    "detected_at": ("datetime", "Quando la pipeline ha visto la rettifica"),
+    "issue": ("integer", "Numero del bollettino rettificato"),
+}
+
+
+def datapackage(dataset: Path, title: str, source_url: str, license: Optional[str]) -> dict:
+    """Il descrittore Frictionless Data Package della borsa: quali file ci sono e
+    che tipo ha ogni colonna.  Si ricava dai file stessi, cosi' un anno nuovo in
+    prices/ entra da solo; ``pipeline.validate`` controlla che sia aggiornato."""
+    def schema(sample: Path) -> dict:
+        with sample.open(encoding="utf-8") as fh:
+            header = next(csv.reader(fh))
+        fields = []
+        for col in header:
+            base = col.removesuffix("_old").removesuffix("_new")
+            kind, desc = FIELDS.get(base, ("string", ""))
+            if col != base:
+                desc = f"{desc} ({'prima' if col.endswith('_old') else 'dopo'} la rettifica)"
+            fields.append({"name": col, "type": kind, "description": desc})
+        return {"fields": fields, "missingValues": [""]}
+
+    def resource(name: str, files: list[Path], desc: str) -> dict:
+        rel = [f.relative_to(dataset).as_posix() for f in files]
+        return {"name": name, "path": rel if len(rel) > 1 else rel[0], "format": "csv",
+                "encoding": "utf-8", "description": desc, "schema": schema(files[0])}
+
+    resources = [resource("products", [dataset / "products.csv"], "Anagrafica dei prodotti")]
+    for name, desc in (("prices", "Quotazioni, un file per anno"),
+                       ("averages", "Medie quindicinali pubblicate dalla borsa")):
+        files = sorted((dataset / name).glob("*.csv"))
+        if files:
+            resources.append(resource(name, files, desc))
+    if (dataset / "revisions.csv").exists():
+        resources.append(resource("revisions", [dataset / "revisions.csv"],
+                                  "Valori corretti dalla fonte dopo la prima pubblicazione"))
+    lic = ({"name": license, "path": "https://creativecommons.org/licenses/by/4.0/"}
+           if license == "CC-BY-4.0" else {"title": license or "non verificata"})
+    return {
+        "name": f"prezzi-agricoli-{dataset.name}",
+        "title": title,
+        "homepage": "https://github.com/a1oysio/prezzi-agricoli",
+        "licenses": [lic],
+        "sources": [{"title": title, "path": source_url}],
+        "resources": resources,
+    }
 
 
 def read_meta(path: Path) -> dict:

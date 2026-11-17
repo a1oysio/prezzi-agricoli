@@ -1,0 +1,40 @@
+name: Pubblica la versione dei dati
+
+# I CSV cambiano ogni settimana: chi li usa in uno studio deve poter dire quale
+# versione ha usato e ritrovarla identica.  Il primo di ogni mese questo
+# workflow crea la release "dati-AAAA.MM" con lo zip di dataset/.  Se il
+# repository e' collegato a Zenodo, ogni release riceve un DOI (MANUAL.md).
+on:
+  schedule:
+    - cron: "17 7 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dataset
+  cancel-in-progress: false
+
+jobs:
+  rilascia:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Crea la release del mese
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="dati-$(date -u +%Y.%m)"
+          # Rilanciato a mano nello stesso mese: la versione c'e' gia', e
+          # sovrascriverla toglierebbe a chi l'ha citata i dati che ha usato.
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "La release $tag esiste gia'."
+            exit 0
+          fi
+          zip -qr "prezzi-agricoli-$tag.zip" dataset LICENSE LICENSE-DATA DISCLAIMER.md CITATION.cff
+          gh release create "$tag" "prezzi-agricoli-$tag.zip" \
+            --target "$(git rev-parse HEAD)" \
+            --title "Dati al $(date -u +%F)" \
+            --notes "Istantanea mensile dei CSV di dataset/, com'erano il $(date -u +%F). Per citarla vedi CITATION.cff e la sezione \"Come citare\" del README."

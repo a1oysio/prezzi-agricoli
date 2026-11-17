@@ -6,13 +6,18 @@ la apre -- scaricare i 4 MB del dataset intero per disegnare un grafico sarebbe
 inaccettabile.
 
 Ogni cartella di ``dataset/`` e' una borsa e finisce in ``api/<borsa>/``; in
-cima, ``api/index.json`` le elenca tutte per la prima pagina del sito.
+cima, ``api/index.json`` le elenca tutte per la prima pagina del sito.  Accanto
+alle serie, ``api/<borsa>/all.csv.gz`` e' l'intera borsa in un file solo, gia'
+unita all'anagrafica: per chi vuole i dati e non il grafico.
 
     python -m pipeline.publish
 """
 from __future__ import annotations
 
 import argparse
+import csv
+import gzip
+import io
 import json
 import shutil
 from collections import defaultdict
@@ -35,6 +40,31 @@ def read_exchange(dataset: Path) -> dict:
 
 def find_datasets(root: Path) -> list[Path]:
     return sorted(d for d in root.iterdir() if (d / "products.csv").is_file())
+
+
+def write_bulk(dataset: Path, out: Path) -> int:
+    """Tutti i prezzi della borsa in un CSV compresso, una riga per (data, codice),
+    con nome, categoria e unita' accanto al codice.  Le colonne dei valori sono
+    quelle di ``prices/``: minimo e massimo, o i quattro prezzi dei petroliferi."""
+    with (dataset / "products.csv").open(encoding="utf-8") as fh:
+        products = {r["code"]: r for r in csv.DictReader(fh)}
+    files = sorted((dataset / "prices").glob("*.csv"))
+    with files[0].open(encoding="utf-8") as fh:
+        values = next(csv.reader(fh))[2:]
+    prices = csvstore.read_prices(dataset / "prices")
+
+    buf = io.StringIO()
+    w = csv.writer(buf, lineterminator="\n")
+    w.writerow(["date", "code", "name", "category_path", "unit", *values])
+    for d, code in sorted(prices, key=lambda k: (k[0], csvstore.sort_key(k[1]))):
+        p = products[code]
+        w.writerow([d, code, p["name"], p["category_path"], p["unit"],
+                    *map(csvstore.fmt, prices[(d, code)])])
+    out.parent.mkdir(parents=True, exist_ok=True)
+    # mtime fisso: gli stessi dati danno lo stesso file, come per i CSV.
+    with gzip.GzipFile(out, "wb", mtime=0) as gz:
+        gz.write(buf.getvalue().encode("utf-8"))
+    return len(prices)
 
 
 def publish(dataset: Path, out_dir: Path, exchange: dict) -> dict[str, int]:
@@ -98,10 +128,12 @@ def main() -> int:
     for dataset in find_datasets(args.datasets):
         exchange = read_exchange(dataset)
         stats = publish(dataset, args.out / dataset.name, exchange)
+        rows = write_bulk(dataset, args.out / dataset.name / "all.csv.gz")
         exchanges.append(exchange)
         print(f"  {exchange['name']}")
         print(f"    prodotti in indice : {stats['products']}")
         print(f"    serie generate     : {stats['series']}")
+        print(f"    righe in all.csv.gz: {rows}")
     if not exchanges:
         print(f"  nessuna borsa in {args.datasets}")
         return 1

@@ -61,6 +61,9 @@ async function boot() {
   $('#exchange').hidden = false;
   $('#exchange-name').textContent = EXCHANGE.name;
   $('#nav-csv').href = `${REPO}/tree/main/dataset/${EXCHANGE.slug}`;
+  // Generato al deploy da pipeline.publish: prezzi e anagrafica in un CSV solo.
+  $('#nav-bulk').href = `${API}/all.csv.gz`;
+  $('#nav-bulk').hidden = false;
   if (EXCHANGE.source_url) {
     $('#nav-source').href = EXCHANGE.source_url;
     $('#nav-source').hidden = false;

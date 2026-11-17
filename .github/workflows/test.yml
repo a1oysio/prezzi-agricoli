@@ -1,0 +1,35 @@
+name: Test
+
+# Gira quando cambia il codice, non a ogni aggiornamento dei dati: i test
+# rileggono bollettini fissati in tests/fixtures/ e li confrontano col dataset,
+# quindi dicono se il parser e' cambiato, non se la fonte ha pubblicato.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "exchanges/**"
+      - "pipeline/**"
+      - "tests/**"
+      - ".github/workflows/test.yml"
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Test
+        run: |
+          for t in tests/test_*.py; do
+            python -m "tests.$(basename "$t" .py)"
+          done
+      - name: Valida il dataset
+        run: python -m pipeline.validate

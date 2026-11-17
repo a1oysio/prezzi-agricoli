@@ -21,7 +21,7 @@ from collections import defaultdict
 from datetime import date, timedelta
 from pathlib import Path
 
-from pipeline import paths
+from pipeline import csvstore, paths
 
 VALID_UNITS = {
     "EUR/t", "EUR/kg", "EUR/L", "EUR/1000L",
@@ -208,6 +208,28 @@ def _check_no_regression(meta_file: Path, total: int, rep: Report) -> None:
         )
 
 
+def _package_args(dataset: Path) -> tuple:
+    """Titolo, fonte e licenza come li ha scritti write_meta."""
+    meta = csvstore.read_meta(dataset / "meta.json")
+    return (meta.get("exchange_name") or dataset.name, meta.get("source_url"),
+            meta.get("license"))
+
+
+def _check_datapackage(dataset: Path, rep: Report) -> None:
+    """datapackage.json lo riscrive csvstore.write_meta: se non corrisponde ai
+    file, qualcuno li ha toccati senza passare dalla pipeline."""
+    want = csvstore.datapackage(dataset, *_package_args(dataset))
+    path = dataset / "datapackage.json"
+    if not path.exists() or json.loads(path.read_text(encoding="utf-8")) != want:
+        rep.error("datapackage.json mancante o non allineato ai CSV: "
+                  "rigeneralo con python -m pipeline.validate --fix-datapackage")
+    for res in want["resources"]:
+        for f in res["schema"]["fields"]:
+            if not f["description"]:
+                rep.error(f"{res['name']}: colonna '{f['name']}' senza descrizione "
+                          f"in csvstore.FIELDS")
+
+
 def validate(dataset: Path) -> Report:
     rep = Report()
     products_file = dataset / "products.csv"
@@ -230,6 +252,7 @@ def validate(dataset: Path) -> Report:
     if averages.is_dir():
         _read_prices(averages, products, rep)
     _check_no_regression(dataset / "meta.json", total, rep)
+    _check_datapackage(dataset, rep)
 
     # Le rettifiche non sono un guasto -- e' la fonte che si corregge -- ma un
     # numero insolito in una sola tornata merita un'occhiata: sono valori gia'
@@ -252,12 +275,16 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--dataset", type=Path, default=None,
                     help="una sola borsa (default: tutte le cartelle di dataset/)")
+    ap.add_argument("--fix-datapackage", action="store_true",
+                    help="riscrive datapackage.json dai CSV e da meta.json, poi valida")
     args = ap.parse_args()
 
     datasets = [args.dataset] if args.dataset else sorted(
         d for d in paths.DATASET_DIR.iterdir() if (d / "products.csv").is_file())
     failed = 0
     for dataset in datasets:
+        if args.fix_datapackage:
+            csvstore.write_datapackage(dataset, *_package_args(dataset))
         rep = validate(dataset)
         print(f"== {dataset.name}")
         print(rep.render())

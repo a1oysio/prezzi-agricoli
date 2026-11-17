@@ -1,0 +1,219 @@
+{
+  "name": "prezzi-agricoli-verona",
+  "title": "Borsa Merci di Verona",
+  "homepage": "https://github.com/a1oysio/prezzi-agricoli",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Borsa Merci di Verona",
+      "path": "https://www.portaleprezziverona.it/camcom-verona/it/borsa-merci"
+    }
+  ],
+  "resources": [
+    {
+      "name": "products",
+      "path": "products.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "description": "Anagrafica dei prodotti",
+      "schema": {
+        "fields": [
+          {
+            "name": "code",
+            "type": "string",
+            "description": "Codice del prodotto: della fonte a Verona, assegnato dal progetto a Bologna"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "Nome del prodotto, come scritto nel listino"
+          },
+          {
+            "name": "category_path",
+            "type": "string",
+            "description": "Categorie del listino, dalla piu' generale, separate da ' > '"
+          },
+          {
+            "name": "unit",
+            "type": "string",
+            "description": "Unita' di misura del prezzo (EUR/t, EUR/kg, EUR/L, ...)"
+          },
+          {
+            "name": "first_date",
+            "type": "date",
+            "description": "Prima rilevazione del prodotto"
+          },
+          {
+            "name": "last_date",
+            "type": "date",
+            "description": "Ultima rilevazione del prodotto"
+          },
+          {
+            "name": "n_observations",
+            "type": "integer",
+            "description": "Righe del prodotto in prices/"
+          },
+          {
+            "name": "n_quoted",
+            "type": "integer",
+            "description": "Righe con almeno un prezzo"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "prices",
+      "path": [
+        "prices/2016.csv",
+        "prices/2017.csv",
+        "prices/2018.csv",
+        "prices/2019.csv",
+        "prices/2020.csv",
+        "prices/2021.csv",
+        "prices/2022.csv",
+        "prices/2023.csv",
+        "prices/2024.csv",
+        "prices/2025.csv",
+        "prices/2026.csv"
+      ],
+      "format": "csv",
+      "encoding": "utf-8",
+      "description": "Quotazioni, un file per anno",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "date",
+            "description": "Data della rilevazione"
+          },
+          {
+            "name": "code",
+            "type": "string",
+            "description": "Codice del prodotto: della fonte a Verona, assegnato dal progetto a Bologna"
+          },
+          {
+            "name": "low",
+            "type": "number",
+            "description": "Prezzo minimo; vuoto = non quotato"
+          },
+          {
+            "name": "high",
+            "type": "number",
+            "description": "Prezzo massimo; vuoto = non quotato"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "averages",
+      "path": [
+        "averages/2016.csv",
+        "averages/2017.csv",
+        "averages/2018.csv",
+        "averages/2019.csv",
+        "averages/2020.csv",
+        "averages/2021.csv",
+        "averages/2022.csv",
+        "averages/2023.csv",
+        "averages/2024.csv",
+        "averages/2025.csv",
+        "averages/2026.csv"
+      ],
+      "format": "csv",
+      "encoding": "utf-8",
+      "description": "Medie quindicinali pubblicate dalla borsa",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "date",
+            "description": "Data della rilevazione"
+          },
+          {
+            "name": "code",
+            "type": "string",
+            "description": "Codice del prodotto: della fonte a Verona, assegnato dal progetto a Bologna"
+          },
+          {
+            "name": "low",
+            "type": "number",
+            "description": "Prezzo minimo; vuoto = non quotato"
+          },
+          {
+            "name": "high",
+            "type": "number",
+            "description": "Prezzo massimo; vuoto = non quotato"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "revisions",
+      "path": "revisions.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "description": "Valori corretti dalla fonte dopo la prima pubblicazione",
+      "schema": {
+        "fields": [
+          {
+            "name": "detected_at",
+            "type": "datetime",
+            "description": "Quando la pipeline ha visto la rettifica"
+          },
+          {
+            "name": "issue",
+            "type": "integer",
+            "description": "Numero del bollettino rettificato"
+          },
+          {
+            "name": "date",
+            "type": "date",
+            "description": "Data della rilevazione"
+          },
+          {
+            "name": "code",
+            "type": "string",
+            "description": "Codice del prodotto: della fonte a Verona, assegnato dal progetto a Bologna"
+          },
+          {
+            "name": "low_old",
+            "type": "number",
+            "description": "Prezzo minimo; vuoto = non quotato (prima la rettifica)"
+          },
+          {
+            "name": "high_old",
+            "type": "number",
+            "description": "Prezzo massimo; vuoto = non quotato (prima la rettifica)"
+          },
+          {
+            "name": "low_new",
+            "type": "number",
+            "description": "Prezzo minimo; vuoto = non quotato (dopo la rettifica)"
+          },
+          {
+            "name": "high_new",
+            "type": "number",
+            "description": "Prezzo massimo; vuoto = non quotato (dopo la rettifica)"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}
