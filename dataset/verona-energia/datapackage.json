@@ -124,6 +124,80 @@
           ""
         ]
       }
+    },
+    {
+      "name": "revisions",
+      "path": "revisions.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "description": "Valori corretti dalla fonte dopo la prima pubblicazione",
+      "schema": {
+        "fields": [
+          {
+            "name": "detected_at",
+            "type": "datetime",
+            "description": "Quando la pipeline ha visto la rettifica"
+          },
+          {
+            "name": "issue",
+            "type": "integer",
+            "description": "Numero del bollettino rettificato"
+          },
+          {
+            "name": "date",
+            "type": "date",
+            "description": "Data della rilevazione"
+          },
+          {
+            "name": "code",
+            "type": "string",
+            "description": "Codice del prodotto: della fonte a Verona, assegnato dal progetto a Bologna"
+          },
+          {
+            "name": "price_old",
+            "type": "number",
+            "description": "Prezzo netto, senza accisa ne' IVA (prima la rettifica)"
+          },
+          {
+            "name": "price_with_excise_old",
+            "type": "number",
+            "description": "Prezzo con accisa, senza IVA (prima la rettifica)"
+          },
+          {
+            "name": "vat_rate_old",
+            "type": "number",
+            "description": "Aliquota IVA in percento (prima la rettifica)"
+          },
+          {
+            "name": "consumer_price_old",
+            "type": "number",
+            "description": "Prezzo al consumo, accisa e IVA incluse (prima la rettifica)"
+          },
+          {
+            "name": "price_new",
+            "type": "number",
+            "description": "Prezzo netto, senza accisa ne' IVA (dopo la rettifica)"
+          },
+          {
+            "name": "price_with_excise_new",
+            "type": "number",
+            "description": "Prezzo con accisa, senza IVA (dopo la rettifica)"
+          },
+          {
+            "name": "vat_rate_new",
+            "type": "number",
+            "description": "Aliquota IVA in percento (dopo la rettifica)"
+          },
+          {
+            "name": "consumer_price_new",
+            "type": "number",
+            "description": "Prezzo al consumo, accisa e IVA incluse (dopo la rettifica)"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
     }
   ]
 }
