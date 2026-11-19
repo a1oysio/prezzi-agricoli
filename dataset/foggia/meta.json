@@ -3,13 +3,13 @@
   "exchange_name": "Borsa Merci di Foggia",
   "source_url": "https://www.fg.camcom.gov.it/servizi/storico-dei-listini-settimanali",
   "license": "Listini pubblici della Camera di Commercio di Foggia, riutilizzabili citando la fonte",
-  "generated_at": "2026-11-17T00:42:50+00:00",
-  "last_issue_number": 43,
+  "generated_at": "2026-11-19T01:26:52+00:00",
+  "last_issue_number": 44,
   "first_date": "2021-06-23",
-  "last_date": "2026-11-11",
+  "last_date": "2026-11-18",
   "n_products": 91,
-  "n_observations": 7392,
-  "n_quoted": 3948,
+  "n_observations": 7419,
+  "n_quoted": 3963,
   "n_averages": 0,
   "n_revisions": 0,
   "observations_per_year": {
@@ -18,6 +18,6 @@
     "2023": 1350,
     "2024": 1410,
     "2025": 1410,
-    "2026": 1197
+    "2026": 1224
   }
 }

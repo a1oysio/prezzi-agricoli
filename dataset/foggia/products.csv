@@ -13,19 +13,19 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 12,FAVE (USO ZOOTECNICO) impurità max 3%,FORAGGI,EUR/t,2021-06-23,2024-06-12,137,0
 13,FAVINO NOSTRANO - bianco (impurità max 5%),FORAGGI,EUR/t,2021-06-23,2021-07-07,3,3
 14,FAVINO NOSTRANO - nero (impurità max 5%),FORAGGI,EUR/t,2021-06-23,2021-07-07,3,0
-15,PISELLO PROTEICO (USO ZOOTECNICO),FORAGGI,EUR/t,2021-06-23,2026-11-11,255,14
+15,PISELLO PROTEICO (USO ZOOTECNICO),FORAGGI,EUR/t,2021-06-23,2026-11-18,256,15
 16,Ceneri 0.80-0.85% - proteine min. 12.5%,SFARINATI > SEMOLA DI GRANO DURO,EUR/t,2021-06-23,2022-09-14,5,1
 17,Ceneri 0.86-0.90%,SFARINATI > SEMOLA DI GRANO DURO,EUR/t,2021-06-23,2022-09-14,5,1
-18,- tipo 00 (ceneri max 0.55%),SFARINATI > FARINE DI GRANO TENERO (merce in sacco carta),EUR/t,2021-06-23,2026-11-11,255,0
-19,- tipo 0 (ceneri max 0.65%),SFARINATI > FARINE DI GRANO TENERO (merce in sacco carta),EUR/t,2021-06-23,2026-11-11,255,0
-20,Farinaccio,CRUSCAMI DI FRUMENTO > di GRANO DURO,EUR/t,2021-06-23,2026-11-11,255,251
-21,Tritello cubettato,CRUSCAMI DI FRUMENTO > di GRANO DURO,EUR/t,2021-06-23,2026-11-11,255,251
-22,Crusca e cruschello,CRUSCAMI DI FRUMENTO > di GRANO DURO,EUR/t,2021-06-23,2026-11-11,255,251
-23,Farinetta,CRUSCAMI DI FRUMENTO > di GRANO DURO,EUR/t,2021-06-23,2026-11-11,255,37
-24,Farinaccio,CRUSCAMI DI FRUMENTO > di GRANO TENERO,EUR/t,2021-06-23,2026-11-11,255,0
-25,Tritello cubettato,CRUSCAMI DI FRUMENTO > di GRANO TENERO,EUR/t,2021-06-23,2026-11-11,255,0
-26,Crusca e cruschello,CRUSCAMI DI FRUMENTO > di GRANO TENERO,EUR/t,2021-06-23,2026-11-11,255,0
-27,di semola di grano duro (ceneri 0.86-0.90%),PASTE ALIMENTARI,EUR/t,2021-06-23,2026-11-11,121,120
+18,- tipo 00 (ceneri max 0.55%),SFARINATI > FARINE DI GRANO TENERO (merce in sacco carta),EUR/t,2021-06-23,2026-11-18,256,0
+19,- tipo 0 (ceneri max 0.65%),SFARINATI > FARINE DI GRANO TENERO (merce in sacco carta),EUR/t,2021-06-23,2026-11-18,256,0
+20,Farinaccio,CRUSCAMI DI FRUMENTO > di GRANO DURO,EUR/t,2021-06-23,2026-11-18,256,252
+21,Tritello cubettato,CRUSCAMI DI FRUMENTO > di GRANO DURO,EUR/t,2021-06-23,2026-11-18,256,252
+22,Crusca e cruschello,CRUSCAMI DI FRUMENTO > di GRANO DURO,EUR/t,2021-06-23,2026-11-18,256,252
+23,Farinetta,CRUSCAMI DI FRUMENTO > di GRANO DURO,EUR/t,2021-06-23,2026-11-18,256,37
+24,Farinaccio,CRUSCAMI DI FRUMENTO > di GRANO TENERO,EUR/t,2021-06-23,2026-11-18,256,0
+25,Tritello cubettato,CRUSCAMI DI FRUMENTO > di GRANO TENERO,EUR/t,2021-06-23,2026-11-18,256,0
+26,Crusca e cruschello,CRUSCAMI DI FRUMENTO > di GRANO TENERO,EUR/t,2021-06-23,2026-11-18,256,0
+27,di semola di grano duro (ceneri 0.86-0.90%),PASTE ALIMENTARI,EUR/t,2021-06-23,2026-11-18,122,121
 28,"BUONO MERCANTILE (peso min. 78 kg/hL. umidità 12%, spezzati max 6%, bianconati max. 35%), contenuto proteico minimo 11.50 %",GRANO DURO,EUR/t,2021-06-30,2021-07-07,2,2
 29,ORZO NAZIONALE Pesante (peso min. kg 62 / hl),CEREALI MINORI E LEGUMINOSE,EUR/t,2021-07-14,2023-06-21,91,84
 30,ORZO NAZIONALE Leggero (peso min. kg 56 / hl),CEREALI MINORI E LEGUMINOSE,EUR/t,2021-07-14,2023-06-21,91,83
@@ -43,8 +43,8 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 42,FAVINO NOSTRANO nero (impurità max 7%),FORAGGI,EUR/t,2022-06-22,2024-06-12,89,0
 43,"FINO (peso min. 78 kg/hL, umidità 12%, spezzati e striminziti max 8%, farinosi 1%, bianconati max. 30%, nulli 0.50%), contenuto proteico min. 12.00%",GRANO DURO,EUR/t,2022-06-29,2023-06-21,45,42
 44,ORZO DISTICO (DA BIRRA),CEREALI MINORI E LEGUMINOSE,EUR/t,2022-08-24,2024-06-12,82,0
-45,AVENA ROSSA,CEREALI MINORI E LEGUMINOSE,EUR/t,2022-08-24,2026-11-11,200,176
-46,AVENA BIANCA,CEREALI MINORI E LEGUMINOSE,EUR/t,2022-08-24,2026-11-11,200,122
+45,AVENA ROSSA,CEREALI MINORI E LEGUMINOSE,EUR/t,2022-08-24,2026-11-18,201,177
+46,AVENA BIANCA,CEREALI MINORI E LEGUMINOSE,EUR/t,2022-08-24,2026-11-18,201,123
 47,GRANOTURCO SECCO,GRANOTURCO SECCO,EUR/t,2022-08-24,2024-06-12,82,12
 48,"BIOLOGICO (peso min. 77 kg/hl, bianconati max. 30%), contenuto proteico minimo 11.50%",GRANO DURO,EUR/t,2022-09-07,2022-09-14,2,1
 49,"FINO (peso min. 78 kg/hl, umidità 12%, spezzati e striminziti max 8%, farinosi 1%, bianconati max. 30%, nulli 0.50%), contenuto proteico minimo 12.00%",GRANO DURO,EUR/t,2022-09-07,2022-09-14,2,1
@@ -53,14 +53,14 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 52,"TENERO FINO (peso min. 77 kg/hl, tolleranza 1% corpi estranei) per farine 00",GRANO TENERO,EUR/t,2022-09-07,2026-09-09,109,0
 53,ORZO NAZIONALE Pesante (peso min. 62 kg/hl),CEREALI MINORI E LEGUMINOSE,EUR/t,2022-09-07,2022-09-14,2,1
 54,ORZO NAZIONALE Leggero (peso min. 56 kg/hl),CEREALI MINORI E LEGUMINOSE,EUR/t,2022-09-07,2022-09-14,2,1
-55,"ORZO DISTICO (DA BIRRA) (peso min. 65 kg/hl, umidità max. 13%, impurità max. 1%, proteine 9-12%)",CEREALI MINORI E LEGUMINOSE,EUR/t,2022-09-07,2026-11-11,118,1
-56,CECE NAZIONALE (calibro 9) impurità max. 3%,CEREALI MINORI E LEGUMINOSE,EUR/t,2022-09-07,2026-11-11,118,74
-57,CECE NAZIONALE (calibro 8) impurità max. 3%,CEREALI MINORI E LEGUMINOSE,EUR/t,2022-09-07,2026-11-11,118,74
-58,CECE NAZIONALE (calibro 7) impurità max. 3%,CEREALI MINORI E LEGUMINOSE,EUR/t,2022-09-07,2026-11-11,118,74
-59,GRANOTURCO SECCO (umidità max. 13%),GRANOTURCO SECCO,EUR/t,2022-09-07,2026-11-11,118,0
-60,FAVE (USO ZOOTECNICO) impurità max. 3%,FORAGGI,EUR/t,2022-09-07,2026-11-11,118,0
-61,FAVINO NOSTRANO - bianco (impurità max. 7%),FORAGGI,EUR/t,2022-09-07,2026-11-11,118,108
-62,FAVINO NOSTRANO - nero (impurità max. 7%),FORAGGI,EUR/t,2022-09-07,2026-11-11,118,0
+55,"ORZO DISTICO (DA BIRRA) (peso min. 65 kg/hl, umidità max. 13%, impurità max. 1%, proteine 9-12%)",CEREALI MINORI E LEGUMINOSE,EUR/t,2022-09-07,2026-11-18,119,1
+56,CECE NAZIONALE (calibro 9) impurità max. 3%,CEREALI MINORI E LEGUMINOSE,EUR/t,2022-09-07,2026-11-18,119,75
+57,CECE NAZIONALE (calibro 8) impurità max. 3%,CEREALI MINORI E LEGUMINOSE,EUR/t,2022-09-07,2026-11-18,119,75
+58,CECE NAZIONALE (calibro 7) impurità max. 3%,CEREALI MINORI E LEGUMINOSE,EUR/t,2022-09-07,2026-11-18,119,75
+59,GRANOTURCO SECCO (umidità max. 13%),GRANOTURCO SECCO,EUR/t,2022-09-07,2026-11-18,119,0
+60,FAVE (USO ZOOTECNICO) impurità max. 3%,FORAGGI,EUR/t,2022-09-07,2026-11-18,119,0
+61,FAVINO NOSTRANO - bianco (impurità max. 7%),FORAGGI,EUR/t,2022-09-07,2026-11-18,119,109
+62,FAVINO NOSTRANO - nero (impurità max. 7%),FORAGGI,EUR/t,2022-09-07,2026-11-18,119,0
 63,"BIOLOGICO (peso min. 76 kg/hL, bianconati max. 30%), contenuto proteico min. 11.50%",GRANO DURO,EUR/t,2023-06-28,2023-07-05,2,1
 64,"FINO (peso min. 78 kg/hL, umidità 12%, spezzati e striminziti max 8%, farinosi 1%, volpati max 8%, vitreo min.70%, nulli 0.50%), contenuto proteico min. 12.00%",GRANO DURO,EUR/t,2023-06-28,2023-07-05,2,2
 65,"BUONO MERCANTILE (peso min. 76 kg/hL. umidità 12%, spezzati e striminziti max 10%, volpati max 10%, vitreo min.50%), contenuto proteico min. 11.00%",GRANO DURO,EUR/t,2023-06-28,2023-07-05,2,2
@@ -73,10 +73,10 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 72,"FINO (peso min. 78 kg/hl, umidità 12%, vitrei min. 70%, volpati max. 8%, spezzati e striminziti max 8%, farinosi 1%, nulli 0.50%), contenuto proteico minimo 12.00%",GRANO DURO,EUR/t,2023-07-12,2023-07-12,1,1
 73,"BUONO MERCANTILE (peso min. 76 kg/hl, umidità 12%, vitrei min. 50%, volpati max. 10%, spezzati e striminziti max 10%), contenuto proteico minimo 11.00%",GRANO DURO,EUR/t,2023-07-12,2023-07-12,1,1
 74,"MERCANTILE** (peso min. 74 kg/hl, umidità 12%, vitrei min. 30%, volpati max. 12%, spezzati e striminziti max 12%), contenuto proteico minimo 10.50%",GRANO DURO,EUR/t,2023-07-12,2023-07-12,1,1
-75,"ORZO NAZIONALE Pesante (peso min. 62 kg/hl, umidità max. 12%)",CEREALI MINORI E LEGUMINOSE,EUR/t,2023-07-12,2026-11-11,116,109
-76,"ORZO NAZIONALE Leggero (peso min. 56 kg/hl, umidità max. 12%)",CEREALI MINORI E LEGUMINOSE,EUR/t,2023-07-12,2026-11-11,116,46
-77,Ceneri 0.80-0.85% - proteine min. 12.5%,SFARINATI > SEMOLA DI GRANO DURO ITALIANO,EUR/t,2023-07-12,2026-11-11,116,113
-78,Ceneri 0.86-0.90%,SFARINATI > SEMOLA DI GRANO DURO ITALIANO,EUR/t,2023-07-12,2026-11-11,116,113
+75,"ORZO NAZIONALE Pesante (peso min. 62 kg/hl, umidità max. 12%)",CEREALI MINORI E LEGUMINOSE,EUR/t,2023-07-12,2026-11-18,117,110
+76,"ORZO NAZIONALE Leggero (peso min. 56 kg/hl, umidità max. 12%)",CEREALI MINORI E LEGUMINOSE,EUR/t,2023-07-12,2026-11-18,117,46
+77,Ceneri 0.80-0.85% - proteine min. 12.5%,SFARINATI > SEMOLA DI GRANO DURO ITALIANO,EUR/t,2023-07-12,2026-11-18,117,114
+78,Ceneri 0.86-0.90%,SFARINATI > SEMOLA DI GRANO DURO ITALIANO,EUR/t,2023-07-12,2026-11-18,117,114
 79,"BIOLOGICO* (peso min. 77 kg/hl, bianconati max. 30%), contenuto proteico min. 11.50%",GRANO DURO,EUR/t,2023-07-19,2024-06-12,41,39
 80,"FINO (peso min. 78 kg/hl, umidità 12%, spezzati e striminziti max 8%, farinosi 1%, volpati max 8%, vitreo min.70%, nulli 0.50%), contenuto proteico min. 12.00%",GRANO DURO,EUR/t,2023-07-19,2024-06-12,41,39
 81,"BUONO MERCANTILE (peso min. 76 kg/hl. umidità 12%, spezzati e striminziti max 10%, volpati max 10%, vitreo min.50%), contenuto proteico min. 11.00%",GRANO DURO,EUR/t,2023-07-19,2024-06-12,41,39
@@ -88,5 +88,5 @@ code,name,category_path,unit,first_date,last_date,n_observations,n_quoted
 87,"FINO (peso min. 79,5 - 80 kg/hl, umidità 12%, vitrei min. 80%, volpati max. 3%, spezzati e striminziti max 5%, farinosi 1%, nulli 0.50%), contenuto proteico minimo 12,00 - 12,50%",GRANO DURO,EUR/t,2024-07-03,2026-03-25,82,80
 88,"BUONO MERCANTILE (peso min. 78 kg/hl, umidità 12%, vitrei min. 65%, volpati max. 4%, spezzati e striminziti max 6%), contenuto proteico minimo 11,00 - 11,50%",GRANO DURO,EUR/t,2024-07-03,2026-03-25,82,80
 89,"MERCANTILE (peso min. 76 kg/hl, umidità 12%, vitrei min. 50%, volpati max. 5%, spezzati e striminziti max 6%), contenuto proteico minimo 11,00%",GRANO DURO,EUR/t,2024-07-03,2026-03-25,82,79
-90,"BIOLOGICO (peso min. 79 kg/hl, Bianconati max. 30%), contenuto proteico minimo 11,00%",GRANO DURO,EUR/t,2026-06-17,2026-11-11,20,19
-91,"TENERO FINO (peso min. 79 kg/hl, tolleranza 1% corpi estranei) per farine 00",GRANO TENERO,EUR/t,2026-09-16,2026-11-11,9,0
+90,"BIOLOGICO (peso min. 79 kg/hl, Bianconati max. 30%), contenuto proteico minimo 11,00%",GRANO DURO,EUR/t,2026-06-17,2026-11-18,21,20
+91,"TENERO FINO (peso min. 79 kg/hl, tolleranza 1% corpi estranei) per farine 00",GRANO TENERO,EUR/t,2026-09-16,2026-11-18,10,0
